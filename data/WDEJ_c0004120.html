@@ -1,0 +1,3895 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_c0004120" d:title="care" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">care </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">keə<span class="alt">r</span></span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span role="text" class="etym">〖原義は「悲しみ･苦悩」〗</span>
+      <span class="u"><span class="ps x_rr">形</span>careful, careless</span>
+    </span>
+  </span>
+  <span id="WDEJ_c0004120_k401" class="box ty_4">
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈行為〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_01_00_01'])" title="care">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>世話 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_01_00_02'])" title="care">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>手入れ</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈感情〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_01_00_03'])" title="care">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>注意 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_01_00_04'])" title="care">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>心配</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(+)｠</span>
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_02_01_01'])" title="care">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>関心がある </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_02_01_02'])" title="care">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>心配する</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVO｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_02_02_01'])" title="care">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>気にする</span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_c0004120_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+      <span class="frmg">
+        <span class="gr x_rr ty_単複">複</span>
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="trans">(病人･老人･子供などに対する)<span class="t">世話</span><span class="gp">, </span><span class="bold">介護</span><span class="gp">, </span><span class="bold">保護</span><span class="gp">; </span><span class="bold">管理, 監督 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">James and Mary share the <span class="italic">care</span> of their children [parents]<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ジェイムズとメリーは子供たち[両親]の面倒を一緒に見ている</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">be (put) <span class="italic"><span class="bold">in</span></span> intensive <span class="italic"><span class="bold">care </span></span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">集中治療を受けている</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic">care</span> in the community </span>
+          <span class="oup_label x_ni">｟主に英｠</span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">在宅ケアサービス</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">A child with disabilities needs special <span class="italic">care</span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">障害を持つ子供には特別な介護が必要である</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">costs of health [medical] <span class="italic">care</span> ≒ health [medical] <span class="italic">care</span> costs </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">医療費</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">
+            <span class="italic">
+              <span class="bold">tender loving care </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">心のこもった優しいもてなし[扱い](<span class="oup_label x_ni">｟略｠</span>TLC)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="trans">(よりよい状態を保つための)<span class="t">手入れ</span><span class="gp">, </span><span class="bold">扱い </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic"><span class="bold">hair</span> [<span class="bold">skin</span>] <span class="bold">care</span></span> products </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ヘア[スキン]ケア製品</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="trans">(誤り･損害などを避けるための)<span class="t">注意</span><span class="gp">, </span><span class="bold">用心</span><span class="gp">, </span><span class="bold">心遣い </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Fragile, Handle with <span class="italic">Care</span><span class="gp">. </span></span>
+          <span class="oup_label x_ni">｟掲示｠</span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">壊れ物につき取り扱い注意 </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>箱に貼る注意書き) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">choose one's words <span class="italic"><span class="bold">with</span></span> great <span class="italic"><span class="bold">care</span></span> [╳attention] </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">言葉遣いに細心の注意を払う</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">driving without due <span class="italic">care</span> and attention </span>
+          <span class="oup_label x_ni">｟英｠</span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">注意怠慢運転(の罪)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="oup_label x_ni">｟文｠</span>
+        <span class="trans">
+          <span class="bold">心配</span>
+          <span class="gp">, </span>
+          <span class="bold">気苦労</span>
+          <span class="gp">, </span>
+          <span class="bold">懸念</span>
+          <span class="gp">, </span>
+          <span class="bold">悲しみ </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>具体例ではa ～/～s) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">all the <span class="italic">cares</span> of life </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">あらゆる生活上の苦労</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I <span class="italic"><span class="bold">don't have a care in the world</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">私は悩み事など何もない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">take the <span class="italic">cares</span> of the world on one's shoulders </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">人の苦労も我が身になって心配する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_05" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">5 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans"><span class="bold">関心事</span><span class="gp">, </span><span class="bold">注意すべき</span>[<span class="bold">なすべき</span>]<span class="bold">事</span><span class="gp">, </span><span class="bold">責任</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_00_06" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">6 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="oup_label x_ni">｟英｠</span>
+        <span class="trans"><span class="bold">児童保護</span>〘保護者の保護が受けられない子供の自治体による保護〙 </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">in <span class="italic">care </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">児童保護下で</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic"><span class="bold">take</span></span> A <span class="italic"><span class="bold">into care </span></span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">A〈子供〉を施設保護下に置く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">á</span>re of <span class="italic">A </span></span>
+      <span id="WDEJ_c0004120_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉方, A気付 </span>
+          <span class="grnote"> (<span class="lbl">!</span>封筒などにはc/oと書く) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">write [mail] to Bob Jordan (<span class="oup_label x_ni">｟米｠</span>in) <span class="italic">care of</span> the Washington Times </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ワシントンタイムズ社気付でボブ･ジョーダンに手紙を出す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>ve a c<span class="str">á</span>re </span>
+      <span id="WDEJ_c0004120_p02_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英話･やや古｠</span>
+          <span class="gr ty_用法">〖通例命令文で〗</span>
+          <span class="trans">気をつけろ, 注意せよ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p03" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">in <span class="italic">A's</span> c<span class="str">á</span>re </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">よりかたく</span></span>in the c<span class="str">á</span>re of <span class="italic">A</span></span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p03_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に書｠</span>
+          <span class="trans">A〈人〉の世話になって, Aに面倒を見てもらって</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">in c<span class="str">á</span>re of <span class="italic">A </span></span>
+      <span id="WDEJ_c0004120_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米｠</span>
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_p01'])" title="care">＝ <span class="xrlabelGroup"><span class="xrlabel">care</span></span> of A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">t<span class="str">à</span>ke c<span class="str">á</span>re </span>
+      <span id="WDEJ_c0004120_p05_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に対して/…するように/…するとき» </span>
+          <span class="trans"><span class="bold">注意する</span>, 気をつける, 用心する(be careful) </span>
+          <span class="sp"> «<span class="italic">with</span></span>
+          <span class="gp">, </span>
+          <span class="sp">
+            <span class="italic">over</span>
+          </span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">to</span> do</span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">that</span>節/(<span class="italic">when</span>) do<span class="italic">ing</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="oup_label x_ni">｟コーパス｠</span>careはgreat, special, immense, particular, extraなどの修飾語を伴うことがある. (<span class="bold">2</span>)「注意して聞く」(listen, pay attention)の意では用いない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">take care with</span> home security </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">住まいの安全に注意する</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">take care</span> not <span class="italic">to</span> be seen </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">見られないように注意する</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Take care to</span> [<span class="italic">that</span> you] avoid the direct sun<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">直射日光は避けるよう気をつけなさい </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>that節内にwillや仮定法現在を用いるのは<span class="oup_label x_ni">｟まれ｠</span>) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p05_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖命令文で; T-〗</span>
+          <span class="trans">(親しみを込め, 別れの軽いあいさつとして)じゃ, 元気で </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Take care!</span> See you later! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">じゃ, 気をつけて</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">またね </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_p06'])" title="care">↓ take care of A <span class="xrlabelGroup"><span class="xrlabel">(2)</span></span></a></span>)</span>
+          </span>
+          <span class="gp x_xot">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">t<span class="str">à</span>ke c<span class="str">á</span>re of <span class="italic">A </span></span>
+      <span id="WDEJ_c0004120_p06_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人･動物･物など〉<span class="bold">の世話をする</span>, 面倒を見る, A〈物〉の手入れをする </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>careはgood, great, better, moreなどの修飾語を伴うことがある) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">take care of</span> one's children [bags] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">子供たち[(盗難などに遭わないように)かばん]の面倒を見る</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">take</span> good <span class="italic">care of</span> the dog [garden] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">犬の世話[庭の手入れ]をしっかりする</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He is old enough to <span class="italic">take care of</span> himself<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は自分のことは自分でやれる年だ</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The financing is <span class="italic">taken care of</span> by a local bank<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">資金については地元の銀行が面倒を見てくれる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p06_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人･事など〉<span class="bold">に留意する</span>, Aを大事にする </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">Take care of yourself! </span>
+              </span>
+            </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">気をつけて, お体大切に </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>別れのあいさつで; Take care. に比べ強意的に健康･安全を意識した表現; <span class="italic">Take care of</span> your health. は健康が思わしくないことを暗示するため通常の状況では不適) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p06_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈問題･仕事など〉<span class="bold">を処理する</span>, 引き受ける</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉を殺す </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'll <span class="italic">take care of</span> the rest [trash]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">後[ごみ]は私が片付けておきます</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">take care of</span> business after lunch </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">昼食後に仕事を処理する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p06_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話･遠回しに｠</span>
+          <span class="trans">A〈料金〉を支払う </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Today I'll <span class="italic">take care of</span> the check<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">今日の勘定は私が持ちます</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_01_k102" class="box x_xd1 ty_1">
+      <span class="title x_xdh"><span class="u">類義 </span>take care ofとlook after, care for</span>
+      <span class="np x_xd1">
+        <span class="x_xdh x_xdt">
+          <span class="bold">take care of </span>
+          <span>は患者･老人･子供などの弱者や客･動物の世話などを始め, 物の手入れや維持管理･物事の処理を責任を持って引き受ける場合に用いる. 単なる責任ではなく愛情を暗示し, </span>
+          <span class="oup_label x_ni">｟英｠</span>
+          <span>より</span>
+          <span class="oup_label x_ni">｟米｠</span>
+          <span>で好まれる. </span>
+          <span class="bold">look after</span>
+          <span>は</span>
+          <span class="oup_label x_ni">｟主に英｠</span>
+          <span>でtake care ofとほぼ同じ意味で用いるが, 短期間子供･親･夫･妻などの家族の面倒を見る場合, 利益･金銭の管理などに言及する際に特に好まれる. </span>
+          <span class="bold">care for</span>
+          <span>は</span>
+          <span class="oup_label x_ni">｟ややかたく｠</span>
+          <span>で広い意味での社会的弱者を世話･介護する総称的表現で好まれ, 長期･終日のものをさすことが多い</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p07" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">under <span class="italic">A's</span> c<span class="str">á</span>re </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">よりかたく</span></span>under the c<span class="str">á</span>re of <span class="italic">A</span></span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に書｠</span>
+          <span class="trans">(正式に)A〈人など〉の管理[監督]下にあって, A〈医者〉の治療を受けて</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_c0004120_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+      <span class="frmg">
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm"><span class="rf">～</span>d </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-d</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">caring </span>
+      </span>
+      <span class="grnote"> (<span class="lbl">!</span>進行形にしない) </span>
+    </span>
+    <span id="WDEJ_c0004120_02_01" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">自動詞</span>
+      <span id="WDEJ_c0004120_02_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖しばしば否定文･疑問文で〗</span>
+          <span class="trans">(重要性を感じて) </span>
+          <span class="ind">【物･事に】</span>
+          <span class="trans">
+            <span class="t">関心がある</span>
+            <span class="gp">, </span>
+            <span class="co x_ni"> «…が» </span>
+            <span class="bold">気になる </span>
+          </span>
+          <span class="sp"> «<span class="italic">about</span>» </span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖否定文で〗</span>
+          <span class="co x_ni"> «…しても» </span>
+          <span class="trans">
+            <span class="bold">気にしない, かまわない </span>
+          </span>
+          <span class="sp"> «<span class="italic">if</span>節» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">don't care about</span> money [my dress]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">僕はお金[服装]など気にしない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He <span class="italic">didn't care about</span> my feelings<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼は私の気持ちなど何とも思っていなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">All she cared about</span></span> was making money<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女の関心といえば金もうけのことばかりだった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">don't care if</span> you hate me<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君に嫌われたってかまわない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">don't care</span> a bit [pin, straw, damn]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ちっともかまわない </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>a bitなどは強調のための副詞句) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_02_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖しばしば否定文･疑問文で〗</span>
+          <span class="trans">(健康･幸福などを願って) </span>
+          <span class="ind">【人のことを】</span>
+          <span class="trans">
+            <span class="t">心配する</span>
+            <span class="gp">, </span>
+            <span class="bold">気にかける </span>
+          </span>
+          <span class="sp"> «<span class="italic"><span class="bold">about</span></span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">for</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">She really <span class="italic">cares about</span> [<span class="italic">cares</span> a lot <span class="italic">about</span>] her kids<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女は自分の子供たちのことを本当に心配している</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">You <span class="italic">don't care about</span> me any more<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">もう私のことなんてどうでもいいのね</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_02_02" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">他動詞</span>
+      <span id="WDEJ_c0004120_02_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trgg x_xd3">
+          <span class="gr ty_用法">〖通例否定文･疑問文で〗</span>
+          <span class="trg">
+            <span class="con">〖care wh節/if節〗</span>
+            <span class="trans"><span class="t">…か</span>[<span class="t">…かどうか</span>]<span class="t">気にする</span><span class="gp">, </span><span class="bold">興味がある</span></span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">No one cared </span></span><span class="italic">what</span> was happening to him<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼に何が起こっているか気にする者はいなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">I don't care </span></span><span class="italic">how</span> old you are<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君の年齢なんて気にするものか</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">I don't care </span></span><span class="italic">if</span> you're rich or not<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">あなたが金持ちであろうとなかろうとかまわない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_02_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="oup_label x_ni">｟かたい話･丁寧に｠</span>
+          </span>
+          <span class="gr ty_用法">〖疑問文･否定文･条件節で〗</span>
+          <span class="trg">
+            <span class="con">〖would care to <span class="r">do</span>〗</span>
+            <span class="trans">
+              <span class="bold">…することを希望する </span>
+            </span>
+            <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_i0001250:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_i0001250_01_00_01_k303'])" title="if">→ if <span class="xrlabelGroup"><span class="xrlabel">1a</span><span class="xrlabel">文法</span></span></a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">“<span class="italic">Would</span> you <span class="italic">care</span> [<span class="oup_label x_ni">｟よりくだけて｠</span><span class="italic">Care</span>] <span class="italic">to</span> join me?” “Oh, I'd love to.” </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(物事を薦めて)「あなたもいかがですか」「まあ, 喜んで」</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_02_02_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟やや古｠</span>
+          <span class="gr ty_用法">〖通例否定文･比較節で〗</span>
+          <span class="co x_ni"> «…するのを» </span>
+          <span class="trans">
+            <span class="bold">好む, 欲する </span>
+          </span>
+          <span class="sp"> «<span class="italic">to</span> do» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He <span class="italic">didn't care to</span> dance<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼は踊りたがらなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Kerry has broken my heart more times <span class="italic"><span class="bold">than</span></span> I <span class="italic"><span class="bold">care to remember</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ケリーには思い出したくもないくらい何度も悲しい思いをさせられた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">That's all I <span class="italic">care to</span> say at this point<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">今の時点で言いたいのはそれだけだ </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>強意を帯びて肯定文で用いることがある) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">á</span>ny <span class="italic">A</span> you c<span class="str">à</span>re to n<span class="str">à</span>me [m<span class="str">è</span>ntion] </span>
+      <span id="WDEJ_c0004120_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">どんな類<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（たぐい）</span></span>のAでも</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">as <span class="str">ì</span>f I c<span class="str">á</span>red </span>
+      <span id="WDEJ_c0004120_p09_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(通例怒って)<span class="co x_ni"> «…か» </span>まったく気にならない, どうでもいい </span>
+          <span class="sp"> «<span class="italic">wh</span>節» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">be p<span class="str">à</span>st c<span class="str">á</span>ring </span>
+      <span id="WDEJ_c0004120_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英話｠</span>
+          <span class="trans">〈人が〉(嫌気がして)もう興味がない</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">á</span>re for <span class="italic">A </span></span>
+      <span id="WDEJ_c0004120_p11_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟ややかたく･主に書｠</span>
+          <span class="trans"><span class="bold">A</span>〈人･物など〉<span class="bold">の面倒を見る</span>, 世話をする </span>
+          <span class="grnote"> (<span class="lbl">!</span>進行形が可能; <span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_c0004120:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0004120_01_k102'])" title="care">↑ take care of A<span class="xrlabelGroup"><span class="xrlabel">類義</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">care for</span> the sick </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">病人の世話をする</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p11_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(友情に基づいて)A〈人〉のことが好きである[を思う], 大事にしたいと思う </span>
+          <span class="grnote"> (<span class="lbl">!</span>進行形にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">And actually, I do <span class="italic">care for</span> him<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">それに実際彼のことが好きだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p11_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟かたい話｠</span>
+          <span class="gr ty_用法">〖通例wouldを伴う疑問文･否定文で〗</span>
+          <span class="trans">A〈物･事〉が欲しい, Aを望む </span>
+          <span class="grnote"> (<span class="lbl">!</span>likeより控えめな表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Would</span> you <span class="italic">care</span> [<span class="oup_label x_ni">｟よりくだけて｠</span><span class="italic">Care</span>] <span class="italic">for</span> another (one)? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(飲み物･料理の)お代わりいかがですか</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p11_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟かたく｠</span>
+          <span class="gr ty_用法">〖通例否定文･疑問文で〗</span>
+          <span class="trans">A〈物･事･人〉が好みである, 好きである </span>
+          <span class="grnote"> (<span class="lbl">!</span>likeより控えめな表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">don't</span> really <span class="italic">care for</span> carrots<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ニンジンは苦手なんです</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p11_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈物〉の手入れをする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p12" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">c<span class="str">ò</span>uldn't c<span class="str">à</span>re l<span class="str">é</span>ss </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">米</span></span>c<span class="str">ò</span>uld c<span class="str">à</span>re l<span class="str">é</span>ss</span>
+        </span>
+      </span>
+      <span id="WDEJ_c0004120_p12_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="co x_ni"> «…について/…か» </span>
+          <span class="trans">まったく気にしない, 一向に関心がない </span>
+          <span class="sp"> «<span class="italic">about</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">wh</span>節» </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>しばしば非常識さ･居直りを暗示する) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They <span class="italic">couldn't care less about</span> the law<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">やつらは法律などおかまいなしだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">for <span class="str">à</span>ll <span class="italic">A</span> c<span class="str">á</span>res </span>
+      <span id="WDEJ_c0004120_p13_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖文頭･文尾で〗</span>
+          <span class="trans">(たとえ…しようと)A〈人〉は一向にかまわない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">You can starve <span class="italic">for all</span> I <span class="italic">care</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">君が飢え死にしようと僕の知ったことではない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">not c<span class="str">á</span>re <span class="str">ó</span>ne w<span class="str">à</span>y or the <span class="str">ó</span>ther [<span class="str">é</span>ither w<span class="str">à</span>y] </span>
+      <span id="WDEJ_c0004120_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">どちらであろうとかまわない</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">S<span class="str">è</span>e if I c<span class="str">á</span>re! </span>
+      <span id="WDEJ_c0004120_p15_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(怒って)勝手にしろ, もう知るか, やれるものならやってみろ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">Wh<span class="str">à</span>t do <span class="str">Í</span> [y<span class="str">ó</span>u, th<span class="str">é</span>y] c<span class="str">à</span>re? </span>
+      <span id="WDEJ_c0004120_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(通例怒って)私[君, 彼ら]にはどうでもいいことだ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_p17" class="idmsec x_xo1">
+      <span class="idm x_xoh">Wh<span class="str">ò</span> c<span class="str">á</span>res?[!] </span>
+      <span id="WDEJ_c0004120_p17_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖反語的に〗</span>
+          <span class="co x_ni"> «…について/…か» </span>
+          <span class="trans">(つまらないことなので)誰が気にするというのか, <span class="bold">誰も気にしない </span></span>
+          <span class="sp"> «<span class="italic">about</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">wh</span>節» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I think he's mad at me, <span class="italic"><span class="bold">but who cares</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は私に腹を立てていると思うけど, それがどうしたっていうの </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>通常の文と共に用いるとき疑問符の代わりに終止符を用いることがある) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">Who cares if</span></span> you're fat or thin? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">君が太っていようがやせていようが誰も気にしないよ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_c0004120_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> ass<span class="str">ì</span>stant</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">(障害者の)介助者</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> att<span class="str">è</span>ndant</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c02_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">ホームヘルパー</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> h<span class="str">ò</span>me</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c03_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">介護施設</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c04" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> l<span class="str">à</span>bel</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c04_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(衣類に付けられた)洗濯表示ラベル</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c05" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> m<span class="str">à</span>nager</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c05_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">介護支援員</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c06" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́ </span></span><span class="str">ò</span>rder</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c06_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">児童保護命令〘両親に代わって子供を社会福祉事業所が保護する法的措置〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c07" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> p<span class="str">à</span>ckage</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c07_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="trans">(家から離れて暮らす学生･軍人などへの)差し入れ小包</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0004120_c08" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> w<span class="str">ò</span>rker</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0004120_c08_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">ケア[管理, 介護]従事者 </span>
+            <span class="grnote"> (<span class="lbl">!</span>しばしばhealth, day, childなどを前に伴う複合語の形で) </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

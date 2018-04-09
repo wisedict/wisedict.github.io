@@ -1,0 +1,3620 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_s0018180" d:title="since" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">since </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">sɪns</span> | </span>
+  </span>
+  <span id="WDEJ_s0018180_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">接続詞</span>
+      <span class="ind">【<span class="gr ty_用法">〖従位接続詞〗</span>過去の始点】</span>
+      <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)肯定文を従えて. (<span class="bold">2</span>)since節中の<span class="gr x_rr">代名詞</span>指示については<span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_w0005570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0005570_03_00_01_k106'])" title="when">→ when<span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(4)</span></span></a></span></span>) </span>
+    </span>
+    <span id="WDEJ_s0018180_01_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span id="WDEJ_s0018180_01_00_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖通例現在完了形と共に〗</span>
+          <span class="trans"><span class="t">…以来</span>(<span class="bold">現在までの間ずっと</span>), <span class="bold">…から</span><span class="gp">, </span><span class="bold">…以降</span></span>
+          <span class="gp">; </span>
+          <span class="trans"><span class="bold">…以来</span>(<span class="bold">現在までの間に</span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">We have worked [have been working] together <span class="italic">(<span class="bold">ever</span>) <span class="bold">since</span></span> we left school<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我々は学校を出てからずっと一緒に仕事をしてきた </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_k202'])" title="since">↓ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span><span class="xrlabel">(1)</span><span class="xrlabel">(b)</span></span></a></span><span class="gp">, </span><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k108'])" title="since"><span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span></span></a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I have only been home once <span class="italic">since</span> I was in college<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">大学在学中以来, 家には1度きりしか帰っていない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Your mother has been a friend of mine <span class="italic">since</span> before you were born<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君のお母さんは君が生まれる前からの友人だ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Beth has learned a lot of things in the four years <span class="italic">since</span> she got divorced<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">べスは離婚後の4年間で多くのことを学んだ </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k107'])" title="since">↓ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">類義</span></span></a></span>)</span>
+          </span>
+          <span class="gp x_xdt">. </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_s0018180_01_00_01_k101" class="box t_語法 ty_1">
+          <span class="title x_xdh"><span class="u">語法 </span>sinceの位置と強勢･リズム</span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">時を表すsinceは一般に強勢は受けない </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh x_xdt">
+                <span class="sn">▸ </span>
+                <span class="ex">We have w<span class="str">ó</span>rked tog<span class="str">é</span>ther(↘) <span class="italic">since</span> we l<span class="str">é</span>ft sch<span class="str">ó</span>ol(<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVQ4Ee2SURHDIBBEkypAAhKQgASkRAISkIKESIgEJODgytLchZLQSfvdzGRyLLvH4ybT9MOzristy0IStdbStm2HIDvvRUqJnHPwETKy670nY8whyM6ryDnziTWMBkzwgKU0mPfvZROl1FxeWOTp1xPwiki4n7iaAhRa6+op8rUvhFBNMDfZWgKZ740rD2eGIe2Dkh6gAh0oRRwVOB3mGGM1MzroRpmTjjCf2KKfjJ8EBHlot9D7ZkDHv/EVet/kv743gScoq4Pe/TdXpAAAAABJRU5ErkJggg==" class="gi"/>). 主節は意味上の重点を置きたい場合に文末に移動し, 文頭にきたsinceはしばしば強勢を受ける </span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh x_xdt">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">S<span class="str">í</span>nce</span> we l<span class="str">é</span>ft sch<span class="str">ó</span>ol(<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVQ4Ee2SURHDIBBEkypAAhKQgASkRAISkIKESIgEJODgytLchZLQSfvdzGRyLLvH4ybT9MOzristy0IStdbStm2HIDvvRUqJnHPwETKy670nY8whyM6ryDnziTWMBkzwgKU0mPfvZROl1FxeWOTp1xPwiki4n7iaAhRa6+op8rUvhFBNMDfZWgKZ740rD2eGIe2Dkh6gAh0oRRwVOB3mGGM1MzroRpmTjjCf2KKfjJ8EBHlot9D7ZkDHv/EVet/kv743gScoq4Pe/TdXpAAAAABJRU5ErkJggg==" class="gi"/>), we have w<span class="str">ó</span>rked tog<span class="str">é</span>ther(↘)<span class="gp">.</span></span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_s0018180_01_00_01_k202" class="box ty_2">
+          <span class="title x_xdh"><span class="u">コーパスの窓 </span>sinceと時制･時の表現</span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">①</span>
+              <span class="bold">主節の時制</span>
+            </span>
+            <span id="WDEJ_s0018180_01_00_01_k202_1_a" class="semb x_xd1 hasSn">
+              <span class="sn x_xdh">a. </span>
+              <span class="trg x_xd2">
+                <span class="trans"><span class="bold">現在完了形と過去完了形</span> sinceは過去のある時点に始まった出来事や状態を, 現在[ある時点]の視点で振り返るときに用いる</span>
+                <span class="gp">. </span>
+                <span class="trans">その振り返る視点が現在(発話時)のときは現在完了形と, 同じく視点が過去の時は過去完了形と用いる</span>
+                <span class="gp">. </span>
+                <span class="trans">頻度の点では過去完了形は全体の1割にも満たないが, <span class="oup_label x_ni">｟話｠</span>で過去を振り返ったり, 小説などで登場人物の立場で出来事を回顧する際に好まれる </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">Ed was 65 years old. He <span class="italic">had worked</span> there <span class="italic">since</span> he was twenty<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">エドは65歳だった</span>
+                  <span class="gp">. </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">彼は20歳の時から(その時まで)そこで働いていた</span>
+                  <span class="gp">. </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">また, 過去完了形よりもさらに頻度は少ないが, 未来の視点から未来完了形で用いられることもある </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Next month I <span class="italic">will have been</span> living here for two years <span class="italic">since</span> I moved in<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">来月で, 私が引っ越してきてから2年ここに住んでいることになる</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span id="WDEJ_s0018180_01_00_01_k202_1_2" class="semb x_xd1 hasSn">
+              <span class="sn x_xdh">b. </span>
+              <span class="trg x_xd2">
+                <span class="trans"><span class="bold">完了進行形</span> 完了進行形が用いられると, 今後[その時点以後]もその状態が続く可能性が高いと話し手が考えていることを暗示</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+            <span id="WDEJ_s0018180_01_00_01_k202_1_3" class="semb x_xd1 hasSn">
+              <span class="sn x_xdh">c. </span>
+              <span class="trg x_xd2">
+                <span class="trans"><span class="bold">現在形と過去形</span> 過去の原因による現在の習慣や変化を表すときには現在形と用いられることがある </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">Carol <span class="italic">goes</span> for a drive every day <span class="italic">since</span> she bought a new car<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">キャロルは新車を買って以来毎日ドライブに出かけている</span>
+                  <span class="gp">. </span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">また, 過去の特定期間を回顧する文脈では過去形と用いられることがある </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">I always <span class="italic">wanted</span> to be an actor <span class="italic">since</span> I was 12<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">私は12歳の時からいつも俳優になりたいと思っていた</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">②</span>
+              <span class="bold">since</span>
+              <span class="bold">節中の時制</span>
+              <span> 主節が現在(完了)形のとき, since節中の</span>
+              <span class="ps x_rr">動詞</span>
+              <span>は通例過去形だが, その状態が現在も続いている場合は現在完了形が用いられる </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">I've lost eight pounds <span class="italic">since</span> I'<span class="italic">ve been</span> here<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">私はここに来て(今までに)8ポンド(≒3.6kg)体重が減った</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">また, since節中の行為･状態が今後も継続されると話し手が感じている場合, 現在完了進行形が用いられることがある </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">Since</span> you <span class="italic">have been doing</span> films, who has been your favorite person to work with? </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">これまで映画の仕事を続けてきて(そしてこれからも続けられるでしょうが), 一緒に仕事をするのにお気に入りの人はどなたでしたか</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">③</span>
+              <span class="bold">since</span>
+              <span class="bold">節中の時の副詞句</span>
+              <span>･</span>
+              <span class="bold">節</span>
+              <span>since節は過去の始点を表すが具体的な時を明示する副詞句･節を伴うことがある </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">I have watched that drama <span class="italic">since</span> it began <span class="italic">in 2010</span> [<span class="italic">when I was 15</span>]<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">私はそのドラマが2010年に[15歳のときに]始まって以来見ている</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Things have changed <span class="italic">since</span> they got married [<span class="italic">since</span> their marriage] <span class="italic">two years ago</span><span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">2年前に彼らが結婚してから事態は変わった </span>
+              </span>
+              <span class="x_xdt">
+                <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)two years agoはsinceに続く節や句を修飾している; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k306'])" title="since">↓ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">語法のポイント</span></span></a></span></span>. (<span class="bold">2</span>)現在の視点から述べるときはagoを使うが, 過去の視点から述べるときはbefore, earlierなどを用いる) </span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_s0018180_01_00_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖it's been/it's <span class="r">C</span> since …〗</span>
+            <span class="trans">(今の時点で)<span class="t">…して以来C</span>〈ある期間〉<span class="t">になる</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖it had been/it was <span class="r">C</span> since …〗</span>
+            <span class="trans">(その時点で)<span class="bold">…して以来C</span>〈ある期間〉<span class="bold">になっていた</span></span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">It's been</span> [<span class="italic">It's</span>] ten years <span class="italic">since</span> my uncle died [<span class="oup_label x_ni">｟よりかたく｠</span><span class="italic">since</span> my uncle's death]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">叔父が死んで10年になる </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>ほぼ同じ内容はMy uncle died ten years ago. (過去の時点に注目), My uncle has been dead for ten years. (継続状態に注目), Ten years have passed <span class="italic">since</span> my uncle died. (過ぎ去った期間に注目)でも表現可能) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">It's been </span></span><span class="italic"><span class="bold">a long time</span></span> [<span class="italic"><span class="bold">so long</span></span>, ages] <span class="italic"><span class="bold">since</span></span> I saw him last<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">この前彼に会って以来ずいぶんになる</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">長い間彼に会っていない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Anne didn't recognize me at first. <span class="italic">It had been</span> five years <span class="italic">since</span> we had met at a party<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">アンは最初私が誰だかわからなかった</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">パーティで出会ってから5年が経っていた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_s0018180_01_00_01_k303" class="box ty_3">
+          <span class="title x_xdh">
+            <span class="u">コミュニケーション </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>A: How long (has it been [is it]) </span>
+              <span class="italic">since</span>
+              <span> you quit smoking? タバコをやめてどのくらいになりますか</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>B: Almost two weeks. ほぼ2週間です</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>❢</span>
+              <span class="oup_label x_ni">｟くだけて｠</span>
+              <span>ではhas it been [is it]はしばしば省略</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_s0018180_01_00_01_k104" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+            <span class="u">コーパス </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">①</span>
+              <span class="bold">主節の時制</span>
+              <span> 発話時点での状態をいうとき, </span>
+              <span class="oup_label x_ni">｟米｠</span>
+              <span>ではit has beenが, </span>
+              <span class="oup_label x_ni">｟英｠</span>
+              <span>ではit isが好まれる. 前者は通例it's beenの形で, 後者はしばしばit'sの形で用いられる. 過去の時点での状態をいうのは</span>
+              <span class="oup_label x_ni">｟書｠</span>
+              <span>に多いが, </span>
+              <span class="oup_label x_ni">｟米書｠</span>
+              <span>では過去完了形が, </span>
+              <span class="oup_label x_ni">｟英書｠</span>
+              <span>では過去形が好まれる. また, </span>
+              <span class="oup_label x_ni">｟まれ｠</span>
+              <span>に未来の時点での状態をいうときは未来形を用いる</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">②</span>
+              <span class="bold">since</span>
+              <span class="bold">節中の時制</span>
+              <span> 主節が現在(完了)形のとき, since節中の</span>
+              <span class="ps x_rr">動詞</span>
+              <span>は通例過去形が, </span>
+              <span class="oup_label x_ni">｟まれ｠</span>
+              <span>に現在完了形が用いられる. 一方, 主節が過去(完了)形のとき, since節中の</span>
+              <span class="ps x_rr">動詞</span>
+              <span>はしばしば過去形, 時に過去完了形が用いられる</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_s0018180_01_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span id="WDEJ_s0018180_01_00_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖序数の後で〗</span>
+          <span class="trans"><span class="bold">…以来</span>(<span class="bold">…番目の</span>) </span>
+          <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_02_02'])" title="since">↓ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">b</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">At 35, I cried <span class="italic"><span class="bold">for the first time since</span></span> I was eight<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">35歳の時, 私は8つの時以来初めて声をあげて泣いた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">It was the first time since</span></span> Jim was born <span class="italic"><span class="bold">that</span></span> we got more than 2 hours of sleep<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我々が2時間以上睡眠をとったのはジムが生まれて以来初めてのことだった </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>主節の主語はitのほかにthat, thisなどが用いられ, 過去のことにはit, that, this, 現在のことにはit, this, that, 未来のことにはit, thisを用いることが多い; that節のthatを省略するのは<span class="oup_label x_ni">｟まれ｠</span>) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_s0018180_01_00_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖最上級の後で〗</span>
+          <span class="trans"><span class="bold">…以来</span>(最も…) </span>
+          <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_02_01'])" title="since">↓ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">a</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="x_xopt x_xd1">
+      <span class="ind">【理由･原因】</span>
+    </span>
+    <span id="WDEJ_s0018180_01_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟ややかたく｠</span>
+        <span class="grnote"> (<span class="lbl">!</span>理由を表すsinceは通例強勢を受けない) </span>
+      </span>
+      <span id="WDEJ_s0018180_01_00_03_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖主節で示す内容の理由や原因を説明して〗</span>
+          <span class="trans">(ご承知の通り)<span class="t">…なので</span><span class="gp">, </span><span class="bold">だから</span><span class="gp">, </span><span class="bold">である以上 </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>聞き手や読み手がすでに知っている理由を述べる; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_b0005880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0005880_01_00_01_k102'])" title="be･cause">→ because<span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">1a</span><span class="xrlabel">類義</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">“<span class="italic">Since</span> it's such a beautiful day, why don't we do something outdoors?” “That's a good idea.” </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">「すばらしい天気なので外で何かしませんか」「いいですね」</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Do you spend a lot of time with your children? I know it might be hard <span class="italic">since</span> you are very busy! </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">子供さんと過ごされる時間は多いですか</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">お忙しいでしょうから難しいかもしれませんね </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>since節を強調したいときは聞き手はすでに知っている内容でも文尾に置かれる; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_03_k105'])" title="since">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span></span></a></span></span>) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_s0018180_01_00_03_k105" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+            <span class="u">コーパス </span>
+          </span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">強い因果関係を表すbecause節は, 話し手や聞き手が最も伝えたい事柄である意味上の焦点となって主節の後に置かれることが多いが, sinceは聞き手にとって既知の内容を伝えるため, 主節の前と後は同じくらいの割合で用いられる. また, becauseのようにit is … that … 構文やonly, just, simplyなどによる強調も行われない. ただし, especiallyやparticularlyを伴って, 特別な理由に言及するsince節を軽く添えることは可能 </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Although it was a lot of work, it was also a lot of fun. <span class="italic">Especially since</span> my husband was with me! </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">大変な仕事でしたが, 大変楽しくもありました</span>
+                <span class="gp">. </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">特に夫が一緒でしたからね </span>
+              </span>
+              <span class="x_xdt">
+                <span class="grnote"> (<span class="lbl">!</span>通例主節の後にコンマと共に添えられたり, この例のようにsince節が単独で用いられる) </span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>なお, 「過去の始点」を表すのか「理由」を表すのかあいまいな場合は, becauseを使った方が無難である</span>
+              <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0005880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0005880_01_00_01_k102'])" title="be･cause">→ because <span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">a</span><span class="xrlabel">類義</span></span></a></span>)</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_s0018180_01_00_03_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖発言の理由を述べて〗</span>
+          <span class="trans">
+            <span class="bold">…なので言うが </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">“How often do you meet him a month?” “Well, <span class="italic"><span class="bold">since you asked</span> [<span class="bold">ask</span>]</span>, I don't have enough time to spend with him.” </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">「彼とは1か月にどのくらい会うのですか」「そうですね, お尋ねですのでお答えしますが, 一緒に過ごす十分な時間がないのです」</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_s0018180_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">前置詞</span>
+      <span class="ind">【過去の始点】</span>
+    </span>
+    <span id="WDEJ_s0018180_02_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span id="WDEJ_s0018180_02_00_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖通例現在完了形と共に〗</span>
+          <span class="trans">〈過去の時点･時期･出来事〉<span class="t">以来</span>(現在までの間ずっと), <span class="bold">…から</span><span class="gp">, </span><span class="bold">…以降</span></span>
+          <span class="gp">; </span>
+          <span class="trans"><span class="bold">…以来</span>(<span class="bold">現在までの間に</span>)</span>
+          <span class="gp">; </span>
+          <span class="trans">〈有名な人〉<span class="bold">の時以来 </span></span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_a0006580:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_a0006580_01_00_01_k102'])" title="af･ter">→ after<span class="xrlabelGroup"><span class="xrlabel">類義</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I haven't seen my mother <span class="italic">since</span> 1990 [May, that day]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">1990年[5月, その日]以来母には会っていない </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>(<span class="bold">1</span>)╳I didn't [don't] see my mother since … としない; <span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_k202'])" title="since">↑ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span><span class="xrlabel">(1)</span><span class="xrlabel">(c)</span></span></a></span></span>. (<span class="bold">2</span>)sinceの代わりにfromを用いて╳I haven't seen my mother from 1990 [May, that day]. としない; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k107'])" title="since">↓ <span class="xrlabelGroup"><span class="xrlabel">類義</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">We've known each other (ever) <span class="italic">since</span> childhood [college]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我々は子供[大学]の時から(ずっと)知り合いだ </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k108'])" title="since">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span></span></a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I saw Lizzie on Sunday, but I haven't seen her <span class="italic"><span class="bold">since then</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">リジーには日曜日に会ったけど, それから会っていない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I've been waiting <span class="italic">since</span> 7 o'clock in the rain<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">雨の中7時からずっと待っているんです </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_k202'])" title="since">↑ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span><span class="xrlabel">(1)</span><span class="xrlabel">(b)</span></span></a></span></span>. (<span class="bold">2</span>)since句に重点がある場合は文末に置く) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I have been a teacher of English for twenty years <span class="italic">since </span><span class="italic">leaving</span> college<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">大学を出てから20年間英語の教師をしている </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>do<span class="italic">ing</span>を従えるのは<span class="oup_label x_ni">｟ややかたく｠</span>; … <span class="italic">since</span> I left collegeのように節を従える方がくだけた言い方; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k107'])" title="since">↓ <span class="xrlabelGroup"><span class="xrlabel">類義</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">We've come a long way <span class="italic">since</span> the 1950s<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">1950年代からの道のりは遠かった </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>変化を遂げるのにかかった時間の長さを感慨深く思い起こす表現) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Nearly every American president <span class="italic">since</span> George Washington has had one or more dogs<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ジョージ･ワシントン以来, ほとんどのアメリカ大統領が犬を1匹以上飼っている </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>since句は名詞句Nearly … presidentを修飾している) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_s0018180_02_00_01_k306" class="box ty_3">
+          <span class="title x_xdh">
+            <span class="u">語法のポイント </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>彼は3日前から病気です</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>× He has been sick since three days ago</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>○ He has been sick for three days</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>❢「…前から」を表す「since A〈期間〉ago」の形は好ましくないとされる</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_s0018180_02_00_01_k107" class="box ty_1">
+          <span class="title x_xdh"><span class="u">類義 </span>sinceとfrom</span>
+          <span class="np x_xd1">
+            <span class="x_xdh">
+              <span class="bold">since </span>
+              <span>は過去のある時を始点とするが, </span>
+              <span class="bold">from</span>
+              <span>は過去･現在･未来のいずれも始点にすることができる </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">from</span> (one's) childhood </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">子供のころから</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">from</span> now on </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">今からずっと</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">from</span> tomorrow </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">明日から</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span>また, sinceは現在または問題となっている時点までの期間を問題にするので通例完了形と共に用い, またin, for, overなどを伴う期間を明示する表現の後で用いられることがあるが</span>
+              <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_01'])" title="since">↑ <span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第4例</a></span><span class="gp">, </span><span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_01'])" title="since"><span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第5例</a></span>)</span>
+              <span>, 改めてuntil [till] … などの終点を表す語句と用いるのは</span>
+              <span class="oup_label x_ni">｟まれ｠</span>
+              <span>. 一方, fromは単に開始点だけを示し, しばしばto [until, till] … などで終点を明示する</span>
+              <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0015690:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0015690_01_00_02'])" title="from">→ from <span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_s0018180_02_00_01_k108" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">①</span>
+              <span>主節の時制については</span>
+              <span class="xrg ty_↑">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_k202'])" title="since">↑ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span><span class="xrlabel">(1)</span></span></a>
+                </span>
+              </span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">②</span>
+              <span>過去の始点以来の継続を強調するためしばしばeverと共に用いられる(</span>
+              <span class="xrg ty_↑">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_01'])" title="since">↑ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第2例</a>
+                </span>
+                <span class="gp">, </span>
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_01'])" title="since"><span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第1例</a>
+                </span>
+              </span>
+              <span class="gp">, </span>
+              <span class="xrg ty_↓">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_03_00_01'])" title="since">↓ <span class="ps x_rr">副詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span>第1例</a>
+                </span>
+              </span>
+              <span>)</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_s0018180_02_00_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖it has been/it is … <span class="rf">～</span> …〗</span>
+            <span class="trans">〈出来事〉<span class="bold">以来</span>〈ある期間〉<span class="bold">になる</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖it had been/it was … <span class="rf">～</span> …〗</span>
+            <span class="trans">〈出来事〉<span class="bold">以来</span>〈ある期間〉<span class="bold">になっていた </span></span>
+            <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_01_02'])" title="since">↑ <span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">b</span></span></a></span>)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_s0018180_02_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span id="WDEJ_s0018180_02_00_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖最上級の後で〗</span>
+          <span class="trans">〈過去の時点･時期･出来事〉<span class="t">以来</span>(最も…)</span>
+          <span class="gp">; </span>
+          <span class="trans">〈有名な人〉<span class="bold">の時以来</span>(<span class="bold">最も</span>) </span>
+          <span class="grnote"> (<span class="lbl">!</span>現在完了形以外とも用いる) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The weather has been <span class="italic">the worst since</span> 1989<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">天気は1989年以来最悪だ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>過去に言及するときは過去形:Last June was <span class="italic">the wettest since</span> 1970. 去年の6月は1970年以来最も雨が多かった) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Einstein is <span class="italic">the greatest</span> scientist <span class="italic">since</span> Newton<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">アインシュタインはニュートン以来最も偉大な科学者だ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>Einstein is <span class="italic">the greatest</span> scientist we have had <span class="italic">since</span> Newton. の簡略表現) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He's happier <span class="italic"><span class="bold">than at any time since</span></span> 1990<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼は今1990年以降最も幸せを感じている </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>形は比較級だが最上級に近い意味) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_s0018180_02_00_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖序数の後で〗</span>
+          <span class="trans"><span class="bold">…以来</span>(<span class="bold">…番目の</span>) </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_01_00_02_01'])" title="since">↑ <span class="ps x_rr">接続詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">a</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Joe smiled <span class="italic"><span class="bold">for the first time since</span></span> the accident<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その事故以来ジョーが初めてほほえんだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">This</span> [<span class="bold">It</span>] <span class="bold">is the first time since</span></span> 1999 <span class="italic"><span class="bold">that</span></span> the charge has fallen<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">手数料が下がったのは1999年以来これが初めてだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the 200th anniversary <span class="italic">since</span> Mozart's death </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">モーツァルト没後200周年記念日</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_s0018180_03" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">副詞</span>
+      <span class="frmg">
+        <span class="frm x_nb">比較なし </span>
+      </span>
+    </span>
+    <span id="WDEJ_s0018180_03_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖通例現在･過去完了形と共に; 文尾･文中で〗</span>
+        <span class="trans"><span class="t">その後</span>(<span class="bold">ずっと</span>)</span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">後で</span>
+          <span class="gp">, </span>
+          <span class="bold">その後のある時に </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>after thatは通例過去形･未来形で用いる) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">They first met two years ago and they've lived [been living] together ever <span class="italic">since</span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼らは2年前に初めて会って, それ以来ずっと一緒に住んでいる </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0018180:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0018180_02_00_01_k108'])" title="since">↑ <span class="ps x_rr">前置詞</span><span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span></span></a></span>)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Sue never married or had children, so my family has <span class="italic">since</span> become her family<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">スーは結婚もしなかったし子供ももたなかった</span>
+          <span class="gp">. </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">だからそれ以後私の家族が彼女の家族となった</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">We have laughed about it many times <span class="italic">since</span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">我々は後で何度もそのことで笑った</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_s0018180_03_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖期間表現の後で; 文中･文尾で〗</span>
+        <span class="trans">
+          <span class="bold">…前 </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>通例完了形, 時に過去形と共に) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">They have <span class="italic"><span class="bold">long since</span></span> disappeared<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼らはずっと前に消えていた(≒They disappeared a long time ago.) </span>
+        </span>
+        <span class="x_xdt">
+          <span class="grnote"> (<span class="lbl">!</span>前者は消えた時点から現在までに注目し, 後者は消えた時点にのみ注目する) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_s0018180_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">s<span class="str">ì</span>nce wh<span class="str">é</span>n (…)? </span>
+      <span id="WDEJ_s0018180_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_→">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0005570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0005570_p02'])" title="when">→ when</a>
+            </span>
+          </span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

@@ -1,0 +1,5378 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_t0007570" d:title="think" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">think </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">θɪŋk</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span class="grnote"> (<span class="lbl">!</span>don't, can'tなど否定短縮形の後ではしばしば無強勢) </span>
+      <span role="text" class="etym">〖語源は「自分に見えるようにする」〗</span>
+      <span class="u"><span class="ps x_rr">名･形</span>thinking, <span class="ps x_rr">名</span>thought</span>
+    </span>
+  </span>
+  <span id="WDEJ_t0007570_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+      <span class="frmg">
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-s</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">thought </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">θɔːt</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm"><span class="rf">～</span>ing </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_01_01" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">他動詞</span>
+      <span id="WDEJ_t0007570_01_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="grnote"> (<span class="lbl">!</span>進行形にしない; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_02_k106'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">語法</span></span></a></span></span>) </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖think (that)節〗</span>
+            <span class="trans">(意見として)〈人が〉<span class="t">…と思う</span><span class="gp">, </span><span class="bold">考える, 信じる, 判断する </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I <span class="italic">think</span> (<span class="italic">that</span>) the Tigers will win the pennant this year<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">タイガースは今年優勝すると思います </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>willは確信度の高い推量を表すためI thinkで弱めている; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_k101'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span><span class="xrlabel">(a)</span></span></a></span></span><span class="gp">; </span><span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_w0007880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0007880_01_00_05'])" title="will">→ will<span class="ps x_rr">助動詞</span><span class="xrlabelGroup"><span class="xrlabel">5</span></span></a></span></span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">(Do you) <span class="italic">think</span> he'll go? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼は行くと思いますか </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟くだけて｠</span>ではDo youが省略されることがある) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I hate to <span class="italic">think that</span> money is everything<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">お金がすべてだなんて思いたくない</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Some children grow up <span class="italic">thinking that</span> their parents know best<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">自分の親は何でも知っていると思って大きくなる子供もいる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Anyone [You] would <span class="italic">think</span> (<span class="italic">that</span>) <span class="italic">…</span><span class="gp">. </span></span>
+              <span class="oup_label x_ni">｟話｠</span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">誰もが[あなたは]…と思うことでしょう </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>奇妙な行動をしている人に対して, 驚き･非難などを表す) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic"><span class="bold">Am I right in thinking </span></span><span class="italic">that</span> you started your career as a lawyer here in Japan? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">弁護士の仕事はここ日本で始められたと考えて差し支えないですね</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_t0007570_01_01_01_k101" class="box t_語法 ty_1">
+            <span class="title x_xdh">
+              <span class="u">語法 </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">①</span>
+                <span class="bold">否定語の位置との関係</span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_1_a" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">a. </span>
+                <span class="trg x_xd2">
+                  <span class="trans">I think that …</span>
+                  <span class="gp">. </span>
+                  <span class="trans">の形を否定文にする場合に次の2つの形が考えられるが, 一般的には最初の例のように主節の<span class="ps x_rr">動詞</span>を否定する形が好まれる </span>
+                  <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_n0007720:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_n0007720_01_00_01_k103'])" title="not">→ not <span class="xrlabelGroup"><span class="xrlabel">1a</span><span class="xrlabel">語法</span><span class="xrlabel">(1)</span></span></a></span>) </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I don't <span class="italic">think</span> Tom will come<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">トムが来るとは思わない</span>
+                  </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I <span class="italic">think</span> Tom won't come<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">トムは来ないと思う</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_1_b" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">b. </span>
+                <span class="trg x_xd2">
+                  <span class="trans">(that)節内に否定を含む形が話者の驚きを表すことがある </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I <span class="italic">thought</span> you <span class="italic">hadn't</span> noticed<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">君は気づいていなかったと思ったのに</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_1_c" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">c. </span>
+                <span class="trg x_xd2">
+                  <span class="trans">付加疑問文は(that)節内の主語＋<span class="ps x_rr">動詞</span>を基準に作られるのが原則</span>
+                  <span class="gp">. </span>
+                  <span class="trans">ただしI don't think …</span>
+                  <span class="gp">. </span>
+                  <span class="trans">の形では実質(that)節内が否定されるので付加疑問文が肯定の形になる </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I <span class="italic">think</span> it's important, isn't it [╳don't I]? </span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">それは大事ですよね</span>
+                  </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I don't <span class="italic">think</span> that's true, is it? </span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">それは本当ではないと思いますが, いかがでしょう</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">②</span>
+                <span class="bold">think</span>
+                <span class="bold">の機能</span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_2_a" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">a. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="bold">話者の自信</span> I th<span class="str">í</span>nk …は発言内容を弱めて独断的に響かないようにする働きがあり<span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_01'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第1例</a></span>)</span>, 場合によっては「(確信はないが)…と思う」のように, 自信のないあいまいな言い方となる</span>
+                  <span class="gp">. </span>
+                  <span class="trans">挿入節の場合はさらに自信のない言い方 </span>
+                  <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_03'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">1c</span></span></a></span>)</span>
+                  <span class="gp">. </span>
+                  <span class="trans">主語に強勢を置いた<span class="str">Í</span> think …は「(他の人は知らないが)私は…と思う」の意で, 自信にあふれた言い方 </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">Ally has been married (↘), <span class="italic">I th<span class="str">í</span>nk</span><span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">アリーは結婚していると思うけど </span>
+                  </span>
+                  <span class="grnote x_xdt"> (<span class="lbl">!</span>Ally has been married (↘), <span class="italic">I th<span class="str">í</span>nk</span> (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVQ4Ee2SURHDIBBEkypAAhKQgASkRAISkIKESIgEJODgytLchZLQSfvdzGRyLLvH4ybT9MOzristy0IStdbStm2HIDvvRUqJnHPwETKy670nY8whyM6ryDnziTWMBkzwgKU0mPfvZROl1FxeWOTp1xPwiki4n7iaAhRa6+op8rUvhFBNMDfZWgKZ740rD2eGIe2Dkh6gAh0oRRwVOB3mGGM1MzroRpmTjjCf2KKfjJ8EBHlot9D7ZkDHv/EVet/kv743gScoq4Pe/TdXpAAAAABJRU5ErkJggg==" class="gi"/>). (アリーは結婚しているんじゃないかな)では疑問を持っていることを暗示) </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex"><span class="italic"><span class="str">Í</span> think</span> Ally has been married (↘)<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">アリーは絶対結婚していると思うよ</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_2_b" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">b. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="bold">控えめ表現</span><span class="oup_label x_ni">｟話｠</span>ではthinkの断定を弱める機能を利用して控えめ表現としてしばしば用いられる</span>
+                  <span class="gp">. </span>
+                  <span class="trans">また, 本来用いられない(特に過去)進行形で, 未完結を暗示させてさらに断定を弱めることがある </span>
+                  <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0009830:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0009830_01_01_02_k101'])" title="won･der">→ wonder<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">2</span><span class="xrlabel">語法</span></span></a></span>) </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">Do you <span class="italic">think</span> you could give me a hand? </span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">手を貸していただけそうでしょうか</span>
+                  </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I <span class="italic">thought</span> we might have lunch tomorrow<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">明日ご一緒にお昼でもと思ったのですが </span>
+                    <span class="xrg ty_↓">(<span class="xr">↓ <span class="xrlabelGroup"><span class="xrlabel">(c)</span></span></span>)</span>
+                  </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">We <span class="italic">were thinking</span> we might try something different today<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">今日は違うことを試すのもよいかと考えていたところだ</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_2_c" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">c. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="bold">過去</span>(<span class="bold">完了</span>)<span class="bold">形と暗示</span> 過去形でthoughtに強勢が置かれると話者が自分の考えが正しかったという気持ちを暗示し, 過去完了形でhadに強勢が置かれると話者が自分の考えが誤っていたという気持ちを暗示する </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">“That'll be excellent.” “Yeah, I <span class="italic">th<span class="str">ó</span>ught</span> you'd like that.” </span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">「それはすばらしいですね」「ええ, 気に入ってくれると思いましたよ」 </span>
+                  </span>
+                  <span class="grnote x_xdt"> (<span class="lbl">!</span>that)節中の<span class="gr x_rr">動詞</span>に強勢を置いたI <span class="italic">thought</span> you'd l<span class="str">í</span>ke that. では「気に入ってくれると思ったのですが」のように自分の考えが間違っていたことを暗示する) </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I h<span class="str">á</span>d <span class="italic">thought</span> I was going to cry<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">私は泣いてしまうと思っていた(が実際には泣かなかった)</span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_t0007570_01_01_01_k101_2_d" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">d. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="bold">I would</span> [<span class="bold">should</span>] <span class="bold">think …</span>. I would [I'd, <span class="oup_label x_ni">｟主に英｠</span>I should] think …</span>
+                  <span class="gp">.</span>
+                  <span class="trans">は自信のない推測を述べる形の控えめ表現 </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">“I was dreaming again?” “<span class="italic">I would think</span> so.” </span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">「私はまた夢を見ていたんでしょうか」「おそらくそうだと思います」</span>
+                  </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex"><span class="italic">I would</span> have <span class="italic">thought</span> the flowers could have been left here for longer<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">花はもっと長くここに置いておくこともできただろうにと思った </span>
+                  </span>
+                  <span class="x_xdt">
+                    <span class="grnote"> (<span class="lbl">!</span>非難を暗示) </span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">③</span>
+                <span class="bold">間接疑問文</span>
+                <span> thinkの後に間接疑問文を従えるのは避けられる </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">I was wondering [<span class="oup_label x_ni">｟まれ｠</span><span class="italic">thinking</span>] if I could borrow your car<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">車をお借りできればと思っていたのですが</span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖what<span class="r">＋</span><span class="gr x_rr ty_品詞">助動詞</span><span class="r">＋</span>主語<span class="r">＋</span>think of [about] <span class="r">A</span>?〗</span>
+            <span class="trans"><span class="t">A</span>〈人･物･事〉<span class="t">についてどう思いますか</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖疑問詞<span class="r">＋</span><span class="gr x_rr ty_品詞">助動詞</span><span class="r">＋</span>主語<span class="r">＋</span>think …〗</span>
+            <span class="trans"><span class="t">何が</span>[<span class="t">誰が</span><span class="gp">, </span><span class="t">どこが</span><span class="gp">, </span><span class="t">なぜ</span>]<span class="t">…と思いますか </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>疑問詞はthink以降の節中の要素について問い, <span class="gr x_rr">助動詞</span>＋主語＋thinkは挿入的に用いられている) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">What do</span> you <span class="italic">think of</span> [<span class="italic">about</span>] John? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ジョンのことをどう思いますか(≒ How do you like John?) </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>How do you think …?は<span class="oup_label x_ni">｟非標準｠</span><span class="gp">; </span><span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_k102'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span></span></a></span></span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">
+                <span class="italic"><span class="bold">What do you think of</span> [<span class="bold">about</span>] <span class="bold">that? </span></span>
+              </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">(意見を聞いて)それをどう思いますか, どうだい </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>しばしば自慢する気持ちを暗示) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">What do</span> you <span class="italic">think</span> happened to him? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼に何が起こったと思いますか(╳Do you think what happened to him? としない)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Who do</span> you <span class="italic">think</span> I am [I'm talking about]? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私が誰だ[誰のことを話している]と思いますか </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>(<span class="bold">1</span>)前者はしばしば「(怒って)私を誰だと思っているんだ」の意でも用いる. (<span class="bold">2</span>)╳Do you think who I am? や<span class="gr x_rr">動詞</span>を短縮して╳Who do you think I'm? としない. (<span class="bold">3</span>)文脈から明らかな場合thinkの後が省略されることがある: “Hey, who are you?” “<span class="italic">Who do</span> you <span class="italic">think</span>?”「おい, お前は誰だ」「誰だと思う」) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Why do</span> you <span class="italic">think</span> that is? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">なぜそういう結果になったのだと思いますか</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Where do</span> you <span class="italic">think</span> you're going? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">どこに行こうっていうのですか </span>
+              <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_k102'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(3)</span></span></a></span>)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">How do</span> you <span class="italic">think</span> I feel? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私がどんな気持ちだと思っているんだい </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>howはfeelの補語の部分を問う) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_t0007570_01_01_01_k102" class="box t_語法 ty_1">
+            <span class="title x_xdh">
+              <span class="u">語法 </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">①</span>
+                <span class="oup_label x_ni">｟コーパス｠</span>
+                <span class="bold">What <span class="r">do</span> you think of</span>
+                <span> [</span>
+                <span class="bold">about</span>
+                <span>] </span>
+                <span class="bold"><span class="r">A</span>?</span>
+                <span> ofは直接的で強い関心を, aboutは漠然とした関連性を示すため, 相手の事や個別の事情に関する内容にはof, 一般的内容について幅広く意見を求める場合はaboutが好まれる </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="italic">What do</span> you <span class="italic">think of</span> your new album [<span class="italic">about</span> the new law]? </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">君の新しいアルバム[新法]についてはどう思いますか</span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">②</span>
+                <span class="bold">what</span>
+                <span class="bold">と</span>
+                <span class="bold">how</span>
+                <span> 日本語では「…をどう思いますか」と言うが, この「どう」にあたる疑問詞は通例whatを用いる(</span>
+                <span class="xrg ty_↑">
+                  <span class="xr">↑ 第1例注記</span>
+                </span>
+                <span>; </span>
+                <span class="xrg ty_→">
+                  <span class="xr">
+                    <a href="x-dictionary:r:WDEJ_h0013400:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0013400_01_00_04_k206'])" title="how">→ how<span class="ps x_rr">副詞</span><span class="xrlabelGroup"><span class="xrlabel">4</span><span class="xrlabel">コーパスの窓</span></span></a>
+                  </span>
+                </span>
+                <span>). ただし, 第7例や以下のような用法ではhowを用いる </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="italic">How do</span> you <span class="italic">think</span> oil prices will affect our lives? </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">石油価格が私たちの暮らしにどのように影響を与えると思いますか </span>
+                </span>
+                <span class="grnote x_xdt"> (<span class="lbl">!</span>howはaffectを修飾している) </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">“Well, how did it happen?” “<span class="italic"><span class="bold">How do you think?</span></span>” </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">「あの, どうしてそんなことになったんだい」「そんなこと考えればわかるでしょ(ばかな質問をしないで)」 </span>
+                </span>
+                <span class="x_xdt">
+                  <span class="grnote"> (<span class="lbl">!</span><span class="italic">How do</span> you <span class="italic">think</span>! のように感嘆符が用いられることもある) </span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">③</span>
+                <span class="bold">相手の行為</span>
+                <span>･</span>
+                <span class="bold">状態</span>
+                <span> do you thinkを添えて相手の行為･状態について尋ねると問いつめる気持ちや怒り･驚きを表す </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="italic">Who do you think</span> you're talking to? </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">誰に向かって口をきいてると思ってるのかね</span>
+                </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="italic">Who do you think</span> you are? </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">自分を何様だと思ってるんだ</span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_03" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">c. </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟話｠</span>
+            <span class="gr ty_用法">〖文中･文尾で挿入的に〗</span>
+            <span class="trans">(<span class="bold">…だ</span>)<span class="t">と思うのだが </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>この場合, 挿入句を除いた文全体がthinkの目的語に相当する; <span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_k101'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">a</span><span class="xrlabel">語法</span><span class="xrlabel">(2)</span><span class="xrlabel">(a)</span></span></a></span></span><span class="gp">, </span><span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_b0007290:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0007290_01_01_02_k204'])" title="be･lieve">→ believe<span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span></span></a></span></span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Jane is, I <span class="italic">think</span>, in love<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ジェーンは恋をしているんだと思うよ</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Is Billy okay for the job, do you <span class="italic">think</span>? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ビリーはその仕事に向いていますか, 君の意見を聞かせてくれますか</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">It's about time, don't you <span class="italic">think</span>? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">そろそろ時間だね, そう思わないかい</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_04" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">d. </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟かたく｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖think <span class="r">A</span> (to be) <span class="r">C</span>〗</span>
+            <span class="trans"><span class="t">A</span>〈物･事･人〉<span class="t">をC</span>〈状態など〉<span class="t">とみなす </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)Cは<span class="gr x_rr">名詞</span><span class="gr x_rr">形容詞</span>. (<span class="bold">2</span>)to beを伴うと客観的判断を暗示するが, be thought to be Cという受け身の形以外では<span class="oup_label x_ni">｟まれ｠</span>. (<span class="bold">3</span>)(that)節を用いる方が普通; <span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_01'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">a</span></span></a></span></span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">We <span class="italic">thought</span> her beautiful<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私たちは彼女のことを美しいと思った(≒<span class="oup_label x_ni">｟よりくだけて｠</span>We <span class="italic">thought</span> that she was beautiful.)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">You ought to <span class="italic">think</span> yourself lucky<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">自分は運がいいと思わなきゃ</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I <span class="italic">think</span> it a good idea to collect money for the plan<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">その計画のためにお金を集めるのはよいことだと思う</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I <span class="italic">think</span> it very possible that he'll retire this year<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼が今年退職することは十分ありうると思う</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">A gene <span class="italic">is thought to be</span> the cause of the disease<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ある遺伝子がその病気の原因だと見られている </span>
+              <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_k204'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span></span></a></span>)</span>
+            </span>
+            <span class="gp x_xdt">. </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_t0007570_01_01_01_k103" class="box ty_1">
+            <span class="title x_xdh"><span class="u">類義 </span>think <span class="r">A</span> (to be) Cとfind <span class="r">A</span> (to be) <span class="r">C</span></span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span class="bold">think </span>
+                <span>は意見を述べるときに用いるが, </span>
+                <span class="bold">find</span>
+                <span>は個人的経験に基づく発見に用いる </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">She <span class="italic">thought</span> [╳found] it necessary to apologize again<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">彼女はもう一度謝る必要があると思った</span>
+                </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">That night I <span class="italic">found</span> it difficult to sleep<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">その夜はなかなか眠れなかった</span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span id="WDEJ_t0007570_01_01_01_k204" class="box ty_2">
+            <span class="title x_xdh">
+              <span class="u">コーパスの窓 </span>
+              <span class="bold"><span class="r">A</span> be thought to <span class="r">do</span></span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>受動態の場合, to不定詞にはbe動詞のほか, 通例状態動詞</span>
+                <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0034070:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0034070_01_00_01_k301'])" title="sta･tive">→ stative<span class="xrlabelGroup"><span class="xrlabel">文法</span></span></a></span>) </span>
+                <span>や完了形が現れるが, 普遍的現象にふれるときは動作動詞</span>
+                <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0002150:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0002150_01_00_01_k303'])" title="can">→ can<span class="hm">1 </span><span class="xrlabelGroup"><span class="xrlabel">1a</span><span class="xrlabel">文法</span></span></a></span>) </span>
+                <span>が用いられることもある </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">Linda is divorced and <span class="italic">is thought to</span> live with her three sons<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">リンダは離婚して3人の息子と住んでいるらしい</span>
+                </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">Mars <span class="italic">is thought to</span> have had water<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">火星には水があったと考えられている</span>
+                </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">The mountains <span class="italic">are thought to</span> control the weather<span class="gp">. </span></span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">山並みが天気を左右すると考えられている</span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_05" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">e. </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟かたく｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖it is thought that節〗</span>
+            <span class="trans"><span class="bold">…だと思われて</span>[<span class="bold">考えられて</span>]<span class="bold">いる </span></span>
+            <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_i0015930:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_i0015930_01_00_04_05'])" title="it">→ it<span class="ps x_rr">代名詞</span><span class="xrlabelGroup"><span class="xrlabel">4e</span></span></a></span>)</span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">It is thought that</span> he is a future soccer star<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼は将来サッカーの名選手になると思われている(≒He <span class="italic">is thought to</span> be a …. ≒<span class="oup_label x_ni">｟よりくだけて｠</span>People <span class="italic">think</span> he is a ….)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">It was</span> once <span class="italic">thought that</span> only women could get breast cancer<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">女性だけが乳癌<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（がん）</span></span>になるとかつては信じられていた </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>現在の考え方との対照を示す) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_06" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">f. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈事〉<span class="bold">を思う, 考える </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>目的語は<span class="gr x_rr">代名詞</span>が多く, 通常の名詞句は<span class="oup_label x_ni">｟まれ｠</span><span class="gp">; </span><span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_02'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span></span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I don't know. <span class="italic"><span class="bold">What do you think</span></span>, Tom? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">さあね</span>
+              <span class="gp">. </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">トム, 君はどう思う(≒ … How about you, Tom?) </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>youを強く発音) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">My life is not as you <span class="italic">think</span> it [╳so]<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私の人生は君が考えているようなものではない </span>
+              <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_i0015930:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_i0015930_01_00_02'])" title="it">→ it<span class="ps x_rr">代名詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">
+                <span class="italic">
+                  <span class="bold">It's not what you think</span>
+                </span>
+                <span class="gp">. </span>
+              </span>
+              <span class="oup_label x_ni">｟話｠</span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">(相手が想像していることを否定して)そんなんじゃないんだ</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">You <span class="italic"><span class="bold">wouldn't think it to look at</span></span> her, but she writes all these romantic stories<span class="gp">. </span></span>
+              <span class="oup_label x_ni">｟主に英｠</span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼女を見て見かけによらないと思うだろうが, 彼女は恋愛小説をたくさん書いているのだ </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>itはbut以下の内容をさす) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_07" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">g. </span>
+          <span class="trg x_xd4">
+            <span class="gr ty_用法">〖関係詞の後で〗</span>
+            <span class="trans">(<span class="bold">…だ</span>)<span class="bold">と思う </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I found this book, <span class="italic">which</span> I <span class="italic">thought</span> was very good for beginners<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">この本を見つけたのですが, 非常に初心者向きだと思いました </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span>この場合which was very good for beginners全体がthoughtの目的語にあたり, I thoughtの前後にコンマを置かない) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Do <span class="italic">what</span> you <span class="italic">think</span> is right<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">自分が正しいと思うことをしなさい</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Please introduce something you <span class="italic">think</span> is delicious to us<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">あなたがおいしいと思う物を何か私たちに紹介してください </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>you thinkの前に主格の関係代名詞が省略されている; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_i0000020:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_i0000020_01_00_01_k301'])" title="I">→ I<span class="hm">1 </span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">文法</span></span></a></span></span>) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_t0007570_01_01_01_08" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">h. </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟書｠</span>
+            <span class="gr ty_用法">〖直接話法〗</span>
+            <span class="trans">
+              <span class="bold">…と思う</span>
+              <span class="gp">, </span>
+              <span class="bold">…と心の中で言う </span>
+            </span>
+            <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0003610:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0003610_01_01_01_k103'])" title="say">→ say<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1a</span><span class="xrlabel">語法</span></span></a></span>)</span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">“What am I doing here?” she <span class="italic">thought</span><span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">「私はここで何をしているのかしら」と彼女は思った </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>引用部分は実際に発音されていないので引用符で囲む代わりにイタリック体で示されることも多い: <span class="italic">What am I doing here</span>? she thought<span class="gp">.</span>) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="trans">(自発的に)〈事〉<span class="t">を考える</span><span class="gp">, </span><span class="bold">思案する </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>目的語は数量詞, (不定)代名詞, whatや同族目的語(thought)が多い; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_c0018520:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0018520_k301'])" title="cog･nate">→ cognate<span class="xrlabelGroup"><span class="xrlabel">文法</span></span></a></span></span>) </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖think wh節･句〗</span>
+            <span class="trans">
+              <span class="bold">…かと考える</span>
+            </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I don't <span class="italic">think</span> much about the future<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">将来についてはあまり考えていない </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>think <span class="sc">much</span> of Aとの違いに注意) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I couldn't hear anything, see anything, <span class="italic">think</span> anything<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は何も聞こえなかったし, 何も見えなかったし, 何も考えることができなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">I know what you're thinking</span>
+              </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君がどう思っているかくらいわかるよ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Why are you looking at me like that? <span class="italic">What</span> are you <span class="italic">thinking</span>? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">なぜそんな風に私のことを見てるの</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">何を考えているの </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_02_k106'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span></span></a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I was trying to <span class="italic">think who</span> to ask<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">誰に尋ねようか考えていたんだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I was <span class="italic">thinking</span> sad thoughts and she cheered me up<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私が悲しいことを考えていると彼女が元気づけてくれた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Think</span> happy thoughts<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">楽しいことを考えなさい</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I was <span class="italic"><span class="bold">thinking the same thing</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">同じことを考えていたよ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_t0007570_01_01_02_k305" class="box ty_3">
+            <span class="title x_xdh">
+              <span class="u">語法のポイント </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>自分の将来を考えたことがありますか</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class=" x_xdt">× Have you ever thought your future?</span>
+            </span>
+            <span class="np x_xd1">
+              <span class=" x_xdt">○ Have you ever thought about your future?</span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>❢慣用表現を除いてthinkは具体的名詞を目的語にしない</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span id="WDEJ_t0007570_01_01_02_k106" class="box t_語法 ty_1">
+            <span class="title x_xdh"><span class="u">語法 </span>thinkの進行形</span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>thinkは「(自発的に)…を考える」</span>
+                <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_02'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>) </span>
+                <span>の意味では進行形が可能だが, 「(意見として)…と思う」</span>
+                <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span>) </span>
+                <span>の意味では通例進行形にしない</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖think (that)節/<span class="oup_label x_ni">｟かたく｠</span>to <span class="r">do</span>〗</span>
+          <span class="trans"><span class="bold">…ということ</span>[<span class="bold">…すること</span>]<span class="bold">を期待</span>[<span class="bold">予期</span>]<span class="bold">する</span>(expect) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">It wasn't as easy as I <span class="italic">thought</span> it would be<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">思ったほど簡単じゃなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The operation took a lot longer than we <span class="italic">thought</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その手術は予想以上に時間がかかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖think (that)節/wh節〗</span>
+          <span class="trans"><span class="bold">…ということ</span>[<span class="bold">…か</span>]<span class="bold">を想像する</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈事〉<span class="bold">を想像する</span>(imagine) </span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">(<span class="bold">I</span>) <span class="bold">never thought I'd see you here! </span></span>
+            </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ここで君に会うなんて思っても見なかったよ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I can't <span class="italic">think why</span> he felt that way<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は彼がなぜそのように感じたのか想像もつかない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Who would have <span class="italic">thought</span> something like this would happen? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">こんなことが起こるなんていったい誰が思っただろうか </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>驚きを表す) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">You'd <span class="italic">think</span> she'd have apologized<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女が謝ったとお思いでしょう </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>実際には謝らなかったことを含意) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Who would have <span class="italic">thought</span> to suspect him? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">誰が彼を怪しむことを考えただろうか</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> the worst </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">最悪の事態を考える</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span> (that)節〗</span>
+            <span class="trans">
+              <span class="bold">…しようと思う</span>
+              <span class="gp">; </span>
+            </span>
+          </span>
+          <span class="oup_label x_ni">｟かたく･文｠</span>
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span> to do〗</span>
+            <span class="trans">
+              <span class="bold">…しようと思う, …するつもりである</span>
+            </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">think</span> I'll take a taxi<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">タクシーで帰るとしよう</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">think to</span> treat it seriously<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">それをまじめに扱うつもりだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span> to do; 否定文･疑問文で〗</span>
+            <span class="trans">
+              <span class="bold">…することを思いつく, 忘れずに…する</span>
+            </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span> wh節･句〗</span>
+            <span class="trans">
+              <span class="bold">…かを思い出す </span>
+            </span>
+            <span class="grnote"> (<span class="lbl">!</span>can't, cannot, try to, want toなどの直後で) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">didn't think to</span> check it was locked<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">それに鍵がかかっているかどうか調べるのを忘れた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">She <span class="italic">couldn't think what</span> to say<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女は何と言ったらよいのかわからなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_01_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans"><span class="bold">…のこと</span>(<span class="bold">ばかり</span>)<span class="bold">を考える </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He always <span class="italic">thinks</span> money<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">あいつはいつも金のことばかり考えている </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>… thinks about money.の方が普通) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_01_02" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="grnote"> (<span class="lbl">!</span>thinkの後に<span class="gr x_rr">副詞</span><span class="gr x_rr">前置詞</span>を伴う形は成句も参照) </span>
+      </span>
+      <span id="WDEJ_t0007570_01_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖think<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>〗</span>
+            <span class="trans">(意見として)<span class="t">思う</span><span class="gp">, </span><span class="bold">考える, 信じる</span><span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は様態の表現) </span><span class="gp">, </span><span class="bold">判断する</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖think so〗</span>
+            <span class="trans">(前出の内容をさして)<span class="bold">そう思う </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>いずれも進行形にしない) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">You <span class="italic">think</span> differently [<span class="italic">in</span> a different way]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君はそうは思っていない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">Don't you think so? </span>
+              </span>
+            </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(相手の意見を確認して)そう思いませんか</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">What makes you think so?</span></span> ≒Why do you <span class="italic">think so</span>? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">なぜそう思うんだい</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="oup_label x_ni">｟皮肉で｠</span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">そうかな(そうでもないように思うが)</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_t0007570_01_02_01_k307" class="box ty_3">
+            <span class="title x_xdh">
+              <span class="u">コミュニケーション </span>
+            </span>
+            <span class="np x_xd1">
+              <span class=" x_xdt">A: Will you finish the work by tonight?</span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span> その仕事は今夜までに終わりますか</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>B: </span>
+                <span class="italic">
+                  <span class="bold">I think so</span>
+                </span>
+                <span>. 終わると思います</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>❢Yes(, I will).と答えるより確信度が低い</span>
+                <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p08'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span>I would [should] think so<span class="gp">.</span></a></span>)</span>
+                <span>. 否定は</span>
+                <span class="italic">
+                  <span class="bold">I don't think so</span>
+                </span>
+                <span class="gp">.</span>
+                <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p03'])" title="think">↓ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span></a></span>)</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>X: Do you want to go out with me Saturday night? 土曜の夜にデートしないか</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>Y: Sorry, </span>
+                <span class="italic">
+                  <span class="bold">I don't think so</span>
+                </span>
+                <span>. 悪いけど, そうもいかないの</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>❢誘いを控えめに断る際にも用いる</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="trans">(問題解決のため)<span class="t">物を考える</span></span>
+            <span class="gp">; </span>
+            <span class="trans">
+              <span class="bold">頭を働かせる</span>
+            </span>
+            <span class="gp">; </span>
+            <span class="co x_ni"> «…について» </span>
+            <span class="trans">(自発的に)<span class="bold">考える, 検討する, 思案する, 思索する, 熟慮する </span></span>
+            <span class="sp"> «<span class="italic">about</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">of</span>» </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖think about wh節･句〗</span>
+            <span class="trans">
+              <span class="bold">…かについて考える</span>
+            </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Hmm … let me <span class="italic">think</span> (<span class="italic">about</span> it [that])<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">うーん, ちょっと考えさせてくれ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">All right, <span class="italic"><span class="bold">I'll think about it</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">わかりました, 考えておきます </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>しばしば即決を避けるための表現として) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">I've been thinking</span></span> … it's time I settled down<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">考えてたんだけど…そろそろ落ち着こうと思うんだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">“I'm <span class="italic">thinking about</span> it.” “<span class="italic">Think</span> hard.” </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">「今考えているんだ」「しっかり考えろ」</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic"><span class="bold">What are you thinking about</span> [<span class="bold">of</span>]<span class="bold">? </span></span>
+            </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">何のことを考えているのですか </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>aboutの方が優勢; aboutの方が積極的に考えることを暗示) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">What were you thinking of? </span>
+              </span>
+            </span>
+            <span class="oup_label x_ni">｟話｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">何を考えてたんだ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>人の行為･失敗を非難して) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">think deeply </span></span><span class="italic">about</span> one's life </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">人生についてじっくり考える</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">Don't even think about</span></span> (doing) <span class="italic"><span class="bold">it</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">そんなこと(をしようなんて[が起きるなんて])考えるな, 何考えているんだ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>半ばあきれて) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">think</span>, therefore I am<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我思う, ゆえに我あり〘フランスの思想家デカルトの言葉〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_02_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="co x_ni"> «…のことを» </span>
+          <span class="trans">
+            <span class="bold">想像する</span>
+            <span class="gp">, </span>
+            <span class="t">思い浮かべる </span>
+          </span>
+          <span class="sp"> «<span class="italic">of</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic"><span class="bold">would never</span></span> [<span class="italic"><span class="bold">wouldn't</span></span>, can't] <span class="italic"><span class="bold">think </span></span><span class="italic">of</span> letting you go alone<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君を1人で行かせるなんてとんでもない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">Just think</span></span>. At this time next week, we'll be in Hawaii<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">考えてごらん</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">来週の今ごろはハワイにいるんだよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_02_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="oup_label x_ni">｟くだけて｠</span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖think<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span><span class="gp">/</span><span class="gr x_rr ty_品詞">形容詞</span>〗</span>
+            <span class="trans">(特定の方法で)<span class="bold">物事を考える </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span><span class="gr x_rr">形容詞</span>は様態の表現; 受け身にしない) </span>
+            <span class="gp">; </span>
+            <span class="co x_ni"> «…のように» </span>
+            <span class="trans">
+              <span class="bold">物を考える </span>
+            </span>
+            <span class="sp"> «<span class="italic">like</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">as</span>» </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> laterally </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">水平思考をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> from the customers' point of view </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">顧客の立場で物を考える</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> in a mathematical way </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">数学的な考え方をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> outside the box </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(特にビジネスにおいて)奇抜な考え方をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think like</span> a journalist </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ジャーナリスト的な物の考え方をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think</span> positive [positively] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">前向きに考える, プラス思考をする</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_01_02_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trg x_xd3">
+          <span class="trans">
+            <span class="bold">企てる, 計画する</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ò</span>me to th<span class="str">í</span>nk of it </span>
+      <span id="WDEJ_t0007570_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖主に文頭で〗</span>
+          <span class="trans">考えてみると</span>
+          <span class="gp">; </span>
+          <span class="trans">(前言を訂正して)いや違う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">I d<span class="str">ó</span>n't th<span class="str">ì</span>nk<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p02_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">まったく </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば皮肉･否定的な叙述の後に添えて) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">There's nothing wrong with it, <span class="italic">I don't think</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">それには何も悪いところはないと思いますよ, 本当に </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>先行部分の内容を否定しているわけではないので, ╳I don't think there's nothing wrong with it. と書き換えられない) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p03" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm"><span class="str">Ì</span> don't th<span class="str">í</span>nk so<span class="gp">. </span></span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">かたく</span></span>I th<span class="str">ì</span>nk n<span class="str">ó</span>t<span class="gp">.</span></span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p03_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">そうでないと思う, いいえ, 違います, それはない, だめだ </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_01_k307'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span><span class="xrlabel">コミュニケーション</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">I th<span class="str">ò</span>ught as m<span class="str">ú</span>ch<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">予想通りだ, そうなると思った, やっぱりね </span>
+          <span class="grnote"> (<span class="lbl">!</span>I thought as much as that.の省略形) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">I wasn't th<span class="str">í</span>nking<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p05_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(気を悪くさせてしまって)すみません </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>(I'm) sorry. という謝罪の直後に用いられることが多い) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">I w<span class="str">ò</span>uld [sh<span class="str">ò</span>uld] have th<span class="str">ó</span>ught so [(that) …]<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p06_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟非難して｠</span>
+          <span class="trans">そう[…と]思っていた(のに)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">I w<span class="str">ò</span>uld [sh<span class="str">ò</span>uld] th<span class="str">í</span>nk …<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">当然…と思う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">I w<span class="str">ò</span>uld [sh<span class="str">ò</span>uld] th<span class="str">í</span>nk so<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">当然そうでしょうね </span>
+          <span class="grnote"> (<span class="lbl">!</span>相手の発言への強い同意を表す; <span class="oup_label x_ni">｟コーパス｠</span>否定文に対応するときはsoの代わりにnotも可能だが頻度は低く, 特にwouldでは<span class="oup_label x_ni">｟まれ｠</span><span class="gp">; </span><span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_01_k307'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span><span class="xrlabel">コミュニケーション</span></span></a></span></span>) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">ì</span>f [wh<span class="str">è</span>n] you th<span class="str">í</span>nk about it </span>
+      <span id="WDEJ_t0007570_p09_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">そう言えば </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He never seemed to be short of money, <span class="italic">if you think about it</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">そう言えば, あの人がお金に困ったように思えたことはないね</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">just th<span class="str">í</span>nk </span>
+      <span id="WDEJ_t0007570_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖命令文で〗</span>
+          <span class="co x_ni"> «…のことを/…ということを/…かを» </span>
+          <span class="trans">考えてもみてよ </span>
+          <span class="sp"> «<span class="italic">of</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">that</span> 節</span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">wh</span>節» </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_03'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">3</span></span>第2例</a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Just think how</span> proud your father will be of you<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">あなたのお父さんがあなたのことをどんなに誇りに思うか想像してごらんなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">Th<span class="str">à</span>t's what <span class="italic">A</span> th<span class="str">ì</span>nk! </span>
+      <span id="WDEJ_t0007570_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="trans">それはA〈人〉の(勝手な)考えだ</span>
+          <span class="gp">; </span>
+          <span class="trans">そうはさせないぞ </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは二人称･三人称で自分はそう思っていないことを強調; Aに強勢が置かれる) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk about <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p12_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_02'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">2</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p12_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人･物･事〉<span class="bold">のことを</span>(<span class="bold">いろいろと</span>)<span class="bold">考える</span>, 思いを巡らす </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic"><span class="bold">can't stop thinking about</span></span> you<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">君のことが頭から離れない</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">What sort of car were you <span class="italic">thinking about</span>? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(販売員が客に対して)どのような車をお考えでしたか</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p12_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(決断時に)<span class="bold">A</span>〈人〉<span class="bold">のことを考慮</span>[<span class="bold">配慮</span>]<span class="bold">する</span>, A(の立場)を思いやる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I believe <span class="italic">thinking about</span> other people is important<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">他の人のことを考えることが大切だと思います</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p12_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p09'])" title="think">↑ if [when] you <span class="xrlabelGroup"><span class="xrlabel">think</span></span> about it</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk ag<span class="str">á</span>in </span>
+      <span id="WDEJ_t0007570_p13_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…(すること)を» </span>
+          <span class="trans">考え直す </span>
+          <span class="sp"> «<span class="italic">about</span> (do<span class="italic">ing</span>)» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p13_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖しばしばif節に続く命令文で〗</span>
+          <span class="trans">考えを改めた方がいいぞ </span>
+          <span class="grnote"> (<span class="lbl">!</span>相手の考えが間違っていることを示唆) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk a l<span class="str">ó</span>t of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p24'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> highly of A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk ah<span class="str">é</span>ad </span>
+      <span id="WDEJ_t0007570_p15_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="ind">【先のことを】</span>
+          <span class="trans">前もって考える</span>
+          <span class="gp">; </span>
+          <span class="trans">(そうすることで)事前に準備しておく </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="str">à</span>ll the b<span class="str">é</span>tter of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p21'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> better of A <span class="xrlabelGroup"><span class="xrlabel">(2)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p17" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk al<span class="str">ò</span>ud [<span class="str">ò</span>ut l<span class="str">ó</span>ud] </span>
+      <span id="WDEJ_t0007570_p17_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖進行形･過去形で〗</span>
+          <span class="trans">思いついた事を(整理しないまま)声に出して言う, 独り言を言う(talk to oneself) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Oh, sorry. (I was) (just) <span class="italic">thinking aloud</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">あっ, ごめん, (ただの)独り言だよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">A</span> aw<span class="str">á</span>y </span>
+      <span id="WDEJ_t0007570_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aのことを忘れる, (頭から)振り払う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk b<span class="str">á</span>ck </span>
+      <span id="WDEJ_t0007570_p19_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="ind">【過去(にいた人･物)のことを】</span>
+          <span class="trans">振り返る, 思い出す, 回想する, 考える(look back) </span>
+          <span class="sp"> «<span class="italic">to</span></span>
+          <span class="gp">, </span>
+          <span class="sp">
+            <span class="italic">on</span>
+          </span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">over</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">when I <span class="italic">think back to</span> my early childhood </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">幼少のころのことを振り返ると</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk b<span class="str">á</span>dly of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p20_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p25'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> ill of A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk b<span class="str">é</span>tter of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p21_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(行動を起こす前に)Aを考え直す, よく考えてやめる </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>(<span class="bold">1</span>)Aはitが圧倒的に多いが<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>なども来る. (<span class="bold">2</span>)<span class="oup_label x_ni">｟まれ｠</span>にbetterの前にtheが置かれることもある) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He started to say something, then <span class="italic">thought better of it</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は何か言いかけたが思いとどまった </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>直前にbut, thenを伴うことが多い) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p21_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉をより高く評価する</span>
+          <span class="gp">; </span>
+          <span class="trans">Aを見直す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk for <span class="italic">one</span>s<span class="str">è</span>lf </span>
+      <span id="WDEJ_t0007570_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">自分で考える, 自分の意見を持つ, 主体性を持つ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk h<span class="str">á</span>rd </span>
+      <span id="WDEJ_t0007570_p23_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…について» </span>
+          <span class="trans">よく考える </span>
+          <span class="sp"> «<span class="italic">about</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk h<span class="str">í</span>ghly of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p24_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉を高く評価する </span>
+          <span class="grnote"> (<span class="lbl">!</span>進行形にしない) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p25" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="str">í</span>ll of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p25_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉を悪く思う </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p45'])" title="think">↔ think well of A</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p26" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk l<span class="str">é</span>ss of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p26_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…したことで» </span>
+          <span class="trans">A〈人･行為〉の評価を下げる </span>
+          <span class="sp"> «<span class="italic">for</span> do<span class="italic">ing</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p27" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk l<span class="str">í</span>ttle of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p27_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">Aを軽く</span>[<span class="bold">低く</span>]<span class="bold">見る</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p27_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aすることを(それほど)いとわない, 苦にしない </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">動名</span>) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p28" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk n<span class="str">ó</span>thing of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p28_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aを何とも思わない, Aなんて大したことはない </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>で, 他人が困難･奇妙･誤りなどと思う行為) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">think nothing of</span> working twelve hours a day [cheating on the fare] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">1日に12時間働く[不正乗車をする]ことを何とも思っていない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p28_02" class="semb x_xo2 hasSn">
+        <span class="x_xoh">
+          <span class="sn">2 </span>
+          <span class="oup_label x_ni">｟かたい話･やや古｠</span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> nothing of it〗</span>
+          <span class="trans">どういたしまして, お気になさらずに </span>
+          <span class="grnote"> (<span class="lbl">!</span>謝罪やお礼に対する丁寧な応答) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p28_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aに注意[関心]を払わない, Aを気にとめない </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは通常と異なる事態) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p28_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉を軽蔑する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p29" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p29_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈新しい事･提案など〉<span class="bold">を考え</span>[<span class="bold">思い</span>]<span class="bold">つく </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I've been trying to <span class="italic">think of</span> a way to say no<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">断る方法をずっと考えている</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Have you <span class="italic">thought of</span> what you'll do after you retire? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">退職後何をするか考えつきましたか </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>think ofの後にwh節を続ける場合, ofは省略しない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">How did you <span class="italic">think of</span> solving the problem that way? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その問題をそのように解くのはどうやって思いついたのですか </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>この意ではHow did you think about …?より普通) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic"><span class="bold">can't think of anything</span></span> to say<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">言うことを何も思いつかなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖しばしばcan <span class="rf">～</span>〗</span>
+          <span class="trans"><span class="bold">Aを思い出す</span>(remember) </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>; 受け身にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">can't think of</span> [╳about] it now<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">それをど忘れした</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_02_03'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">3</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p12'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> about A <span class="xrlabelGroup"><span class="xrlabel">(3)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖通例進行形で〗</span>
+          <span class="trans">(困ったときなどに)A〈特定の人･物〉(のこと)を考える, 思い浮かべる[描く] </span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They <span class="italic">are thinking of</span> me for the new position<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らはその新しい役職の候補として私を考えている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> of oneself〗</span>
+          <span class="trans">自分のしたいこと[自分のためになること]をする </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例前にonlyを伴う) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p29_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↓">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p49'])" title="think">↓ when I <span class="xrlabelGroup"><span class="xrlabel">think</span></span> of A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p30" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk of <span class="italic">A</span> as <span class="italic">C </span></span>
+      <span id="WDEJ_t0007570_p30_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人･物･事〉<span class="bold">をCだと思う</span>, みなす(regard) </span>
+          <span class="grnote"> (<span class="lbl">!</span>Cは<span class="gr x_rr">名詞</span><span class="gr x_rr">形容詞</span><span class="gr x_rr">分詞</span>など; 進行形にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Most people <span class="italic">think of</span> education <span class="italic">as</span> having only to do with school<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">たいていの人は教育が学校とだけ関係があると思っている</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Dogs <span class="italic">think of</span> themselves <span class="italic">as</span> members of the family<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(飼い)犬は自分を家族の一員だと思っている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p31" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk of [about] <span class="italic">do</span>ing </span>
+      <span id="WDEJ_t0007570_p31_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖しばしば進行形で〗</span>
+          <span class="trans">…しようかと考える </span>
+          <span class="grnote"> (<span class="lbl">!</span>be going to do, intend to doなどと違ってまだ決心はしていない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Bill <span class="italic">was thinking of</span> [<span class="italic">about</span>] <span class="italic">asking</span> Sue out<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ビルはスーをデートに誘おうかと考えていた </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>… thinking to ask Sue out. とするのは<span class="oup_label x_ni">｟非標準｠</span>) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p31_k108" class="box x_xo2 ty_1">
+        <span class="title x_xdh">
+          <span class="u">類義 </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh">
+            <span>of doingは選択肢や過程を意識し, about </span>
+            <span class="italic">do</span>
+            <span>ingは時間をかけて慎重に熟考していることを暗示する </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">They were <span class="italic">thinking</span> very carefully <span class="italic">about visiting</span> the country<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">彼らはその国の訪問を慎重に検討中だ </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>慎重さをいうこのような文脈ではof visitingは<span class="oup_label x_ni">｟不自然｠</span>) </span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p31_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖しばしば否定文で〗</span>
+          <span class="trans">…することを想像する </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">We <span class="italic">couldn't think of being</span> rude to Lizzie<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">リジーに失礼な態度をとるなど思いもよらなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p32" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk on <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p32_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟古･方言｠</span>
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p12'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> about A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p33" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">one</span> is <span class="str">í</span>t </span>
+      <span id="WDEJ_t0007570_p33_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">自分を偉いと思っている</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p34" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">one</span>s<span class="str">é</span>lf into <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p34_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">自分がA〈人･役割〉の立場だったらどうか(真剣に)考える</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p35" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">A </span><span class="str">ó</span>ut [<span class="str">ó</span>ut <span class="italic">A</span>] </span>
+      <span id="WDEJ_t0007570_p35_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈物事〉をよく考える, 念入りに計画する </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば受け身で) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The plan was well <span class="italic">thought out</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その計画はよく練られていた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p35_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈計画･解答など〉について頭をしぼる</span>
+          <span class="gp">; </span>
+          <span class="trans">Aの先々のことまで考える</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p36" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="str">ò</span>ut l<span class="str">ó</span>ud </span>
+      <span id="WDEJ_t0007570_p36_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p17'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> aloud</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p37" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">A </span><span class="str">ó</span>ver [<span class="str">ó</span>ver <span class="italic">A</span>] </span>
+      <span id="WDEJ_t0007570_p37_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈発想･計画など〉を(結論を出す前に)よく考える, 熟慮する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p38" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk p<span class="str">ó</span>orly of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p38_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p27'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> little of A <span class="xrlabelGroup"><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p39" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk the b<span class="str">é</span>st [w<span class="str">ó</span>rst] of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p39_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人･行為〉が一番よい[悪い]と考える</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p40" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk (the) b<span class="str">é</span>tter of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p40_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p21'])" title="think">＝ <span class="xrlabelGroup"><span class="xrlabel">think</span></span> better of A <span class="xrlabelGroup"><span class="xrlabel">(2)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p41" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">A</span> thr<span class="str">ó</span>ugh [thr<span class="str">ó</span>ugh <span class="italic">A</span>] </span>
+      <span id="WDEJ_t0007570_p41_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aを(結論を出すために)考えぬく</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> through wh節〗</span>
+          <span class="trans">…かを考えぬく</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p42" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">í</span>nk to <span class="italic">one</span>s<span class="str">è</span>lf </span>
+      <span id="WDEJ_t0007570_p42_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">心の中で<span class="co x_ni"> «…と» </span>考える </span>
+          <span class="sp"> «<span class="italic">that</span>節» </span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟書｠</span>
+          <span class="gr ty_用法">〖直接話法〗</span>
+          <span class="trans">…だと思う </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0003610:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0003610_01_01_01_k103'])" title="say">→ say<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1a</span><span class="xrlabel">語法</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p43" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk tw<span class="str">í</span>ce </span>
+      <span id="WDEJ_t0007570_p43_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…について/…する前に» </span>
+          <span class="trans">よく考える, 再考する </span>
+          <span class="sp"> «<span class="italic">about</span> (do<span class="italic">ing</span>)</span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">before</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Think twice before</span> shopping on the net<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">インターネット上で買い物をする前によく考えた方がいいぞ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p43_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖否定文で〗</span>
+          <span class="co x_ni"> «…することに» </span>
+          <span class="trans">ためらいを感じる, 躊躇<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（ちゆうちよ）</span></span>する, 二の足を踏む </span>
+          <span class="sp"> «<span class="italic">about</span> do<span class="italic">ing</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p44" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk <span class="italic">A </span><span class="str">ú</span>p [<span class="str">ú</span>p <span class="italic">A</span>] </span>
+      <span id="WDEJ_t0007570_p44_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米･くだけた話｠</span>
+          <span class="trans"><span class="bold">A</span>〈新しい事〉<span class="bold">を考え出す</span>, 工夫する(invent) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm trying to <span class="italic">think up</span> a good reason not to go to the party<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">パーティに出席しないもっともな理由を考え出そうとしているところです</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p45" class="idmsec x_xo1">
+      <span class="idm x_xoh">th<span class="str">ì</span>nk w<span class="str">é</span>ll of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p45_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人〉<span class="bold">をよく思う </span></span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p25'])" title="think">↔ think ill of A</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p46" class="idmsec x_xo1">
+      <span class="idm x_xoh">to th<span class="str">í</span>nk (that) … </span>
+      <span id="WDEJ_t0007570_p46_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖文頭･文尾で〗</span>
+          <span class="trans">…と考えると, …だとは </span>
+          <span class="grnote"> (<span class="lbl">!</span>驚き･失望などを表す) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">To think that</span> all these years John has fooled us! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ジョンがこれまで何年間も私たちをだまし続けてきたなんて</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p47" class="idmsec x_xo1">
+      <span class="idm x_xoh">Wh<span class="str">à</span>t do you th<span class="str">í</span>nk? </span>
+      <span id="WDEJ_t0007570_p47_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_01_01_01_06'])" title="think">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1f</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_t0007570_p47_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">実はね, 知ってるかい </span>
+          <span class="grnote"> (<span class="lbl">!</span>意外なことなどを切り出す時に言う) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p48" class="idmsec x_xo1">
+      <span class="idm x_xoh">What<span class="str">è</span>ver you th<span class="str">í</span>nk<span class="gp">. </span></span>
+      <span id="WDEJ_t0007570_p48_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_s0003610:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0003610_p64'])" title="say">＝ Whatever you <span class="xrlabelGroup"><span class="xrlabel">say</span></span><span class="gp">. </span></a>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p49" class="idmsec x_xo1">
+      <span class="idm x_xoh">wh<span class="str">è</span>n I th<span class="str">í</span>nk of <span class="italic">A </span></span>
+      <span id="WDEJ_t0007570_p49_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aのことを思うと </span>
+          <span class="grnote"> (<span class="lbl">!</span>過去の行為や体験を思い出して驚いたり恥じたりする時の表現) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p50" class="idmsec x_xo1">
+      <span class="idm x_xoh">wh<span class="str">è</span>n you th<span class="str">í</span>nk about it </span>
+      <span id="WDEJ_t0007570_p50_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_t0007570:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0007570_p09'])" title="think">＝ if you <span class="xrlabelGroup"><span class="xrlabel">think</span></span> about it</a>
+            </span>
+          </span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_t0007570_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+    </span>
+    <span id="WDEJ_t0007570_02_00_01" ord="0" class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="gr x_rr ty_名詞区分">C</span>
+          <span class="oup_label x_ni">｟主に英･くだけて｠</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖単数形で; 通例a <span class="rf">～</span>〗</span>
+          <span class="co x_ni"> «…について» </span>
+          <span class="trans">
+            <span class="bold">考えること </span>
+          </span>
+          <span class="sp"> «<span class="italic">about</span>» </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have [╳take] <span class="italic">a think </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">(決断を下すために)考える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have <span class="italic">a</span> long, hard <span class="italic">think </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">時間をかけて一生懸命考える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have <span class="italic">a</span> quick <span class="italic">think about</span> A </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">Aのことをちょっと考える</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_p51" class="idmsec x_xo1">
+      <span class="idm x_xoh">(If <span class="italic">A</span> th<span class="str">ì</span>nk …,) <span class="italic">A'</span>ve g<span class="str">ò</span>t [<span class="italic">A</span> have] an<span class="str">ò</span>ther th<span class="str">ì</span>nk c<span class="str">ó</span>ming! </span>
+      <span id="WDEJ_t0007570_p51_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="trans">(もしA〈人〉が…すると思ったら)大間違いだ, Aは勘違いをしている </span>
+          <span class="grnote"> (<span class="lbl">!</span>間違っているから考え直せという意味) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">If</span> he <span class="italic">thinks</span> we'll accept a pay cut, he'<span class="italic">s got another think coming</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">もしおれたちが賃金カットを受け入れるとあいつが考えているならそれは大きな間違いだ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_t0007570_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> p<span class="str">ì</span>ece</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_t0007570_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(新聞･雑誌の)論説文</span>
+            <span class="gp">; </span>
+            <span class="trans">社説</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_t0007570_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> t<span class="str">à</span>nk</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_t0007570_c02_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="gr ty_用法">〖集合的に; <span class="oup_label x_ni">｟英｠</span>では単複両扱い〗</span>
+            <span class="trans">シンクタンク, 頭脳集団</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

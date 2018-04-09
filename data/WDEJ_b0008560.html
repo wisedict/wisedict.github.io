@@ -1,0 +1,4176 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_b0008560" d:title="best" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">best </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">best</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span class="xrg ty_→">
+        <span class="xr">
+          <a href="x-dictionary:r:WDEJ_b0008880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008880_k101'])" title="bet･ter">→ better<span class="hm">1</span><span class="xrlabelGroup"><span class="xrlabel">語源</span></span></a>
+        </span>
+      </span>
+      <span class="grnote"> (<span class="lbl">!</span>good, wellの最上級) </span>
+    </span>
+  </span>
+  <span id="WDEJ_b0008560_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">形容詞</span>
+    </span>
+    <span id="WDEJ_b0008560_01_00_01" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">1 </span>
+        <span class="gr ty_用法">〖goodの最上級〗</span>
+      </span>
+      <span id="WDEJ_b0008560_01_00_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="ind">【人･物･事にとって】</span>
+          <span class="trans">(質･技術･機能の点で)<span class="t">最も良い</span><span class="gp">, </span><span class="bold">最も優れた</span>[<span class="bold">うまい, 上手な</span>]</span>
+          <span class="gp">; </span>
+          <span class="trans">(判断として)<span class="bold">最も望ましい</span>[<span class="bold">適切な</span>]</span>
+          <span class="gp">; </span>
+          <span class="trans">(程度の点で)<span class="bold">最も良い</span><span class="gp">, </span><span class="bold">十分な </span></span>
+          <span class="sp"> «<span class="italic">for</span>» </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0011190:com.apple.dictionary.ja-en.WISDOM" title="worst">↔ worst</a></span>)</span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)肯定的に「(理想的で)最高の」の意にも, 否定的に「(理想的ではないが)望みうる最高の」の意にも用いる. (<span class="bold">2</span>)時に反語的に用いる. (<span class="bold">3</span>)慣用表現は<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_01_00_04_k503'])" title="best">↓ <span class="xrlabelGroup"><span class="xrlabel">表現</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Music is <span class="italic"><span class="bold">one of the best</span></span> ways to learn language<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">音楽は言葉を学ぶのに最も良い方法のひとつだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the very <span class="italic">best</span> handbook available </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">手に入るものの中ではまさしく最高の案内書 </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>veryは「まさしく」の意の強意; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_v0002520:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_v0002520_01_00_02'])" title="ver･y">→ very<span class="ps x_rr">副詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The children got the <span class="italic">best</span> possible care<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">子供たちは考えうる最良の監督下にあった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I think his band is <span class="italic"><span class="bold">the best in the world</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼のバンドは世界で最高だと思う</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Our team was the <span class="italic">third best</span> in the world<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我々のチームは世界3位だった </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>「世界…位」は序数を添える) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Coming to this university was the <span class="italic">best</span> choice for me<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">この大学に来ることが私にとって最良の選択だった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the <span class="italic">best</span> quality furniture </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">最高品質の家具 </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>best qualityが形容詞的に機能している) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">His play is by far [easily, much] the <span class="italic">best</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼のプレーは抜きんでて最高だ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>最上級を強めるby far, easily, muchに注意) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm only doing <span class="italic"><span class="bold">what's best for</span></span> them<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は彼らにとって最もためになることをやっているだけだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the ten <span class="italic">best</span> [<span class="italic">best</span> ten, <span class="oup_label x_ni">｟まれ｠</span>top ten <span class="italic">best</span>] teams in the country </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その国の上位10チーム </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>bestのないthe top ten teams in the countryの方が圧倒的に普通) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the <span class="italic">best</span> liar </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">最悪の大うそつき </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>反語的用法) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_01_00_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖it is best (for <span class="r">A</span>) to <span class="r">do</span>〗</span>
+            <span class="trans">(<span class="t">Aが</span>)<span class="t">…するのが最も良い </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>特に明示する必要がない限りfor Aは通例省略される) </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖it is <span class="rf">～</span> that節/if節〗</span>
+            <span class="trans"><span class="bold">…というのが</span>[<span class="bold">…すれば</span>]<span class="bold">最も良い </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>that [if]節中は直説法; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_i0015930:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_i0015930_01_00_04_k306'])" title="it">→ it <span class="xrlabelGroup"><span class="xrlabel">4a</span><span class="xrlabel">文法</span></span></a></span></span>) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">In Britain, <span class="italic">it is best </span><span class="italic">to</span> ask a policeman [<span class="italic">that</span> you ask a policeman]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">英国では警察官に尋ねるのがいちばん良い</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">It</span> would <span class="italic">be best for</span> them <span class="italic">to</span> stay together<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼らは一緒にいるのがいちばん良いだろう</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_01_00_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">c. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖the best thing〗</span>
+          <span class="co x_ni"> «…のことで/人･物･事にとって» </span>
+          <span class="trans"><span class="t">いちばん良いこと</span>[<span class="bold">ところ, 点</span>] </span>
+          <span class="sp"> «<span class="italic">about/for</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしばbe動詞の主語となるが, The best is …の形は避けられる) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">“What's <span class="italic">the best thing about</span> being an actor?” “I think (it is) working with other actors.” </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">「俳優をやっていていちばん良いことは何ですか」「ほかの俳優さんたちと一緒に仕事ができることでしょうか」</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">The best thing</span> (to do) is to have [having] a steady job<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">最善の策は定職をもつことだ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>to不定詞が続く場合, <span class="oup_label x_ni">｟くだけて｠</span>ではtoが省略されて … is have …となることがある) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">The best thing is</span> (<span class="bold">that</span>)</span> I don't have to sell it<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">いちばん良いのは, 私がそれを売る必要がないということだ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>挿入句的に<span class="italic">The best thing is</span>, I don't have to sell it.とすることもある) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">It was <span class="italic">the best thing</span> that ever happened to me<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">それはこれまでの私の経験で最良のことであった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_01_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖goodの最上級; <span class="t">名詞</span>の前で〗</span>
+        <span class="trans">(主に物･時間などについて)<span class="t">大半の</span><span class="gp">, </span><span class="bold">ほとんどの</span>(most) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">for the <span class="italic">best</span> [better] part of one's life </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">一生の大半の間</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_01_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="trans">(時などが)<span class="t">最も楽しい</span><span class="gp"> , </span><span class="bold">最良の </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">the <span class="italic">best</span> moment of one's life </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">人生で最良の瞬間</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_01_00_04" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">4 </span>
+        <span class="con">〖be <span class="rf">～</span>〗</span>
+      </span>
+      <span id="WDEJ_b0008560_01_00_04_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖wellの最上級〗</span>
+          <span class="trans">(人が)<span class="bold">最も健康で </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm happy to be 40 years old. I feel the <span class="italic">best</span> I ever felt<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">40歳になってうれしい</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">体調もこれまでになく良い</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_01_00_04_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖goodの最上級〗</span>
+          <span class="trans">〈人が〉(気落ちしていたが)<span class="bold">最高の気分で </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I really feel <span class="italic">best</span> when I'm working with him<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は彼と仕事をしていると本当に最高の気分だ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_b0008560_01_00_04_k201" class="box ty_2">
+          <span class="title x_xdh"><span class="u">コーパスの窓 </span>be (the) best</span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">一般にbe動詞などの補語となる用法ではtheが落ちることがあるが, 絶対的優位を示し限定する気持ちが強い場合はtheを伴うことが多く, 漠然と優位を示す場合はtheはない方が普通 </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">I love sports, but running and swimming <span class="italic">are the best</span> for me<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">スポーツは好きだけどランニングと水泳が私には最も合っている</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Cars of this size <span class="italic">are best</span> for beginners<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">このサイズの車が初心者にはぴったりだ</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_b0008560_01_00_04_k102" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">①</span>
+              <span class="bold">控えめ表現</span>
+              <span> 傲慢に響いたり人を傷つけたりすることを避けるため, 最上級を弱める修飾語を伴うことも多い </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">I think that he is probably the <span class="italic">best</span> chef in London at the moment<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">彼は現在のロンドンで最高のシェフだと思う </span>
+              </span>
+              <span class="x_xdt">
+                <span class="grnote"> (<span class="lbl">!</span>I think, probably, at the momentなどで限定を避けていることに注意) </span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">②</span>
+              <span class="bold">2</span>
+              <span class="bold">者比較</span>
+              <span> 特に2者を比較して優れていることをいう場合は一般的にthe betterを用いるが, </span>
+              <span class="oup_label x_ni">｟話｠</span>
+              <span>ではthe bestも用いられる</span>
+              <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0008880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008880_01_00_01'])" title="bet･ter">→ better<span class="hm">1</span><span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span>最終例</a></span>) </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Give me the <span class="italic">best</span> [better] wine of these two<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">ここにある2種のうち良い方のワインをください</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Which do you like (the) <span class="italic">best</span> of these two? </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">この2つのうちどちらがより好きですか </span>
+              </span>
+              <span class="x_xdt">
+                <span class="grnote"> (<span class="lbl">!</span>Whichと用いることも可) </span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_b0008560_01_00_04_k503" class="box ty_5">
+          <span class="title x_xdh"><span class="u">表現 </span>bestを使った日常表現</span>
+          <span class="np x_xd1">
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">Academy Award for <span class="italic">Best</span> [<span class="italic">Best</span> Supporting] Actor </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">アカデミー最優秀主[助]演男優賞</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">be the <span class="rf">～</span> at A </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">Aが大の得意だ</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="oup_label x_ni">｟米｠</span><span class="italic">Best</span> When Purchased by April 2007 ≒<span class="oup_label x_ni">｟英｠</span><span class="italic">Best</span> Before (End): April 2007 </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">賞味期限: 2007年4月 </span>
+              </span>
+              <span class="grnote x_xdt"> (<span class="lbl">!</span>食品の入った缶や袋の刻印) </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">do one's <span class="rf">～</span> work </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">仕事に最善を尽くす</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">My <span class="rf">～</span> guess is that … </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">私にわかるのはせいぜい…です</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">the <span class="rf">～</span> and brightest in Washington </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">ワシントン[米国政府]最高の俊英たち </span>
+              </span>
+              <span class="grnote x_xdt"> (<span class="lbl">!</span>the＋<span class="gr x_rr">形容詞</span>で人を表す) </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">one's <span class="rf">～</span> dress </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">よそ行きの服</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">the <span class="rf">～</span> place in the world [on the earth] </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">この世で最高の場所, この世の楽園</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">the n<span class="str">è</span>xt b<span class="str">è</span>st th<span class="str">í</span>ng </span>
+      <span id="WDEJ_b0008560_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に次いで/…することに次いで/…にとって» </span>
+          <span class="trans">2番目に良い物, 次善の物 </span>
+          <span class="sp"> «<span class="italic">to</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">to</span> do<span class="italic">ing</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">for</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>be動詞の主語にもなる; この形でnextの代わりにsecondを使うことは少ない; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_03_00_01'])" title="best">↓ <span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Your plan was <span class="italic">the next best thing to</span> Kate's<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">君の案はケイトの次に良かった</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_b0008560_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">副詞</span>
+    </span>
+    <span id="WDEJ_b0008560_02_00_01" ord="0" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖wellの最上級〗</span>
+        <span class="trans">(質･技術･機能などの点で)<span class="t">最も良く</span><span class="gp">, </span><span class="bold">最もうまく</span>[<span class="bold">上手に, 適切に</span>]</span>
+        <span class="gp">; </span>
+        <span class="trans">(程度の点で)<span class="bold">最も, いちばんに, ひどく </span></span>
+        <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="gr x_rr">動詞</span>の後ではしばしば, 限定用法の<span class="gr x_rr">過分</span>の前では通例theを伴う; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_a0021945:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_a0021945_01_00_01_k301'])" title="at･trib･u･tive">→ attributive<span class="xrlabelGroup"><span class="xrlabel">文法</span></span></a></span></span>. (<span class="bold">2</span>)程度の用法では時にmostとの置き換えが可能. (<span class="bold">3</span>)時に反語的に用いる. (<span class="bold">4</span>)時に複合要素として用いる) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">This new model is <span class="italic">best</span> suited for professionals<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">この新型は専門家に最も適しています</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">It works [performs] <span class="italic">best</span> under the displayed conditions<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">それは表示条件下で最も高性能を発揮します</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I like baseball (the) <span class="italic">best</span> of all sports<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">すべてのスポーツの中で野球がいちばん好きだ </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>mostより好まれる; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_b0008880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008880_02_00_01_k103'])" title="bet･ter">→ better<span class="hm">1</span><span class="ps x_rr">副詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">語法</span></span></a></span></span>) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">the <span class="italic">best</span>-known [<span class="italic">best</span>-dressed, <span class="italic">best</span>-loved] person </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">最も有名な[洗練された着こなしの, 愛された]人</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Do as you <span class="italic"><span class="bold">think best </span></span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">最善と思うことをやりなさい(≒Do what you think best.; <span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_01_00_01'])" title="best">↑ <span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">as b<span class="str">è</span>st <span class="italic">one</span> c<span class="str">á</span>n [m<span class="str">á</span>y] </span>
+      <span id="WDEJ_b0008560_p02_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(困難な状況下で)可能な限り, できるだけ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I tried to change the situation <span class="italic">as best I could</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">全力を尽くして状況を変えようとした</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">b<span class="str">è</span>st of <span class="str">á</span>ll </span>
+      <span id="WDEJ_b0008560_p03_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖挿入副詞的に〗</span>
+          <span class="trans">最も良いことは, 本当にすばらしいことは </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">cheap, easy, and <span class="italic">best of all</span>, tasty </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">安くて手軽で何よりうまい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p03_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">最も, いちばん </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I like baseball [(the) winter] <span class="italic">best of all</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">野球[冬]がいちばん好きだ </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>… all the sports [seasons]の略) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">had b<span class="str">é</span>st <span class="italic">do </span></span>
+      <span id="WDEJ_b0008560_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に話｠</span>
+          <span class="trans">…した方が良い, …すべきだ </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0008880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008880_p19'])" title="bet･ter">→ had <span class="xrlabelGroup"><span class="xrlabel">better</span></span><span class="hm">1 </span><span class="italic">do</span></a></span>)</span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="oup_label x_ni">｟コーパス｠</span>had betterとほぼ同じ意味で用いるが, 頻度はhad betterの30分の1程度. (<span class="bold">2</span>)<span class="oup_label x_ni">｟コーパス｠</span>日常英語では'd best <span class="italic">do</span>や<span class="oup_label x_ni">｟よりくだけて｠</span>best <span class="italic">do</span>のようにhadを短縮したり省略して使う方が普通. (<span class="bold">3</span>)特に<span class="oup_label x_ni">｟英｠</span>では非標準とされることもある) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">You<span class="italic">'d</span> [You] <span class="italic">best</span> leave now<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">もう帰りなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">how b<span class="str">é</span>st to <span class="italic">do </span></span>
+      <span id="WDEJ_b0008560_p05_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">どうすれば最もうまく…できるか, 最もうまく…する仕方[方法](the best way to <span class="italic">do</span>) </span>
+          <span class="grnote"> (<span class="lbl">!</span>how to <span class="italic">do</span>にbestが加わった形) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">how best to</span> prepare for the disaster </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">災害への最適な備え方</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_b0008560_03" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+    </span>
+    <span id="WDEJ_b0008560_03_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖通例the /one's <span class="rf">～</span>〗</span>
+        <span class="co x_ni"> «…にとって» </span>
+        <span class="trans"><span class="t">最高の物</span>[<span class="t">人</span>]</span>
+        <span class="gp">; </span>
+        <span class="trans"><span class="bold">最も優れた人</span>[<span class="bold">物</span>] </span>
+        <span class="sp"> «<span class="italic">for</span>» </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">All parents everywhere want <span class="italic">the best for</span> their children<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">どこの親でもみんな自分の子供のためには最高の物を望むものだ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">For skiing, Colorado has to be <span class="italic"><span class="bold">among the best</span></span> in the world<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">スキーでは, コロラドは世界で最高の場所の1つに違いない(╳among the bestsとしない)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">
+            <span class="italic">his </span>
+            <span class="italic">
+              <span class="bold">personal best </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼の自己ベスト[最高記録]</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic">the</span> second <span class="italic">best</span> (to A) </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">(Aに次いで)2番目に良い[次善の]物 </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_p01'])" title="best">↑ <span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">成句</span></span>the next best thing</a></span>)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">meet <span class="italic">the best</span> of Hollywood </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">そうそうたるハリウッドの名士たちと会う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_03_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖通例the /one's <span class="rf">～</span>〗</span>
+        <span class="trans">(能力が最大限に引き出されて)<span class="t">最高</span>[<span class="t">最善</span>]<span class="t">の状態 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">John is <span class="italic">not </span><span class="italic"><span class="bold">in the best of moods</span> [<span class="bold">health</span>]</span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ジョンはあまり機嫌が良くない[健康がすぐれない] </span>
+        </span>
+        <span class="x_xdt">
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>通例否定文･疑問文で) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_03_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖one's <span class="rf">～</span>〗</span>
+        <span class="trans">
+          <span class="bold">よろしくとのあいさつ </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Give <span class="italic">my best</span> [<span class="italic">My best</span>] to Kim<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">キムによろしく(≒Give my (best) regards to Kim</span>
+          <span class="gp">.</span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">à</span>ll the b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p06_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">ご多幸[健康, 健勝]をお祈りします, すべてうまくいきますように</span>
+          <span class="gp">; </span>
+          <span class="trans">ご機嫌よう</span>
+          <span class="gp">; </span>
+          <span class="ind">【人に】</span>
+          <span class="trans">どうぞよろしく </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>別れのあいさつ･手紙の末尾などで用いる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Wish you <span class="italic">all the best</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ご多幸を祈ります</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">All the best</span>! Bye-bye! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ご機嫌よう, さようなら</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">All the best</span> for (you in) the New Year<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(あなたにとって)新年が良い年となりますように</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p07" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">at b<span class="str">é</span>st </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">まれ</span></span>at the b<span class="str">é</span>st</span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(どんなに好意的[多め]に見ても)<span class="bold">せいぜい</span>, 良くても, 多くても </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0011190:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0011190_p05'])" title="worst">↔ at (the) worst</a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Your idea is, <span class="italic">at best</span>, incomplete<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ひいき目に見ても君のアイディアは不完全だ</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They have $1,000 <span class="italic">at best</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らが持っているのはせいぜい千ドルだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">at <span class="italic">one's</span> b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">最良の状態</span>[絶好調, 絶頂期, 真っ盛り]<span class="bold">で</span>[<span class="bold">では, の</span>] </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">flowers <span class="italic">at their best </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">満開の花々</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">the team <span class="italic">at its best </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">最盛期のチーム</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">at the b<span class="str">é</span>st of t<span class="str">ì</span>mes </span>
+      <span id="WDEJ_b0008560_p09_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(人･物が)最良の状態だったとしても〈十分でない･望ましいものではないなど〉 </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例否定的内容と共に用いる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The work pays poorly <span class="italic">at the best of times</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その仕事は景気がいいときですら割が悪い</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">be the b<span class="str">è</span>st of fr<span class="str">í</span>ends </span>
+      <span id="WDEJ_b0008560_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈人と人が〉最高の友人[仲間, パートナー]である </span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)狭義の「友人」以外にも用いる. (<span class="bold">2</span>)特にけんか･対立などを経た後にいう) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">My sister and I <span class="italic">are</span> now <span class="italic">the best of friends</span> after numberless quarrels<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">数え切れないほどけんかしたが今では姉と私は最高のコンビだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">d<span class="str">ò </span><span class="italic">one's</span> (v<span class="str">è</span>ry) b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…するよう» </span>
+          <span class="trans"><span class="bold">最善を尽くす</span>, できる限り努力する </span>
+          <span class="sp"> «<span class="italic">to</span> do» </span>
+          <span class="grnote"> (<span class="lbl">!</span>veryは<span class="gr x_rr">形容詞</span>で「まさしく」の意) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Do your best to</span> arrive on time<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">時間通りに到着できるよう最善を尽くしなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">d<span class="str">ò</span> the b<span class="str">è</span>st <span class="italic">one</span> c<span class="str">á</span>n </span>
+      <span id="WDEJ_b0008560_p12_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_p11'])" title="best">＝ do one's (very) <span class="xrlabelGroup"><span class="xrlabel">best</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">for the b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p13_01" class="semb x_xo2 hasSn">
+        <span class="x_xoh">
+          <span class="sn">1 </span>
+          <span class="oup_label x_ni">｟主に話｠</span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例It's (all) <span class="rf">～</span>〗</span>
+          <span class="trans">(可能な範囲で)最良である</span>
+          <span class="gp">; </span>
+          <span class="trans">(諸条件を考慮すると)思ったほど悪くない</span>
+          <span class="gp">; </span>
+          <span class="trans">(今はそうでもないが)いずれは良い結果となるかもしれない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She died without pain. <span class="italic">It</span> may <span class="italic">be all for the best</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女は苦しまずに死んだ</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">それはせめてもの幸いなのかもしれない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p13_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(結果的に)最も良い方向に〈向かう･改良するなど〉 </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Their heated discussion is <span class="italic">for the best</span> in the end<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らの激論も最後にはうまくまとまるだろう</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They closed their eyes and hoped <span class="italic">for the best</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らは目を閉じてうまくいくよう願った</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p13_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">まったくの善意で, すべてはよかれと思って</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">è</span>t [h<span class="str">à</span>ve] the b<span class="str">é</span>st of <span class="italic">A </span></span>
+      <span id="WDEJ_b0008560_p14_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉A〈人･議論など〉に打ち勝つ, A〈人〉より勝る</span>
+          <span class="gp">; </span>
+          <span class="trans">(商売などで)A〈人〉を出し抜く </span>
+          <span class="grnote"> (<span class="lbl">!</span>bestの代わりにbetterを使うこともある) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Team A <span class="italic">got the best of</span> Team B, 2—1<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">2対1でAチームはBチームを下した</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">get</span></span> [<span class="italic"><span class="bold">have</span></span>] <span class="italic"><span class="bold">the best of it </span></span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(けんか･議論･試合などで)優位に立つ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p14_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈感情･欲望･苦痛などが〉A〈人〉を支配する, A〈人〉を理性的に行動できなくする </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Don't let excitement <span class="italic">get the best of</span> you<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">興奮に駆られて行動するな</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A</span> b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p15_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈計画･挑戦など〉をあきらめる, 放棄する</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉の優位を認める, Aに敗北[屈服]する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">l<span class="str">ò</span>ok <span class="italic">one's</span> b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈人･物などが〉最も魅力的に[美しく]見える </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Our house always <span class="italic">looks its best</span> in the spring time<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">我が家は常に春が最も美しく見える</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p17" class="idmsec x_xo1">
+      <span class="idm x_xoh">m<span class="str">à</span>ke the b<span class="str">é</span>st of <span class="italic">A </span></span>
+      <span id="WDEJ_b0008560_p17_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(前向きな才覚･努力によって)<span class="bold">A</span>〈不利な状況など〉<span class="bold">を最大限に利用する </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)恵まれた状況を「最大限に用いる」場合はmake the most of A. (<span class="bold">2</span>)時にAはit, things, a bad situation [bargain, deal], <span class="oup_label x_ni">｟英｠</span>a bad jobなどが入る) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They <span class="italic">made the best of</span> the given opportunity and succeeded<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らは与えられた機会を最大限に生かして成功を収めた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_b0008560_p17_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈不利な状況など〉を乗り切る, しのぐ</span>
+          <span class="gp">; </span>
+          <span class="trans">Aで我慢する </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">We have no choice but to <span class="italic">make the best of</span> what we have<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">今ある物で我慢するほか仕方がない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">m<span class="str">à</span>ke the b<span class="str">é</span>st of <span class="italic">one</span>s<span class="str">è</span>lf </span>
+      <span id="WDEJ_b0008560_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉自分をできるだけ魅力的に[美しく]見せる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">When older, you should try to <span class="italic">make the best of yourself</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">年を取ったらできる限り自分を美しく見せるよう努力すべきだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">the b<span class="str">è</span>st of <span class="str">é</span>verything </span>
+      <span id="WDEJ_b0008560_p19_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">あらゆる最高級品 </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">My husband buys me <span class="italic">the best of everything</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">夫はあらゆる最高級品を買ってくれる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">The b<span class="str">è</span>st of it <span class="str">í</span>s (that) … </span>
+      <span id="WDEJ_b0008560_p20_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">最も好ましい[良い, おもしろい]ことは…だ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">the b<span class="str">è</span>st of the b<span class="str">ú</span>nch [a b<span class="str">à</span>d l<span class="str">ó</span>t] </span>
+      <span id="WDEJ_b0008560_p21_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英｠</span>
+          <span class="trans">(あまり満足のゆくものではないが)その中ではましな方の人[物]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">the b<span class="str">è</span>st of thr<span class="str">é</span>e [f<span class="str">í</span>ve, …] (g<span class="str">à</span>mes) </span>
+      <span id="WDEJ_b0008560_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(of以下の(ゲーム)数の半分以上に勝利した方を勝ちとする) 3[5, …]番勝負 </span>
+          <span class="grnote"> (<span class="lbl">!</span>…は奇数) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Let's play <span class="italic">the best of three</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">3番勝負といこう</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">to the b<span class="str">é</span>st of <span class="italic">A </span></span>
+      <span id="WDEJ_b0008560_p23_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人の知識･信念･能力･記憶〉の限りでは </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">To the best of</span> my knowledge [memory], Kazu is not married yet<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私が知っている[覚えている]限りでは, カズはまだ結婚していません(≒As far as I know [(can) remember]…</span>
+            <span class="gp">.</span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">tr<span class="str">ỳ </span><span class="italic">one's</span> b<span class="str">é</span>st </span>
+      <span id="WDEJ_b0008560_p24_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_b0008560:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0008560_p11'])" title="best">＝ do one's (very) <span class="xrlabelGroup"><span class="xrlabel">best</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_p25" class="idmsec x_xo1">
+      <span class="idm x_xoh">with the b<span class="str">é</span>st (of th<span class="str">è</span>m) </span>
+      <span id="WDEJ_b0008560_p25_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">誰にも劣らず </span>
+          <span class="grnote"> (<span class="lbl">!</span>最優秀の人々とも「並び立つ, 拮抗<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（きつこう）</span></span>する(with)」ことから) </span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_b0008560_04" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+    </span>
+    <span id="WDEJ_b0008560_04_01" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">他動詞</span>
+      <span id="WDEJ_b0008560_04_01_01" ord="0" class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟かたく･やや古｠</span>
+          <span class="trans">〈人などが〉〈人･議論など〉<span class="bold">に打ち勝つ, まさる</span>; (商売などで)〈人〉<span class="bold">を出し抜く </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">best</span> the world's record </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">世界記録を更新する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The Tigers <span class="italic">bested</span> the Giants(,) 10—0<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">タイガースはジャイアンツを10対0で下した </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>報道ではしばしば過去形) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_b0008560_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> bef<span class="str">ó</span>re d<span class="str">à</span>te</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">賞味期限 </span>
+            <span class="grnote"> (<span class="lbl">!</span>best-before dateともつづる) </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> b<span class="str">ú</span>y</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c02_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(購入)おすすめ品 </span>
+            <span class="grnote"> (<span class="lbl">!</span>商品広告などで用いる) </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀ </span></span><span class="str">é</span>ffort</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c03_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="con">〖one's/the <span class="rf">～</span>; しばしば<span class="rf">～</span>s〗</span>
+            <span class="trans">最善[最大限]の努力 </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">despite A's <span class="italic">best</span> efforts </span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">A〈人〉の最善[最大限]の努力にもかかわらず</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_b0008560_c03_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="fld">〘コンピュ〙</span>
+            <span class="trans">ベストエフォート〘インターネット接続速度などの理論上の最高値〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c04" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀ </span></span><span class="str">é</span>nd</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c04_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(肋骨<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（ろつこつ）</span></span>の付いた)羊の首の肉〘バーベキューなどで食べる〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c05" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> fr<span class="str">í</span>end</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c05_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="con">〖しばしばone's <span class="rf">～</span>〗</span>
+            <span class="trans">最高の友人[仲間, パートナー] </span>
+            <span class="grnote"> (<span class="lbl">!</span>狭義の「友人」以外にも用いる) </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Frank is one of <span class="italic">my best friends</span><span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">フランクは私の親友の1人だ</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">She became <span class="italic">best friends</span> with Carol<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">彼女はキャロルと親友になった(≒She and Carol became the best of friends.)</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Some of <span class="italic">my best friends</span> are Jews [Blacks, homosexuals]<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">ユダヤ人[黒人, 同性愛者]の親友もいる </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>自分が人種差別主義者でないことを強調する言い方) </span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c06" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> m<span class="str">á</span>n</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c06_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">花婿付添人<span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0019230:com.apple.dictionary.ja-en.WISDOM" title="brides･maid">↔ bridesmaid</a></span>)</span>〘結婚式で花婿(bridegroom)の世話を担当〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c07" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> pr<span class="str">á</span>ctice</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c07_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(事業などでの)(見本となる)最良の方式[ノウハウ], 先駆的方法</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c08" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> r<span class="str">ó</span>om</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c08_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="con">〖the <span class="rf">～</span>〗</span>
+            <span class="trans">応接間</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_b0008560_c09" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> s<span class="str">é</span>ller</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_b0008560_c09_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_b0008670:com.apple.dictionary.ja-en.WISDOM" title="best(-)seller">＝ best(-)seller</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

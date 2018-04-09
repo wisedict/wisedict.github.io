@@ -1,0 +1,4461 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_h0000950" d:title="half" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">half </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">hæf|hɑːf</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span class="grnote"> (<span class="lbl">!</span>語末-lfのlは発音しない) </span>
+      <span role="text" class="etym">〖語源は「分割された(もの)」〗</span>
+    </span>
+  </span>
+  <span id="WDEJ_h0000950_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+      <span class="frmg">
+        <span class="gr x_rr ty_単複">複</span>
+        <span class="frm">halves </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">hævz|hɑːvz</span> | </span>
+        <span class="gp">; </span>
+        <span class="xrg">
+          <span class="xr">
+            <span class="xrlabelGroup">
+              <span class="xrlabel">3</span>
+            </span>
+          </span>
+        </span>
+        <span class="gp">, </span>
+        <span class="xrg">
+          <span class="xr">
+            <span class="xrlabelGroup">
+              <span class="xrlabel">4</span>
+            </span>
+          </span>
+        </span>
+        <span class="gp">, </span>
+        <span class="xrg">
+          <span class="xr">
+            <span class="xrlabelGroup">
+              <span class="xrlabel">6</span>
+            </span>
+          </span>
+        </span>
+        <span class="frm">でまた<span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-s</span> | </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">
+          <span class="t">半分</span>
+          <span class="gp">, </span>
+          <span class="bold">2分の1</span>
+        </span>
+        <span class="gp">.</span>
+      </span>
+      <span id="WDEJ_h0000950_01_00_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖half of <span class="r">A</span>〗</span>
+          <span class="trans">
+            <span class="t">Aの半分</span>
+            <span class="gp">, </span>
+            <span class="bold">Aの2分の1 </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)Aは限定された<span class="gr x_rr">名詞</span>または<span class="gr x_rr">代名詞</span>の目的格; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_k101'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(1)</span></span></a></span></span><span class="gp">, </span><span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_m0007350:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_m0007350_01_00_01_k301'])" title="me">→ me<span class="hm">1 </span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">文法</span></span></a></span></span>. (<span class="bold">2</span>)halfは修飾語で限定される場合を除いて通例無冠詞. (<span class="bold">3</span>)場合によっては多数, 多量, 大半の意味で用いられることもある<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_02_00_02'])" title="half">↓ <span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Half</span> (<span class="italic">of</span>) the report was [the reports were] written in English<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">報告書の半分は英語で書かれていた </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="gr x_rr">動詞</span>の呼応はofに続く<span class="gr x_rr">名詞</span>に従う; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_k202'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">コーパスの窓</span></span></a></span></span>. (<span class="bold">2</span>)ofの省略については<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_k101'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(1)</span></span></a></span></span>. (<span class="bold">3</span>)集合名詞を従える場合, 複数の構成員を意識すると複数扱いされることがある; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_f0001350:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001350_01_00_01_k301'])" title="fam･i･ly">→ family<span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">文法</span></span></a></span></span><span class="gp">: </span><span class="italic">Half</span> (<span class="italic">of</span>) the population is [are] poor. 住民の半分は生活が苦しい) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">More than half </span></span><span class="italic">of</span> all teachers are over 40<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">すべての教師の半分以上が40歳を上回っている</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I got the bigger <span class="italic">half</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は大きい方の半分をもらった </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>厳密でなくおおよそ半分である場合にも用いる) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">in the first [second] <span class="italic">half of</span> the 20th century </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">20世紀の前半[後半]に</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Half of</span> 10 is 5<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">10の半分は5</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_01_00_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖<span class="r">A</span> and a half〗</span>
+          <span class="trans"><span class="t">Aと半分</span>, (帯分数で)<span class="bold">Aと</span>[<span class="bold">箇</span><span class="pr"><span d:pr="US solitary" class="ph t_ruby">（か）</span></span>]<span class="bold">2分の1 </span></span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_q0000760:com.apple.dictionary.ja-en.WISDOM" title="quar･ter">→ quarter</a></span>)</span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>(<span class="bold">1</span>)Aは数詞または通例a/an/<span class="oup_label x_ni">｟まれ｠</span>one＋<span class="gr x_rr">名詞</span>. (<span class="bold">2</span>)この用法でA and one halfの形は<span class="oup_label x_ni">｟まれ｠</span><span class="gp">; </span><span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_02_00_01_02'])" title="half">↓ <span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">1b</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Tom is eleven <span class="italic">and a half</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">トムは11歳と半年だ(≒Tom is eleven and a <span class="italic">half</span> years old. <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_02_00_01_02'])" title="half">↓ <span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">1b</span></span></a></span></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I've worked here for a year <span class="italic">and a half</span> [one and a <span class="italic">half</span> years]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私はここで1年半働いてきた </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>前者の方が普通; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_k101'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(2)</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">a bottle <span class="italic">and a half</span> of wine </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">1</span>
+            <span class="gp">.</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">5本分のワイン</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_01_00_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">c. </span>
+        <span class="trg x_xd3">
+          <span class="trans">(2分割した)<span class="bold">半分 </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">two <span class="italic">halves</span> of a bun </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(ハンバーガー用に)半分に切った丸パン2枚</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the other <span class="italic">half</span> of the cake </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ケーキの残り半分</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_h0000950_01_00_01_k101" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">①</span>
+              <span class="bold">half of <span class="r">A</span></span>
+              <span class="bold">における</span>
+              <span class="bold">of</span>
+              <span class="bold">の省略</span>
+              <span> half ofが定冠詞(the), 指示形容詞(this, thatなど), (代)名詞の所有格(my, her, hisなど; </span>
+              <span class="xrg ty_→">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_s0000060:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0000060_01_00_01_k301'])" title="'s">→ 's<span class="xrlabelGroup"><span class="xrlabel">文法</span></span></a>
+                </span>
+              </span>
+              <span>)が付いた</span>
+              <span class="ps x_rr">名詞</span>
+              <span>を伴う場合, ofは省略されることがある</span>
+              <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_01'])" title="half">↑ <span class="xrlabelGroup"><span class="xrlabel">1a</span></span>第1例</a></span>)</span>
+              <span>. ただし</span>
+              <span class="italic">half</span>
+              <span> of them [it]のように</span>
+              <span class="ps x_rr">代名詞</span>
+              <span>が続く場合, また</span>
+              <span class="italic">half</span>
+              <span> of 10 [a dozen]のように数詞や数量を表す</span>
+              <span class="ps x_rr">名詞</span>
+              <span>が続く場合, half of all [each, every, any]＋</span>
+              <span class="ps x_rr">名詞</span>
+              <span>のように集合を意識する語が続く場合, ofは省略はしない(╳ half it, ╳half 10, ╳half all …などとしない). 逆に</span>
+              <span class="italic">half</span>
+              <span> a dozenのように不定冠詞が付いた数量を表す</span>
+              <span class="ps x_rr">名詞</span>
+              <span>が続く場合, ofは不要</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">②</span>
+              <span class="oup_label x_ni">｟コーパス｠</span>
+              <span class="bold">a/an</span>
+              <span class="bold">
+                <span class="r">＋</span>
+              </span>
+              <span class="ps x_rr">名詞</span>
+              <span class="bold">
+                <span class="r">＋</span>
+              </span>
+              <span class="bold">and a half</span>
+              <span class="bold">と</span>
+              <span class="bold"><span class="r">one</span> and a half</span>
+              <span class="bold">
+                <span class="r">＋</span>
+              </span>
+              <span class="ps x_rr">名詞</span>
+              <span> 「1.5の…」を表す場合は, 前者の形が優勢なものの両方が可能. 「2.5の…」のような2以上の数とhalfの組み合わせでは, two years and a halfより後者のように</span>
+              <span class="ps x_rr">形容詞</span>
+              <span>を使ったtwo </span>
+              <span class="italic">and a half</span>
+              <span> yearsまたはtwo-</span>
+              <span class="italic">and-a-half</span>
+              <span> yearsが普通</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_h0000950_01_00_01_k202" class="box ty_2">
+          <span class="title x_xdh"><span class="u">コーパスの窓 </span>halfの単数･複数呼応</span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">halfは通例複数の概念に言及するときは複数扱いし, 単数の概念に言及するときは単数扱いする </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">We receive about 1,000 phone calls a year. About <span class="italic">half are</span> from women<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">我々は1年に約千件の電話を受ける</span>
+                <span class="gp">. </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">ほぼ半分は女性からのものだ</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">They can only supply <span class="italic">half</span> of what their customers want and <span class="italic">half is</span> not enough<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">彼らは顧客の要望の半分しか提供できていないが, 半分では不十分なのだ</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1">
+            <span class=" x_xdh">… and a half ではa halfを意識して通例単数扱いされる </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">That hour <span class="italic">and a half</span> was important<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">その1時間半が重要であった</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(サッカー･バスケットなどの試合の)<span class="bold">前</span>[<span class="bold">後</span>]<span class="bold">半</span><span class="gp">, </span><span class="bold">ハーフ</span></span>
+        <span class="gp">; </span>
+        <span class="fld">〘野球〙</span>
+        <span class="trans">(1イニングの)<span class="bold">表</span>(top), <span class="bold">裏</span>(bottom)</span>
+        <span class="gp">; </span>
+        <span class="fld">〘ゴルフ〙</span>
+        <span class="trans"><span class="bold">ハーフ</span>〘18ホールのうち, インまたはアウトの9ホール; マッチプレーの引き分けをさす場合もある〙</span>
+        <span class="gp">; </span>
+        <span class="trans">(コンサートの)<span class="bold">前</span>[<span class="bold">後</span>]<span class="bold">半部 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">The game is played in two <span class="italic">halves</span> of 45 minutes each<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">試合は前半後半45分ずつ行われる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="xrg ty_＝">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_h0000980:com.apple.dictionary.ja-en.WISDOM" title="half･back">＝ <span class="xrlabelGroup"><span class="xrlabel">halfback</span></span></a>
+          </span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟英･くだけて｠</span>
+        <span class="trans">(ビールなどの)<span class="bold">半パイント </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">A <span class="italic">half</span> [Two <span class="italic">halves</span>] of lager, please<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ラガー半パイント[半パイント2杯]ください</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_05" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">5 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="gr ty_用法">〖無冠詞で〗</span>
+        <span class="trans">(時刻の)<span class="bold">半</span><span class="gp">, </span><span class="bold">30分 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I went to bed at <span class="italic">half</span> (past [<span class="oup_label x_ni">｟米･まれ｠</span>after]) eleven<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">11時半に寝た </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟英話｠</span>では若い層がスコットランド用法の影響でhalf elevenをよく使う) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I went to bed at eleven or <span class="italic">half</span> past<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">11時か11時半に寝た</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_06" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">6 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟英｠</span>
+        <span class="trans">(列車･バスなどの子供用)<span class="bold">半額切符</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_07" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">7 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟米話｠</span>
+        <span class="trans"><span class="bold">50セント硬貨</span>(<span id="WDEJ_h0000950_o01" class="u">half dollar</span>)</span>
+        <span class="gp">; </span>
+        <span class="oup_label x_ni">｟英話｠</span>
+        <span class="trans">
+          <span class="bold">半マイル</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="xrg ty_＝">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_h0001180:com.apple.dictionary.ja-en.WISDOM" title="half･pen･ny">＝ <span class="xrlabelGroup"><span class="xrlabel">halfpenny</span></span></a>
+          </span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_01_00_08" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">8 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟英｠</span>
+        <span class="trans">
+          <span class="bold">半学年 </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>2期制の前期または後期) </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="italic">A</span> and a h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p01_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_02'])" title="half">↑ <span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">b</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p01_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="trans">(普通よりも)大きい[よりよい, 重要な, 大変な, すごい]A </span>
+          <span class="grnote"> (<span class="lbl">!</span>強調表現で, 良い意味にも悪い意味にも使う) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">That was a fight [job] <span class="italic">and a half</span>! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">すごい試合[大変な仕事]だった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">by h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p02_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(もとの数量の)半分だけ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">cut [reduce, break] A <span class="italic">by half </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">Aを半分に切る[減らす, 割る]</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p02_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖反語的に〗</span>
+          <span class="trans">非常に</span>
+          <span class="gp">; </span>
+          <span class="trans">あまりにも </span>
+          <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_p11'])" title="half">↓ too … by <span class="xrlabelGroup"><span class="xrlabel">half</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">by h<span class="str">á</span>lves </span>
+      <span id="WDEJ_h0000950_p03_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">中途半端に, 生半可には </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例否定文で) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">You bought a Ferrari! Well, you never did anything <span class="italic">by halves</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">フェラーリを買ったんだってね</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">なるほど君は何ごとも中途半端はしたことないものね</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p04" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">g<span class="str">ò</span> h<span class="str">á</span>lves </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ g<span class="str">ò</span> h<span class="str">à</span>lf and h<span class="str">á</span>lf</span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけて｠</span>
+          <span class="ind">【人と/費用･勘定などを】</span>
+          <span class="trans">折半する, 出し合う </span>
+          <span class="sp"> «<span class="italic">with</span></span>
+          <span class="gp">/</span>
+          <span class="sp">
+            <span class="italic">in</span>
+          </span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">on</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Let's <span class="italic">go halves on</span> the bill<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">支払いは割り勘にしよう</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">ò</span>w the <span class="str">ò</span>ther h<span class="str">à</span>lf l<span class="str">í</span>ves </span>
+      <span id="WDEJ_h0000950_p05_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(まったく正反対の)あちら側の暮しぶり </span>
+          <span class="grnote"> (<span class="lbl">!</span>富裕層と貧困層, 先進国と開発途上国, 資本主義国と共産圏などを比較していうことが多い) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">in [<span class="oup_label x_ni">｟ややまれ｠</span>into] h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p06_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">2等分に</span>, 半分(ずつ)に </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">cut a watermelon <span class="italic">in half </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">スイカを半分に切る </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>in(to) halvesの方が論理的には正しいが, <span class="oup_label x_ni">｟まれ｠</span>; 「3[4]等分する」の場合はinto thirds [quarters]が普通) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p06_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(折る･曲げる際に)半分に(なるように) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">fold a map <span class="italic">in half </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">地図を(重ねて)2つ折りにする</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">in [into] h<span class="str">á</span>lves </span>
+      <span id="WDEJ_h0000950_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟まれ｠</span>
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_p06'])" title="half">＝ in <span class="xrlabelGroup"><span class="xrlabel">half</span><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">not (even) kn<span class="str">ò</span>w [have not h<span class="str">è</span>ard] the h<span class="str">á</span>lf of it </span>
+      <span id="WDEJ_h0000950_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">半分もわかって[聞いて]いない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">You don't know the half of it</span>
+              </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(それどころか)事態はより深刻だ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">not the h<span class="str">á</span>lf of <span class="italic">A</span> [it] </span>
+      <span id="WDEJ_h0000950_p09_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aの[それの]ほんの一部でしかない, 序の口にすぎない(もっとひどい[複雑な]ことがある)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">on h<span class="str">á</span>lves </span>
+      <span id="WDEJ_h0000950_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米｠</span>
+          <span class="trans">半分で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">t<span class="str">ò</span>o … by h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけて･けなして｠</span>
+          <span class="trans">あまりに…すぎる, いやになるほど… </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She is <span class="italic">too</span> clever <span class="italic">by half</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女はあまりに小賢<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（こざか）</span></span>しい</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_h0000950_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">形容詞</span>
+      <span class="grnote"> (<span class="lbl">!</span>文の中で通例強勢を受ける) </span>
+      <span class="frmg">
+        <span class="frm x_nb">比較なし </span>
+      </span>
+      <span class="gr ty_用法">〖通例<span class="t">名詞</span>の前で〗</span>
+    </span>
+    <span id="WDEJ_h0000950_02_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span id="WDEJ_h0000950_02_00_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖half a …〗</span>
+          <span class="trans">
+            <span class="t">半分の…</span>
+            <span class="gp">, </span>
+            <span class="bold">2分の1の… </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>(<span class="bold">1</span>)しばしば数量単位の<span class="gr x_rr">名詞</span>や抽象名詞を従えて. (<span class="bold">2</span>)a half …の語順については<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_02_00_01_k103'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(1)</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I've been waiting for <span class="italic">half an</span> hour [<span class="oup_label x_ni">｟非標準｠</span>a <span class="italic">half-</span>hour, a <span class="italic">half</span> hour]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は30分ほど待っています </span>
+            <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_02_00_01_k103'])" title="half">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(1)</span></span></a></span>)</span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>特定の半分を示すときはthe half …: I finished my homework in <span class="italic">the half</span> hour [╳half the hour] after I got home. 私は帰宅後30分のうちに宿題を済ませた) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">John is <span class="italic">half a</span> head taller than his mother<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ジョンは母親より頭半分ほど背が高い</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Half</span> the people are for the event<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その人たちの半分は催しに賛成だ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="gr x_rr">動詞</span>の呼応については<span class="xrg ty_↑"><span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_01_k202'])" title="half">↑ <span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">コーパスの窓</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">another <span class="italic">half</span> (<span class="italic">a</span>) dozen times </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">もう5, 6回(╳half another dozen timesとしない)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_h0000950_02_00_01_k103" class="box t_語法 ty_1">
+          <span class="title x_xdh">
+            <span class="u">語法 </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">①</span>
+              <span class="bold">a half</span>
+              <span class="bold">
+                <span class="r">＋</span>
+              </span>
+              <span class="ps x_rr">名詞</span>
+              <span class="oup_label x_ni">｟非標準｠</span>
+              <span>では, 数量単位の</span>
+              <span class="ps x_rr">名詞</span>
+              <span>を従えるときa half＋</span>
+              <span class="ps x_rr">名詞</span>
+              <span>の語順が用いられることがある</span>
+              <span class="xrg ty_↑">(<span class="xr">↑ 第1例</span>)</span>
+              <span>. この語順ではhalfと</span>
+              <span class="ps x_rr">名詞</span>
+              <span>の結びつきが強く, しばしばhalf-hourのようにハイフンを伴う. また, その場合形容詞的に用いられることも多い </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">a half-</span>hour meeting </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">30分の会合</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span class="np x_xd1 hasSn">
+            <span class="x_xdh">
+              <span class="sn">②</span>
+              <span class="bold">a</span>
+              <span> [</span>
+              <span class="bold">the</span>
+              <span>] </span>
+              <span class="bold">half a</span>
+              <span class="bold">
+                <span class="r">＋</span>
+              </span>
+              <span class="ps x_rr">名詞</span>
+              <span class="oup_label x_ni">｟くだけて｠</span>
+              <span>では, 単位の</span>
+              <span class="ps x_rr">名詞</span>
+              <span>を伴ってある語を修飾する場合, half a＋</span>
+              <span class="ps x_rr">名詞</span>
+              <span>が数を表すひとまとまりの</span>
+              <span class="ps x_rr">形容詞</span>
+              <span>と感じられ, 前にaやtheを伴うことがある </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">(<span class="italic">a</span>) <span class="italic">half a</span> million dollars </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">50万ドル</span>
+              </span>
+            </span>
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex"><span class="italic">the half a</span> dozen films they saw last year </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_用例訳">彼らが去年見た数本の映画</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_02_00_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖<span class="r">A</span> and a half …〗</span>
+          <span class="trans">
+            <span class="bold">Aと半分の… </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟コーパス｠</span>(<span class="bold">1</span>)Aは通例数詞. (<span class="bold">2</span>)A and one halfの形は<span class="oup_label x_ni">｟比較的まれ｠</span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">two <span class="italic">and a half</span> years </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">2年半(╳two and a half yearとしない)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">one <span class="italic">and a half</span> million tons of water </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">150万トンの水</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_02_00_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">c. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖<span class="t">名詞</span>の前で〗</span>
+          <span class="trans"><span class="bold">半分の大きさ</span>[<span class="bold">容量</span>]<span class="bold">の</span>〈容器など〉, <span class="bold">ハーフサイズの </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">order a <span class="italic">half</span> bottle of wine </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ワインのハーフボトルを注文する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_02_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖<span class="rf">～</span> the/one's A〗</span>
+          <span class="trans"><span class="bold">A</span>〈問題･楽しみなど〉<span class="bold">の大半</span>[<span class="bold">大部分</span>] </span>
+          <span class="grnote"> (<span class="lbl">!</span>強調表現) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic">Half the</span> problem is that we are short-staffed<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">問題の大きな部分は人材不足ということだ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">
+            <span class="italic">
+              <span class="bold">Getting there is half the fun</span>
+            </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">目的地に着くまでが楽しいのだ〘旅行の宣伝文句〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_02_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="bold">不十分な</span>
+          <span class="gp">, </span>
+          <span class="bold">中途半端な </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have only a <span class="italic">half</span> acquaintance with A </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">Aを中途半端にしかわかっていない</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_02_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟話｠</span>
+        <span class="trans">
+          <span class="bold">ほんのわずかな</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">be h<span class="str">à</span>lf the <span class="italic">A </span><span class="italic">one </span><span class="str">ù</span>sed to b<span class="str">é </span></span>
+      <span id="WDEJ_h0000950_p12_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">かつてのようなAではない, Aとしての昔の面影はない</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>lf a d<span class="str">ó</span>zen </span>
+      <span id="WDEJ_h0000950_p13_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">半ダースの, 6個の</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p13_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">数個の, 数人の</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>lf a m<span class="str">í</span>nute [s<span class="str">é</span>c(ond), m<span class="str">ó</span>(ment)] </span>
+      <span id="WDEJ_h0000950_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="trans">ちょっとの間, あっという間 </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Hold on. I'll be with you in <span class="italic">half a sec</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ちょっと待って, すぐ戻るから</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(電話で)ちょっと切らないで</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">in h<span class="str">á</span>lf the t<span class="str">ì</span>me </span>
+      <span id="WDEJ_h0000950_p15_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(予想より)ずっと短い時間で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">only h<span class="str">à</span>lf the st<span class="str">ó</span>ry </span>
+      <span id="WDEJ_h0000950_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(秘密にしておくために)事実の半分しか〈話さないなど〉</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_h0000950_03" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">副詞</span>
+      <span class="frmg">
+        <span class="frm x_nb">比較なし </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_03_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖<span class="t">形容詞</span><span class="t">副詞</span><span class="t">前置詞</span><span class="t">動詞</span>の前で〗</span>
+        <span class="trans"><span class="t">半分だけ</span><span class="gp">, </span><span class="bold">半ば</span>, (完全ではなく)<span class="bold">わずかばかり, 一部</span></span>
+        <span class="gp">; </span>
+        <span class="trans"><span class="bold">うすうす</span>〈気づくなど〉</span>
+        <span class="gp">; </span>
+        <span class="oup_label x_ni">｟英話｠</span>
+        <span class="gr ty_用法">〖時刻を表す数詞の前で〗</span>
+        <span class="trans">(…時)<span class="bold">半で </span></span>
+        <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_01_00_05'])" title="half">↑ <span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">5</span></span></a></span>)</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">The tank is still <span class="italic">half</span> full<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">水槽はまだ半分しかたまっていない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">a <span class="italic">half</span>-empty bottle of wine </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">飲みかけのワインボトル </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>half＋<span class="gr x_rr">形容詞</span>が<span class="gr x_rr">名詞</span>を修飾する場合, halfと<span class="gr x_rr">形容詞</span>の間にしばしばハイフンを入れる) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">He is <span class="italic"><span class="bold">half</span></span> Japanese <span class="italic">(<span class="bold">and</span>) <span class="bold">half</span></span> American<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼は日米のハーフだ(≒His father is Japanese and his mother is American. /His mother is Japanese and his father is American.)(╳He is half. としない)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_03_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟話｠</span>
+        <span class="gr ty_用法">〖<span class="t">形容詞</span>の前で〗</span>
+        <span class="trans">(状況のひどさ･極端さを示して)<span class="bold">ほとんど… </span></span>
+        <span class="grnote"> (<span class="lbl">!</span>強調表現) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Susan was <span class="italic">half</span> crazy worrying about her son<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">スーザンは息子を心配して気が狂いそうだった</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_03_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="bold">不十分に</span>
+          <span class="gp">, </span>
+          <span class="bold">中途半端に</span>
+          <span class="gp">, </span>
+          <span class="bold">途中まで </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">He was only <span class="italic">half</span> prepared for his presentation<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼は自分の発表の準備が不十分だった</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I'm <span class="italic">half</span> certain he will be there<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼がそこに現れるかどうか確信が持てない</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p17" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">h<span class="str">à</span>lf ag<span class="str">á</span>in as … as <span class="italic">A</span> (<span class="italic">does</span>) </span>
+        <span class="xrg ty_＝">
+          <span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">主に英</span></span>h<span class="str">á</span>lf as … ag<span class="str">à</span>in as <span class="italic">A</span> (<span class="italic">does</span>)</span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p17_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aの1</span>
+          <span class="gp">.</span>
+          <span class="trans">5倍…で, 1倍半…で </span>
+          <span class="grnote"> (<span class="lbl">!</span>one and a half timesとする方が明確) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>lf and h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">半々に[で]</span>
+          <span class="gp">; </span>
+          <span class="trans">同量ずつ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">á</span>lf as … </span>
+      <span id="WDEJ_h0000950_p19_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">半分の…</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">á</span>lf as m<span class="str">ù</span>ch [m<span class="str">à</span>ny] as <span class="italic">A</span> (<span class="italic">does</span>) </span>
+      <span id="WDEJ_h0000950_p20_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aの半分(の量[数]だけ)…で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">not h<span class="str">á</span>lf </span>
+      <span id="WDEJ_h0000950_p21_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけた話｠</span>
+          <span class="trans">(半分どころでなく)とても, ひどく, まったく </span>
+          <span class="grnote"> (<span class="lbl">!</span>強調表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She <span class="italic">isn't half</span> pretty<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">あの娘のかわいらしさは半端じゃないね〘非常にかわいらしい〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p21_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖単独で〗</span>
+          <span class="trans">はい, とても </span>
+          <span class="grnote"> (<span class="lbl">!</span>Yes.の強調表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">“Was Ken pleased with the result?” “<span class="italic">Not half</span>!” </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">「健は結果に満足していたの」「そりゃあもう」〘大喜びでした〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_h0000950_p21_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">少しも…でない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">It's <span class="italic">not half</span> long enough<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">長さが足りない</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">That's <span class="italic">not half</span> bad<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">悪いどころではない, なかなかいい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">not h<span class="str">á</span>lf as [such a] … </span>
+      <span id="WDEJ_h0000950_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…ほど» </span>
+          <span class="trans">とても…でない </span>
+          <span class="sp"> «<span class="italic">as</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>強調表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He is <span class="italic">not half such a</span> bad boss <span class="italic">as</span> people say<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は人が言うほど悪い上司では決してない</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The movie <span class="italic">wasn't half as</span> good <span class="italic">as</span> the book<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">映画はとても原作本には及ばなかった</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_h0000950_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> b<span class="str">à</span>th</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="trans">(シャワーや浴槽がない)簡易バスルーム〘洗面所とトイレのみ〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> b<span class="str">ì</span>nding</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c02_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">半革装丁</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> bl<span class="str">ò</span>od</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c03_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">異父[異母]兄弟[姉妹]</span>
+            <span class="gp">; </span>
+            <span class="trans">腹[種]違い〘片親の違う兄弟[姉妹]関係〙</span>
+            <span class="gp">; </span>
+            <span class="trans">混血児</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c04" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> b<span class="str">ó</span>ard</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c04_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0001010:com.apple.dictionary.ja-en.WISDOM" title="half-board">＝ half-board</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c05" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> b<span class="str">ò</span>ot</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c05_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="con">〖通例<span class="rf">～</span>s〗</span>
+            <span class="trans">(すねの半ばまで来る)ハーフブーツ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c06" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> br<span class="str">ò</span>ther</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c06_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">異父[母]兄[弟], 腹[種]違いの兄[弟]〘片親の違う兄弟〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c07" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> c<span class="str">ó</span>ck</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c07_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(銃の掛け金が半分掛かった)ハーフコック </span>
+            <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_h0001040:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0001040_p01'])" title="half-cocked">→ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span>go off <span class="xrlabelGroup"><span class="xrlabel">half-cocked</span></span></a></span>)</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c08" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> cr<span class="str">ó</span>wn</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c08_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0000960:com.apple.dictionary.ja-en.WISDOM" title="half-a-crown">＝ half-a-crown</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c09" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> d<span class="str">á</span>y</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c09_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0001070:com.apple.dictionary.ja-en.WISDOM" title="half-day">＝ half-day</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c10" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> d<span class="str">ó</span>llar</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c10_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(米国･カナダの)半ドル銀[硬]貨</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c11" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> g<span class="str">à</span>iner</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c11_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘水泳〙</span>
+            <span class="trans">前逆飛び</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c12" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> h<span class="str">í</span>tch</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c12_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">半結び, 片結び〘最も簡単な引っかけ結び〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c13" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> m<span class="str">é</span>asures</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c13_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟主に英･けなして｠</span>
+            <span class="trans">間に合わせの行動[手段], その場しのぎの解決策</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c14" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> m<span class="str">ó</span>urning</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c14_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(本喪に続く)半喪期</span>
+            <span class="gp">; </span>
+            <span class="trans">半喪服</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c15" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> n<span class="str">é</span>lson</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c15_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘レスリング〙</span>
+            <span class="trans">ハーフネルソン〘相手の背後から腕を自分と同じ側の脇の下を通して, 相手の後ろ首筋を押さえて固める〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c16" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> n<span class="str">ò</span>te</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c16_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="fld">〘楽〙</span>
+            <span class="trans">2分音符(<span class="oup_label x_ni">｟英｠</span>minim)</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c17" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> n<span class="str">ú</span>mber</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c17_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘数〙</span>
+            <span class="trans">0</span>
+            <span class="gp">.</span>
+            <span class="trans">5刻みの数</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c18" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> p<span class="str">á</span>y</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c18_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="trans">給料の半分</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_h0000950_c18_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">(陸･海軍将校の)休職給</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c19" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> p<span class="str">ì</span>nt</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c19_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="trans">半パイント〘液量単位; <span class="xrg ty_＝"><span class="xr">＝ <span class="xrlabelGroup"><span class="xrlabel">1/4</span></span>クォート</span></span>〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_h0000950_c19_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米俗｠</span>
+            <span class="trans">背の低い人</span>
+            <span class="gp">; </span>
+            <span class="trans">取るに足らない人</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c20" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> p<span class="str">ì</span>pe</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c20_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(スケートボード･スノーボード用)ハーフパイプ(競技場)〘パイプを半分に切断したような形から〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c21" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> pr<span class="str">í</span>ce</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c21_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0001200:com.apple.dictionary.ja-en.WISDOM" title="half-price">＝ half-price</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c22" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> s<span class="str">ì</span>ster</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c22_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">異父[母]姉[妹], 腹[種]違いの姉[妹]〘片親の違う姉妹〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c23" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> s<span class="str">ì</span>ze</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c23_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="trans">(婦人服の)ハーフサイズ〘小柄で太めの女性サイズ〙</span>
+            <span class="gp">; </span>
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="trans">(2つのサイズの)中間サイズ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c24" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> sl<span class="str">ì</span>p</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c24_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">ペチコート</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c25" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> s<span class="str">ò</span>le</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c25_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">(靴の)半底〘toeからshankまで〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c26" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> st<span class="str">è</span>p</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c26_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="fld">〘楽〙</span>
+            <span class="trans">半音(semitone)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_h0000950_c26_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="fld">〘軍〙</span>
+            <span class="trans">(行進のときの)半歩(の歩幅)</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c27" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> sw<span class="str">í</span>ng</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c27_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘野球〙</span>
+            <span class="trans">ハーフスイング</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c28" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> t<span class="str">é</span>rm</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span class="grnote x_xdh"> (<span class="lbl">!</span><span class="oup_label x_ni">｟英｠</span>) </span>
+        <span id="WDEJ_h0000950_c28_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="trans">(学校･大学で)学期途中の休暇 </span>
+            <span class="grnote"> (<span class="lbl">!</span>通例1週間弱程度) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_h0000950_c28_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="trans">(学校･大学の学期の)半期</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c29" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="rf">～</span> time</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c29_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0001220:com.apple.dictionary.ja-en.WISDOM" title="half-time">＝ half-time</a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c30" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> t<span class="str">ì</span>tle</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c30_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘印〙</span>
+            <span class="trans">前扉</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c31" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> t<span class="str">ò</span>ne</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c31_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="xrg ty_＝">
+              <span class="xr">
+                <a href="x-dictionary:r:WDEJ_h0000950:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_h0000950_c26'])" title="half">＝ half step<span class="xrlabelGroup"><span class="xrlabel">(1)</span></span></a>
+              </span>
+            </span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_h0000950_c32" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> v<span class="str">ò</span>lley</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_h0000950_c32_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="fld">〘テニス･クリケット〙</span>
+            <span class="trans">ハーフボレー</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

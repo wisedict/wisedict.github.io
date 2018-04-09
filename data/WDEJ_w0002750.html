@@ -1,0 +1,5536 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_w0002750" d:title="way" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">way </span>
+    <span class="hm">1</span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">weɪ</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span class="grnote"> (<span class="lbl">!</span>weighと同音) </span>
+      <span role="text" class="etym">〖語源は「行く, 乗り物で運ぶ」〗</span>
+    </span>
+  </span>
+  <span id="WDEJ_w0002750_k401" class="box ty_4">
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈行動〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_01'])" title="way">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1</span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="gp">, </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_02'])" title="way">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>方法 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_06'])" title="way">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">6 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(…の)点 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_08'])" title="way">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">8 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(個人の)やり方</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈進行〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_03'])" title="way">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>道, 通路 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_04'])" title="way">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4, 5 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>方向 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_07'])" title="way">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">7 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>道のり</span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_w0002750_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+      <span class="frmg">
+        <span class="gr x_rr ty_単複">複</span>
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trgg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trg">
+          <span class="con">〖a way to <span class="r">do</span>/of <span class="r">do</span>ing〗</span>
+          <span class="trans">
+            <span class="t">…する方法</span>
+            <span class="gp">, </span>
+            <span class="bold">やり方</span>
+          </span>
+          <span class="gp">; </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖(in) a … way〗</span>
+          <span class="trans">
+            <span class="t">…なふうに </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span>限定詞や<span class="gr x_rr">形容詞</span>を伴って副詞的に; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_s0025850:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0025850_01_00_01_k302'])" title="some">→ some<span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">文法</span></span></a></span></span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">There are many <span class="italic">ways </span><span class="italic">to</span> relax<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">リラックスするにはいろんなやり方がある</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">We have to <span class="italic"><span class="bold">find a way to</span></span> end the strike<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ストを終わらせる方法を見つけなければならない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I <span class="italic"><span class="bold">have</span></span> [<span class="italic"><span class="bold">There's</span></span>] <span class="italic"><span class="bold">no way of</span></span> knowing that<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">それを知るすべがない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">E-mail is a <span class="italic">way of communicating</span> [╳communication]<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">Eメールはコミュニケーションの一手段である </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>「…の方法, 手段」という場合, a way of の後には通例<span class="gr x_rr">動名</span>を用い, <span class="gr x_rr">名詞</span>を用いない; a means of communicationとすることは可) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">see things <span class="italic">in a</span> different <span class="italic">way </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">物事を違った目で見る(≒see things differently) </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>wayは複数形も可能: The accident has affected different people <span class="italic">in</span> different <span class="italic">ways</span>. その事故はいろんな形でさまざまな人々に影響を与えている) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic"><span class="bold">In what way</span></span> is your new album different from your debut album? </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">新しいアルバムはあなたのデビューアルバムとどういうふうに違うのですか</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Sometimes he speaks <span class="italic"><span class="bold">in a way that</span></span> hurts her<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ときどき彼は彼女を傷つけるような言い方をする</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic"><span class="bold">Do it my way</span></span> or get out! </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">おれの言う通りにやれ, でなきゃ出て行け</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">(<span class="italic">In</span>) this <span class="italic">way</span> he became famous<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">こうして彼は有名になった </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>inはしばしば省略され, <span class="oup_label x_ni">｟話｠</span>では特にその傾向が強い) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">
+            <span class="italic">
+              <span class="bold">in one way or another </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">あれこれ手を尽くして</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span id="WDEJ_w0002750_01_00_01_k102" class="box ty_1">
+          <span class="title x_xdh"><span class="u">類義 </span>wayとmethod, manner, means</span>
+          <span class="np x_xd1">
+            <span class="x_xdh x_xdt">
+              <span class="bold">way </span>
+              <span>は何らかの目的を達成するための方法や手段を表す最も一般的な語. </span>
+              <span class="bold">method</span>
+              <span>は組織的･計画的な方法を表す. しばしば論理立てされた科学的な分析手法や計算方法に言及する際に好まれる. </span>
+              <span class="bold">manner</span>
+              <span>は</span>
+              <span class="oup_label x_ni">｟かたく｠</span>
+              <span>で, 人の振る舞い方など, 様態についてその様子を述べる際に好まれる. </span>
+              <span class="bold">means</span>
+              <span>は何か本来の目的を達成するための媒介的手段や方法を表す</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖the way <span class="r">A </span><span class="r">does</span>〗</span>
+        <span class="grnote"> (<span class="lbl">!</span>wayとAの間にはin whichまたは関係副詞のthatを補って考える; the way how A does …は<span class="oup_label x_ni">｟まれ｠</span>) </span>
+        <span class="gp">.</span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="trans">
+            <span class="t">…する方法</span>
+            <span class="gp">, </span>
+            <span class="bold">…の仕方 </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I don't like <span class="italic">the way</span> young people today talk<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">今の若者のしゃべり方は好きじゃない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">That's <span class="italic">the way</span> I see it<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">それが私の見解です</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">This is <span class="italic">the way</span> we wash our hands<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">手はこうして洗うんですよ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I think it's a shame <span class="italic">the way</span> the old man died alone<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その老人が1人ぼっちで亡くなったのは大変遺憾だと思う </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span><span class="italic">the way</span>は文脈によってはこのように意味が薄れthatの機能に近くなることがある) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="trans">
+            <span class="bold">…である様子</span>
+          </span>
+          <span class="gp">; </span>
+          <span class="trans"><span class="bold">…の状態</span>[<span class="bold">現状</span>]</span>
+          <span class="gp">; </span>
+          <span class="trans">
+            <span class="bold">…のあり方 </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">We're very happy with <span class="italic"><span class="bold">the way things are</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">我々は現状に非常に満足している</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I love you just <span class="italic">the way</span> you are<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">今のままの君が好きだ </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>直前のyouを修飾するように訳す) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_02_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">c. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖副詞的に〗</span>
+          <span class="trans">
+            <span class="bold">…するように </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span>in <span class="italic">the way</span> A doesのinが省略されたと考える) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Just do it <span class="italic">the way</span> I did it<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ただ私がしたようにしなさい(≒Just do it as I did it.)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Some things just don't go <span class="italic">the way</span> you want them to<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">なかには自分の思い通りにいかないこともある</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_02_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">d. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖副詞的に〗</span>
+          <span class="trans">
+            <span class="bold">…するやり方から判断すると</span>
+          </span>
+          <span class="gp">; </span>
+          <span class="trans">
+            <span class="bold">…の仕方では </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">The way</span> I see [look at, figure] it, …<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私の見る[考える]ところでは[私の思うに]…</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_03" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">3 </span>
+        <span class="gr x_rr ty_名詞区分">C</span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_03_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="gr ty_用法">〖通例単数形で〗</span>
+            <span class="trans"><span class="t">道</span><span class="gp">, </span><span class="bold">道路</span>(road)</span>
+            <span class="gp">; </span>
+            <span class="trans">
+              <span class="bold">通路</span>
+              <span class="gp">, </span>
+              <span class="bold">出入口</span>
+            </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖the <span class="rf">～</span> to A〗</span>
+            <span class="trans"><span class="bold">A</span>〈施設･建物など〉<span class="bold">への道筋</span></span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">We're going the wrong <span class="italic">way</span>. McDonald's is that <span class="italic">way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">道が違うぞ</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">マクドナルドはあっちだ </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>2つ目のwayは<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_04'])" title="way">↓ <span class="xrlabelGroup"><span class="xrlabel">4</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">lose one's <span class="italic">way</span> in the woods </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">森で道に迷う</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He nodded to her across [over] the <span class="italic">way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼は通りの向かいから彼女に会釈した</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He went out the back <span class="italic">way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼は裏道から出た</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Could you <span class="italic"><span class="bold">tell</span></span> [╳teach] <span class="italic"><span class="bold">me the way to</span></span> the library? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">図書館へ行く道を教えていただけませんでしょうか </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>実際に案内する場合はshowを用いる) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">find [look for] a <span class="italic">way</span> out [in] </span>
+            <span class="oup_label x_ni">｟主に英｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">出口[入口]を見つける[探す]</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">WRONG WAY </span>
+            <span class="oup_label x_ni">｟掲示｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(一方通行の)出口 </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>DO NOT ENTER(進入禁止)と併用されることが多い) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_03_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖the/one's <span class="rf">～</span>〗</span>
+          <span class="trans">
+            <span class="bold">通り道</span>
+            <span class="gp">, </span>
+            <span class="bold">行く手 </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">stand in <span class="italic">the way </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">行く手に立ちはだかる</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(行動の)妨げになる</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">Get out of my way! </span>
+              </span>
+            </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">じゃまだ, どいてくれ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">along [on] <span class="italic">the way </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">途中で</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_01_00_03_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">c. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖… W-〗</span>
+          <span class="trans">
+            <span class="bold">…街道 </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span>通りの名称で) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="gr ty_用法">〖通例単数形で〗</span>
+        <span class="trans"><span class="t">方向</span><span class="gp">, </span><span class="bold">方角</span>(direction)</span>
+        <span class="gp">; </span>
+        <span class="oup_label x_ni">｟話｠</span>
+        <span class="gr ty_用法">〖単数形で〗</span>
+        <span class="trans">(…の)<span class="bold">方面</span><span class="gp">, </span><span class="bold">近所 </span></span>
+        <span class="grnote"> (<span class="lbl">!</span>しばしば副詞的に) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Please come <span class="italic"><span class="bold">this way</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">どうぞこちらへ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">The dog was running <span class="italic"><span class="bold">this way and that</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">犬はあちこち走り回っていた</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Which <span class="italic">way</span> are you going? </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">どちら(の方向)へおいでになりますか</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">look the other <span class="italic">way </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">よその方を向く</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="oup_label x_ni">｟比喩的に｠</span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">知らん顔をする, 無視する</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">If you're around my <span class="italic">way</span>, please drop in<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">もし近くに来られたらどうぞお立ち寄りください</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_05" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">5 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟比喩的に｠</span>
+        <span class="trans">(進むべき将来の)<span class="t">方向</span><span class="gp">, </span><span class="bold">方針</span>, (選択すべき)<span class="bold">進路</span><span class="gp">, </span><span class="bold">行く末 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">The trend is going <span class="italic"><span class="bold">the wrong way</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">流れがまずい方向に進んでいる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">They voted the <span class="italic">way</span> their consciences told them<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼らは良心の命ずる方に投票した </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_02_03'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">c</span></span></a></span>)</span>
+        </span>
+        <span class="gp x_xdt">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_06" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">6 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(…の)<span class="t">点</span><span class="gp">, </span><span class="bold">面</span><span class="gp">, </span><span class="bold">観点</span>(respect) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I think it's still true <span class="italic"><span class="bold">in some ways</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ある点ではまだそれは真実だと思う</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">be different in many <span class="italic">ways </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">多くの点で異なる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">
+            <span class="italic">
+              <span class="bold">in every way </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">あらゆる面において</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">English is becoming truly international in a <span class="italic">way</span> that French is not<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">英語はフランス語とは違った点で本当に国際的になりつつある</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_07" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">7 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖単数形で〗</span>
+        <span class="trans"><span class="t">道のり</span><span class="gp">, </span><span class="bold">距離</span>(distance)</span>
+        <span class="gp">; </span>
+        <span class="trans">(時間的)<span class="bold">間隔</span></span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">心理的へだたり </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>通例a long wayの形でしばしば後に出発点･方向を表す<span class="gr x_rr">副詞</span>を伴う; <span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p03'])" title="way">↓ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span>a long way off</a></span></span>) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">The station is a long <span class="italic">way</span> [<span class="oup_label x_ni">｟不自然｠</span>far] from home<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">駅は家から遠い </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0001670:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001670_01_00_01'])" title="far">→ far<span class="ps x_rr">副詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span>)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">There is still [We still have, <span class="oup_label x_ni">｟くだけて｠</span>We've still got] <span class="italic"><span class="bold">a</span> (<span class="bold">long</span>) <span class="bold">way</span></span> [<span class="oup_label x_ni">｟米･くだけて｠</span> ways] <span class="italic"><span class="bold">to go</span></span><span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">まだずいぶんと遠いよ</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="ind">（成功までの）</span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">道のりはまだ長い, まだまだ努力が必要だ </span>
+        </span>
+        <span class="x_xdt">
+          <span class="sp"> «<span class="italic">before</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟くだけて｠</span>ではこのようにaの後に複数形のwaysが置かれることがある) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">We're a long <span class="italic">way</span> from being bankrupt<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">我々はまだまだ倒産なんかしない(≒We're far from being bankrupt.)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">His first guess was a long <span class="italic">way</span> out<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼の最初の予想は完全に間違っていた</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_08" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">8 </span>
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="gr x_rr ty_名詞区分">C</span>
+          <span class="trans">(個人の)<span class="bold">流儀</span><span class="gp">, </span><span class="t">やり方</span></span>
+          <span class="gp">; </span>
+          <span class="trans">
+            <span class="bold">生き方</span>
+            <span class="gp">, </span>
+            <span class="bold">心の持ち方</span>
+          </span>
+          <span class="gp">; </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖<span class="rf">～</span>s〗</span>
+          <span class="trans">(特定社会の)<span class="bold">行動様式</span><span class="gp">, </span><span class="bold">生活スタイル</span></span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">change one's <span class="italic">ways </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">自分のやり方を変える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">mend one's <span class="italic">ways </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">行いを改める[姿勢を正す]</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Kids always have a <span class="italic">way</span> of finding stuff like that<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">子供はしょっちゅうそんなものを見つけるもんだよ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">I admire his <span class="italic">way</span> of working [╳to work]<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">彼の仕事ぶりには感心する </span>
+        </span>
+        <span class="x_xdt">
+          <span class="grnote"> (<span class="lbl">!</span>所有格が付く場合はto不定詞は用いない) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_01_00_09" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">9 </span>
+      <span class="trgg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trg">
+          <span class="con">〖<span class="rf">～</span>s〗</span>
+          <span class="trans">(均等に分けられた)<span class="bold">部分</span></span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">Divide it four <span class="italic">ways</span>, please<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">4つに分けてください</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">à</span>ll the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p01_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">ずっと, <span class="bold">はるばる </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>空間的にも時間的にも使う) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">drive <span class="italic">all the way</span> down to Miami </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">マイアミまでずっと運転する</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">It rained <span class="italic">all the way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ずっと雨が降っていた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p01_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(範囲の広さを示して)さまざまに</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p01_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">完全に, すっかり </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm with you (there) <span class="italic">all the way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その点でまったく同感です</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">along the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p02_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_03_01'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">3a</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p02_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">その間に, その過程で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">a l<span class="str">ò</span>ng w<span class="str">á</span>y off </span>
+      <span id="WDEJ_w0002750_p03_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖時間〗</span>
+          <span class="trans">〈事が〉 </span>
+          <span class="ind">【人にとって】</span>
+          <span class="trans">(<span class="bold">今から</span>)<span class="bold">かなり先で </span></span>
+          <span class="sp"> «<span class="italic">for</span>» </span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> (from) doing〗</span>
+          <span class="trans">〈人･事が〉…するのはかなり先である</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> A〗</span>
+          <span class="trans">〈人が〉A〈事〉はかなり先になる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">2020 seems <span class="italic">a long way off</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">2020年なんてだいぶ先のように思える</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">We were <span class="italic">a long way off being</span> grandparents<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">我々が祖父母になるのはまだまだ先である</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She is still <span class="italic">a long way off</span> publication<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女の出版への道のりはまだ長い</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p03_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖可能性･程度〗</span>
+          <span class="trans">〈人･事が〉<span class="co x_ni"> «…することの/…の» </span>可能性は低い, 実現への道のりは遠い </span>
+          <span class="sp"> «(<span class="italic">from</span>) do<span class="italic">ing</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">from</span>» </span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> A〗</span>
+          <span class="trans">A〈事〉にはほど遠い(far from) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I was <span class="italic">a long way off having</span> a problem<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私は問題を抱えるところまでは至っていなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p03_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖距離〗</span>
+          <span class="co x_ni"> «…から» </span>
+          <span class="trans">遠く離れて, 遠くで</span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟比喩的に｠</span>
+          <span class="co x_ni"> «…とは» </span>
+          <span class="trans">距離を置いて </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">a truck passing <span class="italic">a long way off </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">遠くを通り過ぎているトラック</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">That building is visible from <span class="italic">a long way off</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その建物は遠く離れたところから見える</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">à</span>ny w<span class="str">á</span>y … </span>
+      <span id="WDEJ_w0002750_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖接続詞的に〗</span>
+          <span class="trans">どんな方法を[で]…しようと </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Spend the money <span class="italic">any way</span> you choose<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">どんな方法であれそのお金を使え(≒Spend the money in the way you choose.)</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">It rained <span class="italic">all the way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ずっと雨が降っていた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">b<span class="str">è</span>at <span class="italic">one's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p05_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(敵や障害などを乗り越えて)突き進む, ばく進する</span>
+          <span class="gp">; </span>
+          <span class="trans">(困難な状況を)くぐり抜ける </span>
+          <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p50'])" title="way">↓ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span>make one's <span class="xrlabelGroup"><span class="xrlabel">way</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p05_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">貧乏旅行をする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">b<span class="str">ò</span>th w<span class="str">á</span>ys </span>
+      <span id="WDEJ_w0002750_p06_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">両方とも</span>
+          <span class="gp">; </span>
+          <span class="trans">往復とも </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">It can be argued <span class="italic">both ways</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">どちらの議論も成り立つ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">by a l<span class="str">ò</span>ng w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">はるかに, ずっと, 一番の </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He missed the goal <span class="italic">by a long way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼のシュートはゴールを大きくはずした</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">by the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖話題の導入〗</span>
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(新たな話題を持ち出して)<span class="bold">ところで</span>, それはそうと </span>
+          <span class="grnote"> (<span class="lbl">!</span>会話を進めたり, 本題に入る前置き表現となる; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_r0003830:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_r0003830_01_00_06_k501'])" title="re･al･ly">→ really<span class="xrlabelGroup"><span class="xrlabel">会話のシグナル</span></span></a></span></span>) </span>
+          <span class="gp">; </span>
+          <span class="trans">(より重要な話題を思い出して聞き手の注意を引いて)話の途中ですが, <span class="bold">そう言えば</span></span>
+          <span class="gp">; </span>
+          <span class="trans">(関連情報を付け加えて)ついでながら, ちなみに </span>
+          <span class="grnote"> (<span class="lbl">!</span>文頭･文中･文尾で; 日本語の「ところで」は談話の冒頭でも用いられるが, by the wayは前に何らかの会話が必要) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">By the way</span>, do you have some time? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ところで少し時間があるかい </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>さりげなく本題を導入するのに用いる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Oh, <span class="italic">by the way</span>, let me remind you that the last train leaves at ten<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">話の途中ですが, 最終列車は10時に出ることをお忘れなく </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>さりげなさを感じさせたり, 急に思いついたことを装うために, しばしばohと共に用いる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I loved working with him, <span class="italic">by the way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ついでに言っとくけど彼と働くのは楽しかったよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">by w<span class="str">á</span>y of <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p09_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈都市など〉<span class="bold">を通って</span>(via) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">go <span class="italic">by way of</span> Boston </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ボストン経由で行く</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p09_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈物〉を手段として </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">use a computer <span class="italic">by way of</span> a keyboard </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">キーボードを用いてコンピュータを利用する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p09_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aのつもりで</span>
+          <span class="gp">; </span>
+          <span class="trans">Aの代わりに </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">by way of</span> apology </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">謝罪のつもりで</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p09_04" class="semb x_xo2 hasSn">
+        <span class="x_xoh">
+          <span class="sn">4 </span>
+          <span class="oup_label x_ni">｟英･くだけて｠</span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖by <span class="rf">～</span> of doing〗</span>
+          <span class="trans">いつも…する, …するという評判だ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">ch<span class="str">è</span>at <span class="italic">one's</span> w<span class="str">á</span>y to [into, through] <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">だましてA〈事〉に至る[A〈場所･事〉に入り込む, Aを突破する]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">cl<span class="str">è</span>ar the w<span class="str">á</span>y (for <span class="italic">A</span>) </span>
+      <span id="WDEJ_w0002750_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(Aのために)じゃまものを除く</span>
+          <span class="gp">; </span>
+          <span class="trans">(Aへの)道を切り開く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ò</span>me a l<span class="str">ò</span>ng w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p12_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖しばしば完了形で〗</span>
+          <span class="trans">大いに進歩[向上, 上達, 変化]する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ò</span>me <span class="italic">A's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p13_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈事が〉A〈人〉に起こる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈物が〉A〈人〉の手に入る, Aに転がり込む</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p13_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">〈事が〉A〈人〉にとってうまく運ぶ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t b<span class="str">ó</span>th [tw<span class="str">ó</span>] w<span class="str">à</span>ys </span>
+      <span id="WDEJ_w0002750_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈言動が〉自他共に傷つける, もろ刃の剣である</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p15" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm"><span class="str">è</span>ither w<span class="str">á</span>y </span>
+        <span class="oup_label x_ni">｟話｠</span>
+        <span class="gr ty_用法">〖副詞的に〗</span>
+      </span>
+      <span id="WDEJ_w0002750_p15_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">どちら[いずれ]の方向にも </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Billy can go <span class="italic">either way</span> and do whatever he wants<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ビリーはどちらの方向にも進めるし, 望むことは何でもすることができる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p15_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(両方の可能性を示して)どちら[いずれ]にしても </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_e0002710:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_e0002710_02_00_02'])" title="ei･ther">→ either<span class="ps x_rr">形容詞</span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Is the universe finite or infinite? <span class="italic">Either way</span>, it's impossible to imagine<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">宇宙は有限か無限か</span>
+            <span class="gp">. </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">いずれにせよ, 想像するのは不可能だ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p15_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(両条件下での同じ結果を示して)どちら[いずれ]にも </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The situation could go <span class="italic">either way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">状況は(良くも悪くも)いずれにも変わりうる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p15_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(どちらを望むべくもなく)どちらであろうと </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I don't care <span class="italic">either way</span>; it's just a game<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私はどちらでもかまわない, ただのゲームですから</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p15_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖数字表現の後で〗</span>
+          <span class="trans">多かれ少なかれ, おおよそ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">within three feet <span class="italic">either way </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">おおよそ3フィート以内で[に]</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">è</span>el <span class="italic">one's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p16_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">手探りで進む </span>
+          <span class="grnote"> (<span class="lbl">!</span>方向を表す<span class="gr x_rr">副詞</span>を伴う) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He <span class="italic">felt his way along</span> the wall to the nearest chair<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は壁づたいに手探りで手近ないすのところまで進んだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p16_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">手探り[試行錯誤]でことを進める </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Carl had to <span class="italic">feel his way</span> for a while in his new job<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">カールは新しい仕事について, しばらくの間手探りでやらなければならなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p17" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">ì</span>nd <span class="italic">one's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p17_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span>＋<span class="gr x_rr">副詞</span>〗</span>
+          <span class="trans">〈人が〉苦労して進む </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は方向の表現) </span>
+          <span class="gp">, </span>
+          <span class="ind">【場所に】</span>
+          <span class="trans">たどり着く </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She couldn't <span class="italic">find her way through</span> the forest<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女は森を抜けることができなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p17_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈物が〉 </span>
+          <span class="ind">【場所に】</span>
+          <span class="trans">(ひょっこり)現れる </span>
+          <span class="sp"> «<span class="italic">into</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">to</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">〈人が〉 </span>
+          <span class="ind">【ある状況に】</span>
+          <span class="trans">(偶然)なる </span>
+          <span class="sp"> «<span class="italic">into</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Quite by chance, she <span class="italic">found her way into</span> modeling<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">まったくひょんなことから, 彼女はモデルをすることになった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p17_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">苦労して進む</span>
+          <span class="gp">; </span>
+          <span class="trans">たどりつく, やっと到着する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">è</span>t [st<span class="str">à</span>nd] in the w<span class="str">á</span>y of <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aを妨げる </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">You can't let your personal feelings <span class="italic">get in the way of</span> business<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">自分の個人的感情を商売の妨げにしては駄目だ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">è</span>t [h<span class="str">à</span>ve] <span class="italic">one's</span> (<span class="str">ó</span>wn) w<span class="str">à</span>y (with <span class="italic">A</span>) </span>
+      <span id="WDEJ_w0002750_p19_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(反対にもかかわらず)(Aを)自分のしたいようにする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p20_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(圧力で)<span class="bold">崩れる</span>, 壊れる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The walls <span class="italic">gave way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">壁が崩れ落ちた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p20_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈膝が〉がくっとなる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Her legs started to <span class="italic">give way</span> (beneath her)<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女は膝ががくがくし出した</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve w<span class="str">á</span>y to <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p21_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉に譲歩する, A〈事〉に屈する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p21_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈感情〉に負ける </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give way to</span> despair </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">絶望に陥る</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p21_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈事〉に取って代わられる, 変化する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p21_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英｠</span>
+          <span class="trans">A〈人〉に道を譲る(<span class="oup_label x_ni">｟米｠</span>yield)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">go <span class="str">à</span>ll the w<span class="str">á</span>y with <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈事〉をとことんまでやる</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉と(肉体関係で)最後まで行く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò</span> a l<span class="str">ò</span>ng [some] w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p23_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖肯定文で〗</span>
+          <span class="co x_ni"> «…するのに» </span>
+          <span class="trans">大いに[少し]役に立つ, 助けとなる </span>
+          <span class="sp"> «<span class="italic">toward</span> do<span class="italic">ing</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">to</span> do<span class="italic">ing</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">to</span> do» </span>
+          <span class="gp">; </span>
+          <span class="trans">〈金額が〉使いでがある </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0001670:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001670_p13'])" title="far">→ go <span class="xrlabelGroup"><span class="xrlabel">far</span><span class="xrlabel">(2)</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">go b<span class="str">à</span>ck a long w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p24_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈2人(以上)が〉(かなり)長い付き合いである</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p24_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈活動･考えなどが〉かなりの歴史がある, <span class="co x_ni"> «…まで» </span>遡る </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p25" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò </span><span class="italic">one's </span><span class="str">ó</span>wn w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p25_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(人がどう思おうと)思うがままにやる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p25_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈国･地域･組織などが〉独立独歩で行く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p26" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò </span><span class="italic">one's</span> w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p26_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p25'])" title="way">＝ go one's own <span class="xrlabelGroup"><span class="xrlabel">way</span><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p27" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò</span> out of the [<span class="italic">one's</span>] w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p27_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">
+            <span class="bold">わざわざ</span>
+            <span class="co x_ni"> «…» </span>
+            <span class="bold">する</span>
+          </span>
+          <span class="gp">; </span>
+          <span class="trans">無理[回り道]して<span class="co x_ni"> «…» </span>する </span>
+          <span class="sp"> «<span class="italic">to</span> do» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p28" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò </span><span class="italic">A's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p28_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈出来事が〉A〈人〉の都合のいいようになる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p28_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(旅行･移動などで)A〈人〉と同じ方向へ行く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p28_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="trans">A〈人〉が旅を続ける</span>
+          <span class="gp">; </span>
+          <span class="trans">(次の目的のため)去る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p29" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ò</span> way b<span class="str">á</span>ck </span>
+      <span id="WDEJ_w0002750_p29_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p24'])" title="way">＝ go back a long <span class="xrlabelGroup"><span class="xrlabel">way</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p30" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>ve a w<span class="str">á</span>y of <span class="italic">do</span>ing </span>
+      <span id="WDEJ_w0002750_p30_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈人･物が〉(どうしても)…する傾向がある[しがちである, してしまう] </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_08'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">8</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p31" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>ve a w<span class="str">á</span>y with <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p31_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人･言葉･数字など〉の扱い方がうまい</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p31_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">魅力[説得力]がある </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aには主語をさす人称代名詞がくる; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_w0002880:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002880_01_00_01_k301'])" title="we">→ we <span class="xrlabelGroup"><span class="xrlabel">1</span><span class="xrlabel">文法</span></span></a></span></span>) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p32" class="idmsec x_xo1">
+      <span class="idm x_xoh">h<span class="str">à</span>ve [w<span class="str">à</span>nt] it b<span class="str">ó</span>th w<span class="str">à</span>ys </span>
+      <span id="WDEJ_w0002750_p32_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">ふたまたをかける, どっちに転んでも得するようにしている</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p33" class="idmsec x_xo1">
+      <span class="idm x_xoh">H<span class="str">à</span>ve it your <span class="str">ò</span>wn w<span class="str">á</span>y! </span>
+      <span id="WDEJ_w0002750_p33_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">勝手[好き]にしろ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p34" class="idmsec x_xo1">
+      <span class="idm x_xoh">if I h<span class="str">à</span>d my w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p34_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">もし思い通りになるなら, 自分としては </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">If I had my way</span>, I would change the whole world<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">もしできることなら世界中を変えたい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p35" class="idmsec x_xo1">
+      <span class="idm x_xoh">I h<span class="str">à</span>ve my w<span class="str">á</span>ys<span class="gp">. </span></span>
+      <span id="WDEJ_w0002750_p35_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(答えをぼかして)いろいろと方法があってね, まあいろいろとね</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p36" class="idmsec x_xo1">
+      <span class="idm x_xoh">in a b<span class="str">à</span>d w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p36_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="con">〖be <span class="rf">～</span>〗</span>
+          <span class="trans">〈人が〉病気である</span>
+          <span class="gp">; </span>
+          <span class="trans">〈組織などが〉苦境にある</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p37" class="idmsec x_xo1">
+      <span class="idm x_xoh">in a b<span class="str">ì</span>g w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p37_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">大々的に, 大規模に</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p38" class="idmsec x_xo1">
+      <span class="idm x_xoh">in <span class="str">á</span>ny w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p38_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖疑問文･条件文で〗</span>
+          <span class="trans">何らかの点[方法]で </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Is the book <span class="italic">in any way</span> based on your own experiences? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その本は何らかの点であなたの体験に基づいているのですか</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p38_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖否定文で〗</span>
+          <span class="trans">決して…ない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He is <span class="italic">not</span> a dangerous man <span class="italic">in any way</span> [in no way a dangerous man]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼はまったく危険な男ではない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p39" class="idmsec x_xo1">
+      <span class="idm x_xoh">in m<span class="str">ó</span>re w<span class="str">à</span>ys than <span class="str">ó</span>ne </span>
+      <span id="WDEJ_w0002750_p39_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">2つ以上の意味で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p40" class="idmsec x_xo1">
+      <span class="idm x_xoh">in n<span class="str">ó</span> w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p40_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_→">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p38'])" title="way">→ in any <span class="xrlabelGroup"><span class="xrlabel">way</span><span class="xrlabel">(2)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p41" class="idmsec x_xo1">
+      <span class="idm x_xoh">in <span class="italic">one's</span> (<span class="str">ò</span>wn) w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p41_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">自分のやり方で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p41_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(人には変に思えるが)その人[それ]なりに</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p42" class="idmsec x_xo1">
+      <span class="idm x_xoh">in <span class="str">ó</span>ne [a] w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p42_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">ある意味では </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">In a way</span>, we were very stupid<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ある意味では我々は実に愚かだった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p43" class="idmsec x_xo1">
+      <span class="idm x_xoh">in <span class="str">ò</span>ne w<span class="str">à</span>y or an<span class="str">ó</span>ther </span>
+      <span id="WDEJ_w0002750_p43_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p54'])" title="way">＝ one <span class="xrlabelGroup"><span class="xrlabel">way</span></span> or another</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p44" class="idmsec x_xo1">
+      <span class="idm x_xoh">in <span class="str">ò</span>ne w<span class="str">à</span>y or the <span class="str">ó</span>ther </span>
+      <span id="WDEJ_w0002750_p44_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p54'])" title="way">＝ one <span class="xrlabelGroup"><span class="xrlabel">way</span></span> or another</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p45" class="idmsec x_xo1">
+      <span class="idm x_xoh">in the [<span class="italic">A's</span>] w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p45_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(Aの)道をふさいで, <span class="bold">じゃまになって </span></span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_03_02'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">3</span><span class="xrlabel">b</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p46" class="idmsec x_xo1">
+      <span class="idm x_xoh">in the w<span class="str">á</span>y of <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p46_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aに関して, Aが…くらい </span>
+          <span class="grnote"> (<span class="lbl">!</span>nothing, little, muchなどの後で, 否定的文脈で) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">We don't have much <span class="italic">in the way of</span> tradition<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">我々は伝統というものについてはあまり持ちあわせてはいない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p46_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p18'])" title="way">＝ get [stand] in the <span class="xrlabelGroup"><span class="xrlabel">way</span></span> of A</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p47" class="idmsec x_xo1">
+      <span class="idm x_xoh">kn<span class="str">ò</span>w <span class="italic">one's</span> w<span class="str">à</span>y ar<span class="str">ó</span>und (<span class="italic">A</span>) </span>
+      <span id="WDEJ_w0002750_p47_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(Aの)地理[事情]に通じている</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p48" class="idmsec x_xo1">
+      <span class="idm x_xoh">kn<span class="str">ò</span>w the w<span class="str">á</span>y to <span class="italic">A's</span> h<span class="str">è</span>art </span>
+      <span id="WDEJ_w0002750_p48_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟おどけて｠</span>
+          <span class="trans">A〈人〉の喜ばせ方を知っている, Aの心をつかむのがうまい</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p49" class="idmsec x_xo1">
+      <span class="idm x_xoh">l<span class="str">è</span>ad the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p49_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">先に立って道案内をする</span>
+          <span class="gp">; </span>
+          <span class="trans">指導する, 手本を示す</span>
+          <span class="gp">; </span>
+          <span class="trans">(分野で)先端を行く </span>
+          <span class="grnote"> (<span class="lbl">!</span>方向･場所の<span class="gr x_rr">副詞</span>を伴う) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p50" class="idmsec x_xo1">
+      <span class="idm x_xoh">m<span class="str">à</span>ke <span class="italic">one's</span> w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p50_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">進む</span>, 前進する, 進出する </span>
+          <span class="grnote"> (<span class="lbl">!</span>方向･経路を表す<span class="gr x_rr">副詞</span>を伴う) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">They <span class="italic">made their way to</span> the street<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らは通りの方へ向かった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p50_k503" class="box x_xo2 ty_5">
+        <span class="title x_xdh"><span class="u">表現 </span><span class="ps x_rr">動詞</span><span class="r">＋</span><span class="r">one's</span> way</span>
+        <span class="np x_xd1">
+          <span class="x_xdh">
+            <span>makeのほかにもどのように「進む」かを表した</span>
+            <span class="ps x_rr">動詞</span>
+            <span>を用いる表現が多く見られる; 通例移動に困難さを伴う </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">pick <span class="italic">one's way </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">(道を選んで)用心深く進む</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">elbow <span class="italic">one's way </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">肘でかき分けて進む</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">▸ </span>
+              <span class="ex">find <span class="italic">one's way </span></span>
+              <span class="xrg ty_↑">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p17'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span></a>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">fight <span class="italic">one's way </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">(敵と)戦いながら進む</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh x_xdt">
+              <span class="sn">▸ </span>
+              <span class="ex">feel <span class="italic">one's way </span></span>
+              <span class="xrg ty_↑">
+                <span class="xr">
+                  <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p16'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span></a>
+                </span>
+              </span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">thread <span class="italic">one's way </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">(人ごみを)縫うように進む</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p50_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">成功する, 認められる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">make one's way</span> in the fashion business [as a director] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ファッション業界で[映画監督として]成功する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p51" class="idmsec x_xo1">
+      <span class="idm x_xoh">m<span class="str">à</span>ke w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p51_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">スペースをあける </span>
+          <span class="sp"> «<span class="italic">for</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p51_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【後進に】</span>
+          <span class="trans">道を譲る </span>
+          <span class="sp"> «<span class="italic">for</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p52" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">n<span class="str">ò</span> w<span class="str">á</span>y </span>
+        <span class="oup_label x_ni">｟話｠</span>
+      </span>
+      <span id="WDEJ_w0002750_p52_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖単独で〗</span>
+          <span class="trans">(依頼に対して)<span class="bold">絶対だめだ</span>, 断る</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖No <span class="rf">～</span> is A doing〗</span>
+          <span class="trans">A〈人〉は絶対…するようなことはない </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">“Sing us a song.” “<span class="italic">No way</span>!” </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">「歌ってよ」「冗談じゃない」</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">No way am</span> I <span class="italic">going</span> back there! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">絶対そこへ帰るもんか</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p52_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖単独で〗</span>
+          <span class="trans">(可能性を打ち消して)<span class="bold">絶対ない</span>, そんなことがあるか</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖there's no <span class="rf">～</span> (that)節〗</span>
+          <span class="trans">
+            <span class="bold">…なんてありえない </span>
+          </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟くだけて｠</span>ではthatは省略される) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Hopeless? <span class="italic">No way</span>! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">望みがないって? そんなことはない</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">There's no way</span> they (can [are going to, will]) win.≒There's <span class="italic">no way</span> for them to win<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼らが勝つなんてことはない </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)強意的にThere's no way <span class="italic">in hell</span> (that) …. (…なんて絶対ありえない)が用いられることがある. (<span class="bold">2</span>)疑問文はIs there any way …?) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p52_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="trans">まさか, うそだろ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">“I'm going to be on TV.” “<span class="italic">No way</span>!” </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">「テレビに出るのよ」「そんなばかな」</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p53" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">ó</span>ne w<span class="str">à</span>y and an<span class="str">ó</span>ther </span>
+      <span id="WDEJ_w0002750_p53_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">いくつかの点[理由]で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p54" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">ó</span>ne w<span class="str">à</span>y or an<span class="str">ó</span>ther </span>
+      <span id="WDEJ_w0002750_p54_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">どうにかして, どんな方法を使ってでも </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I've got to go <span class="italic">one way or another</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">なんとしてでも行かないといけない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p54_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">あれやこれや</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p55" class="idmsec x_xo1">
+      <span class="idm x_xoh">one w<span class="str">à</span>y or the <span class="str">ó</span>ther </span>
+      <span id="WDEJ_w0002750_p55_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p15'])" title="way">＝ either <span class="xrlabelGroup"><span class="xrlabel">way</span><span class="xrlabel">(2)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p55_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p54'])" title="way">＝ one <span class="xrlabelGroup"><span class="xrlabel">way</span></span> or another</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p56" class="idmsec x_xo1">
+      <span class="idm x_xoh">on the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p56_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">〈赤ん坊が〉生まれる予定で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p57" class="idmsec x_xo1">
+      <span class="idm x_xoh">on the [<span class="italic">one's</span>] w<span class="str">à</span>y <span class="str">ó</span>ut </span>
+      <span id="WDEJ_w0002750_p57_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">出口へ向かう途中で</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p57_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">消えかかって, 流行遅れになりかかって, 衰えて, すたれて</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p58" class="idmsec x_xo1">
+      <span class="idm x_xoh">on the [<span class="italic">one's</span>] w<span class="str">á</span>y (to <span class="italic">A</span>) </span>
+      <span id="WDEJ_w0002750_p58_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(<span class="bold">A</span>〈場所〉<span class="bold">に</span>)<span class="bold">行く</span>[<span class="bold">来る</span>]<span class="bold">途中で</span>, 近づいて</span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖be/get <span class="rf">～</span>〗</span>
+          <span class="trans">(Aに)出かける[出発する]ところで </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm <span class="italic">on my way to</span> Chicago<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">シカゴに行く途中だ(╳ in the wayとしない)</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Well, I'll be <span class="italic">on my way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">さて, そろそろ行くよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p58_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈出来事が〉もうすぐで, じきに </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Autumn is <span class="italic">on its way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">まもなく秋が訪れようとしている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p58_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(A〈事〉に)なる途中で, しかかって</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p59" class="idmsec x_xo1">
+      <span class="idm x_xoh">out of the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p59_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">人里離れた所に</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p59_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">終えて, 片付いて</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p59_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖否定文で〗</span>
+          <span class="trans">不適当な, 変な, 異常な </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He <span class="italic">didn't</span> say anything <span class="italic">out of the way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は特にこれといって変なことは言わなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p59_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">殺されて </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">put A <span class="italic">out of the way </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">A〈人〉を消す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p60" class="idmsec x_xo1">
+      <span class="idm x_xoh">out of the [<span class="italic">one's</span>] w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p60_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">
+            <span class="bold">通行のじゃまにならないように </span>
+          </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_01_00_03_02'])" title="way">↑ <span class="xrlabelGroup"><span class="xrlabel">3</span><span class="xrlabel">b</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">jump <span class="italic">out of the way </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">飛びのく</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p61" class="idmsec x_xo1">
+      <span class="idm x_xoh">p<span class="str">à</span>ve the w<span class="str">á</span>y for [to] <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p61_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟報道｠</span>
+          <span class="trans">A〈物･事〉が可能になる[発達する]状況を整える</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p62" class="idmsec x_xo1">
+      <span class="idm x_xoh">p<span class="str">ò</span>int the w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p62_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…への» </span>
+          <span class="trans">正しい道を示す</span>
+          <span class="gp">; </span>
+          <span class="co x_ni"> «…に向けて» </span>
+          <span class="trans">将来の見通しを示す </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p63" class="idmsec x_xo1">
+      <span class="idm x_xoh">qu<span class="str">ì</span>te a w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p63_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p67'])" title="way">＝ some <span class="xrlabelGroup"><span class="xrlabel">way</span><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p64" class="idmsec x_xo1">
+      <span class="idm x_xoh">r<span class="str">ù</span>b <span class="italic">A</span> (<span class="oup_label x_ni">｟英｠</span>up) the wr<span class="str">ò</span>ng w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p64_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉の神経を逆なでする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p65" class="idmsec x_xo1">
+      <span class="idm x_xoh">s<span class="str">è</span>e <span class="italic">one's</span> w<span class="str">á</span>y (cl<span class="str">è</span>ar) to <span class="italic">do</span>ing [to <span class="italic">do</span>] </span>
+      <span id="WDEJ_w0002750_p65_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">…できる見通しがつく, …できそうに思う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p66" class="idmsec x_xo1">
+      <span class="idm x_xoh">s<span class="str">è</span>t in <span class="italic">one's</span> w<span class="str">á</span>ys </span>
+      <span id="WDEJ_w0002750_p66_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(老齢で)自分の考えをがんこに守って</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p67" class="idmsec x_xo1">
+      <span class="idm x_xoh">s<span class="str">ò</span>me w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p67_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…から» </span>
+          <span class="trans">かなり遠くに </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p67_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">何らかの方法[様態]で, どういうふうに(in some way)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p68" class="idmsec x_xo1">
+      <span class="idm x_xoh">str<span class="str">ò</span>ke <span class="italic">A</span> [<span class="italic">A's</span> h<span class="str">á</span>ir] the wr<span class="str">ò</span>ng w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p68_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">(意図せずに)A〈人〉を怒らせる, いらだたせる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p69" class="idmsec x_xo1">
+      <span class="idm x_xoh">Th<span class="str">à</span>t's (just) the w<span class="str">à</span>y I <span class="str">á</span>m<span class="gp">. </span></span>
+      <span id="WDEJ_w0002750_p69_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">私はそういう人間なんだ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p70" class="idmsec x_xo1">
+      <span class="idm x_xoh">Th<span class="str">à</span>t's (just) the w<span class="str">à</span>y it g<span class="str">ó</span>es<span class="gp">. </span></span>
+      <span id="WDEJ_w0002750_p70_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">そういうものさ </span>
+          <span class="grnote"> (<span class="lbl">!</span>あきらめの気持ちを表す) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p71" class="idmsec x_xo1">
+      <span class="idm x_xoh">Th<span class="str">à</span>t's (just) the w<span class="str">à</span>y it <span class="str">í</span>s<span class="gp">. </span></span>
+      <span id="WDEJ_w0002750_p71_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">そういうことです, そういうものです</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p72" class="idmsec x_xo1">
+      <span class="idm x_xoh">Th<span class="str">á</span>t's the w<span class="str">à</span>y (to g<span class="str">ó</span>)<span class="gp">. </span></span>
+      <span id="WDEJ_w0002750_p72_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p80'])" title="way">＝ <span class="xrlabelGroup"><span class="xrlabel">way</span></span> to go! </a>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p73" class="idmsec x_xo1">
+      <span class="idm x_xoh">the h<span class="str">á</span>rd w<span class="str">à</span>y </span>
+      <span id="WDEJ_w0002750_p73_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="gr ty_用法">〖副詞的に〗</span>
+          <span class="trans">苦労して, 嫌な思いをして</span>
+          <span class="gp">; </span>
+          <span class="trans">苦い経験から〈学ぶ･達成するなど〉</span>
+          <span class="gp">; </span>
+          <span class="trans">失敗して</span>
+          <span class="gp">; </span>
+          <span class="trans">やっと〈勝つなど〉 </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">She <span class="italic"><span class="bold">learned the hard way</span></span> that she should always lock her car<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女は痛い目に遭って, 車はいつもロックしておくべきということを学んだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p74" class="idmsec x_xo1">
+      <span class="idm x_xoh">the <span class="str">ò</span>ther [wr<span class="str">ò</span>ng] way (a)r<span class="str">ó</span>und </span>
+      <span id="WDEJ_w0002750_p74_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">あべこべに[で], 逆に[で] </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Ian needs Meg more than <span class="italic">the other way around</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">メグがイアンを必要としているという以上にイアンがメグを必要としている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p75" class="idmsec x_xo1">
+      <span class="idm x_xoh">the w<span class="str">à</span>y of the w<span class="str">ó</span>rld </span>
+      <span id="WDEJ_w0002750_p75_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">世の常, 常識</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p76" class="idmsec x_xo1">
+      <span class="idm x_xoh">tr<span class="str">ì</span>ck <span class="italic">one's</span> w<span class="str">á</span>y into [past, onto] <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p76_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…して» </span>
+          <span class="trans">だましてA〈場所〉に入り込む[Aを通り過ぎる, Aに上がる] </span>
+          <span class="sp"> «<span class="italic">by</span> do<span class="italic">ing</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p77" class="idmsec x_xo1">
+      <span class="idm x_xoh">under w<span class="str">á</span>y </span>
+      <span id="WDEJ_w0002750_p77_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖be <span class="rf">～</span>〗</span>
+          <span class="trans">〈計画･活動などが〉<span class="co x_ni"> «…するのに» </span>道半ばである, <span class="bold">進行中である </span></span>
+          <span class="sp"> «<span class="italic">to</span> do» </span>
+          <span class="grnote"> (<span class="lbl">!</span>時にunderの前に強意のwellを伴う) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Negotiations are already <span class="italic">under way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">交渉はすでに始まっている</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Let's get <span class="italic">under way</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">さあ行こう[始めよう]</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p77_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈乗り物が〉移動中である</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p78" class="idmsec x_xo1">
+      <span class="idm x_xoh">W<span class="str">à</span>y en<span class="str">ó</span>ugh! </span>
+      <span id="WDEJ_w0002750_p78_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3"><span class="fld">〘海〙</span>漕<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（こ）</span></span><span class="trans">ぎ方止め! </span></span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p79" class="idmsec x_xo1">
+      <span class="idm x_xoh">w<span class="str">à</span>ys and m<span class="str">é</span>ans </span>
+      <span id="WDEJ_w0002750_p79_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…する» </span>
+          <span class="trans">方法と財源</span>
+          <span class="gp">; </span>
+          <span class="trans">方法, 手段 </span>
+          <span class="sp"> «<span class="italic">of</span> do<span class="italic">ing</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">to</span> do» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p80" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">W<span class="str">à</span>y to g<span class="str">ó</span>! </span>
+        <span class="oup_label x_ni">｟米話｠</span>
+      </span>
+      <span id="WDEJ_w0002750_p80_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">いいぞ, その調子, よくやったね</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p80_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">やってくれたね </span>
+          <span class="grnote"> (<span class="lbl">!</span>失敗した人をからかうときなどに使う) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_p81" class="idmsec x_xo1">
+      <span class="idm x_xoh">w<span class="str">ò</span>rk <span class="italic">one's</span> w<span class="str">á</span>y through <span class="italic">A </span></span>
+      <span id="WDEJ_w0002750_p81_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">働いてA〈学校〉を出る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_w0002750_p81_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(時間･労力をかけて)A〈仕事〉を成し遂げる </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_w0010480:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0010480_01_02_05'])" title="work">→ work<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">5</span></span></a></span>)</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_w0002750_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> of l<span class="str">í</span>fe</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_w0002750_c01_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trgg x_xd2">
+            <span class="frmg">
+              <span class="gr x_rr ty_単複">複</span>
+              <span class="frm"><span class="rf">～</span>s of life </span>
+            </span>
+            <span class="trg">
+              <span class="trans">生活(様式)</span>
+            </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">the American <span class="italic">way of life </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">アメリカ人の生活様式</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_w0002750_c01_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="trans">(人の)生き方, 生きがい</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀ </span></span><span class="str">ó</span>ut</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_w0002750_c02_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟英･掲示｠</span>
+            <span class="trans">出口(<span class="oup_label x_ni">｟米｠</span>exit)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_w0002750_c02_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="trans">(困難な状況からの)脱出口[手段] </span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">He was searching for a <span class="italic">way out</span> of his dilemma<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_用例訳">彼はジレンマから逃れる方法を模索していた</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> st<span class="str">à</span>tion</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_w0002750_c03_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">普通列車[バス]の停車駅, 中継地点</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_w0002750_c04" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> tr<span class="str">à</span>in</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_w0002750_c04_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟米｠</span>
+            <span class="trans">各駅停車の列車</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

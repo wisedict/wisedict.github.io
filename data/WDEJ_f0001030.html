@@ -1,0 +1,5680 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_f0001030" d:title="fall" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">fall </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">fɔːl</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span role="text" class="etym">〖「(重力により)下へ落ちる」〗</span>
+    </span>
+  </span>
+  <span id="WDEJ_f0001030_k401" class="box ty_4">
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(+)｠</span>
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>落ちる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>転ぶ, 倒れる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_04'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>失脚する</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV+｠</span>
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_01'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">10a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>たれ下がる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_11'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">11 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>下がる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">14 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(…曜日に)当たる</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVC｠</span>
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_13'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">13 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(状態に)なる, 陥る</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈季節〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_02_00_01'])" title="fall">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>秋</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈落下〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_02_00_02'])" title="fall">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>下落 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_02_00_03'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>落下, 転倒</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_02_00_04'])" title="fall">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>滝</span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_f0001030_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+      <span class="frmg">
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">fell </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">fel</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm"><span class="rf">～</span>en </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-ən</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm"><span class="rf">～</span>ing </span>
+      </span>
+      <span class="grnote"> (<span class="lbl">!</span>完了形としてbe fallenを用いるのは<span class="oup_label x_ni">｟やや古｠</span>で, 今はhave fallenが普通) </span>
+    </span>
+    <span id="WDEJ_f0001030_01_01" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="ind">【落下する】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖fall (<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>)〗</span>
+          <span class="trans">〈人･物が〉(誤って･自然に)<span class="t">落ちる</span><span class="gp">, </span><span class="bold">落下する</span>(drop); 〈雨･雪などが〉<span class="bold">降る</span>; 〈葉などが〉<span class="bold">散る</span>; 〈幕などが〉<span class="bold">下りる</span>; 〈髪などが〉<span class="bold">抜ける</span>(<span class="italic">down, off, over</span>) </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は方向･場所の表現) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall down</span> the stairs </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">階段から転がり落ちる </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>downは<span class="gr x_rr">前置詞</span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall from</span> [<span class="italic">out</span> (<span class="italic">of</span>)<span class="italic">, off</span>, ╳down] the window <span class="italic">onto</span> the ground </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">窓から地面に落ちる </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>downは場所との接触を伴う落下を示すのでこの場合は用いない) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Al slipped and <span class="italic">fell into</span> [<span class="italic">in</span>] the river<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">アルは足を滑らせて川に落ちた </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>intoは落ちていく過程に, inは落下地点に焦点がある) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall through</span> the ceiling </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">天井を突き破って落ちる</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">A heavy snow began to <span class="italic">fall</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">雪が激しく降り出した(≒ It began to snow heavily.)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Leaves are <span class="italic">falling from</span> the trees<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">木々から葉が散っている</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_f0001030_01_01_01_k102" class="box ty_1">
+            <span class="title x_xdh"><span class="u">類義 </span>fallとdrop, crash, tumble</span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span class="bold">fall </span>
+                <span>は重力を支える力を失い突然または偶然落ちることをいう最も一般的な語. </span>
+                <span class="bold">drop</span>
+                <span>は</span>
+                <span class="gr x_rr ty_動詞区分">自動詞</span>
+                <span>では偶然落ちることをいうが, 落ちる速さ･突発性など落ちるまでの様態や経緯に注目する. </span>
+                <span class="bold">crash</span>
+                <span>は落ちるときの衝撃の強さや音の大きさに焦点を当てる. </span>
+                <span class="bold">tumble</span>
+                <span>は突然転がりながら落ちてゆくこと</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="co x_ni"> «…から» </span>
+          <span class="trans">〈言葉･ため息･表情などが〉<span class="bold">漏れる, 発せられる </span></span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">No word <span class="italic">fell from</span> her lips<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女は何も語らなかった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【倒れる】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span id="WDEJ_f0001030_01_01_03_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖fall (<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>)〗</span>
+            <span class="trans">
+              <span class="t">転ぶ</span>
+              <span class="gp">, </span>
+              <span class="bold">倒れる</span>
+            </span>
+            <span class="gp">; </span>
+            <span class="trans">(…の状態で)<span class="bold">倒れる</span><span class="gp">; </span><span class="bold">ひざまずく</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈建物･構造物などが〉<span class="bold">倒壊</span>[<span class="bold">崩落</span>]<span class="bold">する</span>; 〈木などが〉<span class="bold">倒れる</span>(<span class="italic">down, over</span>) </span>
+            <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)<span class="gr x_rr">副詞</span>は方向･場所の表現. (<span class="bold">2</span>)通例「誤って倒れる」の意だが, 「故意に倒れる」場合も可) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall</span> (<span class="italic">down</span>) <span class="italic">in</span> the street </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">通りでこける</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall</span> (flat) <span class="italic">on</span> one's face [back] </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">(バタンと)うつぶせ[あおむけ]に倒れる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall to</span> [<span class="italic">on</span>] one's knees </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ひざまずく</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall on</span> one's head </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">頭から倒れる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall backward into</span> a mire </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">背中からぬかるみにはまる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall against</span> the wall </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">壁に倒れかかる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">fall over</span> dead [drunk] </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">息絶えて倒れる[酔いつぶれる]</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The Berlin Wall <span class="italic">fell</span> in 1989<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ベルリンの壁は1989年に崩壊した</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_01_01_03_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖fall<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>〗</span>
+            <span class="oup_label x_ni">｟くだけて｠</span>
+            <span class="trans">(しばしば疲労などのために)<span class="bold">倒れ込む, 身を投げ出す </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は方向･場所の表現) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I was so tired that I <span class="italic">fell into</span> bed yesterday<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">昨日はへとへとだったので倒れるように床に入った</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈人･政府などが〉 </span>
+          <span class="ind">【権力の座･地位から】</span>
+          <span class="trans">(突然)<span class="t">失脚する</span><span class="gp">, </span><span class="bold">倒れる </span></span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="trans"><span class="gp">;</span> 〈都市などが〉 </span>
+          <span class="ind">【敵に】</span>
+          <span class="trans"><span class="bold">陥落する</span>, 〈政党が〉 </span>
+          <span class="ind">【ほかの政党に】</span>
+          <span class="trans">
+            <span class="bold">敗北する </span>
+          </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The President <span class="italic">fell from</span> power in 1998<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">1998年に大統領は権力の座を失った</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The city soon <span class="italic">fell to</span> the rebel troops<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その町はまもなくして反乱軍の手に落ちた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="trans">(戦争で)<span class="bold">死ぬ</span>; (負傷して･死んで)<span class="bold">倒れる</span><span class="gp">; </span><span class="bold">撃たれる </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> in battle </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">戦死する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟英･方言｠</span>
+          <span class="trans">
+            <span class="bold">妊娠する</span>
+          </span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟古｠</span>
+          <span class="trans">(誘惑などに)<span class="bold">屈する, 堕落する</span>; 〈女性が〉<span class="bold">貞操を失う</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈特に子羊などが〉<span class="bold">生まれる</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_08" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">8 </span>
+        <span class="trg x_xd3">
+          <span class="fld">〘クリケット〙</span>
+          <span class="trans">〈打者が〉<span class="bold">アウトになる</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_09" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">9 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟俗｠</span>
+          <span class="trans">
+            <span class="bold">ぱくられる</span>
+            <span class="gp">; </span>
+            <span class="bold">刑務所行きになる</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【下へ向く】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_10" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">10 </span>
+        <span id="WDEJ_f0001030_01_01_10_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖fall<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>〗</span>
+            <span class="trans">〈髪などが〉<span class="t">たれ下がる</span><span class="gp">, </span><span class="bold">かかる </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は場所･方向の表現) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Her hair <span class="italic">fell</span> (<span class="italic">down</span>) <span class="italic">over</span> her face [<span class="italic">across</span> her cheek, <span class="italic">into</span> her eyes]<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼女の髪は顔を覆うように[頰にかけて, 目に入るほどに]たれていた</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_01_01_10_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈土地などが〉<span class="co x_ni"> «…の方に» </span><span class="bold">下へ傾斜する</span>(<span class="italic">away, off</span>) </span>
+            <span class="sp"> «<span class="italic">to</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">toward</span>» </span>
+            <span class="trans"><span class="gp">;</span> 〈川が〉<span class="co x_ni"> «…に» </span><span class="bold">注ぎ込む </span></span>
+            <span class="sp"> «<span class="italic">into</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The ground <span class="italic">falls away</span> steeply <span class="italic">to</span> the sea<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">地面が海に向かって急勾配になっている</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_11" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">11 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈数量･価格･温度･水準などが〉(大幅に)<span class="t">下がる</span><span class="gp">, </span><span class="bold">減る</span>; 〈音･声が〉<span class="bold">小さく</span>[<span class="bold">低く</span>]<span class="bold">なる</span>; 〈潮が〉<span class="bold">引く</span>; 〈風などが〉<span class="bold">弱まる</span>; 〈元気･勢いなどが〉<span class="bold">衰える</span>(drop) </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_r0015660:com.apple.dictionary.ja-en.WISDOM" title="rise">↔ rise</a></span>)</span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Share<span class="oup_label x_ni">｟英｠</span> [Stock<span class="oup_label x_ni">｟米｠</span>] prices <span class="italic">fell</span> sharply [(by) 20%]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">株価が急落[20%下落]した</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The temperature <span class="italic">fell</span> below zero [to －20 degrees]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">気温が氷点下[零下20度]に下がった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Her voice <span class="italic">fell</span> to a whisper<span class="gp">. </span></span>
+            <span class="oup_label x_ni">｟書｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女の声はささやきへと変わった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_12" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">12 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈目が〉<span class="bold">下を向く, 伏し目になる</span>; 〈顔が〉<span class="bold">悲しい</span>[<span class="bold">失望した, 恥ずかしい</span>]<span class="bold">表情をする </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">His face <span class="italic">fell</span> in disappointment<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼はがっかりして落胆の表情を浮かべた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【ある状態に陥る】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_13" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">13 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖fall <span class="r">C</span>〗</span>
+          <span class="trans">(急に)<span class="t">C</span>〈状態〉<span class="t">になる</span><span class="gp">, </span><span class="t">陥る </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>Cは<span class="gr x_rr">形容詞</span><span class="gr x_rr">名詞</span>, 前置詞句<span class="xrg ty_↓"><span class="xr"><a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_13_k203'])" title="fall">↓ <span class="xrlabelGroup"><span class="xrlabel">表現</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> in love with A </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">A〈人〉を好きになる, Aに惚<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（ほ）</span></span> れる </span>
+            <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_l0011520:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_l0011520_p07'])" title="love">→ <span class="xrlabelGroup"><span class="xrlabel">成句</span></span>fall [be] in <span class="xrlabelGroup"><span class="xrlabel">love</span></span> (with A)</a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> asleep </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">寝入る </span>
+          </span>
+          <span class="grnote x_xdt"> (<span class="lbl">!</span>無意識の行為を表す<span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_a0019780:com.apple.dictionary.ja-en.WISDOM" title="a･sleep">→ asleep</a></span></span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> victim [prey] to A </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">Aの犠牲になる</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_f0001030_01_01_13_k203" class="box ty_2">
+            <span class="title x_xdh"><span class="u">コーパスの窓 </span>Cに現れる主な語句</span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>主語の意志に関わらないことを暗示する語句や文脈で用いられることが多い</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">①</span>
+                <span>形容詞 </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="bold">asleep</span>, dead, <span class="bold">ill</span>, open<span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_m0020070:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_m0020070_01_00_01'])" title="mouth">→ mouth<span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span>)</span>, pregnant, <span class="bold">short</span>, sick, <span class="bold">silent</span>, unconscious<span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">②</span>
+                <span>前置詞句 </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">into a coma, into despair, into disrepair, out of fashion [favor], in [into] line, <span class="bold">in</span> [<span class="bold">out of</span>] <span class="bold">love, into</span> [in] <span class="bold">place</span>, out of sight, into [in] silence, into [in] step<span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">③</span>
+                <span>名詞 </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">prey, <span class="bold">victim</span><span class="gp">. </span></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【当たる】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_14" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">14 </span>
+        <span id="WDEJ_f0001030_01_01_14_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="ind">【ある曜日に】</span>
+            <span class="trans">〈記念日･日付などが〉<span class="t">当たる</span>, 〈行事などが〉<span class="bold">行われる</span>; 〈アクセントなどが〉 </span>
+            <span class="ind">【音節に】</span>
+            <span class="trans">
+              <span class="bold">ある, 落ちる </span>
+            </span>
+            <span class="sp"> «<span class="italic">on</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">My birthday [February 4] <span class="italic">falls on</span> (a) Sunday this year<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">今年の僕の誕生日[2月4日]は日曜日だ</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The accent of ‘committee’ <span class="italic">falls on</span> the second syllable<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">committeeのアクセントは第2音節にある</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_01_01_14_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈光･影が〉<span class="co x_ni"> «…に» </span><span class="bold">落ちる, 差す </span></span>
+            <span class="sp"> «<span class="italic">on</span></span>
+            <span class="gp">, </span>
+            <span class="sp">
+              <span class="italic">over</span>
+            </span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">across</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Light <span class="italic">falls on</span> the retina after entering our eyes<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">光は目に入ると網膜に当たる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Suddenly a large shadow <span class="italic">fell over</span> him from behind<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">突然大きな影が背後から彼を飲み込んだ</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_01_01_14_03" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">c. </span>
+          <span class="trg x_xd4">
+            <span class="co x_ni"> «…に» </span>
+            <span class="trans">〈矢･弾･パンチなどが〉<span class="bold">当たる</span><span class="gp">; </span><span class="oup_label x_ni">｟書｠</span>〈視線が〉(偶然に･急に)<span class="bold">注がれる, 向く </span></span>
+            <span class="sp"> «<span class="italic">on</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">upon</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Just as I was closing the book, my eyes <span class="italic">fell on</span> a certain passage on the page<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">本を閉じかけたところで, ページのある一節がふと私の目に留まった</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_01_01_14_04" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">d. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈訴え･要望などが〉 </span>
+            <span class="ind">【耳に】</span>
+            <span class="trans">
+              <span class="bold">入る, 聞こえる </span>
+            </span>
+            <span class="sp"> «<span class="italic">on</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Our appeals <span class="italic">fell on</span> deaf ears<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">我々の訴えに誰も耳を傾けなかった</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【属する】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_15" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">15 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖fall<span class="r">＋</span><span class="gr x_rr ty_品詞">副詞</span>〗</span>
+          <span class="trans">(部類･領域などに)<span class="bold">分けられる, 分類される </span></span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>はinto, underなどを含む前置詞句) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Whales <span class="italic">fall into</span> [<span class="oup_label x_ni">｟まれ｠</span><span class="italic">in</span>] the category of mammals<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">クジラは哺乳類に属する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Your actions <span class="italic">fall under</span> the heading of negligence<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君の行為は職務怠慢という項目に該当する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall within</span> [<span class="italic">outside</span> (<span class="italic">of</span>)] the regulations </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">規定の範囲内[外]である</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_16" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">16 </span>
+        <span class="trg x_xd3">
+          <span class="ind">【人に】</span>
+          <span class="trans">〈遺産などが〉<span class="bold">相続される</span>; 〈財産などが〉<span class="bold">帰属する </span></span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【訪れる】</span>
+      </span>
+      <span id="WDEJ_f0001030_01_01_17" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">17 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="trans">(突然)〈夜･季節などが〉 </span>
+          <span class="ind">【場所に】</span>
+          <span class="trans">
+            <span class="bold">やってくる</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="ind">【人々･場所に】</span>
+          <span class="trans">〈静寂などが〉<span class="bold">訪れる</span>; 〈悲しみ･疲れ･災難などが〉<span class="bold">襲いかかる, 迫る </span></span>
+          <span class="sp"> «<span class="italic">over</span></span>
+          <span class="gp">, </span>
+          <span class="sp">
+            <span class="italic">on</span>
+          </span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">upon</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">As night <span class="italic">fell over</span> Manhattan, the city lights began to sparkle<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">マンハッタンに夜のとばりが下りると, 町の明かりがきらめき始めた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">A sudden silence <span class="italic">fell on</span> the crowd<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">群衆は急に静まり返った</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_01_02" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">他動詞</span>
+      <span id="WDEJ_f0001030_01_02_01" ord="0" class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟米･豪･ニュージー｠</span>
+          <span class="trans">〈木〉<span class="bold">を伐採する</span>(fell<span class="sup">2</span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll ab<span class="str">ó</span>ard </span>
+      <span id="WDEJ_f0001030_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="ind">【人と】</span>
+          <span class="trans">言い争う </span>
+          <span class="sp"> «<span class="italic">with</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll aboard <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p02_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="fld">〘海〙</span>
+          <span class="trans">〈船が〉Aと衝突する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p02_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aに襲いかかる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll ab<span class="str">ò</span>ut (l<span class="str">á</span>ughing [with l<span class="str">á</span>ughter]) </span>
+      <span id="WDEJ_f0001030_p03_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけた話｠</span>
+          <span class="trans">大笑いする, 笑いころげる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll across <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p04_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉に偶然会う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p04_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">10a</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14b</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll all <span class="str">ó</span>ver <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p05_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">A〈人〉にお世辞を言う, こびる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll all <span class="str">ó</span>ver <span class="italic">one</span>self </span>
+      <span id="WDEJ_f0001030_p06_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米｠</span>
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_p39'])" title="fall">＝ <span class="xrlabelGroup"><span class="xrlabel">fall</span></span> over oneself</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll among <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈盗賊など〉の一味となる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll ap<span class="str">á</span>rt </span>
+      <span id="WDEJ_f0001030_p08_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(古さ･ずさんな作りのために)〈物が〉<span class="bold">ばらばらになる</span>[壊れる]</span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖進行形で〗</span>
+          <span class="trans">ひどい状態である </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'll drive this car until it <span class="italic">falls apart</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">僕はこの車がぶっ壊れるまで乗るつもりだ</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The house is <span class="italic">falling apart</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その家はぼろぼろだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p08_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">(問題を抱え)〈組織･制度などが〉崩壊する, 行き詰まる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈事が〉失敗に終わる(break down) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The current healthcare system is <span class="italic">falling apart</span> because of increasing costs<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">現行の健康保険制度は増大するコストのために破綻しかけている</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Our marriage finally <span class="italic">fell apart</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私たちの結婚生活はついに破局をむかえた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p08_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">〈人が〉精神的にやられる, 取り乱す</span>
+          <span class="gp">; </span>
+          <span class="trans">〈人生などが〉(突然)崩れ去る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll aw<span class="str">á</span>y </span>
+      <span id="WDEJ_f0001030_p09_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈物が〉<span class="co x_ni"> «…から» </span>落ちる, (修理した後に)脱落する </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p09_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_02'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">10</span><span class="xrlabel">b</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p09_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(徐々に)〈感情･音などが〉弱まる, なくなる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈量･規模などが〉<span class="co x_ni"> «…まで» </span>落ち込む, 減る </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p09_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈景色などが〉(遠ざかって)見えなくなる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p09_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉 </span>
+          <span class="ind">【友人･信仰などを】</span>
+          <span class="trans">(見捨てて)離れ去る </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">〈群衆が〉散る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p09_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="fld">〘海〙</span>
+          <span class="trans">〈船が〉針路をそれる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll b<span class="str">á</span>ck </span>
+      <span id="WDEJ_f0001030_p10_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">後ろ向きに倒れる[倒れ込む] </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall back</span> on the bed </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ベッドにあおむけに倒れ込む</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p10_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">屈する, 後退する</span>
+          <span class="gp">; </span>
+          <span class="trans">〈軍隊が〉<span class="co x_ni"> «…まで» </span>退却する(retreat) </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p10_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="trans">(驚き･恐怖などで)後ずさりする</span>
+          <span class="gp">; </span>
+          <span class="trans">のけぞる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p10_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈価格･量などが〉<span class="co x_ni"> «…まで» </span>下がる, 減少する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p10_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【元の状態などに】</span>
+          <span class="trans">戻る, 帰る </span>
+          <span class="sp"> «<span class="italic">into</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall back into</span> sleep </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">再び眠りにつく</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He soon <span class="italic">fell back into</span> his old ways of drinking<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼はじきに以前同様の酒飲みに戻った</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll b<span class="str">á</span>ck on [upon] <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人･物〉を(最後の)より所にする</span>
+          <span class="gp">; </span>
+          <span class="trans">(最善の手段を講じず)A〈安易な方法など〉に頼る(resort to) </span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">have something to <span class="italic">fall back on </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(いざという時に)当てにできるものがある</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p12" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">f<span class="str">à</span>ll (…) b<span class="str">é</span>hind </span>
+        <span class="grnote"> (<span class="lbl">!</span>…は数値表現やfar, wayなどの程度副詞) </span>
+      </span>
+      <span id="WDEJ_f0001030_p12_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(移動中に)(<span class="bold">次第に</span>)<span class="bold">後れる</span>, 後れをとる </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_k0000540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_k0000540_p48'])" title="keep">↔ keep up</a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> a few steps <span class="italic">behind </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">2, 3歩後れる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p12_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(進歩･目標達成の点で) </span>
+          <span class="ind">【学校などで/分野で】</span>
+          <span class="trans">後れをとる </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_k0000540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_k0000540_p48'])" title="keep">↔ keep up</a></span>)</span>
+          <span class="sp"> «<span class="italic">at</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">in</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p12_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(競技で)負ける, 負け越す </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall behind</span> 5—0 in the first set </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">第1セットを5対0で勝ち越される</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p13" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">f<span class="str">á</span>ll (…) behind <span class="italic">A </span></span>
+        <span class="grnote"> (<span class="lbl">!</span>…は数値表現やfar, wayなどの程度副詞) </span>
+      </span>
+      <span id="WDEJ_f0001030_p13_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(移動中に)(<span class="bold">次第に</span>)<span class="bold">A</span>〈人など〉<span class="bold">に後れる</span>, 後れをとる </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_k0000540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_k0000540_p48'])" title="keep">↔ keep up</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p13_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(進歩･目標達成の点で) </span>
+          <span class="ind">【学校などで/分野で】</span>
+          <span class="trans"><span class="bold">A</span>〈人など〉<span class="bold">に後れをとる </span></span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_k0000540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_k0000540_p48'])" title="keep">↔ keep up</a></span>)</span>
+          <span class="sp"> «<span class="italic">at</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">in</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall behind</span> the rest of the class </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">クラスのみんなから後れる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p13_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人･物･事が〉<span class="bold">A</span>〈予定〉<span class="bold">より遅れる </span></span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall</span> (two days) <span class="italic">behind</span> schedule </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">予定よりも(2日)遅れる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p13_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(増加の点で)A〈事〉に追いついていない, Aと同率で増加していない </span>
+          <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_k0000540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_k0000540_p48'])" title="keep">↔ keep up</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p13_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(競技で)A〈チーム〉に負ける</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll beh<span class="str">í</span>nd with [in] <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈人などが〉A〈支払い･仕事など〉が済んでいない[遅れている]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll d<span class="str">ó</span>wn </span>
+      <span id="WDEJ_f0001030_p15_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…の上に/…に» </span>
+          <span class="trans">倒れる, 倒壊する </span>
+          <span class="sp"> «<span class="italic">on</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">to</span>» </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">3</span><span class="xrlabel">a</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p15_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">〈議論･計画などが〉<span class="co x_ni"> «…の点で» </span>つまずく, 失敗に終わる </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p15_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">〈人が〉 </span>
+          <span class="ind">【仕事･約束などを】</span>
+          <span class="trans">しくじる, 果たさない </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p15_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="gr ty_用法">〖進行形で〗</span>
+          <span class="trans">〈建物が〉ひどい状態である</span>
+          <span class="gp">; </span>
+          <span class="trans">〈衣服などが〉ずり落ちている</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p15_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">3a</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">10a</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll down <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p17" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">f<span class="str">á</span>ll for <span class="italic">A </span></span>
+        <span class="oup_label x_ni">｟くだけた話｠</span>
+        <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+      </span>
+      <span id="WDEJ_f0001030_p17_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈策略･宣伝など〉<span class="bold">にだまされる</span>, ひっかかる</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈詐欺師など〉の手に落ちる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'm not <span class="italic">falling for</span> that again! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その手は二度と食わないぞ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p17_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人･事〉に(突然)ほれ込む, 夢中になる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll for it </span>
+      <span id="WDEJ_f0001030_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英俗｠</span>
+          <span class="trans">妊娠する, 「できてしまう」</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll from <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p19_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">2</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_04'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">4</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p19_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈支持など〉を逃す </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_g0008030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0008030_p01'])" title="grace">→ fall from <span class="xrlabelGroup"><span class="xrlabel">grace</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">í</span>n </span>
+      <span id="WDEJ_f0001030_p20_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈屋根･天井などが〉崩れ落ちる, 〈建物などが〉内側へ崩れる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="fld">〘軍〙</span>
+          <span class="trans">〈兵隊が〉整列する</span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖命令文で〗</span>
+          <span class="trans">整列</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈使用期限などが〉切れる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(賃貸期間が切れて)〈土地などが〉(所有者にとって)使用可能になる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">同意する</span>
+          <span class="gp">; </span>
+          <span class="trans">一致する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟豪･ニュージー｠</span>
+          <span class="trans">ミスをする</span>
+          <span class="gp">; </span>
+          <span class="trans">ひどい目に遭う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟ニュージー｠</span>
+          <span class="trans">妊娠する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_08" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">8 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟俗｠</span>
+          <span class="trans">寝る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p20_09" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">9 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(川などに)落ちる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll in <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p21_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈意見など〉に(やむなく)賛同する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p21_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈川など〉に落ちる </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span> 第3例</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p21_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_13'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">13</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_15'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">15</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="italic">A </span><span class="str">í</span>n [<span class="str">í</span>n <span class="italic">A</span>] </span>
+      <span id="WDEJ_f0001030_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈兵隊〉を整列させる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">í</span>n behind <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p23_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉の後に並ぶ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p23_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈先を歩いている人〉に続いて歩く </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I caught up and <span class="italic">fell in behind</span> him<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私は彼に追いつくとその後に続いた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">í</span>n beside [alongside] <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p24_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈先を歩いている人〉と並んで歩く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p25" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">f<span class="str">à</span>ll <span class="str">í</span>n for <span class="italic">A </span></span>
+        <span class="oup_label x_ni">｟話｠</span>
+      </span>
+      <span id="WDEJ_f0001030_p25_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈分け前など〉をもらう</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p25_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈非難･同情など〉を受ける, 招く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p26" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll into <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p26_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">3a</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">3b</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">10a</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">10b</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_13'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">13</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_15'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">15</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p26_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈わななど〉に落ちる, はまる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈物･人が〉A〈敵･悪者などの手〉に渡る[落ちる] </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall into</span> the same trap </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">同じ手口にひっかかる</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall into</span> the hands [clutches] of enemies </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">敵の手中に陥る</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p26_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈悪習など〉が癖になる, 身につく</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p26_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟かたく｠</span>
+          <span class="ind">【初対面の人などと】</span>
+          <span class="trans">A〈会話･議論など〉を始める </span>
+          <span class="sp"> «<span class="italic">with</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p27" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">í</span>n with <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p27_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">A〈人〉と偶然出会う[知り合う]</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈好ましくない人物〉と交わる, 交際を始める </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">My son <span class="italic">fell in with</span> a bad crowd<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">うちの息子は悪い連中と付き合い始めた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p27_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英｠</span>
+          <span class="trans">(特に不本意ながら)A〈人･考え･計画など〉に同意する(agree to A)</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈事実など〉と符合する </span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p28" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">ó</span>ff </span>
+      <span id="WDEJ_f0001030_p28_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人･物が〉落ちる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈部品などが〉脱落する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p28_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈量･数などが〉減少する</span>
+          <span class="gp">; </span>
+          <span class="trans">〈規模などが〉縮小する</span>
+          <span class="gp">; </span>
+          <span class="trans">〈質などが〉低下する</span>
+          <span class="gp">; </span>
+          <span class="trans">〈勢いなどが〉衰える </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Sales of beef have <span class="italic">fallen off</span> dramatically since BSE<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">牛肉の売上がBSE以来急激に落ち込んでいる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p28_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉<span class="co x_ni"> «…から» </span>離れる </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p28_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="fld">〘海〙</span>
+          <span class="trans">〈船が〉風下へ転航する, 針路をそれる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p29" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll off <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p29_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈場所〉から落下する </span>
+          <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p29_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(老朽化･故障などのため)〈部品などが〉A〈本体〉からはずれる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p30" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll on [upon] <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p30_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">3a</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14a</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14b</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_03'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14c</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_04'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14d</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_17'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">17</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p30_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英･文｠</span>
+          <span class="trans">A〈敵など〉に襲いかかる, Aを急襲する(attack)</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈食物〉をむさぼり始める</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈物･場所〉に我先にと飛びつく, 殺到する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p30_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英･かたい書｠</span>
+          <span class="trans">〈責任･費用などが〉A〈人〉に課せられる, Aの負担となる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈非難･疑惑などが〉Aに降りかかる, 向けられる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p30_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉A〈つらい時期など〉を経験する </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall on</span> hard [bad] times </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">(貧乏で)困窮する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p30_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈人が〉A〈考えなど〉をふと思いつく</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p31" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">ó</span>ut </span>
+      <span id="WDEJ_f0001030_p31_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">外側に落ちる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英｠</span>
+          <span class="co x_ni"> «…と/…のことで» </span>
+          <span class="trans">けんかする, 仲たがいする </span>
+          <span class="sp"> «<span class="italic">with</span></span>
+          <span class="gp">/</span>
+          <span class="sp">
+            <span class="italic">over</span>
+          </span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">about</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈歯･髪などが〉抜ける </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">My hair started <span class="italic">falling out</span> five years ago<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">5年前から髪の毛が抜けてきた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈放射性物質が〉流出する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="fld">〘軍〙</span>
+          <span class="trans">〈兵隊が〉解散する</span>
+          <span class="gp">; </span>
+          <span class="trans">隊列を離れる</span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖命令文で〗</span>
+          <span class="trans">解散</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="trans">落伍<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（らくご）</span></span>する</span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟米俗｠</span>
+          <span class="trans">立ち去る, 帰る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈事が〉起こる, (…なように)運ぶ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">All things <span class="italic">fell out</span> as expected<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">万事が予想通りに進んだ</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">It <span class="italic">fell out</span> that I would drive him home<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私が彼を車で家に送っていくことになった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_08" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">8 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米俗｠</span>
+          <span class="trans">どっと笑い出す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p31_09" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">9 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米俗｠</span>
+          <span class="trans">(麻薬などで)ぼうっとする, 眠り込む</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p32" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="italic">A </span><span class="str">ó</span>ut [<span class="str">ó</span>ut <span class="italic">A</span>] </span>
+      <span id="WDEJ_f0001030_p32_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈兵隊〉を解散させる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p33" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll out of <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p33_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_13'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">13</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p33_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈習慣など〉を(徐々に)断つ, やめる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p33_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈部屋など〉から外に出る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p34" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll out of b<span class="str">é</span>d </span>
+      <span id="WDEJ_f0001030_p34_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">ベッドから転がり落ちる</span>
+          <span class="gp">; </span>
+          <span class="trans">(あわてて)飛び起きる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p35" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll <span class="str">ó</span>ver </span>
+      <span id="WDEJ_f0001030_p35_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">1</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">3a</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p35_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟スコット｠</span>
+          <span class="trans">寝入る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p35_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">〈コンピュータが〉(突然)故障する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p36" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll over <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p36_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">10a</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_14_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">14b</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_17'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">17</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p36_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈物〉につまずいて転ぶ[転びそうになる] </span>
+          <span class="grnote"> (<span class="lbl">!</span>受け身にしない) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p36_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈場所〉の向こうに転げ落ちる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p37" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll over b<span class="str">á</span>ckward </span>
+      <span id="WDEJ_f0001030_p37_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_p39'])" title="fall">＝ <span class="xrlabelGroup"><span class="xrlabel">fall</span></span> over oneself <span class="xrlabelGroup"><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p38" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll over <span class="str">ò</span>ne an<span class="str">ó</span>ther [<span class="str">è</span>ach <span class="str">ó</span>ther] </span>
+      <span id="WDEJ_f0001030_p38_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…しようと/…を求めて» </span>
+          <span class="trans">先を競う </span>
+          <span class="sp"> «<span class="italic">to</span> do</span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">for</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p39" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll over <span class="italic">one</span>s<span class="str">è</span>lf </span>
+      <span id="WDEJ_f0001030_p39_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="gr ty_用法">〖しばしば進行形で〗</span>
+          <span class="co x_ni"> «…しようと/…を求めて» </span>
+          <span class="trans">躍起[必死]になる </span>
+          <span class="sp"> «<span class="italic">to</span> do</span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">for</span>» </span>
+          <span class="grnote"> (<span class="lbl">!</span>特に不慣れな事柄について用いる) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p39_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">あわてて転ぶ</span>
+          <span class="gp">; </span>
+          <span class="trans">不器用である</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p40" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll thr<span class="str">ó</span>ugh </span>
+      <span id="WDEJ_f0001030_p40_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈計画などが〉失敗に終わる</span>
+          <span class="gp">; </span>
+          <span class="trans">むだになる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Our deal <span class="italic">fell through</span> at the last minute<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">取引は土壇場になって流れてしまった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p40_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">抜け落ちる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p41" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll t<span class="str">ó </span></span>
+      <span id="WDEJ_f0001030_p41_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">食べ始める</span>
+          <span class="gp">; </span>
+          <span class="trans">仕事[争い]を始める</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p41_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈戸などが〉ひとりでに閉まる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p42" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll to <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p42_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈地面･床など〉に落ちる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p42_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主にかたい書/文｠</span>
+          <span class="trans">A〈仕事･議論など〉に(懸命に)取りかかる, 着手する</span>
+          <span class="gp">; </span>
+          <span class="trans">Aし始める(begin) </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">動名</span>) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p42_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟かたく｠</span>
+          <span class="trans">〈義務･責任などが〉A〈人〉に降りかかる, 訪れる</span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖itを主語にして〗</span>
+          <span class="co x_ni"> «…する義務[責任]が» </span>
+          <span class="trans">A〈人〉に降りかかる </span>
+          <span class="sp"> «<span class="italic">to</span> do» </span>
+          <span class="grnote"> (<span class="lbl">!</span>特に好ましくない, または困難な事柄について用いる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">It fell to</span> me <span class="italic">to</span> tell Sarah her mother had died<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">私はセラに母が死んだことを伝えねばならなくなった</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p42_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_03_01'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">3a</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_04'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">4</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_10_02'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">10b</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_11'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">11</span>
+                </span>
+              </a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_16'])" title="fall">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">16</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p43" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">à</span>ll to p<span class="str">í</span>eces [b<span class="str">í</span>ts] </span>
+      <span id="WDEJ_f0001030_p43_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_p08'])" title="fall">＝ <span class="xrlabelGroup"><span class="xrlabel">fall</span></span> apart</a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p44" class="idmsec x_xo1">
+      <span class="idm x_xoh">f<span class="str">á</span>ll under <span class="italic">A </span></span>
+      <span id="WDEJ_f0001030_p44_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_f0001030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0001030_01_01_15'])" title="fall">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">15</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p44_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈影響･支配など〉を受ける </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">fall under</span> a strange spell </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">不思議な魅力にとりつかれる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p45" class="idmsec x_xo1">
+      <span class="idm x_xoh">l<span class="str">è</span>t <span class="italic">A</span> f<span class="str">á</span>ll </span>
+      <span id="WDEJ_f0001030_p45_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈持った物〉を放す, 落とす</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_p45_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈秘密など〉を(偶然を装って)わざと漏らす</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_f0001030_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+      <span class="frmg">
+        <span class="gr x_rr ty_単複">複</span>
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="gr x_rr ty_名詞区分">C</span>
+          <span class="gr x_rr ty_名詞区分">U</span>
+          <span class="oup_label x_ni">｟米｠</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖時にF-; 通例無冠詞単数形またはthe <span class="rf">～</span>〗</span>
+          <span class="trans"><span class="t">秋</span>(<span class="oup_label x_ni">｟主に英｠</span>autumn)<span class="grnote"> (<span class="lbl">!</span>「木の葉の落ちる(fall)季節」から) </span><span class="gp">; </span></span>
+          <span class="gr ty_用法">〖形容詞的に〗</span>
+          <span class="trans">
+            <span class="bold">秋の, 秋用の </span>
+          </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0031190:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0031190_01_00_01'])" title="spring">→ spring<span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span></a></span>)</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">in (the) <span class="italic">fall </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">秋に</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">in the <span class="italic">fall</span> of 2015≒in (the) <span class="italic">fall</span> 2015 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">2015年の秋に </span>
+        </span>
+        <span class="grnote x_xdt"> (<span class="lbl">!</span>in fall of 2015は<span class="oup_label x_ni">｟まれ｠</span>) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">the <span class="italic">fall</span> semester </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">秋学期 </span>
+        </span>
+        <span class="x_xdt">
+          <span class="grnote"> (<span class="lbl">!</span>2学期制の前期; 9月から1月) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="gr ty_用法">〖通例単数形で〗</span>
+        <span class="ind">【価格･数量･規模などの】</span>
+        <span class="trans">
+          <span class="t">下落</span>
+          <span class="gp">, </span>
+          <span class="bold">下降, 減少 </span>
+        </span>
+        <span class="sp"> «<span class="italic">in</span></span>
+        <span class="gp">, </span>
+        <span class="sp"><span class="italic">of</span>» </span>
+        <span class="trans"><span class="gp">;</span> (潮などが)<span class="bold">引くこと </span></span>
+        <span class="xrg ty_⇔">(<span class="xr"><a href="x-dictionary:r:WDEJ_r0015660:com.apple.dictionary.ja-en.WISDOM" title="rise">↔ rise</a></span>)</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">a sharp <span class="italic">fall in</span> unemployment [profits] </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">失業率[利益]の急激な低下</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="gr ty_用法">〖通例単数形で〗</span>
+        <span class="co x_ni"> «…からの» </span>
+        <span class="trans">
+          <span class="t">落下</span>
+          <span class="gp">, </span>
+          <span class="bold">降下, 墜落</span>
+          <span class="gp">; </span>
+          <span class="bold">落下距離</span>
+          <span class="gp">; </span>
+          <span class="bold">落差 </span>
+        </span>
+        <span class="sp"> «<span class="italic">from</span>» </span>
+        <span class="trans">
+          <span class="gp">; </span>
+          <span class="t">転倒</span>
+          <span class="gp">; </span>
+          <span class="bold">倒壊</span>
+          <span class="gp">; </span>
+          <span class="bold">戦死 </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">die from a <span class="italic">fall </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">転落死する</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">break one's back in a <span class="italic">fall from</span> a horse </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">落馬して背骨を折る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have a bad <span class="italic">fall </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ひどい転び[落ち]方をする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖<span class="rf">～</span>s; 単複両扱い〗</span>
+        <span class="trans"><span class="t">滝</span>(waterfall) </span>
+        <span class="grnote"> (<span class="lbl">!</span>固有名詞で多く用いられる) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">(The) Niagara <span class="italic">Falls</span> is [are] located between Lake Erie and Lake Ontario<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">ナイアガラの滝はエリー湖とオンタリオ湖との間にある </span>
+        </span>
+        <span class="x_xdt">
+          <span class="grnote"> (<span class="lbl">!</span>構成する2つの滝をまとめてとらえる際は単数扱い, 個々にとらえる際は複数扱い) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_05" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">5 </span>
+      <span id="WDEJ_f0001030_02_00_05_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr x_rr ty_名詞区分">U</span>
+          <span class="trans"><span class="bold">たれ下がる</span>[<span class="bold">下向きになる</span>]<span class="bold">こと</span><span class="gp">; </span><span class="bold">そのさま </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the <span class="italic">fall</span> of her hair </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女の髪のたれ具合</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_02_00_05_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="gr x_rr ty_名詞区分">C</span>
+          <span class="trans"><span class="bold">たれ下がる物</span><span class="gp">; </span><span class="oup_label x_ni">｟米｠</span>(女性用の)<span class="bold">長髪のヘアピース</span>; (婦人帽の後ろに付ける)<span class="bold">ベール</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_06" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">6 </span>
+        <span class="gr ty_用法">〖単数形で〗</span>
+      </span>
+      <span id="WDEJ_f0001030_02_00_06_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖通例one's/the <span class="rf">～</span>〗</span>
+          <span class="ind">【権力･地位などからの】</span>
+          <span class="trans">
+            <span class="bold">失脚, 没落 </span>
+          </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="trans">
+            <span class="gp">; </span>
+            <span class="bold">衰退, 崩壊 </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">the </span><span class="italic"><span class="bold">rise and fall</span></span> of the Japanese economy </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">日本経済の盛衰</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_f0001030_02_00_06_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖通例the <span class="rf">～</span>〗</span>
+          <span class="trans">(国･都市などの)<span class="bold">陥落, 滅亡 </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">the fall</span> of the Roman Empire </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ローマ帝国の滅亡</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_07" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">7 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans"><span class="bold">降雨</span>(<span class="bold">量</span>), <span class="bold">降雪</span>(<span class="bold">量</span>) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">have a <span class="italic"><span class="bold">heavy fall</span></span> of snow </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">大雪に見舞われる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_08" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">8 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="fld">〘レスリング〙</span>
+        <span class="trans"><span class="bold">フォール</span><span class="gp">; </span><span class="bold">ひと勝負</span>[<span class="bold">試合</span>]; <span class="fld">〘柔道〙</span><span class="bold">押さえ込み</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_09" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">9 </span>
+      <span class="trg x_xd2">
+        <span class="con">〖the/a <span class="rf">～</span>〗</span>
+        <span class="fld">〘キリスト教〙</span>
+        <span class="trans">
+          <span class="bold">堕落 </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex"><span class="italic">the fall</span> [<span class="italic">Fall</span>] (of Man) </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">人間の堕落〘アダムとイブの原罪; ヘビの誘惑に屈して禁断の実を食べたこと〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_10" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">10 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(地面などの)<span class="bold">傾き, 勾配</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_11" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">11 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(羊などの)<span class="bold">出産</span><span class="gp">; </span><span class="bold">一腹の子</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_12" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">12 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(木材の)<span class="bold">伐採</span>(<span class="bold">量</span>)</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_13" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">13 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="fld">〘海･機〙</span>
+        <span class="trans">(滑車の)<span class="bold">引き綱</span>[<span class="bold">索</span>]</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_14" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">14 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="fld">〘狩猟〙</span>
+        <span class="trans">
+          <span class="bold">落としわな</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_15" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">15 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟俗｠</span>
+        <span class="trans"><span class="bold">逮捕</span>(arrest)</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_16" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">16 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="ind">【夜･闇などの】</span>
+        <span class="trans">
+          <span class="bold">到来, 訪れ </span>
+        </span>
+        <span class="sp"> «<span class="italic">of</span>» </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_17" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">17 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="trans">(アクセントの)<span class="bold">置かれる位置</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_18" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">18 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="oup_label x_ni">｟スコット｠</span>
+        <span class="trans">
+          <span class="bold">運</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_02_00_19" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">19 </span>
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="gr x_rr ty_名詞区分">C</span>
+        <span class="fld">〘楽〙</span>
+        <span class="trans">
+          <span class="bold">終止法</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p46" class="idmsec x_xo1">
+      <span class="idm x_xoh">br<span class="str">è</span>ak <span class="italic">A's</span> f<span class="str">á</span>ll </span>
+      <span id="WDEJ_f0001030_p46_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈物･人(の身体部位)が〉A〈人〉の落下のショックを和らげる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p47" class="idmsec x_xo1">
+      <span class="idm x_xoh">r<span class="str">ì</span>de for a f<span class="str">á</span>ll </span>
+      <span id="WDEJ_f0001030_p47_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="gr ty_用法">〖通例進行形で〗</span>
+          <span class="trans">自ら危険[厄介]を招くような行動をする, むちゃをする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_p48" class="idmsec x_xo1">
+      <span class="idm x_xoh">t<span class="str">à</span>ke the f<span class="str">á</span>ll (for <span class="italic">A</span>) </span>
+      <span id="WDEJ_f0001030_p48_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟俗｠</span>
+          <span class="trans">(A〈人〉の)罪を被る</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_f0001030_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> f<span class="str">ò</span>liage</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_f0001030_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">紅葉</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> g<span class="str">ù</span>y</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span class="grnote x_xdh"> (<span class="lbl">!</span><span class="oup_label x_ni">｟くだけて｠</span>) </span>
+        <span id="WDEJ_f0001030_c02_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="trans">身代わり, 他人の罪を負わされる人(scapegoat)</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_c02_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="trans">だまされやすい人, カモ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_f0001030_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～́</span></span> l<span class="str">ì</span>ne</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_f0001030_c03_01" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">1 </span>
+          <span class="trg x_xd2">
+            <span class="con">〖the <span class="rf">～</span>〗</span>
+            <span class="fld">〘スキー〙</span>
+            <span class="trans">最大傾斜線, フォールライン</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_f0001030_c03_02" class="semb x_xd1 hasSn">
+          <span class="sn x_xdh">2 </span>
+          <span class="trg x_xd2">
+            <span class="trans">瀑布<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（ばくふ）</span></span>線〘台地と平地の境界線で, 滝や急流の始点〙</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

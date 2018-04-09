@@ -1,0 +1,4990 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_c0036550" d:title="cut" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">cut </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">kʌt</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span role="text" class="etym">〖原義は「鋭い刃物で切る」<span class="gp">; </span>〗</span>
+      <span class="xrg ty_→">
+        <span class="xr">
+          <a href="x-dictionary:r:WDEJ_c0005750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0005750_k101'])" title="cat">→ cat<span class="hm">1</span><span class="xrlabelGroup"><span class="xrlabel">語源</span></span></a>
+        </span>
+      </span>
+      <span class="u"><span class="ps x_rr">名</span>cutting</span>
+    </span>
+  </span>
+  <span id="WDEJ_c0036550_k401" class="box ty_4">
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVO｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切る </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_05_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">5a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切りそろえる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_06_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">6a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>傷つける </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_07'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">7 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>削減する</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(O)O｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_02_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切り分ける</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVO(+)｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_02_02'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2b </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切り出す </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_04'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>くりぬく</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVOC｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_03'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(切って)…の状態にする</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(+)｠</span>
+        <span class="gr x_rr ty_動詞区分">自動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_02_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切れる </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_02_02'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>通り抜ける</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈切ること〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_02_00_01'])" title="cut">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切り傷 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_02_00_02'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>切れ目 </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_02_00_04'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(髪の)カット</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="ind">〈削減〉</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_02_00_03_01'])" title="cut">
+              <span class="ps x_rr">名詞</span>
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>引き下げ </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_02_00_05_01'])" title="cut">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">5a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span> 削除</span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_c0036550_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+      <span class="frmg">
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-ts</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">
+          <span class="rf">～</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="frm"><span class="rf">～</span>ting </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_01_01" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="ind">【(刃物で)切る】</span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈人･刃物などが〉 </span>
+          <span class="ind">【断片に】</span>
+          <span class="trans">〈物〉<span class="t">を切る</span><span class="gp">, </span><span class="bold">切断する </span></span>
+          <span class="sp"> «<span class="italic">in</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">into</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> a rope with a knife </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ナイフでロープを切る</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> an apple <span class="italic">in</span> two [<span class="italic">in</span> half] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">リンゴを2つ[半分]に切る[割る]</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The cake was <span class="italic">cut into</span> 8 pieces<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ケーキは8つに切り分けられた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> the air </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">空<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（くう）</span></span>を切る</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span id="WDEJ_c0036550_01_01_02_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉〈肉など〉<span class="bold">を切り取る</span><span class="gp">, </span><span class="t">切り分ける</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖cut <span class="r">A </span><span class="r">B</span><span class="gp">/</span><span class="r">B</span> for <span class="r">A</span>〗</span>
+            <span class="trans"><span class="bold">A</span>〈人〉<span class="bold">にB</span>〈食べ物など〉<span class="bold">を切ってやる </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Cut</span> me a big slice of cake<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">僕に大きく切ったケーキをくれないか</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> another piece of cheese </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">チーズをもう1枚切り取る</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_02_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉<span class="co x_ni"> «…の形に» </span>〈物〉<span class="t">を切り出す</span><span class="gp">, </span><span class="bold">切る </span></span>
+            <span class="sp"> «<span class="italic">into</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> the potatoes <span class="italic">into</span> thick slices </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ジャガイモを厚めに切る</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The board was <span class="italic">cut into</span> squares<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">その板は四角に切り出された</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖cut <span class="r">A </span><span class="r">C</span>〗</span>
+          <span class="trans"><span class="t">切ってA</span>〈物･人など〉<span class="t">をC</span>〈状態〉<span class="t">にする </span></span>
+          <span class="grnote"> (<span class="lbl">!</span>Cはopen, short, freeなどの<span class="gr x_rr">形容詞</span>, 前置詞句) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">cut</span></span> a package <span class="italic"><span class="bold">open </span></span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">パッケージを開封する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">He was <span class="italic"><span class="bold">cut loose</span> [<span class="bold">free</span>]</span> from the business<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼はその仕事から解放された</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈人が〉<span class="co x_ni"> «…に» </span>〈穴〉<span class="bold">を開ける</span><span class="gp">, </span><span class="t">…をくりぬく</span><span class="gp">, </span><span class="bold">掘る </span></span>
+          <span class="sp"> «<span class="italic">in</span></span>
+          <span class="gp">, </span>
+          <span class="sp">
+            <span class="italic">into</span>
+          </span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">through</span>» </span>
+          <span class="gp">; </span>
+          <span class="ind">【場所を貫いて】</span>
+          <span class="trans">〈道路など〉<span class="bold">を切り開く </span></span>
+          <span class="sp"> «<span class="italic">through</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> a hole in the center of a board </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">板の中央に穴を開ける</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> a circle in the top of the pumpkin </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">カボチャのてっぺんを円形にくりぬく</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span id="WDEJ_c0036550_01_01_05_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈芝･髪･爪など〉<span class="bold">を短く刈る</span><span class="gp">, </span><span class="t">切り</span>[<span class="t">刈り</span>]<span class="t">そろえる </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>軽く切り[刈り]そろえる場合はtrim) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">
+                <span class="italic"><span class="bold">have</span> [<span class="bold">get</span>] <span class="bold">one's hair cut </span></span>
+              </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">散髪する </span>
+            </span>
+            <span class="grnote x_xdt"> (<span class="lbl">!</span><span class="oup_label x_ni">｟話｠</span>ではget a haircutが好まれる) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> the grass [hedge] </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">草[垣根]を刈りそろえる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> one's nails </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">爪を切る</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_05_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈作物･草など〉<span class="bold">を刈り取る</span><span class="gp">, </span><span class="bold">収穫する </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> wheat </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">麦を収穫する</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_05_03" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">c. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖通例be <span class="rf">～</span> (C)〗</span>
+            <span class="trans">〈衣服が〉(<span class="bold">C</span>〈高低など〉<span class="bold">の位置で</span>)<span class="bold">裁断され</span>(<span class="bold">てい</span>)<span class="bold">る </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>Cは<span class="gr x_rr">形容詞</span>) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Her silk gown <span class="italic">was cut</span> in the latest fashion<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼女の絹のドレスは最新のスタイルに裁断されていた</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span id="WDEJ_c0036550_01_01_06_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人･刃物が〉〈体(の一部)〉<span class="bold">を切る</span><span class="gp">, </span><span class="t">傷つける</span></span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖<span class="rf">～</span> oneself〗</span>
+            <span class="ind">【刃物などで】</span>
+            <span class="trans">(体の一部を)<span class="bold">切る, 傷を負う </span></span>
+            <span class="sp"> «<span class="italic">with</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">on</span>» </span>
+            <span class="gp">, </span>
+            <span class="ind">【体の部位を】</span>
+            <span class="trans">
+              <span class="bold">切る </span>
+            </span>
+            <span class="sp"> «<span class="italic">on</span>» </span>
+            <span class="grnote"> (<span class="lbl">!</span>いずれもうっかり傷つける時も, 故意の場合も含む) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> one's finger </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">指を切る</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> oneself (badly) </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">(ひどい)けがをする</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_06_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人〉<span class="bold">の感情</span>[<span class="bold">心</span>]<span class="bold">を傷つける</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈寒風などが〉〈人〉<span class="bold">の身にこたえる </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Her cruel remarks <span class="italic">cut</span> me to the quick<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">彼女の残酷な言葉が胸にぐさりときた</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_c0036550_01_01_06_k102" class="box ty_1">
+            <span class="title x_xdh"><span class="u">類義 </span>cutとchop, slice</span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span class="bold">cut </span>
+                <span>はナイフ･はさみなど刃物で物を切る, 分割する, 切り離す, 一部を取り除いて何かをつくることを表す最も一般的な語. 意味を拡張して, 長すぎるものを短くして整える, 切って穴を開ける, 体の一部を傷つける, 刃物を使って何かを作る場合や比喩表現に用いることも多い. </span>
+                <span class="bold">chop</span>
+                <span>はナイフ･おのなど鋭い刃物で荒っぽく切りつけたり繰り返し打ちつけることで小さく切ることを表す. 日常英語では野菜･木などを切る際に好まれる. </span>
+                <span class="bold">slice</span>
+                <span>はパン･肉･野菜などを板状に切ったり, 鋭利な刃物などでさっと容易に切ることを表すが, 比喩表現にも用いる</span>
+                <span class="gp">. </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【削減する】</span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈費用など〉<span class="t">を削減する</span><span class="gp">, </span><span class="bold">切り詰める</span></span>
+          <span class="gp">; </span>
+          <span class="trans">
+            <span class="bold">…を減らす </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Her salary may be <span class="italic">cut</span> by 10 percent<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女の給料は10%減になるかもしれない</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> the risk of injury </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">けがの危険性を減らす</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_08" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">8 </span>
+        <span id="WDEJ_c0036550_01_01_08_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈時間など〉<span class="bold">を縮める</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈映画･演説･小説など〉<span class="bold">を短縮する</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈一部〉<span class="bold">をカット</span>[<span class="bold">削除</span>]<span class="bold">する </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">cut</span> one's speech by five minutes </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">スピーチを5分短縮する</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">This scene was <span class="italic">cut</span> from the final film<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">このシーンは最終版でカットされた</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_08_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈映画〉<span class="bold">を編集する</span></span>
+            <span class="gp">; </span>
+            <span class="fld">〘楽〙</span>
+            <span class="trans">〈CDなど〉<span class="bold">を製作する</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈曲など〉<span class="bold">を録音する</span></span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【その他】</span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_09" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">9 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈水･食料など〉<span class="bold">の供給を止める</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈エンジンなど〉<span class="bold">を止める</span>(<span class="italic">off</span>) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> electricity to the factory </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">工場への送電を止める</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_10" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">10 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟主に米･くだけて｠</span>
+          <span class="trans">〈話など〉<span class="bold">をやめる </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Cut</span> the crap! </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ばかいうな</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_11" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">11 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="trans">〈学校など〉<span class="bold">を休む</span><span class="gp">, </span><span class="bold">サボる</span><span class="gp">, </span><span class="bold">ずる休みする</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_12" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">12 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈川･道などが〉〈ほかの川･道など〉<span class="bold">と交差する</span><span class="gp">, </span><span class="bold">…を横切る</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈場所〉<span class="bold">を分ける </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The desert was <span class="italic">cut</span> by a road<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その砂漠は道路で二分されていた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_13" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">13 </span>
+        <span id="WDEJ_c0036550_01_01_13_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="fld">〘トランプ〙</span>
+            <span class="trans">〈札〉<span class="bold">をカットする</span>〘山を2つに分け上下を入れ替えること〙 </span>
+            <span class="grnote"> (<span class="lbl">!</span>「切る」はshuffle) </span>
+            <span class="gp">; </span>
+            <span class="trans">(1枚)〈札〉<span class="bold">を引く</span>〘親などを決めるため〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_13_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="fld">〘スポーツ〙</span>
+            <span class="trans">(球技で)〈球〉<span class="bold">をカットする</span></span>
+            <span class="gp">; </span>
+            <span class="fld">〘ゴルフ〙</span>
+            <span class="trans">〈球〉<span class="bold">をスライスさせて打つ</span></span>
+            <span class="gp">; </span>
+            <span class="fld">〘クリケット〙</span>
+            <span class="trans">〈球〉<span class="bold">をカットする</span>〘バットを水平に構えてオフ側に打つ〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_14" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">14 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="trans">〈物〉<span class="bold">を分解する</span></span>
+            <span class="gp">; </span>
+            <span class="co x_ni"> «…で» </span>
+            <span class="trans">〈酒など〉<span class="bold">を割る</span><span class="gp">, </span><span class="bold">薄める </span></span>
+            <span class="sp"> «<span class="italic">with</span>» </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖通例be <span class="rf">～</span>〗</span>
+            <span class="trans">〈麻薬が〉<span class="co x_ni"> «…と» </span><span class="bold">混合される </span></span>
+            <span class="sp"> «<span class="italic">with</span>» </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_15" class="semb x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">15 </span>
+          <span class="oup_label x_ni">｟話｠</span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_15_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人〉<span class="bold">を無視する</span>, (会っても)<span class="bold">…に知らんぷりをする</span></span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_01_15_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">(チームなどから)〈人〉<span class="bold">をはずす</span></span>
+            <span class="gp">; </span>
+            <span class="trans">〈人〉<span class="bold">をクビにする</span></span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_16" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">16 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟米俗｠</span>
+          <span class="gr ty_用法">〖主に否定文で〗</span>
+          <span class="trans">〈仕事など〉<span class="bold">をさばく</span><span class="gp">, </span><span class="bold">処理する</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_17" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">17 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈赤ん坊が〉〈歯〉<span class="bold">を生やす</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_01_18" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">18 </span>
+        <span class="trg x_xd3">
+          <span class="trans">
+            <span class="bold">…を去勢する</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_01_02" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">自動詞</span>
+      <span id="WDEJ_c0036550_01_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="trans">
+              <span class="t">切る</span>
+              <span class="gp">, </span>
+              <span class="bold">切断する</span>
+            </span>
+            <span class="gp">; </span>
+            <span class="trans"><span class="bold">切り取る</span>[<span class="bold">分ける</span><span class="gp">, </span><span class="bold">離す</span>]</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span>(＋<span class="gr x_rr">副詞</span>)〗</span>
+            <span class="trans">〈刃物(付きの機械)などが〉<span class="bold">切れる</span>, 〈物が〉(刃物で)<span class="bold">切れる </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は様態の表現) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">This razor <span class="italic">cuts well</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">このかみそりは切れ味がよい</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Cheese <span class="italic">cuts easily</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">チーズは楽に切れる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trg x_xd3">
+          <span class="co x_ni"> «…を» </span>
+          <span class="trans">
+            <span class="bold">通り抜ける</span>
+            <span class="gp">, </span>
+            <span class="bold">突っ切って進む </span>
+          </span>
+          <span class="sp"> «<span class="italic">through</span>» </span>
+          <span class="gp">; </span>
+          <span class="co x_ni"> «…を(横切って)» </span>
+          <span class="trans">
+            <span class="bold">近道をする </span>
+          </span>
+          <span class="sp"> «<span class="italic">across</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">through</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut through</span> a garden </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">庭を通り抜ける</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> (diagonally) <span class="italic">across</span> the lawn </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">芝生を(斜めに)横切って近道する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="fld">〘映〙</span>
+          <span class="ind">【(別の場面)などに】</span>
+          <span class="trans">
+            <span class="bold">切り替わる</span>
+            <span class="gp">, </span>
+            <span class="bold">移る </span>
+          </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">; </span>
+          <span class="gr ty_用法">〖命令形で〗</span>
+          <span class="trans">
+            <span class="bold">撮影中断</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖<span class="rf">～</span>＋<span class="gr x_rr">副詞</span>〗</span>
+          <span class="trans"><span class="bold">急に進路</span>[<span class="bold">方向</span>]<span class="bold">を変える </span></span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は方向の表現) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut to</span> the right </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">〈ドライバーが〉右に急ハンドルを切る</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖<span class="rf">～</span>＋<span class="gr x_rr">副詞</span>〗</span>
+          <span class="trans">〈言葉･寒さなどが〉<span class="bold">身にこたえる </span></span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="gr x_rr">副詞</span>は様態の表現) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span id="WDEJ_c0036550_01_02_06_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="fld">〘トランプ〙</span>
+            <span class="trans">
+              <span class="bold">カットする</span>
+            </span>
+            <span class="gp">; </span>
+            <span class="trans">
+              <span class="bold">札を1枚引く</span>
+            </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_c0036550_01_02_06_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="fld">〘球技〙</span>
+            <span class="trans">
+              <span class="bold">球をカットする</span>
+            </span>
+            <span class="gp">; </span>
+            <span class="fld">〘クリケット〙</span>
+            <span class="trans">〈球が〉<span class="bold">急に曲がる</span></span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans"><span class="bold">急いで去る</span>[<span class="bold">帰る</span>], <span class="bold">ずらかる</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_08" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">8 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans"><span class="bold">バット</span>[<span class="bold">クラブ</span>]<span class="bold">を振る</span><span class="gp">, </span><span class="bold">スイングする</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_09" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">9 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈(走っている)馬が〉<span class="bold">脚と脚をぶつけ</span>(<span class="bold">て負傷す</span>)<span class="bold">る</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_01_02_10" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">10 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈歯が〉<span class="bold">生える</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ú</span>t across <span class="italic">A </span></span>
+      <span id="WDEJ_c0036550_p01_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_02_02'])" title="cut">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">2</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p01_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈問題･感情などが〉Aにまで及ぶ, Aの域を超えている </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The concern <span class="italic">cuts across</span> ethnic lines<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その懸念は民族の域を超えて広がっている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p01_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aを妨げる</span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟英｠</span>
+          <span class="trans">〈考えなどが〉Aと対立する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t al<span class="str">ó</span>ng </span>
+      <span id="WDEJ_c0036550_p02_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英話｠</span>
+          <span class="trans">消えうせる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t and r<span class="str">ú</span>n </span>
+      <span id="WDEJ_c0036550_p03_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて･非難して｠</span>
+          <span class="trans">(困った事態から)さっさと逃げ出す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p03_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3"><span class="fld">〘海〙</span>錨<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（いかり）</span></span><span class="trans">を切り離して出帆する</span><span class="gp">. </span></span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A</span> aw<span class="str">á</span>y [aw<span class="str">á</span>y <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈不要な物〉を切り取る, 切り離す, 取り除く(remove)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t b<span class="str">á</span>ck </span>
+      <span id="WDEJ_c0036550_p05_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【人数･金額などを】</span>
+          <span class="trans">削減する, 切り下げる </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut back on</span> one's hours [fats] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">自分の時間を切り詰める[脂肪の摂取量を減らす]</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p05_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">カットバックする </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0036600:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036600_01_00_02'])" title="cut･back">→ cutback <span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A</span> b<span class="str">á</span>ck [b<span class="str">á</span>ck <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p06_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈人数･金額･時間など〉<span class="bold">を削減する</span>, 減らす </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut back</span> the spending </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">支出を切り詰める</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p06_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈木〉を刈り込む, 剪定<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（せんてい）</span></span>する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A</span> d<span class="str">é</span>ad </span>
+      <span id="WDEJ_c0036550_p07_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉をわざと無視する, 知っているのに知らないふりをする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t d<span class="str">ó</span>wn </span>
+      <span id="WDEJ_c0036550_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…の[を]» </span>
+          <span class="trans"><span class="bold">量を減らす</span>, 削減する </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p09" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A</span> d<span class="str">ó</span>wn [d<span class="str">ó</span>wn <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p09_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">Aの</span>(<span class="bold">消費</span>)<span class="bold">量を減らす</span>[削減する]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈木など〉を切り倒す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟文｠</span>
+          <span class="trans">(刃物･銃などで)A〈人〉を傷つける, 殺す</span>
+          <span class="gp">; </span>
+          <span class="trans">〈病気が〉A〈人〉を倒す </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">be <span class="italic">cut down</span> by leukemia </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">白血病で亡くなる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈小説など〉を短くする</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈衣類〉の丈を詰める</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈価格など〉を下げる, 落とす</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉に値引きさせる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> her <span class="italic">down</span> to [by] $10 </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女に10ドルにまで[だけ]まけさせる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈人〉をこきおろす</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p09_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(レース用に)A〈車〉を改造(して軽く)する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p10" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="str">í</span>n </span>
+      <span id="WDEJ_c0036550_p10_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans"><span class="bold">口をはさむ</span>, 割って入る </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟書｠</span>
+          <span class="gr ty_用法">〖直接話法〗</span>
+          <span class="trans">…と口をはさむ </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0003610:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0003610_01_01_01_k103'])" title="say">→ say<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1a</span><span class="xrlabel">語法</span></span></a></span>)</span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">“Nonsense!” Bob <span class="italic">cut in</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">「ばか言え」とボブが口を出してきた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p10_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【車･人の列などに】</span>
+          <span class="trans">割り込む </span>
+          <span class="sp"> «<span class="italic">on</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p10_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈機械などが〉必要時に作動する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p10_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="trans">(ダンスで)パートナーの交代を求める </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Can I <span class="italic">cut in</span>? </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">交代して私と踊ってもらえますか </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>ダンス中のカップルの1人に向かって) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A </span><span class="str">í</span>n on <span class="italic">B </span></span>
+      <span id="WDEJ_c0036550_p11_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉にB〈もうけなど〉の分け前をやる, A〈人〉をB〈仲間など〉に加えてやる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ú</span>t into <span class="italic">A </span></span>
+      <span id="WDEJ_c0036550_p12_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(ナイフなどで)A〈物〉に切れ目[切れ込み]を入れる</span>
+          <span class="gp">;</span>
+          <span class="trans">〈物が〉A〈物〉に食い込む </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">His hands bled as the wire <span class="italic">cut</span> deeply <span class="italic">into</span> his flesh<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼の両手は肉に鉄線が深く食い込んで出血した</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p12_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈列･話など〉に割り込む</span>
+          <span class="gp">; </span>
+          <span class="trans">Aを妨げる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p12_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈時間など〉に食い込む</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈価値など〉を減らす, 下げる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ú</span>t <span class="str">ì</span>t </span>
+      <span id="WDEJ_c0036550_p13_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米話｠</span>
+          <span class="trans">十分である, 期待にこたえる</span>
+          <span class="gp">; </span>
+          <span class="trans">(なんとか)うまくやる[いく]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="str">ó</span>ff </span>
+      <span id="WDEJ_c0036550_p14_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈機械･音などが〉急に止まる[やむ]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p14_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米｠</span>
+          <span class="trans">脇道に入る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A </span><span class="str">ó</span>ff [<span class="str">ó</span>ff <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p15_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈物〉<span class="bold">を切り離す</span></span>
+          <span class="gp">; </span>
+          <span class="trans">A〈物〉を短く切る </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> (him) <span class="italic">off</span> a big piece of pie </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">パイから大きな1切れを(彼に)切り取(ってや)る</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_01_09'])" title="cut">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">9</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例be <span class="rf">～</span> off〗</span>
+          <span class="trans">〈場所･人が〉<span class="co x_ni"> «…から» </span><span class="bold">孤立する </span></span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟比喩的に｠</span>
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">疎い </span>
+          <span class="sp"> «<span class="italic">from</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The town <span class="italic">was cut off</span> for weeks by snow<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">雪のせいでその町は数週間孤立した</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> A off〗</span>
+          <span class="trans">A〈関係〉を絶つ</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉との関係を絶つ </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは時に再帰代名詞; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_o0004020:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_o0004020_01_00_02_k301'])" title="one･self">→ oneself <span class="xrlabelGroup"><span class="xrlabel">2</span><span class="xrlabel">文法</span></span></a></span></span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Every member of his family <span class="italic">cut</span> him <span class="italic">off</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">家族全員が彼と絶縁した</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈人〉の遺産相続権を奪う, Aを勘当する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> A off〗</span>
+          <span class="trans">A〈人〉の話に割って入る</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈(通話中の)人〉の電話を切る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aを妨げる</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人(の行く手)〉を遮る</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈道路〉を封鎖する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_08" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">8 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_p20'])" title="cut">＝ <span class="xrlabelGroup"><span class="xrlabel">cut</span></span> A up<span class="xrlabelGroup"><span class="xrlabel">(2)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_09" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">9 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例be <span class="rf">～</span> off〗</span>
+          <span class="trans">急死する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p15_10" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">10 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米･くだけて｠</span>
+          <span class="trans">〈バーテンなどが〉A〈酔客〉に酒を出すのをやめる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="str">ó</span>ut </span>
+      <span id="WDEJ_c0036550_p16_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈エンジンなどが〉突然止まる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p16_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米･くだけて｠</span>
+          <span class="trans">(急いで)立ち去る[帰る]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p16_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="trans">〈車が〉急に車線から脇に飛び出す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p16_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟豪･ニュージー｠</span>
+          <span class="trans">〈道が〉行き止まりになる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p17" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A </span><span class="str">ó</span>ut [<span class="str">ó</span>ut <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p17_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈物〉<span class="bold">を切り取る</span>, 切り抜く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈ある形の紙･布など〉<span class="bold">を切り取る</span>, 切り抜く </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">a cookie cutter to <span class="italic">cut out</span> rounds </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">丸型に抜くクッキーの抜き型</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈記事･小説などの一部〉をカットする, 削除する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈物〉を控える, やめる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut out</span> coffee </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">コーヒーを控える</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">Cut it</span></span> [that] <span class="italic"><span class="bold">out! </span></span></span>
+            <span class="oup_label x_ni">｟話｠</span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">やめろ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…から» </span>
+          <span class="trans">A〈人〉をはずす </span>
+          <span class="sp"> «<span class="italic">of</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">cut</span> A <span class="italic">out of</span> one's will </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">A〈人〉を遺言状の相続人からはずす</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖be <span class="rf">～</span> out; 通例否定文･疑問文で〗</span>
+          <span class="co x_ni"> «職業に/…になることに» </span>
+          <span class="trans">向いている, 適している </span>
+          <span class="sp"> «<span class="italic">for/to</span> be» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p17_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈光など〉を遮る</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ú</span>t through <span class="italic">A </span></span>
+      <span id="WDEJ_c0036550_p18_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈風などが〉A〈人など〉の身を切るようである</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p18_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0036550:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0036550_01_02_02'])" title="cut">↑ <span class="xrlabelGroup"><span class="xrlabel">自動詞</span><span class="xrlabel">2</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p18_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈関門など〉を切り抜ける, 乗り越える</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈形式など〉を極力省く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="str">ú</span>p </span>
+      <span id="WDEJ_c0036550_p19_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米･くだけて｠</span>
+          <span class="trans">(授業で)悪ふざけをする, おどける</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p19_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">とても腹を立てる </span>
+          <span class="sp"> «<span class="italic">about</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p19_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈布地などが〉<span class="co x_ni"> «…に» </span>仕立てられる </span>
+          <span class="sp"> «<span class="italic">into</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t <span class="italic">A </span><span class="str">ú</span>p [<span class="str">ú</span>p <span class="italic">A</span>] </span>
+      <span id="WDEJ_c0036550_p20_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">Aを細かく切る, 切り刻む</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p20_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英｠</span>
+          <span class="trans">A〈運転手〉の前に割り込む</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p20_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例be <span class="rf">～</span> up〗</span>
+          <span class="trans">負傷する</span>
+          <span class="gp">; </span>
+          <span class="trans">心を痛める, 悲観する </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">be</span> badly <span class="italic">cut up</span> about [over] A </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">Aをひどく嘆き悲しむ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_p20_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈作品など〉をけなす, こきおろす</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">cut <span class="str">ù</span>p r<span class="str">ó</span>ugh [n<span class="str">á</span>sty] </span>
+      <span id="WDEJ_c0036550_p21_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけて｠</span>
+          <span class="trans">ひどく怒る, くってかかる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">cut <span class="str">ù</span>p w<span class="str">é</span>ll </span>
+      <span id="WDEJ_c0036550_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟俗｠</span>
+          <span class="trans">多額の遺産を残す</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_c0036550_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+      <span class="frmg">
+        <span class="gr x_rr ty_単複">複</span>
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-ts</span> | </span>
+      </span>
+      <span class="gr x_rr ty_名詞区分">C</span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="t">切り傷</span>
+          <span class="gp">, </span>
+          <span class="bold">傷口 </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">bleed from the <span class="italic">cuts</span> on one's hand </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">手の傷口から出血する</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">minor <span class="italic">cuts</span> and bruises </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">軽い切り傷や打ち身</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span id="WDEJ_c0036550_02_00_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="trans">
+            <span class="t">切れ目</span>
+            <span class="gp">, </span>
+            <span class="bold">切れ込み </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">make small <span class="italic">cuts</span> in the top pie crust </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">パイ生地の上に小さく切れ目を入れる</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the <span class="italic">cuts</span> of a leaf </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">葉の切れ込み</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_02_00_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="trans">(肉の)<span class="bold">切り身</span><span class="gp">, </span><span class="bold">1片 </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">low-fat <span class="italic">cuts</span> of meat </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">低脂肪の肉片</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span id="WDEJ_c0036550_02_00_03_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="con">〖しばしば<span class="rf">～</span>s〗</span>
+          <span class="co x_ni"> «…における» </span>
+          <span class="trans">
+            <span class="t">引き下げ</span>
+            <span class="gp">, </span>
+            <span class="bold">切り下げ</span>
+            <span class="gp">, </span>
+            <span class="bold">削減 </span>
+          </span>
+          <span class="sp"> «<span class="italic">in</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">be opposed to tax [budget] <span class="italic">cuts </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">税金[予算]の引き下げに反対する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">deep <span class="italic">cuts in</span> spending [salary] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">大きな支出[給与]削減</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_02_00_03_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="co x_ni"> «…の» </span>
+          <span class="trans">
+            <span class="bold">中断</span>
+            <span class="gp">, </span>
+            <span class="bold">配給停止 </span>
+          </span>
+          <span class="sp"> «<span class="italic">in</span>» </span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟主に英｠</span>
+          <span class="trans">
+            <span class="bold">停電</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="gr ty_用法">〖通例単数形で〗</span>
+        <span class="trans">(髪を)<span class="t">カット</span>(<span class="bold">すること</span>)</span>
+        <span class="gp">; </span>
+        <span class="trans">(髪の)<span class="bold">スタイル</span><span class="gp">, </span><span class="bold">カット</span></span>
+        <span class="gp">; </span>
+        <span class="trans">(衣服の)<span class="bold">スタイル</span><span class="gp">, </span><span class="bold">裁断 </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">a <span class="italic">cut</span> and blow-dry </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">カットとブロー</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">By the <span class="italic">cut</span> of her clothes, I can tell that she is a well-bred woman<span class="gp">. </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">服のスタイルから見て彼女は良家の出身だ</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_05" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">5 </span>
+      <span id="WDEJ_c0036550_02_00_05_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="trans">(映画･放送などの)<span class="bold">カット</span><span class="gp">, </span><span class="bold">削除 </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">make some <span class="italic">cuts</span> in a drama </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">劇の一部をカットする</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_02_00_05_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(映画などの)<span class="bold">編集</span>(<span class="bold">版</span>)</span>
+          <span class="gp">; </span>
+          <span class="trans">(CDなどの)<span class="bold">曲 </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">the director's [latest] <span class="italic">cut</span> of the movie </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">その映画のディレクターズカット[最新版]</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_06" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">6 </span>
+      <span id="WDEJ_c0036550_02_00_06_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="fld">〘トランプ〙</span>
+          <span class="trans"><span class="bold">カット</span>(<span class="bold">すること</span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_02_00_06_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trg x_xd3">
+          <span class="fld">〘球技〙</span>
+          <span class="trans">(球の)<span class="bold">カット</span></span>
+          <span class="gp">; </span>
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">(バット･クラブを)<span class="bold">振ること</span><span class="gp">, </span><span class="bold">スイング</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_07" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">7 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟米｠</span>
+        <span class="trans">
+          <span class="bold">切り開いた通路</span>
+          <span class="gp">, </span>
+          <span class="bold">切り通し</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">近道 </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">a <span class="italic">cut</span> through a hill side </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">山腹を通る切り通し</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_08" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">8 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟くだけて｠</span>
+        <span class="gr ty_用法">〖単数形で〗</span>
+        <span class="trans"><span class="bold">分け前</span><span class="gp">, </span><span class="bold">取り分</span>(share<span class="sup">1</span>) </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">take one's <span class="italic">cut</span> of the profits </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">もうけから分け前をもらう</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_09" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">9 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟米･カナダ｠</span>
+        <span class="trans">(一定期間内の木材の)<span class="bold">伐採量</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_10" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">10 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟くだけて｠</span>
+        <span class="trans">(くじ引き用の)<span class="bold">こより</span><span class="gp">, </span><span class="bold">わら </span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">draw <span class="italic">cuts </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_用例訳">くじを引く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_11" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">11 </span>
+      <span id="WDEJ_c0036550_02_00_11_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">a. </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖通例単数形で〗</span>
+          <span class="trans">(人を)<span class="bold">傷つける言葉</span>[<span class="bold">行為</span>], <span class="bold">当てつけ</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_c0036550_02_00_11_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">b. </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="oup_label x_ni">｟話｠</span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖通例the <span class="rf">～</span>〗</span>
+            <span class="trans">
+              <span class="bold">無視すること</span>
+              <span class="gp">, </span>
+              <span class="bold">知らんぷり</span>
+            </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_12" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">12 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟主に米｠</span>
+        <span class="trans">(学校などを)<span class="bold">さぼること</span><span class="gp">, </span><span class="bold">欠席</span><span class="gp">, </span><span class="bold">ずる休み</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_13" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">13 </span>
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="oup_label x_ni">｟豪･ニュージー･俗｠</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="con">〖the <span class="rf">～</span>s〗</span>
+          <span class="trans">
+            <span class="bold">むち打ちの体罰</span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_02_00_14" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">14 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟アイル･話｠</span>
+        <span class="trans">(人の)<span class="bold">外見</span><span class="gp">, </span><span class="bold">身なり</span></span>
+        <span class="gp">; </span>
+        <span class="oup_label x_ni">｟アイル｠</span>
+        <span class="trans">
+          <span class="bold">見苦しい状態</span>
+          <span class="gp">, </span>
+          <span class="bold">ざま</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">a c<span class="str">ú</span>t above <span class="italic">A </span></span>
+      <span id="WDEJ_c0036550_p23_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="trans">A〈人･物〉より良い物, Aより上質[上位] </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The dancer is <span class="italic"><span class="bold">a cut above the rest</span></span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">そのダンサーはほかの者より一枚上だ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">m<span class="str">à</span>ke [m<span class="str">ì</span>ss] the c<span class="str">ú</span>t </span>
+      <span id="WDEJ_c0036550_p24_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="fld">〘ゴルフ〙</span>
+          <span class="trans">規定のスコアをクリア(して予選を通過)する[クリアできない]</span>
+          <span class="gp">; </span>
+          <span class="trans">合格する[を逃す]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p25" class="idmsec x_xo1">
+      <span class="idm x_xoh">the c<span class="str">ù</span>t and thr<span class="str">ú</span>st of <span class="italic">A </span></span>
+      <span id="WDEJ_c0036550_p25_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">Aについての活発な議論</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_c0036550_03" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">形容詞</span>
+      <span class="frmg">
+        <span class="frm x_nb">比較なし </span>
+      </span>
+      <span class="gr ty_用法">〖主に<span class="t">名詞</span>の前で〗</span>
+    </span>
+    <span id="WDEJ_c0036550_03_00_01" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">1 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="bold">切った</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans"><span class="bold">切って傷ついた</span>〈指など〉</span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">切り取った</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">摘んだ</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans"><span class="bold">刻んだ</span>〈野菜など〉</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_03_00_02" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">2 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="bold">短縮した</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans">
+          <span class="bold">削減した</span>
+        </span>
+        <span class="gp">; </span>
+        <span class="trans">(水などで割って)<span class="bold">薄めた</span>〈酒〉</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_03_00_03" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">3 </span>
+      <span class="trg x_xd2">
+        <span class="oup_label x_ni">｟話｠</span>
+        <span class="trans">
+          <span class="bold">酔っ払って </span>
+        </span>
+        <span class="grnote"> (<span class="lbl">!</span>half cutともいう) </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_03_00_04" class="semb x_xd1 hasSn">
+      <span class="sn x_xdh">4 </span>
+      <span class="trg x_xd2">
+        <span class="trans">
+          <span class="bold">去勢した</span>
+        </span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p26" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t and c<span class="str">á</span>rried </span>
+      <span id="WDEJ_c0036550_p26_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">＝ married</span>
+          </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_r0014260:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_r0014260_c01'])" title="rhym･ing">→ rhyming slang</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_p27" class="idmsec x_xo1">
+      <span class="idm x_xoh">c<span class="str">ù</span>t and dr<span class="str">í</span>ed </span>
+      <span id="WDEJ_c0036550_p27_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_c0036560:com.apple.dictionary.ja-en.WISDOM" title="cut-and-dried">＝ cut-and-dried</a>
+            </span>
+          </span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="cb x_xo0">
+    <span id="WDEJ_c0036550_c01" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> fl<span class="str">ó</span>wer</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0036550_c01_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">切り花</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_c02" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> gl<span class="str">á</span>ss</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0036550_c02_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="trans">カットグラス, 切子<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（きりこ）</span></span>ガラス</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_c0036550_c03" class="csec x_xo1">
+      <span class="cwg x_xoh">
+        <span class="cw"><span class="str"><span class="rf">～̀</span></span> l<span class="str">ú</span>nch</span>
+      </span>
+      <span class="gramb x_xd0">
+        <span id="WDEJ_c0036550_c03_01" ord="0" class="semb x_xd1">
+          <span class="trg x_xd2">
+            <span class="oup_label x_ni">｟豪･ニュージー｠</span>
+            <span class="trans">(弁当の)サンドイッチ</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

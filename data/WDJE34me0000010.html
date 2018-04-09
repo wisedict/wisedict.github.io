@@ -1,0 +1,4903 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDJE34me0000010" d:title="目" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">め </span>
+    <span class="hvg">【<span class="hv">目</span>】</span>
+    <span class="box ty_jump_table">
+      <span class="x_xdh x_xdt">
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_01'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">①</span>
+                <span class="xrlabel">器官 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_02'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">②</span>
+                <span class="xrlabel">視力, 視覚 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_03'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">③</span>
+                <span class="xrlabel">視線 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_04'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">④</span>
+                <span class="xrlabel">目つき </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_05'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑤</span>
+                <span class="xrlabel">鑑識眼 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_06'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑥</span>
+                <span class="xrlabel">見方 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_07'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑦</span>
+                <span class="xrlabel">経験 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_08'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑧</span>
+                <span class="xrlabel">台風などの </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_09'])" title="め" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑨</span>
+                <span class="xrlabel">ざる・織物・木などの</span>
+              </span>
+            </a>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_01" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">1 </span>
+      <span class="ind">【器官】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例複数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【眼球】</span>
+          <span class="trans"><span class="art">an</span> eyeball</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE34me0000010_00_01_01" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">①</span>
+        <span class="hv"><span class="rf">～</span>(の)目</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">はれぼったい[かわいい]目 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">puffy [lovely] <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">つり[たれ]目 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">slanted [droopy] <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">黒い目の娘 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a girl with dark [black] <span class="italic">eyes</span></span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例 a black eye は目の周りの打撲によるあざをさす) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">物言いたげな目 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">talking <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女は大きく青いきれいな目をしている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She has beautiful big [╳big beautiful] blue <span class="italic">eyes</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE34me0000010_00_01_02" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">②</span>
+        <span class="hv">目が[は]</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目が赤い<span class="gl">｟充血している｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">His <span class="italic">eyes</span> are bloodshot</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目がひどくくぼんでいた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">His <span class="italic">eyes</span> were deeply sunken [deep-set]</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例前の方は病気や老齢でやつれた様子を, 後の方は彫りの深い顔をいう) </span>
+          <span class="trans ty_訳文">He had deep sunken [deep-set] <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目がひりひり[ごろごろ]します </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">My <span class="italic">eyes</span> feel irritated [sandy]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">どこに目がついているんだ<span class="gl">｟よく見ろ｠ </span></span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">Where are your <span class="italic">eyes</span>? </span> / <span class="trans ty_訳文">Look where you're going</span><span class="gp">.</span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目は心の窓 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟ことわざ｠</span>
+          <span class="trans ty_訳文">The <span class="italic">eyes</span> are the window of the soul</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE34me0000010_00_01_03" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">③</span>
+        <span class="hv">目の</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">optic</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の神経 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">an <span class="italic">optic</span> nerve</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目のごみ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a foreign body [object] <span class="italic">in</span> the <span class="italic">eye</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh x_xdt">
+          <span class="sn">▸ </span>
+          <span class="ex">目の玉 </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE34me0002870:com.apple.dictionary.ja-en.WISDOM" title="めだま" ty="項目">⇨目玉</a></span>）</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の前で交通事故があった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">There was a car accident right in front of [before, under] my <span class="italic">eyes</span></span>
+          <span class="gp">. </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE34me0003430:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0003430_00_01'])" title="めのまえ" ty="項目">目の前<span class="xrlabelGroup">⇨<span class="xrlabel">① </span></span></a></span>）</span>
+        </span>
+      </span>
+      <span class="box x_xd2 ty_会話">
+        <span class="title x_xdh">会話</span>
+        <span class="np x_xd1">
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">「それはどこにあるの」「君の目の前<span class="gl">｟鼻先｠</span>だよ」 </span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_訳文">“Where is it?” “Right under [before] your <span class="italic">nose</span></span>
+              <span class="gp">. / </span>
+              <span class="ind">【そこだ】</span>
+              <span class="trans ty_訳文">It's right there</span>
+              <span class="gp">.</span>
+              <span class="trans ty_訳文">” </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE34me0000010_00_01_04" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">④</span>
+        <span class="hv">目を</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目を泣きはらす </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">cry one's <span class="italic">eyes</span> out</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目を細める </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="ind">【まぶしくて, よく見えなくて】</span>
+          <span class="trans ty_訳文">screw up one's <span class="italic">eyes </span></span>
+          <span class="ind">【近視などで】</span>
+          <span class="trans ty_訳文">squint one's <span class="italic">eyes </span></span>
+          <span class="ind">【愛着・笑みなどで】</span>
+          <span class="trans ty_訳文">crease one's <span class="italic">eyes</span></span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>narrow one's eyes は通例疑いや敵意のために眉をひそめる表情) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目を閉じる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">close [shut] one's <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その小さい男の子は目を大きく見開いて巨大な象を見た </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The little boy gazed at the huge elephant, (with his) <span class="italic">eyes</span> wide open</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>この open は形容詞) </span>
+          <span class="ind">【目を丸くして】</span>
+          <span class="trans ty_訳文">The little boy looked round-<span class="italic">eyed</span> at the huge elephant</span>
+          <span class="gp">.</span>
+          <span class="ind">【目を皿のようにして】</span>
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans ty_訳文">The little boy was <span class="italic">all eyes</span> as he looked at the huge elephant</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">ブラインドを開けると彼女は目をぎゅっとつむった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">When she drew up the blind, she squeezed her <span class="italic">eyes</span> tight shut</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は戦争で片目を失った </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He lost an <span class="italic">eye</span> in the war</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は驚いて目をぱちくり[白黒]させた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He blinked [goggled] (his <span class="italic">eyes</span>) in amazement</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は封筒を取り上げ郵便局の消印を目を細めて見た </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He picked up the envelope and <span class="italic">squinted at</span> the postmark</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">会話をするときには相手の目を見なさい, でないと相手の話に興味がないとか聞いていないと受けとられます </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Look into the other person's <span class="italic">eyes</span> [Make <span class="italic">eye</span> contact with the other person] during a conversation</span>
+          <span class="gp">; </span>
+          <span class="trans ty_訳文">otherwise, he thinks you are not interested in or listening to what he is saying</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE34me0000010_00_01_05" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">⑤</span>
+        <span class="hv">目で</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼が歩いているのをこの目で見たのです </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I saw him walking <span class="italic">with</span> my own [╳these] <span class="italic">eyes</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_02" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">2 </span>
+      <span class="ind">【視力, 視覚】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば複数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【視力】</span>
+          <span class="trans">eyesight, sight</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="oup_label x_ni">｟やや書｠</span>
+          <span class="trans">vision</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の錯覚 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">an <span class="italic">optical</span> illusion</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に見えない細菌 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">an <span class="italic">invisible</span> germ</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の届く限り一面に<span class="gl">｟見渡す限り｠</span>麦畑が広がっていた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The wheat field stretched as far as the [╳one's] <span class="italic">eye</span> could see</span>
+          <span class="gp">. </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE32mi0006810:com.apple.dictionary.ja-en.WISDOM" title="みわたす" ty="項目">⇨見渡す</a></span>）</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目がよい </span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">have good (<span class="italic">eye</span>)<span class="italic">sight </span></span> / <span class="trans ty_訳文">have sharp [good] <span class="italic">eyes</span></span><span class="gp">.</span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目が悪い </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He has bad [poor] (<span class="italic">eye</span>)<span class="italic">sight</span> [<span class="italic">vision</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は片目が見えない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He is blind <span class="italic">in one eye</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女は目が見えなくなった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She has lost her (<span class="italic">eye</span>)<span class="italic">sight</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She has become <span class="italic">blind</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目がかすみます </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Things look blurred</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">I have blurred <span class="italic">vision</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼の目は昨年以来めっきり衰えた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">His (<span class="italic">eye</span>)<span class="italic">sight</span> has failed badly since last year</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">暗闇でも目がきく動物もいる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Some animals <span class="italic">can see</span> in the dark</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">我々日本人は食物を味わうだけでなく目でも<span class="gl">｟見て｠</span>楽しむのですよ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">You know Japanese people [<span class="oup_label x_ni">｟やや書｠</span> the Japanese] enjoy <span class="italic">looking at</span> food as much as we enjoy tasting it</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>「我々」はことさらに訳さない方がよい ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_03" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">3 </span>
+      <span class="ind">【視線】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例複数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【見ること】</span>
+          <span class="trans"><span class="art">a</span> look</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">伏し目になる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">drop [lower] one's <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目と目を見かわす </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">exchange <span class="italic">looks </span></span>
+          <span class="gp ty_no-margin">｟</span>
+          <span class="tp">with</span>
+          <span class="gp ty_no-margin">｠</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目をそらす </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">look away </span>
+          <span class="gp ty_no-margin">｟</span>
+          <span class="tp">from</span>
+          <span class="gp ty_no-margin">｠</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女と目が合うと私は手を振った </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">When our <span class="italic">eyes</span> met [I caught her <span class="italic">eye</span>], I waved to her</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目のやり場に困る[がない] </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I don't know where to rest my <span class="italic">eyes</span> [where to <span class="italic">look</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">窓の方へ目を向けたが何も見えなかった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I looked at the window, but didn't [couldn't] see anything</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_04" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">4 </span>
+      <span class="ind">【目つき】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="ind">【目の表情】</span>
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば複数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【様子】</span>
+          <span class="trans"><span class="art">a</span> look</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>感情を示す形容詞を伴う ) </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">落ち着いた[嫉妬の]目で私の方を振り向く </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">turn to me with a tranquil [a jealous] <span class="italic">eye</span> [<span class="italic">look</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">不信[尊敬]の目で人を見る </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">eye</span> [<span class="italic">look at</span>] 〘him〙 with disbelief [respectfully, admiringly]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女はけげんな目をしていた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She <span class="italic">had a</span> puzzled <span class="italic">look</span> in her eye(s)</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She <span class="italic">looked</span> puzzled</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">父は私をきびしい目で見た </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Father <span class="italic">gave</span> me <span class="italic">a</span> severe <span class="italic">look</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">Father <span class="italic">looked at</span> me severely</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">真理は私に話すなと目で合図した </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Mari <span class="italic">winked at</span> me [signaled to me with her eyes, signaled to me with a wink] not to speak</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_05" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">5 </span>
+      <span class="ind">【鑑識眼】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>通例単数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【判断力】</span>
+          <span class="trans">judgment</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は絵を見る目がある </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He has an <span class="italic">eye</span> [a <span class="italic">good eye</span>] <span class="italic">for</span> art</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">この詩を鑑賞するには詩人の目がいる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">It needs a poet's <span class="italic">eye</span> [(洞察力) <span class="italic">insight</span>] to appreciate this poem</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">砂田は人を見る目がある[ない] </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Sunada is a good [a bad, a poor] judge of character</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_06" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">6 </span>
+      <span class="ind">【見方】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="ind">【観点】</span>
+          <span class="trans"><span class="art">an</span> eye </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば複数形で) </span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【見地, 見解】</span>
+          <span class="trans"><span class="art">a</span> point of view, <span class="art">a</span> viewpoint</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">法の目から見れば </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">in the <span class="italic">eyes</span> of the law</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">別の[公平な]目で情勢を見る </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">look at the situation <span class="italic">with</span> another [an impartial] <span class="italic">eye</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私たちは彼の目から見れば赤ん坊だ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">We are babies <span class="italic">in</span> his <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">作家の目から見ると, これらの文学作品は批評に値しない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">From</span> a writer'<span class="italic">s point of view</span>, these literary works are beneath criticism [review]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">これがアメリカ人の目から見た日本観です </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">This is Japan <span class="italic">as</span> Americans <span class="italic">see</span> it [<span class="italic">as seen by</span> Americans]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">長い目で見ればその家は今買っておいた方がいいでしょう </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">In the long run</span> it would be better for you to buy the house now [<span class="oup_label x_ni">｟話｠</span> the house would be a good buy (for you)]</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_07" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">7 </span>
+      <span class="ind">【経験】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trans"><span class="art">(an)</span> experience</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">アメリカ旅行中何度も恐ろしい目にあった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I had a lot of frightening <span class="italic">experiences</span> during my trip in America</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">大雨が降った後ひどい目にあった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">We had a terrible <span class="italic">time</span> after it had rained heavily</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_08" class="gramb x_xd0 hasSn ty_no_trans">
+    <span class="x_xdh">
+      <span class="sn">8 </span>
+      <span class="ind">【台風などの】</span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">台風の目 </span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">the center [<span class="italic">eye</span>] of a typhoon </span> / <span class="trans ty_訳文">〘比喩的〙 the storm center</span><span class="gp">.</span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">針の目<span class="gl">｟穴｠ </span></span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">the <span class="italic">eye</span> of a needle </span> / <span class="trans ty_訳文">a needle's <span class="italic">eye</span></span><span class="gp">. </span></span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE34me0000010_00_09" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">9 </span>
+      <span class="ind">【ざる・織物・木などの】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trgg x_xd2">
+        <span class="trg">
+          <span class="ind">【網・ざるの目】</span>
+          <span class="trans"><span class="art">a</span> mesh</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【織り方】</span>
+          <span class="trans">texture</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【木目, 石目】</span>
+          <span class="trans">grain</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="ind">【チェス盤などのます目】</span>
+          <span class="trans"><span class="art">a</span> square</span>
+        </span>
+        <span class="gp">;</span>
+        <span class="trg">
+          <span class="trdef">〖のこぎり・やすりなどの〗</span>
+          <span class="trans"><span class="art">a</span> tooth </span>
+          <span class="tfrm">(<span class="tgr x_rr ty_単複">複数</span> teeth)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">2インチの目の網 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a net of two-inch <span class="italic">meshes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の細かい[荒い]ざる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a fine-<span class="italic">meshed</span> [a coarse-<span class="italic">meshed</span>] strainer</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目のゆるい[荒い; つんだ]布地 </span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">cloth <span class="italic">of</span> loose [coarse; close] <span class="italic">texture </span></span> / <span class="trans ty_訳文">loose [coarse; close] cloth</span><span class="gp">.</span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の細かい木材[石材] </span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">wood [stone] <span class="italic">of</span> fine <span class="italic">grain </span></span> / <span class="trans ty_訳文">fine-<span class="italic">grained</span> wood [stone]</span><span class="gp">.</span></span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">碁盤の目 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">squares</span> on a <span class="italic">go</span> board</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">のこぎり[やすり]の目 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">the <span class="italic">teeth</span> of a saw [a file]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p01" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3001" class="cw">目がくらむ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目がくらむようなダイヤモンド </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a <span class="italic">dazzling</span> diamond</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は金に目がくらんだ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">was blinded</span> [<span class="italic">was dazzled</span>] <span class="italic">by</span> money</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p02" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3002" class="cw">目が肥える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の肥えた聴衆 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">an <span class="italic">appreciative</span> audience</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p03" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3003" class="cw">目が覚める</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="trans ty_複合語">wake (up) </span>
+              <span class="ind">【正気を取り戻す】</span>
+              <span class="trans ty_複合語">come to one's senses</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目が覚めるような<span class="gl">｟鮮やかな｠</span>赤いドレス </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a <span class="italic">brilliant</span> red dress</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目が覚めるような<span class="gl">｟息をのむほどの｠</span>ホームラン </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a <span class="italic">stunning</span> home run</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">今朝のどが痛くて目が覚めた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">woke up</span> [(目を覚まされる) <span class="italic">was awakened</span>] <span class="italic">with</span> a sore throat</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その音で目が覚めた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The noise <span class="italic">woke</span> me <span class="italic">up</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p04" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3004" class="cw">目が据わる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は飲むにつれて目が据わってきた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">As he drank more, his <span class="italic">eyes grew fixed</span> [<span class="italic">took on a fixed look</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p05" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3005" class="cw">目が[の]高い</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の高い<span class="gl">｟鑑賞力のある｠</span>観客 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">an <span class="italic">appreciative</span> audience</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼はさすがに目が高い<span class="gl">｟違いの分かる目を持っている｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">has a</span> truly <span class="italic">discerning eye</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p06" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3007" class="cw">目が届く</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">親の目の届かない所で<span class="gl">｟いない所で｠</span>悪い事をする </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">do bad things <span class="italic">behind</span> one's parents' <span class="italic">back</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">近くにいなさいと言ったでしょ. ママの目の届かない所に行っては絶対だめよ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I told you to stay close</span>
+          <span class="gp">. </span>
+          <span class="trans ty_訳文">Do<span class="italic">n't</span> ever <span class="italic">leave</span> my <span class="italic">sight</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p07" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3008" class="cw">目がない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女は甘いものに目がない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She <span class="italic">loves</span> [<span class="italic">is very fond of</span><span class="gp">, </span><span class="oup_label x_ni">｟話｠ </span><span class="italic">is crazy about</span>] sweets</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She <span class="italic">has a weakness for</span> sweets</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She <span class="italic">can't resist</span> sweets</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She <span class="italic">has a sweet tooth</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p08" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3009" class="cw">目が回る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">運動をやりすぎて目が回った<span class="gl">｟めまいがした｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">felt giddy</span> [<span class="italic">dizzy</span>] from too much exercise</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">今日は目が回るほど<span class="gl">｟大変｠</span>忙しい </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'm <span class="italic">very</span> busy [<span class="oup_label x_ni">｟話｠</span> (<span class="italic">as</span>) busy <span class="italic">as a bee</span>] today</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p09" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3010" class="cw">目から鱗<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（うろこ）</span></span>が落ちる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">突然目から鱗が落ちた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Suddenly <span class="italic">the scales have fallen from</span> my <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">I <span class="italic">was</span> suddenly <span class="italic">awakened to the truth</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p10" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3011" class="cw">目から火が出る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">鴨居に頭をぶつけて目から火が出た </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">saw stars</span> when I hit my head against the lintel</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p11" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3012" class="cw">目じゃない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は私の目じゃない<span class="gl">｟相手にならない｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">is no match for</span> me</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">他の女は目じゃない<span class="gl">｟意味を持たない｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Other girls <span class="italic">mean nothing</span> to me</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p12" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3013" class="cw">目と鼻の先</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">駅は家から目と鼻の先です </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="ind">【非常に近い】</span>
+          <span class="trans ty_訳文">The station is <span class="italic">very close to</span> my house</span>
+          <span class="gp">.</span>
+          <span class="ind">【石を投げると届く距離にある】</span>
+          <span class="trans ty_訳文">The station is just <span class="italic">a stone's throw</span> from my house</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p13" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3014" class="cw">目に余る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に余る<span class="gl">｟堪えがたい｠</span>行為 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">the conduct one <span class="italic">can't stand</span> [<span class="italic">bear</span>, (認める) <span class="italic">approve</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p14" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3015" class="cw">目に入れても痛くない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">孫娘は目に入れても痛くない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">My granddaughter is <span class="italic">the apple of</span> my <span class="italic">eye</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p15" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3016" class="cw">目に浮かぶ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">あの美しいシーンが目に<span class="gl">｟心に｠</span>浮かぶ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The beautiful scene <span class="italic">comes to mind</span> [<span class="italic">into</span> my <span class="italic">mind</span>]</span>
+          <span class="gp">.</span>
+          <span class="ind">【…を心に描く】</span>
+          <span class="trans ty_訳文">I <span class="italic">can</span> (<span class="italic">just</span>) <span class="italic">picture</span> the beautiful scene</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p16" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3017" class="cw">目に映る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に映るすべてのものが私には珍しかった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Everything that <span class="italic">met</span> my <span class="italic">eyes</span> [I <span class="italic">saw</span>] was new to me</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p17" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3018" class="cw">目に角<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（かど）</span></span>を立てる</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【ひどく怒ってにらみつける】</span>
+              <span class="trans ty_複合語">look at 〘him〙 very angrily</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p18" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3019" class="cw">目に染みる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">煙が目に染みた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The smoke <span class="italic">stung</span> my <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">My <span class="italic">eyes smarted</span> from the smoke</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">5月は新緑が目に染みる<span class="gl">｟鮮やかである｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The fresh green is <span class="italic">vivid</span> in May</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p19" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3020" class="cw">目にする</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">これは街でよく目にする光景である </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">This is the scene we often <span class="italic">see</span> on the street</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p20" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3021" class="cw">目に立つ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に立つ<span class="gl">｟目立つ｠</span>色 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a <span class="italic">striking</span> color</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p21" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3022" class="cw">目に留める</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女の赤いドレスが私の目に留まった<span class="gl">｟注意を引いた｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Her red dress <span class="italic">caught</span> my <span class="italic">eye</span> [<span class="italic">drew</span> my <span class="italic">attention, attracted</span> my <span class="italic">attention</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p22" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3023" class="cw">目に入る</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は立ち止まって彼女をにらんでいたが彼女は彼のことは目にも入らないかのように通り過ぎた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He stopped to glare at her, but she passed as if she didn't even <span class="italic">see</span> him</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p23" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3024" class="cw">目には目を歯には歯を</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="trans ty_複合語">an eye for an eye, a tooth for a tooth</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p24" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3025" class="cw">目に触れる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">赤ちゃんは目に触れるものは何でも口に入れようとする </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Babies try to put everything they <span class="italic">see</span> into their mouths</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p25" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3026" class="cw">目に見える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に見えて<span class="gl">｟著しく｠</span>進歩する </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">make (╳a) <span class="italic">remarkable</span> [<span class="italic">marked</span>] progress </span>
+          <span class="gp ty_no-margin">｟</span>
+          <span class="tp">in</span>
+          <span class="gp ty_no-margin">｠</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目に見えて<span class="gl">｟急速に｠</span>快方に向かっている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He is getting better (<span class="italic">very</span>) <span class="italic">quickly</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その結果はすでに目に見えている<span class="gl">｟明らかだ｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The outcome is already <span class="italic">too obvious</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p26" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3027" class="cw">目にも留まらぬ</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目にも留まらぬ<span class="gl">｟稲妻のような｠</span>速さで </span>
+        </span>
+        <span class="trg x_xd3"><span class="trans ty_訳文">as quick as lightning </span> / <span class="trans ty_訳文">like lightning</span><span class="gp">.</span></span>
+      </span>
+      <span id="WDJE34me0000010_p27" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3028" class="cw">目に物言わす</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に物言わすことができる<span class="gl">｟目で何でも意思伝達できる｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">You can <span class="italic">communicate</span> anything <span class="italic">with</span> your <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p28" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3029" class="cw">目に物見せる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目に物見せてやるぞ<span class="gl">｟こらしめてやるぞ｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'll <span class="italic">teach</span> you <span class="italic">a lesson</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p29" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3030" class="cw">目の色を変える</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目の色を変えて<span class="gl">｟狂ったように｠</span>勉強している </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He is studying <span class="italic">like mad</span> [<span class="italic">crazy</span>]</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">ゴルフのこととなると彼の目の色が変わる<span class="gl">｟目がきらきら[きらり]と輝く｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">His <span class="italic">eyes sparkle</span> [<span class="italic">flash</span>] when it comes to golf</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p30" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3031" class="cw">目の上のこぶ</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【いつもじゃまになるもの】</span>
+              <span class="trans ty_複合語">a constant hindrance </span>
+              <span class="gp ty_no-margin">｟</span>
+              <span class="tp">to</span>
+              <span class="gp ty_no-margin">｠</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+          <span class="xrg x_xdt">（<span class="xr"><a href="x-dictionary:r:WDJE34me0003400:com.apple.dictionary.ja-en.WISDOM" title="めのかたき" ty="項目">⇨目の敵<span class="pr"><span d:pr="US solitary" class="ph t_ruby">（かたき）</span></span></a></span><span class="gp">, </span><span class="xr"><a href="x-dictionary:r:WDJE34me0003430:com.apple.dictionary.ja-en.WISDOM" title="めのまえ" ty="項目">⇨目の前</a></span>）</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p31" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3032" class="cw">目の黒いうちは</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私の目の黒いうちは<span class="gl">｟生きている間は｠</span>やつとの結婚は許さないぞ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I won't allow you to marry him <span class="italic">as long as</span> I <span class="italic">live</span></span>
+          <span class="gp">.</span>
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans ty_訳文">You'll marry him <span class="italic">over</span> my <span class="italic">dead body</span>!</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p32" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3033" class="cw">目の付け所</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目の付け所がいい </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">You <span class="italic">aim at the right thing</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">Your <span class="italic">aim is right</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">そこが目の付け所だ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">That's <span class="italic">the point</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p33" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3034" class="cw">目の保養</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">展示中の数々の美術品は目の保養になった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">A (good) number of works of art on show were a feast <span class="italic">for my</span> [<span class="italic">the</span>] <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p34" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3035" class="cw">目は口ほどに物を言う</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="trans ty_複合語">The eyes are as eloquent as the tongue</span>
+              <span class="gp">. </span>
+              <span class="trans ty_複合語">/ Eyes say as much as words</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p35" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3036" class="cw">目も当てられない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その光景は目も当てられないひどいものだった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The sight was <span class="italic">too</span> terrible [horrible] <span class="italic">to look at</span></span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">That was an <span class="italic">unbearable</span> sight <span class="italic">to see</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p36" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3037" class="cw">目を合わせる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼はとても恥ずかしがり屋で人と目を合わせることができない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He is very shy and <span class="italic">never makes</span> [<span class="italic">always avoids</span>] <span class="italic">eye contact</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p37" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3038" class="cw">目を疑う</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">一瞬自分の目を疑った </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">couldn't believe</span> my <span class="italic">eyes</span> for a moment</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p38" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3039" class="cw">目もくれない</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私の忠告に目もくれない<span class="gl">｟無関心だ｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">be indifferent to</span> [(<span class="italic ty_containJapanese">耳を貸さない</span>) <span class="italic">turn a deaf ear to,</span> (<span class="italic ty_containJapanese">無視する</span>) <span class="italic">ignore</span>] my advice</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p39" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3040" class="cw">目を覆う</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【目をそむける】</span>
+              <span class="trans ty_複合語">avert one's <span class="italic">eyes </span></span>
+              <span class="gp ty_no-margin">｟</span>
+              <span class="tp">from</span>
+              <span class="gp ty_no-margin">｠</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目を覆う<span class="gl">｟正視できない｠</span>惨状 </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">a terrible scene one can <span class="italic">hardly look at</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p40" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3041" class="cw">目をかける</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">先生は彼に目をかけている<span class="gl">｟ひいきする｠ </span></span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The teacher <span class="italic">favors</span> him</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p41" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3042" class="cw">目をかすめる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目をかすめて<span class="gl">｟こっそりと｠</span>酒を飲む </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">drink <span class="italic">on the sly</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は両親の目をかすめて<span class="gl">｟両親の陰で｠</span>たばこを吸った </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He smoked <span class="italic">behind</span> his parents' <span class="italic">back</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p42" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3043" class="cw">目を配る</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【注意して監視する】</span>
+              <span class="trans ty_複合語">keep an eye out </span>
+              <span class="gp ty_no-margin">｟</span>
+              <span class="tp">for</span>
+              <span class="gp ty_no-margin">｠</span>
+              <span class="ind">【目を離さず見る】</span>
+              <span class="trans ty_複合語">keep an eye </span>
+              <span class="gp ty_no-margin">｟</span>
+              <span class="tp">on</span>
+              <span class="gp ty_no-margin">｠</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">親は常に子供たちに目を配る必要がある </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Parents should always <span class="italic">keep an eye on</span> their children</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p43" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3044" class="cw">目をくらます</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【うまく人をまいて逃げる】</span>
+              <span class="oup_label x_ni">｟話｠</span>
+              <span class="trans ty_複合語">give 〘him〙 the slip</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">容疑者は警察の目をくらませて逃げた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The suspect <span class="italic">gave</span> the police <span class="italic">the slip</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p44" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3045" class="cw">目を凝らす</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">真二はその消えかかった字を読もうと目をこらした </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Shinji <span class="italic">strained</span> his <span class="italic">eyes</span> to read the faded letters</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">Shinji <span class="italic">looked hard at</span> the faded letters</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p45" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3046" class="cw">目を皿のようにする</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">目を皿のようにして<span class="gl">｟非常に注意深く徹底的に｠</span>探す </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">look for 〘it〙 <span class="italic">very carefully and thoroughly</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は目を皿のようにしたが霧の中では何も見えなかった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">strained</span> his <span class="italic">eyes</span>, but could see nothing in the fog</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p46" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3047" class="cw">目を三角にする</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【目に怒りの表情を浮かべる】</span>
+              <span class="trans ty_複合語">put on an angry look in one's eyes </span>
+              <span class="ind">【眉をつり上げる】</span>
+              <span class="trans ty_複合語">lower one's eyebrows </span>
+              <span class="grnote"> (<span class="lbl">!</span>日本語に引かれて raise … とすると非難や疑念, 失望の表情になる) </span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p47" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3048" class="cw">目をつける</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【獲得しようと】</span>
+              <span class="trans ty_複合語">have an [one's] eye 〘<span class="italic">on</span> it [him]〙</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p48" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3049" class="cw">目をつぶる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">社長は彼の過失に目をつぶった </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="ind">【大目に見た】</span>
+          <span class="trans ty_訳文">The boss <span class="italic">overlooked</span> [<span class="italic">winked at</span>] his fault</span>
+          <span class="gp">.</span>
+          <span class="ind">【見て見ぬふりをした】</span>
+          <span class="trans ty_訳文">The boss <span class="italic">closed</span> [<span class="italic">shut</span>] his <span class="italic">eyes to</span> his fault</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="italic">turned a blind eye to</span> his fault ともいう) </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE32mi0006640:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE32mi0006640_p01'])" title="みる" ty="項目">⇨見る[成句]</a></span>）</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p49" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3050" class="cw">目を通す</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">書類に目を通す </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">look over</span> [<span class="italic">through</span>] the papers </span>
+          <span class="ind">【ざっと】</span>
+          <span class="trans ty_訳文"><span class="italic">run</span> (<span class="italic">one's eye</span>(<span class="italic">s</span>)) <span class="italic">over</span> [<span class="italic">skim</span> (<span class="italic">through</span>)] the papers</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p50" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3051" class="cw">目を盗む</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">親の目を盗んで<span class="gl">｟内緒で｠</span>賭けトランプをする </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">play cards for money <span class="italic">without the knowledge of</span> one's parents</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p51" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3052" class="cw">目を離す</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">本から目を離す </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">look up</span> from the book</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">あの子は目が離せない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I ca<span class="italic">n't take</span> my <span class="italic">eyes off</span> that child</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>このように通例否定文で) </span>
+          <span class="ind">【監視している】</span>
+          <span class="trans ty_訳文">I have to <span class="italic">keep an eye on</span> that child</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p52" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3053" class="cw">目を光らせる</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【油断なく見る】</span>
+              <span class="trans ty_複合語">keep a watchful eye </span>
+              <span class="gp ty_no-margin">｟</span>
+              <span class="tp">on</span>
+              <span class="gp ty_no-margin">｠</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">警察は麻薬の密輸に目を光らせている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The police <span class="italic">keep a watchful eye on</span> drug trafficking</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p53" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3054" class="cw">目を引く</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="xrg x_xdt">（<span class="xr"><a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_p21'])" title="め" ty="項目">⇨目に留める</a></span>）</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p54" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3055" class="cw">目を伏せる</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私たちはお互いに目を伏せて通り過ぎた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">We passed each other <span class="italic">with</span> lowered <span class="italic">eyes</span></span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は恥じて目を伏せた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">looked</span> [<span class="italic">cast</span> his <span class="italic">eyes</span>] <span class="italic">down</span> in shame</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>この意の「伏し目」は downcast <span class="italic">eyes</span>) </span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p55" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3056" class="cw">目を丸くする</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その小さい男の子は目を丸くして<span class="gl">｟目を大きく見開いて｠</span>巨大な象を見た </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The little boy <span class="italic">looked round-eyed at</span> the huge elephant</span>
+          <span class="gp">. </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE34me0000010:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE34me0000010_00_01_04'])" title="め" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">①</span><span class="xrlabel">④ </span></span></a></span>）</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p56" class="csec x_xd2">
+        <span class="cwg x_xoh">
+          <span id="color_WDJE34me0000010_3057" class="cw">目を回す</span>
+        </span>
+        <span class="gramb x_xo3 ty_no_trans">
+          <span class="semb x_xd1 ty_no_trans">
+            <span class="trg x_xd2">
+              <span class="ind">【気絶する】</span>
+              <span class="trans ty_複合語">faint </span>
+              <span class="ind">【ひどく忙しい】</span>
+              <span class="trans ty_複合語">be extremely busy 〘do<span class="italic">ing</span>; <span class="italic">with</span>〙</span>
+              <span class="gp">.</span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">議会の準備で目を回す </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">be extremely busy</span> prepar<span class="italic">ing</span> for the conference</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE34me0000010_p57" class="csec x_xd2">
+        <span class="cwg x_xot">
+          <span id="color_WDJE34me0000010_3058" class="cw">目を見張る </span>
+        </span>
+      </span>
+    </span>
+    <span class="box x_xd1 ty_会話">
+      <span class="title x_xdh">会話</span>
+      <span class="np x_xd1">
+        <span class="exg x_xd2 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">「ショーはいかがでしたか」「あんまりすばらしくて目を見張ったわ」 </span>
+          </span>
+          <span class="trg x_xd3">
+            <span class="trans ty_訳文">“What [╳How] did you think of the show?” “I <span class="italic">was amazed</span> how good it was</span>
+            <span class="gp">.</span>
+            <span class="trans ty_訳文">”</span>
+          </span>
+        </span>
+        <span class="x_xopt x_xd2">
+          <span id="WDJE34me0000010_p58" class="csec">
+            <span class="cwg">
+              <span id="color_WDJE34me0000010_3059" class="cw">目をむく</span>
+            </span>
+            <span class="gramb ty_no_trans">
+              <span class="semb ty_no_trans">
+                <span class="trg"><span class="ind">【怒ってにらみつける】</span><span class="trans ty_複合語">glare 〘<span class="italic">at</span> him〙 </span> / <span class="trans ty_複合語">give 〘him〙 an angry glare</span><span class="gp">.</span></span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span class="exg x_xd2 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">彼は目をむいて私をどなった </span>
+          </span>
+          <span class="trg x_xd3">
+            <span class="trans ty_訳文">He shouted at me <span class="italic">with an angry glare</span></span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

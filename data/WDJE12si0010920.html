@@ -1,0 +1,3804 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDJE12si0010920" d:title="―(し)ている" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">―(し)ている </span>
+    <span class="box ty_jump_table">
+      <span class="x_xdh x_xdt">
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_01'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">①</span>
+                <span class="xrlabel">進行中の行為・出来事 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_02'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">②</span>
+                <span class="xrlabel">状態 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_03'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">③</span>
+                <span class="xrlabel">名詞を修飾 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_04'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">④</span>
+                <span class="xrlabel">習慣的行為 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_05'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑤</span>
+                <span class="xrlabel">完了・結果 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_06'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑥</span>
+                <span class="xrlabel">観察・意見 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_07'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑦</span>
+                <span class="xrlabel">伝聞 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_08'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑧</span>
+                <span class="xrlabel">丁寧な依頼 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_09'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑨</span>
+                <span class="xrlabel">現在の事実に反する仮定 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_10'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑩</span>
+                <span class="xrlabel">過去の事実に反する仮定 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_11'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑪</span>
+                <span class="xrlabel">経験 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_12'])" title="―(し)ている" ty="一覧">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">⑫</span>
+                <span class="xrlabel">過去の事実</span>
+              </span>
+            </a>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_01" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">1 </span>
+      <span class="ind">【進行中の行為・出来事】</span>
+    </span>
+    <span id="WDJE12si0010920_00_01_00_a" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">a. </span>
+        <span class="ind">（現在進行形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">is [am, are] 〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k01" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅰ </span>
+            <span> 話し手が話しているときに進行途中の行為やできごとを表すときには, 英語では現在進行形を用いる. 話し手は問題となっている行為・できごとについて, 「まだ終わっていない」とか「途中でありまだ続く」といったとらえ方をしている</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">天気は回復に向かっている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The weather <span class="italic">is changing</span> for the better</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">勉強しているときは話しかけないでください </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Don't talk to me when I'<span class="italic">m studying</span></span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>このように進行中の行為 (I'm studying) は話している時点に限定されないこともある) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">秀雄がベッドの上で飛び跳ねている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Hideo <span class="italic">is jumping</span> on the bed</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>hit, jump, kick, nod などの瞬間的動作を表す動詞を現在進行形で用いると, 同じ動作が繰り返されていることを表す) </span>
+        </span>
+      </span>
+      <span class="trgg x_xd2">
+        <span class="box ty_会話">
+          <span class="title x_xdh">会話</span>
+          <span class="np x_xd1">
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">「何をしているの」「宿題をしているところなんだ」 </span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_訳文">“What <span class="italic">are</span> you <span class="italic">doing</span>?” “I'<span class="italic">m</span> (just) <span class="italic">doing</span> my homework</span>
+                <span class="gp">.</span>
+                <span class="trans ty_訳文">” </span>
+                <span class="grnote"> (<span class="lbl">!</span>(1) 現在進行形は文字どおりその行為をしている最中でなくて, ちょっと休憩しているときでも用いる. (2) 「いま, まさに, ちょうど(…の最中[しているところ]である)」の意を強調したいときは, just, now, at the moment などを添える <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE02ii0010590:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE02ii0010590_00_01'])" title="いま" ty="項目">今<span class="xrlabelGroup">⇨<span class="xrlabel">① </span></span></a></span>）</span>) </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span class="box ty_会話">
+          <span class="np x_xd1">
+            <span class="exg x_xd2 hasSn">
+              <span class="x_xdh">
+                <span class="sn">▸ </span>
+                <span class="ex">「雨はまだ降っていますか」「いいえ, もう降っていません」<span class="gp">. </span></span>
+              </span>
+              <span class="trg x_xd3">
+                <span class="trans ty_訳文">“<span class="italic">Is</span> it still <span class="italic">raining</span>?” “No, it'<span class="italic">s</span> not <span class="italic">raining</span> now</span>
+                <span class="gp">.</span>
+                <span class="trans ty_訳文">” </span>
+                <span class="grnote"> (<span class="lbl">!</span>(1) 行為・状況の期間が長いことを強調するときは still を添える <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE31ma0003730:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE31ma0003730_k01'])" title="まだ" ty="項目">⇨まだ [使い分け]</a></span>）</span>. (2) 答えの部分は No, it (has) stopped raining now. (もう降りやんだ)ともいえる) </span>
+              </span>
+            </span>
+            <span class="x_xopt x_xd2">
+              <span id="WDJE12si0010920_k02" class="box ty_1">
+                <span class="title x_xdh">解説</span>
+                <span class="np x_xd1">
+                  <span class="x_xdh x_xdt">
+                    <span class="bold">Ⅱ </span>
+                    <span class="bold">「…している」は英語では現在進行形？</span>
+                  </span>
+                </span>
+                <span class="np x_xd1">
+                  <span class="x_xdh x_xdt">
+                    <span>「…している」というと現在進行形をすぐ思い浮かべるかもしれないが, 現在進行形は本来「…する途中である」「…しかかっている」の意を表す「現在途中形」とでもいうべきもの. 特に状態の変化を表す arrive, become, die, fall, get, go, leave, stop などの動詞では, He'</span>
+                    <span class="italic">s</span>
+                    <span> arriv</span>
+                    <span class="italic">ing</span>
+                    <span> [com</span>
+                    <span class="italic">ing</span>
+                    <span>; go</span>
+                    <span class="italic">ing</span>
+                    <span>, leav</span>
+                    <span class="italic">ing</span>
+                    <span>] soon. (彼はもうすぐ到着します[来ます; 出かけます]) / The bird </span>
+                    <span class="italic">is dying</span>
+                    <span>. (その鳥は死にそうだ) / It'</span>
+                    <span class="italic">s</span>
+                    <span> get</span>
+                    <span class="italic">ting</span>
+                    <span> [becom</span>
+                    <span class="italic">ing</span>
+                    <span>] warmer. (だんだん暖かくなってきた)などのように, 必ずしも日本語の「…している」とは一致しないことに注意. </span>
+                    <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_02_00_a'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">②</span><span class="xrlabel">a </span></span> [第2文例]</a></span>） </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_01_00_b" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">b. </span>
+        <span class="ind">（現在完了(進行)形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="trans">have<span class="tgr ty_不規則変化語">*</span> been 〘do<span class="italic">ing</span>〙</span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="trans">have 〘done〙</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k03" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅲ </span>
+            <span> 過去のある時点に始まった状態・行為が現在まで続いていることを表すには英語では現在完了(進行)形を使う. 通例, 状態動詞及び継続的行為を表す動詞 (expect, hope, keep, learn, lie, live, play, rain, sit, sleep, snow, stand, stay, study, teach, wait, want, work など)とともに用いられる. 現在完了進行形ではしばしば, 現在完了形では通例, for 句や since句[節]など, 期間を表す副詞相当語句を伴う</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">2月からここに来ています </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'<span class="italic">ve been</span> (<span class="italic">staying</span>) here since February</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私は彼女を子供のころから知っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">have known</span> [╳have been knowing] her since she was a child</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>know は状態動詞なので進行形不可. <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_k05'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">② </span></span></a></span>）</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私は3年間英語を勉強しています </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'<span class="italic">ve been studying</span> English for three years</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>話している時点でまだ勉強の途中でこれからも勉強し続けることを暗示する場合にも, 勉強が少し前に完結しその余韻がまだ現在残っている場合にも用いる) </span>
+          <span class="trans ty_訳文">I'<span class="italic">ve studied</span> English for three years</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>まだ勉強を続けているが, とにかくこれまで3年間勉強してきたことを表す) </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k04" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="bold x_xdt">Ⅳ </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">現在完了進行形と現在完了形の違い </span>
+            <span>: 継続的行為を表す動詞の場合, 現在完了進行形と現在完了形はほぼ同じ意味で用いられ交換可能なことが多いが, 現在完了進行形の方がより継続性を強調する. 特に日常会話では lie, sit, stay, wait など通例あまり長くない継続動作を表す動詞の場合, 現在完了進行形の方が好まれる</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">単純過去時制との違い </span>
+            <span>: 単純過去時制を用いた I </span>
+            <span class="italic">studied</span>
+            <span> English for three years. は過去の不特定な3年間, 勉強をしたことを伝える言い方で, その点現在とのつながりを表わす現在完了形とは異なる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_01_00_c" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">c. </span>
+        <span class="ind">（未来進行形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">will be 〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">明日の今ごろは我々は何をしているかな </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I wonder what we'<span class="italic">ll be doing</span> about this time tomorrow</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_01_00_d" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">d. </span>
+        <span class="ind">（過去進行形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">was [were] 〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">太郎は私が電話をかけているあいだ新聞を読んでいた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Taro was reading a newspaper while I <span class="italic">was talking</span> on the phone</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>英語では時制の一致で過去進行形となる. while は同時進行を強調 ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_02" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">2 </span>
+      <span class="ind">【状態】</span>
+    </span>
+    <span id="WDJE12si0010920_00_02_00_a" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">a. </span>
+        <span class="ind">（現在時制の状態動詞を用いて）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">〘do〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k05" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅰ </span>
+            <span> 現在の状態を表すには, 現在時制の「</span>
+            <span class="bold">be</span>
+            <span>+</span>
+            <span class="ps x_rr">形容詞</span>
+            <span>」, 「</span>
+            <span class="bold">be+過去分詞</span>
+            <span>」をはじめ, 一般に状態動詞と呼ばれる動詞を使うことで表すことができる. 状態動詞は通例進行形では用いられない</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">戸が開いて[閉まって]いる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The door <span class="italic">is open</span> [<span class="italic">is closed, is shut</span>]</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>The door is opening [is closing, <span class="oup_label x_ni">｟まれ｠</span> is shutting]. は「開いて[閉まって]いる状態」ではなく「開き[閉まり]つつある」の意) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">救急車が学校の前に止まっている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">An ambulance <span class="italic">is</span> [<span class="italic">is parked</span>] in front of the school</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟米｠</span> is standing (一時停車している)ともいえるが <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_02_00_b'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">②</span><span class="xrlabel">b </span></span></a></span>）</span>, is stopping は「(速度を落として)止まりかけている」の意となるので不可 <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_k02'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">①</span><span class="xrlabel">Ⅱ </span></span></a></span>）</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">そのビルは角に立っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The building <span class="italic">stands</span> [╳is standing] at the corner</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>主語が移動可能なものでは, 進行形も可. その場合, 一時的動作を表す: A policeman <span class="italic">is standing</span> at the corner<span class="gp">.</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女は和服がとても似合っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She <span class="italic">looks</span> very nice in the <span class="italic">kimono</span></span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>和服一般をさす「彼女は和服がとても似合う」 (She looks very nice in <span class="italic">kimonos</span>.) と異なり, 特定の和服をさすので, 日本語に着物を特定する語がなくても, 英語では the のような限定詞が必要) </span>
+          <span class="trans ty_訳文">The <span class="italic">kimono looks</span> very nice on her</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_02_00_b" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">b. </span>
+        <span class="ind">（現在進行形の状態動詞を用いて）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">be 〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k06" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅱ </span>
+            <span> いつもとは違った一時的な行為や状況, 一時的な傾向を表すには現在進行形を用いる. 一般に状態動詞は進行形にはできないが, この用法では使用可</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">まゆ子, なぜめがねをかけていないの </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">Why <span class="italic">aren't</span> you <span class="italic">wearing</span> glasses, Mayuko? </span>
+          <span class="grnote"> (<span class="lbl">!</span>現在時制を使った Mayuko wears glasses. (まゆ子は(習慣的に)めがねをかけている)と比較) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">今日は君は頭がさえているね </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">You <span class="italic">are being</span> very clever today</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>You are very clever. は主語の永久的性質を表すが, 進行形を用いると「さえたことをする[言う]」の意で一時的性質を表す. 同様の進行形が可能な形容詞の一例: careful, foolish, formal, funny, generous, mean, polite, stupid, wise など ) </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_02_00_c" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">c. </span>
+        <span class="ind">（知覚動詞）</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">サイレンの音が聞こえていますか </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文"><span class="italic">Do</span> [<span class="italic">Can</span>] you <span class="italic">hear</span> [╳Are you hearing] the sound of the sirens?</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">私は真由美が家を出て行くのに気がついていた </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">noticed</span> [╳was noticing] Mayumi leave the house</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k07" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class=" x_xdh">see, hear, smell, observe, feel, taste, notice などの知覚動詞は通例進行形にしない. </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">気分はどうですか </span>
+            </span>
+            <span class="trg x_xd3"><span class="trans ty_訳文">How do you feel? </span> / <span class="trans ty_訳文">How are you feeling?</span></span>
+          </span>
+          <span class="exg x_xd2 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">頭が痛い </span>
+            </span>
+            <span class="trg x_xd3">
+              <span class="trans ty_訳文">My head aches</span>
+              <span class="gp">.</span>
+              <span class="trans ty_訳文">My head is aching</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_03" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">3 </span>
+      <span class="ind">【名詞を修飾】</span>
+    </span>
+    <span id="WDJE12si0010920_00_03_00_a" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">a. </span>
+        <span class="ind">（現在分詞で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">台所からいいにおいが漂っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">There is a nice smell <span class="italic">coming</span> from the kitchen</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k08" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>「眠っている赤ん坊」のように「…している」が名詞を修飾する場合, 動詞の現在分詞形を用いる: a </span>
+            <span class="italic">sl<span class="str">è</span>eping</span>
+            <span> b</span>
+            <span class="str">á</span>
+            <span>by. </span>
+            <span class="grnote"> (<span class="lbl">!</span>sl<span class="str">é</span>eping c<span class="str">à</span>r (寝台車)のように「…のための」の意で用いられる動名詞と比較) </span>
+            <span> 「私の隣に眠っている赤ん坊」のように現在分詞の部分がさらに修飾語を伴う場合は現在分詞を名詞の後に置く: a baby </span>
+            <span class="italic">sleeping</span>
+            <span> next to me</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>この用法の現在分詞は通例進行形では用いられない consist, expect, hope, want, wish などの動詞でも使用可 </span>
+            <span class="grnote"> (<span class="lbl">!</span>like を除く) </span>
+            <span>: 我々は10人のメンバーからなっている委員会を作った We set up a committee </span>
+            <span class="italic">consisting</span>
+            <span> of ten members</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_03_00_b" class="semb x_xd1 hasSn ty_no_trans">
+      <span class="x_xdh">
+        <span class="sn">b. </span>
+        <span class="ind">（その他の修飾語句）</span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">大金の入っている財布をなくした </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">〘前置詞〙 I've lost my wallet <span class="italic">with</span> a lot of money in it</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">あのひょろっとしている若者は誰ですか </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">〘形容詞〙 Who's that <span class="italic">thin</span> young man?</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼が書類を入れている金庫は2階にある </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">〘関係詞節〙 The safe (<span class="italic">that</span>) he keeps his papers in is upstairs</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>目的格の関係代名詞は通例省略する. that の代わりに which も可能だがより堅い言い方) </span>
+          <span class="oup_label x_ni">｟書｠</span>
+          <span class="trans ty_訳文">The safe <span class="italic">in which</span> he keeps his papers is upstairs</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>which は省略不可 ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_04" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">4 </span>
+      <span class="ind">【習慣的行為】</span>
+    </span>
+    <span id="WDJE12si0010920_00_04_00_a" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">a. </span>
+        <span class="ind">（現在時制で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">〘do〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k09" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅰ </span>
+            <span> 現在を含み, ある一定期間続くと思われる習慣・繰り返される行為や事柄を表すには単純現在時制を用いる. しばしば every day, always, often, usually などの頻度を表す副詞(句)を伴う</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">おじは農業をやっている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">My uncle <span class="italic">runs</span> [<span class="italic">keeps</span>] a farm</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>My uncle is running [keeping] a farm. は一時的に農業をやっていることを表す <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_k06'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">②</span><span class="xrlabel">b </span></span></a></span>）</span>) </span>
+          <span class="trans ty_訳文">My uncle <span class="italic">is</span> a farmer</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は毎日バスで大学に通っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">goes</span> to college by bus every day</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>He is going to college by bus now. (今はバスで大学に通っている)は, 限られた期間での反復される活動を表す <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_02_00_b'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">②</span><span class="xrlabel">b </span></span></a></span>）</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">淀川は琵琶湖に端を発し, 大阪湾に流れ込んでいる </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The Yodo River <span class="italic">rises</span> in Lake Biwa and <span class="italic">flows</span> into Osaka Bay</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_04_00_b" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">b. </span>
+        <span class="ind">（現在進行形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">be 〘do<span class="italic">ing</span>〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDJE12si0010920_k10" class="box x_xd2 ty_1">
+        <span class="title x_xdh">解説</span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span class="bold">Ⅱ </span>
+            <span> 継続的に繰り返される行為を表すのに, 単純現在時制 </span>
+            <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_05_00_a'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">a </span></span></a></span>） </span>
+            <span> と比べてきわめて高い頻度で起きていることや偶然繰り返されていることを強調する場合, 英語では現在進行形を使う. hear, think などの一部の状態動詞も進行形で用いられる. 通例 always, constantly, continually, forever, perpetually, repeatedly などの副詞を伴い, しつこさに対するいらだちや非難の気持ちを表す表現となることが多い</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">君は勉強もしないでいつもテレビばかり見ているね </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">You <span class="italic">are</span> always <span class="italic">watching</span> TV without studying</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_05" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">5 </span>
+      <span class="ind">【完了・結果】</span>
+    </span>
+    <span id="WDJE12si0010920_k11" class="box x_xd1 ty_1">
+      <span class="title x_xdh">解説</span>
+      <span class="np x_xd1">
+        <span class="x_xdh x_xdt">
+          <span>行為や出来事が, 現在 </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_05_00_a'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">a </span></span></a></span>） </span>
+          <span> や将来 </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_05_00_b'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">b </span></span></a></span>） </span>
+          <span> や過去 </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_05_00_c'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">c </span></span></a></span>） </span>
+          <span> のある時点で完了していることや, さらにその時点とそれ以後においても何らかの結果を残していることを表すには英語では完了形を使う. 通例動作動詞とともに用いる. また, 行為やできごとが完了したことを明確にするために, just </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE02ii0010590:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE02ii0010590_00_02'])" title="いま" ty="項目">今<span class="xrlabelGroup">⇨<span class="xrlabel">② </span></span></a></span>）</span>
+          <span>, already </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE35mo0000050:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE35mo0000050_k01'])" title="もう" ty="項目">⇨もう</a></span>）</span>
+          <span>, still, yet </span>
+          <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE31ma0003730:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE31ma0003730_k01'])" title="まだ" ty="項目">⇨まだ [使い分け]</a></span>） </span>
+          <span> などの語句をしばしば伴う</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_05_00_a" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">a. </span>
+        <span class="ind">（現在完了形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">have 〘done〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼ならもう帰ってきている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">has</span> already <span class="italic">come</span> back</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>状態を表す be 動詞を使って He <span class="italic">is</span> back already. ともいえる <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010920:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010920_00_02_00_a'])" title="―(し)ている" ty="項目"><span class="xrlabelGroup">⇨<span class="xrlabel">②</span><span class="xrlabel">a </span></span></a></span>）</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女は宿題をまだすませていない </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She <span class="italic">has</span>n't <span class="italic">finished</span> her homework yet</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">She still <span class="italic">has</span>n't [<span class="italic">has</span> still not] <span class="italic">finished</span> her homework</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>still は常に否定語より前に置く) </span>
+          <span class="oup_label x_ni">｟書｠</span>
+          <span class="trans ty_訳文">She <span class="italic">has</span> not yet <span class="italic">finished</span> her homework</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>still not は not (…) yet に比べ驚き・いらだちなど強い感情を表す ) </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_05_00_b" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">b. </span>
+        <span class="ind">（未来完了形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">will have 〘done〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">8時までにはそこへ着いているよ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'<span class="italic">ll have gotten</span> there by eight o'clock</span>
+          <span class="gp">.</span>
+          <span class="trans ty_訳文">I'll be there by eight o'clock</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDJE12si0010920_00_05_00_c" class="semb x_xd1 hasSn">
+      <span class="x_xdh">
+        <span class="sn">c. </span>
+        <span class="ind">（過去完了形で）</span>
+      </span>
+      <span class="semb x_xd2">
+        <span class="trg x_xd3">
+          <span class="trans">had 〘done〙</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼女はそのことならすでに美和に話していると言った </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">She said that she <span class="italic">had</span> already <span class="italic">told</span> it to Miwa</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>時制の一致で過去分詞となっている ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_06" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">6 </span>
+      <span class="ind">【観察・意見】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖現在時制で〗</span>
+        <span class="trans">〘do〙</span>
+        <span class="gp">. </span>
+        <span class="grnote"> (<span class="lbl">!</span>話者の観察や意見, 知覚などを表す think, hope, suppose, understand, see, hear, smell, love, hate などの状態動詞とともに ) </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼は無罪だと思っています </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">think</span> [ d<span class="str">ó </span><span class="italic">think</span>] (that) he is innocent</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>後の方が強意的. I'm thinking … では「…と思うようになってきた」の意. ただし「…しようかと思っている」の意では I'<span class="italic">m thinking</span> of doing …. のように進行形となる <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE05oo0011830:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE05oo0011830_00_03'])" title="おもう" ty="項目">思う<span class="xrlabelGroup">⇨<span class="xrlabel">③ </span></span></a></span><span class="gp">, </span><span class="xr"><a href="x-dictionary:r:WDJE18tu0006090:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE18tu0006090_00_01_03'])" title="つもり" ty="項目">つもり <span class="xrlabelGroup">⇨<span class="xrlabel">①</span><span class="xrlabel">③ </span></span></a></span>）</span>) </span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">ガスのにおいがしている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">smell</span> gas</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>I <span class="italic">can smell</span> ともいう. ╳I am smelling gas は不可 ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_07" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">7 </span>
+      <span class="ind">【伝聞】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖現在時制で〗</span>
+        <span class="trans">〘do〙</span>
+        <span class="gp">. </span>
+        <span class="grnote"> (<span class="lbl">!</span>最近聞いた内容を伝える hear, learn, say, tell などの動詞とともに ) </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">2人は3月に結婚すると聞いている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I <span class="italic">hear</span> (<span class="italic">that</span>) they are getting married in March</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">天気予報は明日は曇りだと言っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">The weather forecast <span class="italic">says</span> it will be cloudy tomorrow</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_08" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">8 </span>
+      <span class="ind">【丁寧な依頼】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖現在進行形で〗</span>
+        <span class="trans">be 〘do<span class="italic">ing</span>〙</span>
+        <span class="gp">. </span>
+        <span class="grnote"> (<span class="lbl">!</span>主に「…と思っているのですが」の意で wonder, hope, think などの動詞とともに用いる <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE12si0010910:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE12si0010910_k05'])" title="―(し)ていた" ty="項目">―<span class="xrlabelGroup">⇨<span class="xrlabel"> (し) </span></span>ていた<span class="xrlabelGroup">⇨<span class="xrlabel">⑨ </span></span></a></span>） </span>) </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">明日ここへ来ていただければと思っているのですが </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I'<span class="italic">m hoping</span> you will come over here tomorrow</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_09" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">9 </span>
+      <span class="ind">【現在の事実に反する仮定】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖仮定法過去形で〗</span>
+        <span class="trans">〘did〙</span>
+        <span class="gp">. </span>
+        <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE35mo0002170:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE35mo0002170_00_02'])" title="もし" ty="項目">もし<span class="xrlabelGroup">⇨<span class="xrlabel">② </span></span></a></span>） </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼の住所を知っているのなら教えてあげるのですが </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">If I <span class="italic">knew</span> his address, I would tell (it to) you</span>
+          <span class="gp">.</span>
+        </span>
+      </span>
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">君が富山に住んでいればなあ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I wish you <span class="italic">lived</span> in Toyama</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_10" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">10 </span>
+      <span class="ind">【過去の事実に反する仮定】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖仮定法過去完了形で〗</span>
+        <span class="trans">had 〘done〙</span>
+        <span class="gp">. </span>
+        <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE35mo0002170:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE35mo0002170_00_03'])" title="もし" ty="項目">もし<span class="xrlabelGroup">⇨<span class="xrlabel">③ </span></span></a></span>） </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">あのときその本を買っていればなあ </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">I wish I <span class="italic">had bought</span> the book at that time</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>I am sorry I didn't buy the book at that time. や, より強意的に If only I <span class="italic">had bought</span> [If I <span class="italic">had</span> only <span class="italic">bought</span>] the book at that time! (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVQ4Ee2SURHDIBBEkypAAhKQgASkRAISkIKESIgEJODgytLchZLQSfvdzGRyLLvH4ybT9MOzristy0IStdbStm2HIDvvRUqJnHPwETKy670nY8whyM6ryDnziTWMBkzwgKU0mPfvZROl1FxeWOTp1xPwiki4n7iaAhRa6+op8rUvhFBNMDfZWgKZ740rD2eGIe2Dkh6gAh0oRRwVOB3mGGM1MzroRpmTjjCf2KKfjJ8EBHlot9D7ZkDHv/EVet/kv743gScoq4Pe/TdXpAAAAABJRU5ErkJggg==" class="gi"/>) でも表現可 ) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_11" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">11 </span>
+      <span class="ind">【経験】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖現在完了形で〗</span>
+        <span class="trans">have 〘done〙</span>
+        <span class="gp">. </span>
+        <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE10ko0014750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE10ko0014750_01_08'])" title="こと" ty="項目">こと<span class="xrlabelGroup">⇨<span class="xrlabel">⑧ </span></span></a></span>） </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">彼はこれまでに何度か私に会いにここへ来ている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">He <span class="italic">has been</span> [╳has ever been] here to see me several times</span>
+          <span class="gp">. </span>
+          <span class="grnote"> (<span class="lbl">!</span>ever は通例肯定文では用いない <span class="xrg">（<span class="xr"><a href="x-dictionary:r:WDJE10ko0018510:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDJE10ko0018510_00_01'])" title="これまで" ty="項目">これまで<span class="xrlabelGroup">⇨<span class="xrlabel">① </span></span></a></span>） </span>) </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDJE12si0010920_00_12" class="gramb x_xd0 hasSn">
+    <span class="x_xdh">
+      <span class="sn">12 </span>
+      <span class="ind">【過去の事実】</span>
+    </span>
+    <span class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="trdef">〖過去時制で〗</span>
+        <span class="trans">〘did〙</span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+    <span class="semb x_xd1 ty_no_trans">
+      <span class="exg x_xd2 hasSn">
+        <span class="x_xdh">
+          <span class="sn">▸ </span>
+          <span class="ex">その殺人犯は午後10時ごろ実家に立ち寄っている </span>
+        </span>
+        <span class="trg x_xd3">
+          <span class="trans ty_訳文">That murderer <span class="italic">dropped</span> in at his parents' house about 10:00 p.m.</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>

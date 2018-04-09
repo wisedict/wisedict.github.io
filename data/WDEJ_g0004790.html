@@ -1,0 +1,5686 @@
+<style>@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+/*==== HTML ====*/
+
+body
+{
+	font-size: 12pt;
+	font: -apple-system-body;
+	font-family: -apple-system;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	margin-top: 1.0em;
+	margin-bottom: 1.5em;
+}
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+a
+{
+	color: #2971A7;
+	/* color: #000; */
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #2971A7;
+	text-decoration: underline;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:hover
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+table
+{
+	table-layout: fixed;
+	width: 90%;
+	margin-top: 1em;
+	margin-left: 14px;	/*if indent 30px*/
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+}
+
+caption
+{
+	font-size: 80%;
+	margin-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+tr
+{
+	/* font-size: 80%; */
+	width: 30%;
+}
+
+td
+{
+}
+
+
+/* OSX */
+
+span[class="image"],
+.image
+{
+	display: block;
+	margin-top: 0.4em;
+	margin-left: 1em;
+}
+
+img[class='map']
+{
+	width: 100%;
+	margin-top: 1em;
+}
+
+div[class='lineart']
+{
+	float: right;
+	padding: 1em 0em 0.5em 1.5em;
+	background-color: white;
+}
+
+div[class='lineart']	{ max-width: 33%;}
+div[class='lineart'][layout='Third']	{ max-width: 33%;}
+div[class='lineart'][layout='Half']	{ max-width: 33%;}
+div[class='lineart'][layout='Two-thirds']	{ max-width: 33%;}
+div[class='lineart'][layout='One']		{ max-width: 33%;}
+div[class='lineart'][layout='Two']		{ max-width: 33%;}
+div[class='lineart'][layout='THree']	{ max-width: 33%;}
+div[class='lineart'][layout='Full Page']	{ max-width: 33%;}
+div[class='lineart'][layout='Two Pages']	{ max-width: 33%;}
+div[class='lineart'] img { width: 100%;}
+div[class='lineart'] div { display: block; text-align: center; font-weight: 600; font-size: 80%; }
+
+html.apple_client-panel div.lineart
+{
+	display: none;
+}
+html.apple_client-panel img
+{
+	display: none;
+}
+
+/* */
+
+/* iOS */
+/*
+div.lineart
+{
+	display: none;
+}
+img
+{
+	display: none;
+}
+*/
+/* */
+
+html.apple_client-panel img.gi
+{
+	display: inherit;
+}
+
+
+/*=====================================*/
+/* content                             */
+/*=====================================*/
+
+span.hsb:before
+{
+	/* '•' */
+	content: '\2022';
+	font-size: 80%;
+	vertical-align: 3%;
+}
+
+span.wbb:before
+{
+	/* ' | ' */
+	content: '\a0\7c\a0';
+	font-size: 70%;
+	vertical-align: 15%;
+	color: #777777;
+	margin-left: -0.15em;
+	margin-right: -0.15em;
+}
+
+/*=====================================*/
+/* stress                              */
+/*=====================================*/
+
+span.ph.t_stress span.str.t_l
+{
+	text-decoration: underline;
+}
+
+
+
+
+/*=====================================*/
+/* layout                              */
+/*=====================================*/
+
+*.entry
+{
+	display: block;
+	font-size: 84%;
+	margin-bottom: 4em;
+	line-height: 130%;
+}
+
+/*=====================================*/
+/* xh                                  */
+/*=====================================*/
+
+*.entry > span.x_xh0
+{
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+html.apple_client-panel *.entry > span.x_xh0
+{
+	margin-bottom: 0.1em;
+}
+
+span.x_xh1
+{
+	display: block;
+	/*
+	margin-left: 2.2em;
+	margin-top: 1em;
+	*/
+	margin-top: 0.6em;
+	margin-bottom: 0.4em;
+}
+html.apple_client-panel span.x_xh1
+{
+	margin-top: 0.1em;
+}
+span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.4em;
+	margin-left: 1.0em;
+}
+html.apple_client-panel span.x_xh1 + span.x_xh1
+{
+	margin-top: 0.1em;
+}
+
+*.entry > span.x_xh0 + span.x_xd0,
+*.entry > span.x_xh0 + span.sg
+{
+	margin-top: 0.6em;
+}
+html.apple_client-panel *.entry > span.x_xh0 + span.x_xd0,
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+}
+
+
+/*=====================================*/
+/* xd                                  */
+/*=====================================*/
+
+span.x_xd0
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 2.0em;
+}
+html.apple_client-panel span.x_xd0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
+}
+
+/*
+span.x_xd0.hasSn,
+*/
+span.x_xd0
+{
+	margin-left: 1.0em;
+}
+span.x_xd0 > span.x_xdh
+{
+	display: block;
+	margin-left: -0.8em;
+	margin-bottom: 0.5em;
+	font-size: 120%;
+	line-height: 120%;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	font-size: 100%;
+	line-height: 100%;
+	margin-bottom: 0.1em;
+}
+/*
+html.apple_client-panel span.x_xd0
+{
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xd0 > span.x_xdh
+{
+	margin-left: 0em;
+*/
+
+span.x_xd0.hasSn > span.x_xdh > span.sn
+{
+	/*
+	margin-right: 0.0em;
+	*/
+	margin-right: 0.2em;
+}
+
+/* ---- */
+/*
+span.x_xd0.hasSn
+{
+	margin-left: 2.0em;
+	text-indent: 0em;
+}
+span.x_xd0 > span.sn,
+span.x_xd0 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+/* ---- */
+
+span.x_xd1
+{
+	display: block;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	
+	margin-left: 0em;
+	/* bilingual */
+	/*
+	margin-left: 1.0em;
+	*/
+}
+html.apple_client-panel span.x_xd1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd1.hasSn
+{
+	margin-left: 1.0em;
+	text-indent: 0em;
+}
+span.x_xd1 > span.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+
+span.x_xd1 > span.x_xd2:first-child	/* bilingual */
+{
+	/*margin-left: -1.2em;*/
+	/*
+	text-indent: -1.0em;
+	*/
+}
+span.x_xd1 > span.x_xd2
+{
+}
+
+span.x_xd1 > span.x_xdh
+{
+	/*display: block;*/
+	margin-bottom: 0.5em;
+}
+span.x_xd1 > span.x_xdh.sn,
+span.x_xd1 > span.x_xdh > span.sn
+{
+	display: inline;
+	margin-right: 0.1em;
+}
+
+
+span.x_xd1sub
+{
+	display: block;
+}
+/* first x_xd1sub (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd1sub
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd1sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+
+/*
+	xd2
+*/
+span.x_xd2
+{
+	display: block;
+	margin-left: 0em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+html.apple_client-panel span.x_xd2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.x_xd2.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.0em;
+	margin-right: 0.2em;
+}
+/*
+span.x_xd2 span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.0em;
+}
+*/
+
+/* first x_xd2 (just after sn) */
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd3.hasSn span.x_xdh.sn + span.x_xd4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd4.hasSn span.x_xdh.sn + span.x_xd5.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xd5.hasSn span.x_xdh.sn + span.x_xd6.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo3.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4
+{
+	display: inline;
+	margin-left: 0em;
+}
+span.x_xo3.hasSn span.x_xoh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+
+/*
+span.x_xd1 > span.x_xd2 > span.x_xdh
+{
+	color: red;
+	margin-left: -1em;
+}
+*/
+
+/*
+	xd0, xd1 - de
+	Cascading sn
+*/
+span.x_xd0.cHasSn.gcHasSn
+{
+	margin-left: 2.0em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn
+{
+	margin-left: 1.2em;
+}
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn:not(.cHasSn)
+{
+	margin-left: 0em;
+}
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn.cHasSn > span.sn
+{
+	margin-left: -2.2em;
+	margin-right: 2.3em;
+}
+/*
+	Cascading sn - end
+*/
+
+
+/*
+	new attr test
+	Cascading sn
+	Same to above
+*/
+/*
+span.x_xd0.cSn.gcSn
+{
+	margin-left: 2.2em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn
+{
+	margin-left: 0em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn
+{
+	margin-left: 1.4em;
+}
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn.cSn > span.sn
+{
+	margin-left: -3.4em;
+	margin-right: 2.5em;
+}
+*/
+
+
+/*
+	de
+	xdh contains sn and something.  (e.g. <lg>)
+	Need to add space between sn and something.
+*/
+span.x_xd1 span.x_xdh span.sn
+{
+	margin-right: 0.2em;
+}
+
+
+/*
+span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn
+{
+	margin-left: 0em;
+}
+/*
+span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -0.8em;
+	margin-right: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn
+{
+}
+
+/*
+span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xd2.hasSn span.sn
+{
+	margin-left: -1.2em;
+	margin-right: 0.1em;
+}
+/*
+span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.sn + span.x_xd2.hasSn span.sn
+{
+	margin-left: -3.6em;
+	margin-right: 0.2em;
+}
+/* first x_xd2 (just after sn) */
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2
+{
+	display: inline;
+	margin-left: 0.0em;
+}
+/*
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+*/
+span.x_xd0.cHasSn.gcHasSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn,
+span.x_xd0.cSn.gcSn span.x_xd1.hasSn > span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: inline;
+	margin-left: 1.4em;
+}
+/*
+*/
+span.x_xd1.hasSn span.x_xdh.sn + span.x_xd2.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+span.x_xo3.hasSn span.x_xdh.sn + span.x_xo4.hasSn
+{
+	display: block;
+	margin-left: 1.0em;
+}
+
+
+/* de: lg + msDict */
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2
+*/
+/*
+span.x_xd1 > span.x_xdh + span.x_xd2.t_first
+{
+	display: inline;
+}
+*/
+span.x_xd1 > span.sn + span.x_xd2.t_first
+{
+	margin-left: 1.2em;
+}
+span.x_xd1 > span.x_xdh > span.sn + span.x_xo0,
+span.x_xd2 > span.x_xdh > span.sn + span.x_xo0
+{
+	display: inline;
+}
+
+
+/*
+	x_xd2sub
+*/
+span.x_xd2sub
+{
+	display: block;
+}
+span.x_xd2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xd2sub.hasSn span.sn
+{
+	margin-left: -0.9em;
+	margin-right: 0.1em;
+}
+/* first x_xd2sub (just after sn) */
+span.x_xd2.hasSn span.x_xdh.sn + span.x_xd2sub
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+
+
+/*
+	xd3
+*/
+span.x_xd3
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd3.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd3.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd4
+*/
+span.x_xd4
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd4.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd4.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd5
+*/
+span.x_xd5
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd5.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd5.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+/*
+	xd6
+*/
+span.x_xd6
+{
+	display: block;
+	margin-left: 0em;
+	margin-bottom: 0.2em;
+}
+span.x_xd6.hasSn
+{
+	margin-left: 1.0em;
+}
+span.x_xd6.hasSn span.sn
+{
+	margin-left: -1.0em;
+}
+
+
+
+
+
+/*=====================================*/
+/* xo                                  */
+/*=====================================*/
+
+span.x_xo0
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo0
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+*.entry > span.x_xo0
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+html.apple_client-panel *.entry > span.x_xo0
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+span.x_xdt > span.x_xo0
+{
+	margin-bottom: 1em;
+}
+
+span.x_xo0 > span.x_xoLblBlk
+{
+	display: block;
+	font-variant: small-caps;
+	font-size: 90%;
+	display: block;
+	padding-bottom: 0.3em;
+	border-bottom: solid thin #ddd;
+	color: #888;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo0 > span.x_xoLblBlk
+{
+	margin-top: 1em;
+}
+
+div.xrgBlock.x_xoLblBlkTop,
+span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 3em;
+	border-top: solid thin #ddd;
+	margin-bottom: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop
+{
+	margin-top: 1em;
+}
+div.xrgBlock.x_xoLblBlkTop > span.label,
+span.x_xo0.x_xoLblBlkTop > span.label
+{
+	display: block;
+	margin-top: 1em;
+}
+html.apple_client-panel div.xrgBlock.x_xoLblBlkTop > span.label,
+html.apple_client-panel span.x_xo0.x_xoLblBlkTop > span.label
+{
+	margin-top: 0.5em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-left: 2em;
+}
+div.xrgBlock span.xrgs span.xrg
+{
+	display: block;
+}
+
+span.x_xo1
+{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+span.x_xd0 > span.x_xo0
+{
+	margin-left: -1em;
+}
+
+span.x_xo0.note
+{
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+/* IT */
+span.x_xd0 > span.x_xo1
+{
+	margin-left: 0em;
+}
+span.x_xd0 > span.x_xo1.hasSn
+{
+	padding-left: 1em;
+}
+span.x_xd0 > span.x_xo1.hasSn span.sn
+{
+	margin-left: -0.9em;
+}
+
+/* ES */
+span.x_xd2.msDict > span.synGroup
+{
+	display: block;
+}
+
+/* NL */
+span.x_xd1sub + span.x_xo0
+{
+	margin-top: 0.8em;
+}
+
+
+/* DE : idiom in sense block */
+span.x_xd0 span.x_xd2 span.x_xo1
+{
+	margin-left: 0em;
+	margin-top: 0.4em;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xo2
+{
+	display: inline;
+}
+span.x_xd0 span.x_xd2 span.x_xo1 span.x_xoh + span.x_xo2
+{
+	margin-left: 0.6em;
+}
+
+
+span.x_xo1
+{
+	display: block;
+	margin-left: 1em;
+	/*margin-bottom: 0.8em;*/
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+html.apple_client-panel span.x_xo1
+{
+	margin-bottom: 0.3em;
+}
+/* subEntry in Definition */
+span.x_xd1 span.x_xo1
+{
+	margin-left: 0em;
+}
+
+span.x_xo2
+{
+	display: block;
+	margin-left: 1em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+/*
+span.x_xd1 span.x_xo2
+{
+	margin-left: 0em;
+}
+*/
+span.x_xo2.hasSn
+{
+	margin-left: 2em;
+}
+span.x_xo2.hasSn > span.sn,
+span.x_xo2.hasSn >span.x_xdh > span.sn,
+span.x_xo2.hasSn >span.x_xoh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo2sub
+{
+	display: block;
+}
+/* first x_xo2sub (just after sn) */
+span.x_xo2.hasSn span.x_xoh.sn + span.x_xo2sub
+{
+	display: inline;
+	margin-left: 0.1em;
+}
+span.x_xo2sub.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo2sub.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3,
+span.x_xo2.hasSn span.x_xdh.sn + span.x_xo3 > span.x_xo4.trg:first-child
+{
+	/* AR-EN */
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo3
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo3.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo3.hasSn > span.sn,
+span.x_xo3.hasSn > span.x_xoh > span.sn,
+span.x_xo3.hasSn > span.x_xdh > span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.2em;
+}
+
+span.x_xo4
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+span.x_xo4.hasSn
+{
+	margin-left: 1em;
+}
+span.x_xo4.hasSn span.sn
+{
+	margin-left: -1em;
+	margin-right: 0.1em;
+}
+
+span.x_xo5
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo5.hasSn
+{
+	margin-left: 1em;
+}
+
+/* first x_xo5 (just after sn) */
+span.x_xo4.hasSn > span.x_xoh.sn + span.x_xo5
+{
+	display: inline;
+	margin-left: 0em;
+}
+
+span.x_xo6
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+span.x_xo6.hasSn
+{
+	margin-left: 1em;
+}
+
+
+
+/*=====================================*/
+/* Hide                                */
+/*=====================================*/
+
+/* ▶ */
+span.x_xd1 > span.x_xdh > span.gp.tg_se1
+{
+	display: none;
+}
+
+span.construction	{ display: none; }
+
+span.cdf	{ display: none; }
+
+span.domClass	{ display: none; }
+span.semClass	{ display: none; }
+span.encClass	{ display: none; }
+
+span.morphSet	{ display: none; }
+
+span.meta		 { display: none; }
+
+/* 
+span.hg span.gg.t_wordbreak
+{
+	display: none;
+}
+
+span.hg > span.lg 
+{
+	display: none;
+}
+
+span.hg > span.hw + span.posg
+{
+	display: none;
+}
+*/
+
+
+
+/*=====================================*/
+/* Style                               */
+/*=====================================*/
+
+
+/*=====================================*/
+/* hw                                  */
+/*=====================================*/
+
+span.hg span.hw,
+span.hg span.vg,
+span.hwg span.hw,
+span.ehw,
+span.vhw,
+/* span.hwg span.hvg span.hv, */
+span.hwg span.hvg,
+span.hg span.gp.t_hw
+{
+	font-size: 170%;
+	font-weight: normal;
+	line-height: 150%;
+	/*
+	line-height: 130%;
+	*/
+	-webkit-hyphens: auto;
+}
+span.hvg > span.hm
+{
+	font-size: 59%;
+}
+html.apple_client-panel span.hvg > span.hm
+{
+	font-size: 80%;
+}
+span.hg > span.hgSub1 span.vg
+{
+	font-size: 100%;
+}
+span.hg span.vg.x_weak,
+span.hg span.vg.x_weak span.v
+{
+	font-size: 100%;
+	color: #808080;
+}
+
+span.gramb span.hvg span.hv
+{
+	font-weight: 600;
+}
+span.x_xh0 span.vg
+{
+	font-weight: 200;
+	color: #888;
+}
+
+span.x_xh0 span.vg span.v
+{
+	font-weight: normal;
+	color: black;
+}
+span.x_xh0 span.vg span.t_label
+{
+	font-weight: normal;
+}
+
+span.hwg span.frmg span.frm
+{
+	font-weight: normal;
+	font-size: 170%;
+}
+span.frm_type
+{
+	font-weight: normal;
+}
+span.hwg span.frmg span.gr,
+span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 150%;
+}
+span.hwg span.frmg span.gp.tg_frmg
+{
+	color: #888;
+}
+
+/*
+span.hw ~ span.posg,
+span.vg ~ span.posg
+{
+	display: block;
+	font-size: 120%;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+}
+span.alt-hg span.hw ~ span.posg, 
+span.alt-hg span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.hw ~ span.posg,
+html.apple_client-panel span.vg ~ span.posg
+{
+	font-size: 100%;
+}
+*/
+
+span.x_xd1 > span.posg.x_xdh,
+span.x_xd1 > span.x_xdh > span.posg:first-child
+{
+	font-size: 120%;
+}
+html.apple_client-panel span.x_xd1 > span.posg.x_xdh
+{
+	font-size: 110%;
+}
+
+html.apple_client-panel span.hg span.hw,
+html.apple_client-panel span.hg span.vg,
+html.apple_client-panel span.hwg span.hw,
+html.apple_client-panel span.ehw,
+html.apple_client-panel span.vhw,
+/* html.apple_client-panel span.hwg span.hvg span.hv, */
+html.apple_client-panel span.hwg span.hvg,
+html.apple_client-panel span.hg span.gp.t_hw,
+html.apple_client-panel span.hwg span.frmg span.frm,
+html.apple_client-panel span.hwg span.frmg span.gr,
+html.apple_client-panel span.hwg span.frmg span.gp.tg_frmg
+{
+	font-size: 120%;
+	line-height: 130%;
+}
+
+span.hg span.fg
+{
+	font-size: 150%;
+}
+html.apple_client-panel span.hg span.fg
+{
+	font-size: 100%;
+}
+
+span.hg span.fg span.f	{ font-weight: normal; }
+span.hg span.fg span.sy	{ font-style: italic; }
+
+span.fhw
+{
+	font-weight: 500;
+	font-style: italic;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+span.gp.ty_hom,
+span.xr span.hm
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.hg > span.gp.ty_hom
+{
+	font-size: 120%;
+	vertical-align: 50%;
+}
+html.apple_client-panel span.hg > span.gp.ty_hom
+{
+	font-size: 100%;
+	vertical-align: super;
+}
+/*
+span.hg span.xrg
+{
+	display: block;
+}
+span.hg span.pr span.xrg
+{
+	display: inline;
+}
+*/
+
+/*
+span.varGrp,
+span.vGrp
+{
+	font-weight:normal;
+}
+
+span.hg span.pr + span.vg
+{
+	margin-left: 1em;
+}
+span.v						{font-weight: 600;}
+span.v[highlight="true"] 	{font-style: italic;}
+span.v[highlight="false"]	{font-weight: 600;}
+*/
+
+
+/* hgSub1 */
+
+span.hg > span.hgSub1
+{
+	font-size: 110%;
+	margin-left: 0.1em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	font-size: 100%;
+}
+
+span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	display: block;
+	font-size: 144%;
+	margin-top: 0.3em;
+}
+html.apple_client-panel span.hg > span.hgSub1 span.alt-hg span.hw
+{
+	margin-top: 0.3em;
+	font-size: 111%;
+}
+span.hg > span.hgSub1 span.posg
+{
+	font-size: 110%;
+}
+span.hg > span.hgSub1 span.pr,
+span.hg > span.hgSub1 span.prx
+{
+	font-size: 100%;
+}
+span.hgSub1 > span.etym,
+span.hgSub1 > span.grnote
+{
+	display: block;
+}
+span.hgSub1 > span.etym.x_nblk
+{
+	display: inline;
+}
+
+/*
+span.hg span.hgSub1 span.etym
+{
+	display: inline;
+	margin-right: 0.3em;
+}
+*/
+
+span.hg > span.hgSub2
+{
+	display: block;
+	font-size: 100%;
+	/* margin-left: 2em; */
+}
+
+span.hg > span.hgSub2 span.fg,
+span.hg > span.hgSub2 span.infg,
+span.hg > span.hgSub2 span.vg
+{
+	display: block;
+	font-size: 100%;
+	margin-top: 0.3em;
+}
+
+
+/*=====================================*/
+/* inf                                 */
+/*=====================================*/
+
+span.InfGrp,
+span.iGrp
+{
+	font-weight: normal;
+}
+/*
+span.infg,
+span.gg
+{
+	vertical-align: 1%;
+}
+*/
+span.inf
+{
+	font-weight: 600;
+	/*
+	font-style: italic;
+	*/
+}
+span.infg span.sy + span.inf
+{
+	margin-left: 0.3em;
+}
+
+span.hg span.hw + span.infg,
+span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 170%;
+	font-weight: normal;
+}
+span.hg span.hw + span.infg span.inf,
+span.hg span.hw + span.gp.ty_hom + span.infg span.inf
+{
+	font-weight: normal;
+}
+html.apple_client-panel span.hg span.hw + span.infg,
+html.apple_client-panel span.hg span.hw + span.gp.ty_hom + span.infg
+{
+	font-size: 130%;
+}
+
+
+/*=====================================*/
+/* f                                   */
+/*=====================================*/
+
+span.formGrp,
+span.fGrp
+{
+	font-weight: normal;
+}
+span.f,
+span.form
+{
+	font-weight: 600;
+}
+
+span.x_xdh > span.sn + span.fg + span.posg
+{
+	margin-left: 0.3em;
+}
+
+
+/*=====================================*/
+/* POS                                 */
+/*=====================================*/
+
+/*
+span.x_xh0 span.posg span.pos,
+span.x_xd0 span.x_xdh span.posg span.pos
+{
+	font-size: 120%;
+}
+*/
+/*
+span.hg span.pos,
+span.hwg span.pos
+*/
+span.hg span.posg,
+span.hwg span.posg
+{
+	margin-right: 0.3em;
+}
+span.gp.tg_pos
+{
+	margin-right: 0.3em;
+}
+
+span.pos.x_rr,
+span.ps.x_rr,
+span.lbl.x_rr,
+span.ph.x_rr,
+span.sn.x_rr,
+span.gr.x_rr
+{
+	border: solid 1px #a0a0a0;
+	/* margin-left: 0.12em; */
+	margin-right: 0.18em;
+	margin-top: 0.18em;
+	margin-bottom: 0.18em;
+	padding: 1px 1px 1px 1px;
+	/* color: #000000; */
+	font-size: 70%;
+	-webkit-border-radius: 2px;
+	vertical-align: 5%;
+}
+span.lbl.x_rr
+{
+	margin-right: 0.4em;
+	vertical-align: 10%;
+}
+span.note span.lbl.x_rr
+{
+	vertical-align: 5%;
+}
+span.subEntry span.pos.x_rr
+{
+	font-size: 70%;
+}
+span.ph.x_rr
+{
+	padding: 2px 3px 0px 3px;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.ps.x_rr,
+span.gr.x_rr
+{
+	margin-right: 0.3em;
+}
+
+span.lbl.x_rrbd
+{
+	border: solid #808080;
+	border-width: 2px;
+	padding: 2px 4px 1px 4px;
+	-webkit-border-radius: 3px;
+	color: #808080;
+	font-weight: 600;
+	font-size: 70%;
+	margin-right: 0.5em;
+	vertical-align: 20%;
+}
+html.apple_client-panel span.lbl.x_rrbd
+{
+	vertical-align: 15%;
+}
+
+span.msDict > span.posg:first-child,
+span.se2 > span.posg:first-child,
+span.x_xdh > span.sn + span.posg
+{
+	margin-right: 0.2em;
+}
+
+span.x_xd0 > span.ps.x_xdh.x_rr
+{
+	display: inline;
+}
+
+span.x_xd0 > span.x_xdh.ps.x_rr
+{
+	font-size: 84%;
+}
+
+/*=====================================*/
+/* pr                                  */
+/*=====================================*/
+
+span.pr,
+span.prx
+{
+	font-weight: normal;
+	color: #777;
+	/*
+	font-family: 'Times New Roman';
+	*/
+}
+
+span.hg span.pr,
+span.hg span.prx,
+span.hwg span.pr,
+span.hwg span.prx
+{
+	display: inline-block;
+	/*
+	font-size: 130%;
+	*/
+	font-size: 120%;
+	line-height: 130%;
+	/* vertical-align: 12%; */
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+span.prx + span.prx
+{
+	margin-left: 0.0em;
+}
+span.hg span.hw span.pr,
+span.hg span.v span.pr
+{
+	font-size: 80%;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+span.hwg span.hvg span.pr,
+span.hg span.vg span.pr
+{
+	font-size: 70%;
+}
+html.apple_client-panel span.hwg span.hvg span.pr,
+html.apple_client-panel span.hg span.vg span.pr
+{
+	font-size: 100%;
+}
+
+
+/*
+span.hg > span.pr + span
+{
+	margin-left: 0.6em;
+}
+*/
+
+span.ph
+{
+/*
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+*/
+}
+
+span.cnt
+{
+	font-weight: 200;
+	color: #888;
+}
+span.cnt.x_rr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	color: #000000;
+	border: solid 1px #a0a0a0;
+	-webkit-border-radius: 2px;
+	font-size: 70%;
+	/* vertical-align: 10%; */
+}
+
+
+/*=====================================*/
+/* sn                                  */
+/*=====================================*/
+
+span.sn
+{
+	font-weight: 600;
+	color: #888;
+}
+span.sn.x_rrbg
+{
+	Background: #888;
+	border: solid #888;
+	border-width: 0px;
+	padding: 3px 2px 1px 2px;
+	-webkit-border-radius: 2px;
+	color: white;
+	font-weight: 600;
+	font-size: 70%;
+	vertical-align: 10%;
+	margin-right: 0.5em;
+}
+
+
+/*=====================================*/
+/* ex                                  */
+/*=====================================*/
+
+span.eg span.ex
+{
+	/* font-weight: normal; */
+	font-weight: 200;
+	font-style: italic;
+}
+span.ex span.bold
+{
+	font-weight: 600;
+	font-style: italic;
+}
+span.eg span.ex > span.italic
+{
+	font-style: normal;
+}
+span.eg span.ref
+{
+	font-weight: 200;
+}
+
+/* TH */
+span.eg span.general-text.t_eg_pr
+{
+	font-weight: 200;
+	color: #888;
+}
+/* TR */
+span.eg span.general-text.t_eg_pri
+{
+	font-style: italic;
+	font-weight: 200;
+	color: #888;
+}
+span.gp.t_arrow,
+span.general-text.t_arrow
+{
+	font-size: 90%;
+	vertical-align: -2%;
+	color: #909090;
+}
+
+
+/* bilingual */
+span.exg span.ex
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #666666;
+}
+span.exg span.ex span.bold
+{
+	font-weight: normal;
+}
+span.reg,
+span.hwg span.reg,
+span.semb span.reg,
+span.semb span.ge,
+span.semb span.sj,
+span.exg span.ex span.reg,
+span.exg span.ex span.ge,
+span.exg span.ex span.sj
+{
+	font-weight: normal;
+	color: #888;
+}
+span.hwg span.reg
+{
+	font-size: 170%;
+}
+html.apple_client-panel span.hwg span.reg
+{
+	font-size: 120%;
+}
+span.hwg span.hvg span.reg
+{
+	font-size: 100%;
+}
+
+span.lbl
+{
+	color: #888;
+}
+span.pronBlock span.lbl
+{
+	font-weight: 500;
+	margin-right: 0.3em;
+}
+
+span.lbl.x_sqb
+{
+	background: #808080;
+	border: solid #808080;
+	border-width: 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 80%;
+	color: white;
+	font-weight: 600;
+	margin-right: 1em;
+	vertical-align: 5%;
+}
+
+
+/*=====================================*/
+/* note                                */
+/*=====================================*/
+
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em;
+	margin-top: 0.3em;
+	/* margin-right: 1em; */
+}
+span.note span.lbl,
+span.cntxt span.lbl
+{
+	color: #777;
+}
+span.note.x_nb
+{
+	display: inline;
+	background-color: transparent;
+	padding: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+}
+/*
+span.paragraph,
+span.para
+{
+	display: block;
+	text-indent: 1em;
+	margin-top: 0.25em;
+}
+*/
+
+/*=====================================*/
+/* subEntry                            */
+/*=====================================*/
+
+span.l,
+span.subEntry span.l ~ span.vg span.v
+{
+	font-weight: 600;
+}
+span.drv
+{
+	font-weight: 600;
+}
+span.drvg span.drv
+{
+	margin-right: 0.5em;
+}
+
+span.subEntry span.pos
+{
+	font-size: 100%;
+}
+
+span.subEntry > span.l + span.pr,
+span.subEntry > span.pr + span.posg
+{
+	margin-left: 0.6em;
+}
+
+/*=====================================*/
+/* etym                                */
+/*=====================================*/
+
+/*
+span.etym	{font-weight:normal;}
+*/
+span.etym > span.lbl
+{
+	color: #888;
+}
+span.etym span.dgg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-right: 1em;
+}
+
+
+/*=====================================*/
+/* Other                               */
+/*=====================================*/
+
+span.lg,
+span.gg
+{
+	font-style: italic;
+	color: #888;
+	font-size: 94%;
+	/*
+	margin-right: 0.3em;
+	*/
+}
+/*
+span.gp,
+span.lg,
+span.lbl
+{
+	font-style: normal;
+}
+*/
+
+span.Name	 {font-style: italic;}
+span.altName	 { font-weight: 600; }
+
+span.cite[highlight="true"]
+{
+	font-style: italic;
+}
+span.cite[highlight="false"]
+{
+	font-weight: normal;
+}
+
+span.co
+{
+	font-style: italic;
+}
+span.co.x_ni
+{
+	font-style: normal;
+}
+span.com
+{
+	font-weight: normal;
+}
+span.con
+{
+	font-style: normal;
+	font-weight: 600;
+	color: #666666;
+}
+
+
+span.date			{font-weight: normal;}
+span.date + span.italic	{font-style: italic;}
+span.lang			{font-weight: normal;}
+
+span.ex > span.lbl	{ font-weight: normal; }
+
+span.ff
+{
+	font-style: italic;
+	font-weight: 600;
+}
+span.rel
+{
+	font-weight: 600;
+}
+
+span.sp
+{
+	font-weight: 600;
+}
+span.sp span.gp
+{
+	font-weight: normal;
+}
+
+span.trans
+{
+	font-weight: 500;
+}
+span.trg span.trans
+{
+	font-weight: normal;
+}
+span.trg.x_xd2 > span.trans,
+span.trgg.x_xd2 > span.trg > span.trans
+{
+	font-weight: 500;
+}
+span.trg.x_xd2 > span.trans span.tgr,
+span.trgg.x_xd2 > span.trg > span.trans span.tgr
+{
+	font-weight: normal;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans span.tgr
+{
+	font-weight: normal;
+}
+
+span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 500;
+}
+
+span.efg span.ef
+{
+	font-weight: normal;
+}
+
+span.finf	 {font-style: italic;}
+span.fl		 {font-weight: 600;}
+span.lp[highlight="true"] {font-weight: 600;}
+span.lp[highlight="false"] { font-style: normal;}
+
+span.hwtrans	 { font-weight: normal;}
+
+span.oup_label
+{
+	font-style: italic;
+	color: #888;
+}
+span.oup_label.x_ni
+{
+	font-style: normal;
+}
+
+/*
+span.df > span.lg > span.oup_label,
+span.gp + span.lg > span.oup_label
+{
+	margin-left: 0.2em;
+}
+*/
+
+/*
+span.reg,
+span.ge,
+span.sj
+{
+	font-size: 80%;
+}
+*/
+
+span.xr
+{
+	font-weight: 500;
+}
+span.xr span.gp
+{
+	font-variant: normal;
+}
+
+
+span.hg span.hw span.sy_underline,
+span.hg span.vg span.v span.sy_underline,
+span.sy_underline,
+span.pr span.ph span.str
+{
+	text-decoration: underline;
+}
+
+
+
+/*
+span.lg + span.xrg
+{
+	margin-left: 0.4em;
+}
+span.xrg + span.xrg
+{
+	margin-left: 0.3em;
+}
+*/
+
+span.xu	{font-weight: 600;}
+
+
+/*
+span.def
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.MS > span.lbl {
+	font-weight: 500;
+	font-size: 80%;
+}
+*/
+
+/*
+span.gramGrp,
+span.gGrp
+{
+	font-weight: normal;
+}
+span.gg,
+span.gp.tg_gg
+{
+	font-weight: normal;
+}
+*/
+
+/*
+span.techGrp>span.lbl, span.techMS>span.lbl { font-weight: 500; font-size: 80%;}
+
+span.txn[highlight="true"] {font-style:italic;}
+span.txn[highlight="false"] { font-weight:normal;}
+
+span.txnBin	 {font-style:italic;}
+span.txnFam	 {font-weight:normal;}
+span.txnGenus	 { font-weight:normal;}
+
+
+
+span.render	{font-style:italic;}
+span.render[as="sans-serif"]	{ font-family:'HelveticaNeue';}
+span.render[as="bold"] 		{font-weight: 600;}
+span.render[as="italic"] 		{font-style:italic;} 
+*/
+
+
+/*=====================================*/
+/* General                             */
+/*=====================================*/
+
+span.bold
+{
+	font-weight: 600;
+}
+span.italic
+{
+	font-style: italic;
+}
+span.underline
+{
+	text-decoration: underline;
+	/*
+	font-style: italic;
+	font-weight: normal;
+	*/
+	/* color: #444; */
+}
+span.r
+{
+	font-weight: normal;
+	font-style: normal;
+}
+span.sup
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+span.sub,
+span.subEnt
+{
+	vertical-align: sub;
+	font-size: 70%;
+}
+span.sc
+{
+	font-variant: small-caps;
+}
+
+span.bi			 {font-weight: 500; font-style: italic;}
+span.in			 { vertical-align: sub; font-size: 70%}
+span.ini		 { vertical-align: sub; font-size: 70%; font-style:italic;}
+span.su			 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.sui		 { vertical-align: super; font-size: 70%; font-style:italic;}
+span.sup		 { vertical-align: super; font-size: 70%}
+span.subEnt		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+span.usageLbl
+{
+	font-weight: normal;
+	font-size: 90%;
+	color: #888;
+}
+span.hw span.usageLbl
+{
+	font-size: 80%;
+}
+
+
+span.general-text.t_label,
+span.general-text.t_label_block
+{
+	font-variant: small-caps;
+	margin-right: 0.3em;
+	color: #888;
+}
+span.general-text.t_label_block
+{
+	display: block;
+	/* margin-top: 0.4em; */
+}
+span.gp.t_label.tg_synList,
+span.gp.t_label.tg_antList,
+span.gp.t_label.tg_see,
+span.gp.t_label.tg_REMISIO,
+span.gp.t_label.tg_etym,
+span.etym span.gp.t_label,
+span.dgg span.gp.t_label
+{
+	margin-right: 0.3em;
+	color: #888;
+}
+
+span.hw span.general-text.en_er,
+span.ehw span.general-text.en_er,
+span.vhw span.general-text.en_er,
+span.sg span.general-text.en_er
+{
+	font-size: 80%;
+}
+
+
+
+span.frmg span.frm
+{
+	font-weight: 600;
+	/*
+	font-size: 120%;
+	*/
+}
+span.frmg span.frm.x_nb
+{
+	font-weight: normal;
+}
+
+/* span.idmb span.idmsec span.idm */
+span.idmsec span.idm
+{
+	font-weight: 600;
+}
+
+span.pvb span.pvsec span.pvg span.pv,
+span.pvb span.pvsec span.pvg span.pvv
+{
+	font-weight: 600;
+	/* margin-top: 0.5em; */
+}
+
+span.pvsec span.gramb span.semb span.pgr,
+span.pvsec span.gramb span.pgr
+{
+	font-weight: 600;
+	color: #666666;
+}
+
+span.cb span.csec span.cwg span.cw,
+span.cb span.csec span.cwg span.cvg span.cv,
+span.csec span.cwg span.cw
+{
+	font-weight: 600;
+}
+
+span.ind,
+span.gr
+{
+	color: #888;
+}
+
+span.lev,
+span.fld
+{
+	font-size: 90%;
+	color: #888;
+}
+
+/*
+span.exg span.ex:before
+{
+	content: "▸ ";
+}
+*/
+
+
+span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans.ty_pinyin,
+span.trg.x_xd2 > span.trans span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans.ty_pinyin,
+span.trgg.x_xd2 > span.trg > span.trans span.trans.ty_pinyin
+{
+	/* So that Pinyin match with the one shown on the index column of the dictionary.app */
+	/*font-family: 'STKaitiSC-Regular';*/
+	font-weight: normal;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	color: #777777;
+}
+
+
+span.box
+{
+	display: block;
+	background-color: #eeeeee;
+	/* padding: 0.5em 0.8em 0.5em 0.8em; */
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	/*
+	margin-left: 1em;
+	margin-right: 1em;
+	*/
+	/*
+	margin-top: 1em;
+	margin-bottom: 2em;
+	*/
+}
+html.apple_client-panel span.box
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+/*
+html.apple_client-panel span.box
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+*/
+
+
+/*=====================================*/
+/* Thesaurus                           */
+/*=====================================*/
+
+span.synGroup > span.syn.t_core
+{
+	font-variant: small-caps;
+	font-size: 120%;
+	vertical-align: -1%;
+}
+span.synGroup > span.syn.t_core > span.gp
+{
+	font-variant: normal;
+	font-size: 90%; 
+}
+
+span.antList > span.gp.ty_label.tg_antList
+{
+	font-variant: small-caps;
+	color: #888;
+	font-size: 80%;
+}	/* ANTONYMS */
+
+
+/*=====================================*/
+/* Features                            */
+/*=====================================*/
+
+span.feature
+{
+	display: block;
+	margin-top: 2.5em;
+	margin-right: 1em;
+}
+html.apple_client-panel span.feature
+{
+	margin-top: 1em;
+}
+
+span.feature-title
+{
+	display: block;
+
+	color : #909090;
+	font-weight: 500;
+	font-size: 90%;
+	line-height : 23px;
+	padding-top : 1px;
+	padding-left : 9px;
+	padding-right : 9px;
+	margin-top : 2em;
+	
+	border-style : solid;
+	border-width : 1px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+html.apple_client-panel span.feature-title
+{
+	margin-top : 1em;
+}
+
+span.feature-body
+{
+	display: block;
+
+	color : #333333;
+
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 9px;
+
+	border-style : solid;
+	border-width : 0px 1px 1px 1px;
+	border-color : #cacaca;
+	/* background-color: white; */
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+span.feature-body table
+{
+	table-layout: fixed;
+	/* table-layout: auto; */
+	width: 100%;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+span.feature-caption
+{
+	display: block;
+
+	color : #909090;
+	font-weight: normal;
+	font-size: 90%;
+
+	padding-left : 3px;
+	padding-right : 3px;
+	padding-top : 3px;
+	padding-bottom : 9px;
+}
+
+
+
+
+span.feature span.list
+{
+	display: block;
+}
+
+span.feature span.list + span.list
+{
+	margin-top: 0.25em;
+}
+
+span.feature.t_wordLinks span.list span.item.t_related
+{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+span.feature.t_wordLinks span.list span.item.t_related + span.item.t_description
+{
+	margin-left: 0.5em;
+}
+
+span.para,
+span.list span.item,
+span.np
+{
+	display: block;
+	margin-top: 0.25em;
+}
+
+span.feature.t_rightWord span.heading,
+span.feature.t_usage span.heading,
+span.feature.t_wordNote span.heading
+{
+	font-weight: 500;
+}
+span.feature.t_wordNote span.heading
+{
+	display: block;
+}
+
+span.ll
+{
+	font-weight: 500;
+}
+span.ll span.gp
+{
+	font-weight: normal;
+}
+
+span.feature.t_toolkit > span.feature-body > table tbody tr td.lemma
+{
+	font-weight: 600;
+	font-size: 110%;
+}
+
+span.feature.t_quotes span.para span.eg span.ref
+{
+	display: block;
+}
+
+span.feature.t_encyclopaedic
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+
+/*=====================================*/
+/* Panel                               */
+/*=====================================*/
+
+/*
+html.apple_client-panel body
+{ 
+	margin-top: 0em;
+}
+
+html.apple_client-panel *.entry
+{
+	line-height: 120%;
+}
+
+html.apple_client-panel span.hw, span.ehw, span.vhw 	{ font-size: 120%;}
+html.apple_client-panel span.hg span.fg	{ font-size: 100%; }
+
+html.apple_client-panel span.hg span.pr
+{
+	font-size: 100%;
+}
+html.apple_client-panel span.pos
+{
+	font-size: 100%;
+}
+
+*/
+
+
+/* POS after the headword */
+/*
+html.apple_client-panel span.sg,
+html.apple_client-panel span.hg,
+html.apple_client-panel span.sg span.se1:first-child,
+html.apple_client-panel span.sg span.se1:first-child span.pr
+{
+	display: inline;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+html.apple_client-panel span.sg span.se1:first-child span.posg
+{
+	display: inline;
+	margin-left: 1em;
+}
+html.apple_client-panel span.sg span.se1 span.posg
+{
+	margin-left: 0em;
+}
+*/
+
+/*=====================================*/
+/*                                     */
+/*=====================================*/
+
+
+span.eg.x_blk,
+span.xrg.x_blk,
+span.lbl.x_blk
+{
+	display: block;
+}
+span.eg span.ex.x_ni
+{
+	font-style: normal;
+	font-weight: 200;
+}
+span.eg span.ex.x_ni span.bold
+{
+	font-style: normal;
+	font-weight: 600;
+}
+span.lg.x_ni,
+span.gg.x_ni
+{
+	font-style: normal;
+}
+
+
+img.gi
+{
+	width: 1.0em;
+	height: 1.0em;
+}
+
+img.image.th
+{
+	display: block;
+	width: 96%;
+	margin-top: 1em;
+}
+
+
+
+/*=====================================*/
+/* Panel                               */
+/* Move POS                            */
+/* x_xd0:not(.hasSn)                   */
+/* :first-child or x_xh0 + x_xd0       */
+/*=====================================*/
+html.apple_client-panel *.entry > span.x_xh0:first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xdh,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn),
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xdh
+{
+	display: inline;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0
+{
+	margin-left: 1em;
+}
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xd0:not(.hasSn):first-child > span.x_xd0.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd1.hasSn,
+html.apple_client-panel span.x_xh0 + span.x_xd0:not(.hasSn) > span.x_xd0.hasSn
+{
+	margin-left: 2em;
+}
+html.apple_client-panel span.hg > span.hgSub1
+{
+	display: inline;
+	margin-left: 1em;
+}
+
+/* JA, JA-EN */
+
+body
+{
+	font-family: -apple-system, 'Hiragino Sans';
+	font-weight: 300;
+}
+span.sn
+{
+	font-family: 'Hiragino Sans', -apple-system;
+}
+
+/* */
+
+/* JA-EN */
+
+span.csec span.x_xo3
+{
+	margin-left: 1em;
+}
+
+*.entry[id^="WDEJ"] span.trans,
+*.entry[id^="WDEJ"] span.trg span.trans,
+*.entry[id^="WDEJ"] span.trg.x_xd2 > span.trans,
+*.entry[id^="WDEJ"] span.trgg.x_xd2 > span.trg > span.trans,
+*.entry[id^="WDEJ"] span.x_xdh.sn:first-child + span.exg.x_xd2 > span.trg.x_xd3 > span.trans,
+*.entry[id^="WDEJ"] span.semb.x_xd2 > span.trg.x_xd3 > span.trans
+{
+	font-weight: 300;
+}
+span.t
+{
+	font-weight: 600;
+}
+span.semb span.trg span.trans span.bold
+{
+	color: #505050;
+}
+
+span.grnote > span.lbl
+{
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 0.4em 0px 0.4em;
+	font-size: 92%;
+	color: white;
+	font-weight: 600;
+	font-style: italic;
+	-webkit-border-radius: 2px;
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: block;
+	margin-left: -0.6em;
+	margin-top: 0.5em;
+	color: black;
+	font-weight: 500;
+}
+span.gramb > span.x_xdh > span.sn + span.ind
+{
+	color: black;
+}
+
+span.box
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+span.box > span.title
+{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+	text-indent: 0em;
+}
+span.box > span.title span.u
+{
+	margin-right: 0.5em;
+}
+span.box.ty_4 span.np
+{
+	margin-left: 2em;
+	text-indent: 0em;
+}
+span.box.ty_4 span.np span.oup_label:first-child,
+span.box.ty_4 span.np span.ind:first-child,
+span.box.ty_4 span.np span.gr:first-child
+{
+	margin-left: -2em;
+}
+span.box.ty_4.t_word_choice span.np
+{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_jump_table
+{
+	background-color: white;
+	border: solid #e0e0e0;
+	border-width: 1px;
+	-webkit-border-radius: 3px;
+	font-family: 'Hiragino Sans', -apple-system;
+}
+span.box.ty_jump_table span.xrg
+{
+	margin-right: 0.5em;
+}
+span.box.ty_1.t_使い分け span.np,
+span.box.ty_4.t_word_choice span.np
+{
+	margin-bottom: 0.3em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+span.box.ty_4.t_word_choice span.np span.exg
+{
+	margin-left: 0em;
+	text-indent: 0em;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh + span.x_xd1 > span.gr.x_xdh.x_rr.ty_動詞区分
+{
+	display: none;
+}
+
+html.apple_client-panel span.x_xd0 > span.x_xdh span.frmg,
+html.apple_client-panel span.x_xd0 > span.x_xdh span.grnote
+{
+	display: none;
+}
+
+/* */
+</style><d:entry xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng" id="WDEJ_g0004790" d:title="give" class="entry">
+  <span class="hwg x_xh0">
+    <span d:dhw="1" role="text" class="hw">give </span>
+    <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">ɡɪv</span> | </span>
+    <span d:priority="2" class="hgSub1 x_xh1">
+      <span class="u"><span class="ps x_rr">形･前･名</span>given</span>
+    </span>
+  </span>
+  <span id="WDEJ_g0004790_k401" class="box ty_4">
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(O)O｠</span>
+        <span class="oup_label x_ni">｟SVO(+)｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_01'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">1</span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span class="gp">, </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_17'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">17 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>与える </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_02'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">2 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>預ける </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_03'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">3 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>支払う</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_04'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel"> 4 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>伝える </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_05'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">5 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>言う </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_07'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">7 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>示す </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_09'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">9 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>催す </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_10'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">10 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(印象を)抱かせる</span>
+        <span class="gp">,</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span> (感情を)引き起こす </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_11_01'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">11a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(結果を)もたらす </span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_12'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">12 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>割り当てる</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_18'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel"> 18 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>授ける</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVOC｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_06'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">6 </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>…させる</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SV(O)O｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_08_01'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">8a </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(行為を)する</span>
+      </span>
+    </span>
+    <span class="np x_xd1">
+      <span class="x_xdh x_xdt">
+        <span class="oup_label x_ni">｟SVO｠</span>
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="xrg">
+          <span class="xr">
+            <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_08_02'])" title="give">
+              <span class="xrlabelGroup">
+                <span class="xrlabel">8b </span>
+              </span>
+            </a>
+          </span>
+        </span>
+        <span>(音を)出す</span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_g0004790_01" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">動詞</span>
+      <span class="frmg">
+        <span class="frm"><span class="rf">～</span>s </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">-z</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">gave </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">ɡeɪv</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">given </span>
+        <span class="pr"> | <span d:pr="US solitary" class="ph ty_発音">ɡɪ́v(ə)n</span> | </span>
+        <span class="gp">; </span>
+        <span class="frm">giving </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_01_01" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_動詞区分">他動詞</span>
+        <span class="ind">【与える】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(無償で)(<span class="t">A</span>〈人など〉<span class="t">に</span>)<span class="t">B</span>〈物･金〉<span class="t">を与える</span><span class="gp">, </span><span class="bold">あげる, 贈与する</span></span>
+          <span class="gp">; </span>
+          <span class="trans">
+            <span class="bold">寄付する </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Jeff <span class="italic">gave</span> me a bunch of roses for my birthday<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ジェフは誕生日にバラの花束をくれた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> water <span class="italic">to</span> the flowers </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">花に水をやる</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> money generously <span class="italic">to</span> the poor [charity] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">貧しい人々[チャリティ]に惜しみなくお金を寄付する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">gave</span> him what he wanted<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私は彼が欲しがっていたものをやった</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_g0004790_01_01_01_k502" class="box ty_5">
+            <span class="title x_xdh">
+              <span class="u">表現 </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>(Please) give me …. は直接的に「(ただで)…をちょうだい」と要求する言い方なので親しい間柄を除いて避けた方が無難. 買い物･注文などの場面では代わりに, I'd like …. (…が欲しいのですが), I'd like to get …. (…を買いたいのですが), I'll have [take] …. (…にします)などを用いる</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span id="WDEJ_g0004790_01_01_01_k303" class="box ty_3">
+            <span class="title x_xdh">
+              <span class="u">文法のポイント </span>
+              <span class="bold">授与動詞</span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh x_xdt">
+                <span>第4文型(SVOO)で使われる他動詞のこと. 「…に」を表す位置に置かれる間接目的語と, 「…を」を表す位置に置かれる直接目的語を従え, 「与える」の意を含む. 代表的な動詞は, give, teach, send, buyなど</span>
+                <span class="xrg ty_↓">(<span class="xr"><a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_01_k104'])" title="give">↓ <span class="xrlabelGroup"><span class="xrlabel">語法</span><span class="xrlabel">(5)</span></span></a></span>)</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+          </span>
+          <span id="WDEJ_g0004790_01_01_01_k104" class="box t_語法 ty_1">
+            <span class="title x_xdh">
+              <span class="u">語法 </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh x_xdt">
+                <span class="sn">①</span>
+                <span class="bold">give <span class="r">A </span><span class="r">B</span></span>
+                <span class="bold">と</span>
+                <span class="bold">give <span class="r">B</span> to <span class="r">A</span></span>
+                <span> I gave Ed the pen. とI gave the pen to Ed.(そのペンをエドにあげた)は基本的に同義であるが, 前者では「何を」が, 後者では「誰に」が意味上の焦点となる. よって, What did you give Ed?には前者が, Who(m) did you give the pen to?には後者が対応する返答となる</span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh x_xdt">
+                <span class="sn">②</span>
+                <span class="bold">受け身</span>
+                <span> give A Bの受け身の主語としてはAが選択されることの方が多い. He gave the girl a present.(彼は女の子にプレゼントをあげた)の受け身は基本的に, The girl was given a present [╳a present to]./A present was given to the girl. の2種類が可能. 前者では「何を」が, 後者では「誰に」が意味上の焦点となる. なお, 後者でtoを省略したA present was given the girl. も可能ではあるが</span>
+                <span class="oup_label x_ni">｟まれ｠</span>
+                <span class="grnote"> (<span class="lbl">!</span>ただし, 目的語が<span class="gr x_rr">代名詞</span>の場合は可能:A present was given her<span class="gp">.</span>) </span>
+                <span class="gp">.</span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">③</span>
+                <span class="bold">代名詞目的語と語順</span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_3_a" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">a. </span>
+                <span class="trg x_xd2">
+                  <span class="trans">目的語A, Bのいずれかが<span class="ps x_rr">代名詞</span>の場合, 通例古い情報を表す<span class="ps x_rr">代名詞</span>を文末におくことは避けられる </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">John <span class="italic">gave</span> me his card<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">ジョンは私に名刺をくれた </span>
+                  </span>
+                  <span class="grnote x_xdt"> (<span class="lbl">!</span>特にmeに焦点を当てる場合を除いてJohn <span class="italic">gave</span> his card to me. より好まれる) </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">I <span class="italic">gave</span> it to John<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">私はそれをジョンにやった </span>
+                  </span>
+                  <span class="x_xdt">
+                    <span class="grnote"> (<span class="lbl">!</span>特にitとthemは<span class="gr x_rr">動詞</span>の直後で好まれる; ╳I gave John it. としない) </span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_3_b" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">b. </span>
+                <span class="trg x_xd2">
+                  <span class="trans">目的語A, Bの両方が<span class="ps x_rr">代名詞</span>の場合, <span class="oup_label x_ni">｟主に英･くだけた話｠</span>で<span class="ps x_rr">動詞</span>＋A B [B A]のいずれも可能だが, <span class="ps x_rr">動詞</span>＋B to [for] Aが最も普通で, 特にgive以外の<span class="ps x_rr">動詞</span>では<span class="ps x_rr">動詞</span>＋B Aの形は </span>
+                  <span class="oup_label x_ni">｟比較的まれ｠</span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh">
+                    <span class="sn">▸ </span>
+                    <span class="ex">John <span class="italic">gave</span> it to me [me it, <span class="oup_label x_ni">｟主に英･くだけた話｠</span>it me]<span class="gp">. </span></span>
+                  </span>
+                  <span class="trg x_xd3">
+                    <span class="trans ty_用例訳">ジョンはそれを私にくれた </span>
+                  </span>
+                  <span class="x_xdt">
+                    <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)強勢と音調に注意: g<span class="str">á</span>ve(↘) it to me, gave it to m<span class="str">é</span>(↘), g<span class="str">á</span>ve(↘) me it, <span class="oup_label x_ni">｟主に英･くだけた話｠</span>g<span class="str">á</span>ve(↘) it me, gave it m<span class="str">é</span>(↘). (<span class="bold">2</span>)Bの<span class="gr x_rr">代名詞</span>がthemの場合<span class="italic">gave</span> them meは<span class="oup_label x_ni">｟まれ｠</span>) </span>
+                    <span class="gp">. </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">④</span>
+                <span>(</span>
+                <span class="bold">to</span>
+                <span>) </span>
+                <span class="bold">
+                  <span class="r">A</span>
+                </span>
+                <span class="bold">を問う文</span>
+                <span> 間接目的語すなわち「誰に」与えたかを問うwh疑問文ではtoが必要 </span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh">
+                  <span class="sn">▸ </span>
+                  <span class="ex">Who [<span class="oup_label x_ni">｟かたい書｠</span>Whom] did you <span class="italic">give</span> the pen <span class="italic">to</span>?≒<span class="oup_label x_ni">｟文｠</span><span class="italic">To</span> whom did you <span class="italic">give</span> the pen? </span>
+                </span>
+                <span class="trg x_xd3">
+                  <span class="trans ty_用例訳">誰にペンをあげたの? </span>
+                </span>
+                <span class="x_xdt">
+                  <span class="grnote"> (<span class="lbl">!</span>いずれもtoは省略できない) </span>
+                  <span class="gp">.</span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">⑤</span>
+                <span class="ps x_rr">動詞</span>
+                <span class="bold">
+                  <span class="r">＋</span>
+                </span>
+                <span class="bold">
+                  <span class="r">A </span>
+                  <span class="r">B</span>
+                </span>
+                <span class="bold">構文</span>
+                <span class="ps x_rr">動詞</span>
+                <span>＋A B構文をとる</span>
+                <span class="ps x_rr">動詞</span>
+                <span>は授与動詞と呼ばれ, 一般に何らかの意味で間接目的語Aに直接目的語Bを与えることを表す(</span>
+                <span class="xrg ty_↑">
+                  <span class="xr">
+                    <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_01_k303'])" title="give">↑ <span class="xrlabelGroup"><span class="xrlabel">文法</span></span></a>
+                  </span>
+                </span>
+                <span class="gp">, </span>
+                <span class="xrg ty_→">
+                  <span class="xr">
+                    <a href="x-dictionary:r:WDEJ_f0011200:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_f0011200_01_00_01_k302'])" title="for">→ for <span class="xrlabelGroup"><span class="xrlabel">1b</span><span class="xrlabel">文法</span></span></a>
+                  </span>
+                </span>
+                <span>). </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_5_a" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">a. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A </span><span class="r">B</span></span><span class="bold">と</span><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">B</span> to</span> [<span class="bold">for</span>] <span class="bold"><span class="r">A</span></span><span class="ps x_rr">動詞</span>＋A Bの構文は通例<span class="ps x_rr">動詞</span>＋B to [for] Aに書き換え可能で, <span class="ps x_rr">動詞</span>が所有権の移動や物･事･人の何らかの移動を含意する場合にはその到達点を表すtoを, そういった移動を含意しない場合には利益を表すforを用いる傾向がある</span>
+                  <span class="gp">. </span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>(</span>
+                <span class="bold">i</span>
+                <span>)</span>
+                <span class="bold">to</span>
+                <span class="bold">を従える主な</span>
+                <span class="ps x_rr">動詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">award, <span class="bold">bring</span>, deny, do, fax, feed, <span class="bold">give</span>, grant, <span class="bold">hand</span>, kick, leave <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_l0003540:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_l0003540_01_01_12'])" title="leave">→ leave<span class="hm">1</span><span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">12</span></span></a></span>)</span><span class="gp">, </span><span class="bold">lend</span>, mail, offer, owe, pass, <span class="bold">pay</span>, post, promise, read, refuse, <span class="bold">sell</span><span class="gp">, </span><span class="bold">send</span><span class="gp">, </span><span class="bold">show</span>, sing, take, <span class="bold">teach</span><span class="gp">, </span><span class="bold">tell</span><span class="gp">, </span><span class="bold">write</span><span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>(</span>
+                <span class="bold">ii</span>
+                <span>)</span>
+                <span class="bold">for</span>
+                <span class="bold">を従える主な</span>
+                <span class="ps x_rr">動詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">bake, <span class="bold">bring</span>, build, <span class="bold">buy</span><span class="gp">, </span><span class="bold">cook</span>, design, do, fetch, <span class="bold">find</span>, fix, get, hire, keep, leave, <span class="bold">make</span>, order, pick, play, reach, rent, reserve, save, sing, spare <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0028030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0028030_02_01_01'])" title="spare">→ spare<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1</span></span></a></span>)</span><span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>(</span>
+                <span class="bold">iii</span>
+                <span>)</span>
+                <span class="bold">bring</span>
+                <span>, do, sing, throwはtoとforのいずれも可能</span>
+                <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_b0019610:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_b0019610_01_01_02_k104'])" title="bring">→ bring<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">2</span><span class="xrlabel">語法</span></span></a></span>)</span>
+                <span class="gp">. </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_5_2" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">b. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A </span><span class="r">B</span></span><span class="bold">が可能で</span><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">B</span> to</span> [<span class="bold">for</span>] <span class="bold"><span class="r">A</span></span><span class="bold">で用いられない</span><span class="ps x_rr">動詞</span> 一般的傾向として, <span class="ps x_rr">動詞</span>＋A Bの型はexplain, describeなどラテン語起源の比較的長い<span class="ps x_rr">動詞</span>より, give, show, sendなど古くから英語に存在する短い<span class="ps x_rr">動詞</span>と用いる方が無難</span>
+                  <span class="gp">. </span>
+                  <span class="trans">主なものは以下の通り </span>
+                </span>
+                <span class="exg x_xd2 hasSn">
+                  <span class="x_xdh x_xdt">
+                    <span class="sn">▸ </span>
+                    <span class="ex">allow, bet, charge, cost, fine, permit, refuse, save, spare <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_s0028030:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_s0028030_02_01_02'])" title="spare">→ spare<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">2</span></span></a></span>)</span>, strike, tax, tip, wish<span class="gp">. </span></span>
+                  </span>
+                </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_5_3" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">c. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A </span><span class="r">B</span></span><span class="bold">で用いないが</span><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">B</span> to</span> [<span class="bold">for</span>] <span class="bold"><span class="r">A</span></span><span class="bold">が可能な</span><span class="ps x_rr">動詞 </span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>(</span>
+                <span class="bold">i</span>
+                <span>)</span>
+                <span class="bold">to</span>
+                <span class="bold">を従える主な</span>
+                <span class="ps x_rr">動詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">announce, carry, confess, contribute, convey, declare, deliver, describe, donate, exhibit, <span class="bold">explain</span>, mention, narrate, <span class="bold">propose</span>, push, refer, report, <span class="bold">return</span>, reveal, <span class="bold">say</span>, submit, <span class="bold">suggest</span>, transfer<span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span>(</span>
+                <span class="bold">ii</span>
+                <span>)</span>
+                <span class="bold">for</span>
+                <span class="bold">を従える主な</span>
+                <span class="ps x_rr">動詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">acquire, borrow, collect, compose, describe, obtain, recover, retrieve, withdraw<span class="gp">. </span></span>
+                </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_5_4" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">d. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A </span><span class="r">B</span></span><span class="bold">と</span><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">B</span></span><span class="bold"><span class="r">＋</span></span><span class="ps x_rr">前置詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A</span></span><span class="ps x_rr">動詞</span>＋A Bの型で用いられながら<span class="ps x_rr">動詞</span>＋B to [for] A以外の型で書き換えられる<span class="ps x_rr">動詞</span>もある</span>
+                  <span class="gp">. </span>
+                  <span class="trans">責任を表すforを用いるenvy [excuse, forgive] B for Aのほか, ask B of A, flick B at A, issue B with A, leave B to [for, with] A, play B with [against] A, serve B with [to] Aなど特徴的な<span class="ps x_rr">前置詞</span>をとる<span class="ps x_rr">動詞</span>もある</span>
+                  <span class="gp">. </span>
+                  <span class="trans">なお, 意味的にgiveと類似したprovideはprovide A with B [B for A]は可能だがprovide A Bは不可能, supplyはsupply A with B [B to A, B for A]は可能だがsupply A Bは<span class="oup_label x_ni">｟米｠</span>を除いて不可能</span>
+                  <span class="gp">. </span>
+                </span>
+              </span>
+              <span id="WDEJ_g0004790_01_01_01_k104_5_5" class="semb x_xd1 hasSn">
+                <span class="sn x_xdh">e. </span>
+                <span class="trg x_xd2">
+                  <span class="trans"><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A </span><span class="r">B</span></span><span class="bold">と</span><span class="ps x_rr">動詞</span><span class="bold"><span class="r">＋</span></span><span class="bold"><span class="r">A</span></span>[<span class="bold"><span class="r">B</span></span>] <span class="ps x_rr">動詞</span>＋A Bの型で用いられながら<span class="ps x_rr">動詞</span>＋Aが可能な<span class="ps x_rr">動詞</span>にはfind, <span class="ps x_rr">動詞</span>＋Bが可能な<span class="ps x_rr">動詞</span>にはcost <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0029780:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0029780_02_01_01'])" title="cost">→ cost<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1</span></span><span class="gp">, </span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>, take <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_t0000830:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0000830_01_01_09'])" title="take">→ take <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">9</span></span></a></span>) </span>がある</span>
+                  <span class="gp">. </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【渡す】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="bold">A</span>〈人など〉<span class="bold">に</span>)<span class="bold">B</span>〈物〉<span class="bold">を</span>(<span class="bold">手</span>)<span class="bold">渡す</span><span class="gp">, </span><span class="t">預ける</span><span class="gp">, </span><span class="bold">委託する </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Be a good boy, and <span class="italic">give</span> me the gun<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">おとなしく銃をこっちによこすんだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Give</span> me the salt, please<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">塩を取ってください</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> one's luggage <span class="italic">to</span> the bellboy </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">荷物をベルボーイに預ける</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="con x_xd3">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+        <span id="WDEJ_g0004790_01_01_03_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉<span class="co x_ni"> «…の代価として» </span>(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈金〉<span class="t">を支払う</span>(pay) </span>
+            <span class="sp"> «<span class="italic">for</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I <span class="italic">gave</span> $4,000 <span class="italic">for</span> the car<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私はその車を買うのに4千ドル払った</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">How much will you <span class="italic">give</span> me <span class="italic">for</span> this? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">これいくらで買ってくれる</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_03_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉<span class="co x_ni"> «…の値段で» </span>(<span class="bold">A</span>〈人〉<span class="bold">に</span>)<span class="bold">B</span>〈物〉<span class="bold">を売り渡す </span></span>
+            <span class="sp"> «<span class="italic">for</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Bill <span class="italic">gave</span> me his concert ticket <span class="italic">for</span> 5,000 yen<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ビルは私にコンサートの切符を5千円で譲ってくれた</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【伝える】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈情報･知識など〉<span class="t">を伝える</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈新聞･本などが〉(<span class="bold">A</span>〈人〉<span class="bold">に</span>)<span class="bold">B</span>〈記事･話など〉<span class="bold">を載せる </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> evidence in court </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">法廷で証言をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Can you <span class="italic">give</span> me your name and address? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">お名前とご住所をいただけますか</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> the signal [sign] to stop </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">止まるよう合図する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> a detailed account [description] of the accident </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">事故の模様を詳細に伝える</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈言葉･助言など〉<span class="t">を言う</span><span class="gp">, </span><span class="bold">述べる</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈裁判官が〉(<span class="bold">Aに</span>)<span class="bold">B</span>〈判決など〉<span class="bold">を言い渡す </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Can you <span class="italic">give</span> me any advice? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">何か助言をくれませんか</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> an order </span>
+            <span class="co x_ni"> «人に/…するように» </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">命令を下す </span>
+          </span>
+          <span class="sp"> «<span class="italic">to</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">to</span> do» </span>
+          <span class="gp">; </span>
+          <span class="ind">（人に）</span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">注文をする </span>
+          </span>
+          <span class="sp x_xdt"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> speeches <span class="italic">to</span> lawyers </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">弁護士相手に講演をする</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_g0004790_01_01_05_k505" class="box ty_5">
+            <span class="title x_xdh">
+              <span class="u">表現 </span>
+              <span class="u">コーパス </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span class="bold">
+                  <span class="r">B</span>
+                </span>
+                <span class="bold">に現れる主な</span>
+                <span class="ps x_rr">名詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">account, <span class="bold">advice</span><span class="gp">, </span><span class="bold">answer</span>, command, description, <span class="bold">details</span>, direction, estimate, excuse, explanation, hint, instruction, interview, <span class="bold">lecture</span><span class="gp">, </span><span class="bold">lesson</span>, message, notice, opinion, <span class="bold">order</span>, overview, <span class="bold">permission</span>, presentation, promise, reason, reply, sentence, <span class="bold">speech</span>, statement, suggestion, talk, <span class="bold">voice</span>, warning, <span class="bold">word</span><span class="gp">. </span></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="oup_label x_ni">｟かたく｠</span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖give <span class="r">A</span> to <span class="r">do</span>〗</span>
+            <span class="trans">〈人が〉(ある事柄を言い伝えて)<span class="t">A</span>〈人〉<span class="t">に…させる </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)しばしば受け身で用いる. (<span class="bold">2</span>)doは節を伴うunderstand, believe, knowなどの認識を表す<span class="gr x_rr">動詞</span>) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I was <span class="italic">given to</span> understand that you are ill<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ご病気であるとうかがいまして </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>どのように知り得たのかなどの明言を避ける表現) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="bold">A</span>〈人〉<span class="bold">に</span>)<span class="bold">B</span>〈例など〉<span class="bold">を挙げる</span><span class="gp">, </span><span class="t">示す</span></span>
+          <span class="gp">; </span>
+          <span class="trans">〈人･物･事が〉<span class="bold">B</span>〈気配･徴候など〉<span class="bold">を示す</span>; 〈計器などが〉<span class="bold">B</span>〈数値〉<span class="bold">をさす</span>(show) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> specific examples to support one's idea </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">考えを立証するために具体例を挙げる</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I called his name, but he <span class="italic">gave</span> no sign of life [hearing me] at all<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼の名前を呼んでみたが, 生きて[聞こえて]いる様子がまるでなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">This digital thermometer <span class="italic">gives</span> an accurate reading in 10 seconds<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">このデジタル体温計は10秒で正確な値が表示されます</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【…する】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_08" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">8 </span>
+        <span class="trg x_xd3">
+          <span class="gr ty_用法">〖<span class="t">動詞</span>と同形の<span class="t">名詞</span>を直接目的語として〗</span>
+          <span class="grnote"> (<span class="lbl">!</span>単なる1語動詞を用いるより, 行為･音声を表す<span class="gr x_rr">名詞</span>に修飾語を伴って, 表現を豊かにしたり文体を整えたりする機能がある; <span class="xrg ty_→"><span class="xr"><a href="x-dictionary:r:WDEJ_t0000830:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_t0000830_01_01_03_k103'])" title="take">→ take<span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">3</span><span class="xrlabel">a</span><span class="xrlabel">語法</span></span></a></span></span>) </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_08_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span>〗</span>
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈人･物など〉<span class="bold">に</span>)<span class="bold">B</span>〈行為〉<span class="bold">を働きかける</span><span class="gp">, </span><span class="t">する</span><span class="gp">, </span><span class="bold">行う </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>この用法ではgive B to Aの語順にしない) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Give</span> me a call later<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">後で電話してね(≒Call me later.)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> A a tight hug </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">Aをきつく抱きしめる(≒hug A tightly)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> A a broad smile </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">Aに満面の笑みでほほえむ(≒smile at A broadly)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> the surface a gentle polish </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">表面を優しく磨く(≒polish the surface gently)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> A a disgusted look </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">Aに嫌気のさした顔をする </span>
+              <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_l0010630:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_l0010630_02_00_01'])" title="look">→ look<span class="ps x_rr">名詞</span><span class="xrlabelGroup"><span class="xrlabel">1</span></span><span class="gp">, </span><span class="xrlabelGroup"><span class="xrlabel">2</span></span></a></span>)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Everybody, let's <span class="italic">give</span> a big welcome to Lisa Rinna! </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">皆さん, リサ･リナを大きな拍手で迎えましょう </span>
+            </span>
+            <span class="x_xdt">
+              <span class="grnote"> (<span class="lbl">!</span>toはgiveではなくwelcomeに連語する) </span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_g0004790_01_01_08_k506" class="box ty_5">
+            <span class="title x_xdh">
+              <span class="u">表現 </span>
+              <span class="u">コーパス </span>
+            </span>
+            <span class="np x_xd1">
+              <span class="x_xdh">
+                <span class="bold">
+                  <span class="r">B</span>
+                </span>
+                <span class="bold">に現れる主な</span>
+                <span class="ps x_rr">名詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex"><span class="bold">call</span>, check, consideration, demonstration, encouragement, glance, grin, <span class="bold">hand</span>, help, <span class="bold">hug</span>, indication, kick, <span class="bold">kiss</span><span class="gp">, </span><span class="bold">lift</span><span class="gp">, </span><span class="bold">look</span><span class="gp">, </span><span class="bold">nod</span>, pat, protection, push, <span class="bold">ride</span><span class="gp">, </span><span class="bold">ring</span>, shot, <span class="bold">smile</span>, start, <span class="bold">stare</span><span class="gp">, </span><span class="bold">support</span>, thought, tour, understanding, wash, wave, welcome<span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_08_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give an <span class="r">A</span>〗</span>
+            <span class="trans">〈人･物が〉<span class="bold">A</span>〈音･声など〉<span class="bold">を発する</span><span class="gp">, </span><span class="t">出す </span></span>
+            <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟英｠</span>で好まれる) </span>
+            <span class="gp">; </span>
+            <span class="trans">〈人･物が〉<span class="bold">A</span>〈動作〉<span class="bold">をする </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>主語の無意識の動作を表す) </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give a</span> loud cry </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">大声で泣く(≒cry loudly)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give a</span> laugh </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">笑う(≒laugh)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give a</span> sigh </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ため息をつく(≒sigh)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give a</span> shrug of one's shoulders </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">肩をすくめる(≒shrug one's shoulders)</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give an</span> astonished whistle </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">驚いて口をひゅうと鳴らす</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The ship <span class="italic">gave a</span> sudden lurch<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">船は突然傾いた(≒The ship lurched suddenly.)</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span class="trg x_xd3">
+          <span id="WDEJ_g0004790_01_01_08_k507" class="box ty_5">
+            <span class="title x_xdh">
+              <span class="u">表現 </span>
+              <span class="u">コーパス </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">①</span>
+                <span class="bold">
+                  <span class="r">A</span>
+                </span>
+                <span class="bold">に現れる音声を表す主な</span>
+                <span class="ps x_rr">名詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">chuckle, cough, <span class="bold">cry</span>, gasp, giggle, groan, grunt, <span class="bold">laugh</span>, moan, scream, shout, <span class="bold">sigh</span>, snort, yell, yelp<span class="gp">.</span></span>
+                </span>
+              </span>
+            </span>
+            <span class="np x_xd1 hasSn">
+              <span class="x_xdh">
+                <span class="sn">②</span>
+                <span class="bold">
+                  <span class="r">A</span>
+                </span>
+                <span class="bold">に現れる動作を表す主な</span>
+                <span class="ps x_rr">動詞</span>
+              </span>
+              <span class="exg x_xd2 hasSn">
+                <span class="x_xdh x_xdt">
+                  <span class="sn">▸ </span>
+                  <span class="ex">lurch, shake, shrug, shudder, toss, whistle<span class="gp">. </span></span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_09" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">9 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (for <span class="r">A</span>)〗</span>
+            <span class="trans">〈人が〉(<span class="t">A</span>〈人〉<span class="t">のために</span>)<span class="t">B</span>〈パーティなど〉<span class="t">を</span>(<span class="bold">自宅で</span>)<span class="t">催す</span><span class="gp">, </span><span class="bold">開く</span><span class="gp">;</span></span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span>/give <span class="r">B</span> (to [for] <span class="r">A</span>)〗</span>
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈人〉<span class="bold">に</span>)<span class="bold">B</span>〈演技･講演･劇など〉<span class="bold">を行う, する</span></span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> a birthday party <span class="italic">for</span> Jack </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ジャックのために誕生日会を開く</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> a lecture </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">講義[講演]をする</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> a solo concert </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ソロコンサートを開催する</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> a press conference </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">記者会見を開く</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【もたらす】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_10" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">10 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人･物･事が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈印象･考えなど〉<span class="t">を抱かせる</span><span class="gp">, </span><span class="bold">もたせる</span></span>
+          <span class="gp">; </span>
+          <span class="trans">(<span class="bold">Aに</span>)<span class="bold">B</span>〈喜び･苦痛･困難など〉<span class="bold">を生じさせる</span><span class="gp">, </span><span class="t">引き起こす </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Sloppy dress <span class="italic">gives</span> people the impression that you are lazy<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">身なりがだらしないと人から怠惰だと思われますよ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> children a sense of responsibility [security] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">子供に責任[安心]感を与える</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">It <span class="italic">gives</span> me great pleasure to see you again<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">再びお目にかかることができて大変光栄に存じます</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">My car has <span class="italic">given</span> me no trouble recently<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">私の車はこのところ故障知らずだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_11" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">11 </span>
+        <span class="con x_xd3">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+        <span id="WDEJ_g0004790_01_01_11_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈物･事･生物が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈作用･結果など〉<span class="t">をもたらす</span><span class="gp">, </span><span class="bold">生み出す </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Caffeine <span class="italic">gives</span> us a lift<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">カフェインは気分を高揚させる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Any number multiplied by zero <span class="italic">gives</span> zero<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">どんな数も0を掛けると0になる</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Piazza's homer <span class="italic">gave</span> the Mets a 3—0 lead in the sixth<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">メッツは6回にピアッツァのホームランで3対0とリードした</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> similar [(the) best, different] results </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">同様の[最高の, 異なる]結果をもたらす</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Jersey cows <span class="italic">give</span> rich milk<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ジャージー牛は濃厚な乳を出す</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The noise <span class="italic">gives</span> me a headache<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">騒音で頭痛がする</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_11_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人･物などが〉(<span class="bold">A</span>〈人･場所･物など〉<span class="bold">に</span>)<span class="bold">B</span>〈ある性質･特徴〉<span class="bold">を加える </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>進行形にしない) </span>
+            <span class="gp">; </span>
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈考えなど〉<span class="bold">に</span>)<span class="bold">B</span>〈形･姿など〉<span class="bold">を与える, もたせる </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The historical buildings <span class="italic">give</span> a unique atmosphere <span class="italic">to</span> the town<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">歴史的建造物が町に独特の雰囲気を醸し出している</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The living room <span class="italic">gives</span> a view of the intersection<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">居間からは交差点が見える</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_12" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">12 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈仕事など〉<span class="t">を割り当てる</span></span>
+          <span class="gp">; </span>
+          <span class="trans">(<span class="bold">Aに</span>)<span class="bold">B</span>〈罰など〉<span class="bold">を与える </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">My math teacher <span class="italic">gives</span> us a lot of homework<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">うちの数学の先生はみんなにたくさんの宿題を出す</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> him a $500 fine </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼に500ドルの罰金を課す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_13" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">13 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈人･物など〉<span class="bold">に</span>)<span class="co x_ni"> «…に対して» </span><span class="bold">B</span>〈評価など〉<span class="bold">を与える, 下す </span></span>
+            <span class="sp"> «<span class="italic">for</span>» </span>
+            <span class="gp">; </span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖give <span class="r">A </span><span class="r">C</span>〗</span>
+            <span class="oup_label x_ni">｟英｠</span>
+            <span class="fld">〘スポーツ〙</span>
+            <span class="trans">〈審判が〉<span class="bold">A</span>〈選手･ボール〉<span class="bold">をCと判定する </span></span>
+            <span class="grnote"> (<span class="lbl">!</span>Cは<span class="gr x_rr">形容詞</span>) </span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The hotel has been <span class="italic">given</span> a five-star rating<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">そのホテルは5つ星に格付けされている</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> her high marks for her performance </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼女の演技に高得点を与える</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> the ball out </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">ボールをアウトと判定する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_14" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">14 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give <span class="r">A </span><span class="r">B</span><span class="gp">/</span><span class="r">B</span> to <span class="r">A</span>〗</span>
+          <span class="trans"><span class="bold">A</span>〈人〉<span class="bold">にB</span>〈病気〉<span class="bold">をうつす, 伝染させる</span>(infect) </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Don't <span class="italic">give</span> me your cold<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">かぜをうつさないでくれよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_15" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">15 </span>
+        <span class="trgg x_xd3">
+          <span class="trg">
+            <span class="oup_label x_ni">｟やや古｠</span>
+          </span>
+          <span class="gp">;</span>
+          <span class="trg">
+            <span class="con">〖<span class="rf">～</span> A B〗</span>
+            <span class="trans">〈女性が〉<span class="bold">A</span>〈男性〉<span class="bold">との間にB</span>〈子供〉<span class="bold">をもうける, 産む</span></span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_16" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">16 </span>
+        <span id="WDEJ_g0004790_01_01_16_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟英･かたい話｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖<span class="rf">～</span> A B〗</span>
+            <span class="trans">〈司会者が〉<span class="bold">A</span>〈聴衆など〉<span class="bold">にB</span>〈来賓など〉<span class="bold">を紹介する</span>; 〈人が〉<span class="bold">A</span>〈人〉<span class="bold">にB</span>〈人･事〉<span class="bold">のための乾杯</span>[<span class="bold">拍手</span>]<span class="bold">を呼びかける </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Ladies and gentlemen, I <span class="italic">give</span> you the President<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">皆様, 大統領のために乾杯を</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_16_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="ind">【人･事に】</span>
+            <span class="trans">〈乾杯〉<span class="bold">をする </span></span>
+            <span class="sp"> «<span class="italic">to</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> a toast <span class="italic">to</span> the future </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">前途を祝して乾杯する</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span class="trg x_xd2">
+        <span class="ind">【許し与える】</span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_17" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">17 </span>
+        <span class="con x_xd3">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+        <span id="WDEJ_g0004790_01_01_17_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人･事が〉(<span class="t">A</span>〈人･事など〉<span class="t">に</span>)<span class="t">B</span>〈許可･機会･時間など〉<span class="t">を与える </span></span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Give</span> me another chance<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">もう一度チャンスをください</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> (one's) permission [consent] </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">許可[承諾]をする</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I don't think the new government will last long. I <span class="italic">give</span> it six months tops<span class="gp">. </span></span>
+              <span class="oup_label x_ni">｟話｠</span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">新政権は長続きしないだろうね</span>
+              <span class="gp">. </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">もっても半年だろう</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Give</span> yourself some extra time to get there<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">そこに行くのに少し時間の余裕をみておきなさい</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">I was <span class="italic">given</span> the opportunity to study in Britain<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">私はイギリスで勉強する機会を与えられた</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">How long do the doctors <span class="italic">give</span> you? </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">医者に余命はどれくらいと言われましたか</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_17_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈人･事など〉<span class="bold">に</span>)<span class="bold">B</span>〈支援など〉<span class="bold">を施す</span>[<span class="bold">差しのべる</span>] </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> financial support <span class="italic">to</span> developing countries </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">発展途上国に経済支援を行う</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Will you <span class="italic">give</span> me a hand to carry this? </span>
+              <span class="oup_label x_ni">｟話｠</span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">これを運ぶの手伝ってくれないか</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_18" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">18 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+          <span class="trans">〈人が〉(<span class="t">A</span>〈人〉<span class="t">に</span>)<span class="t">B</span>〈権限･責任･名誉･信頼など〉<span class="t">を授ける</span><span class="gp">, </span><span class="bold">与える</span>; (<span class="bold">A</span>〈人･事〉<span class="bold">に</span>)<span class="bold">B</span>〈重要性など〉<span class="bold">をおく </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Who <span class="italic">gave</span> you the authority to enter this room? </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">誰が君にこの部屋への入室を許可したんだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> him credit for his bravery </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">彼の勇敢ぶりを讃える</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">give</span> you my trust<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">君を信じるよ(≒I trust you.)</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> top priority <span class="italic">to</span> safety </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">安全を最優先させる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_19" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">19 </span>
+        <span id="WDEJ_g0004790_01_01_19_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span><span class="gp">/</span><span class="r">B</span> (to <span class="r">A</span>)〗</span>
+            <span class="trans">〈人が〉(<span class="bold">A</span>〈事〉<span class="bold">に</span>)<span class="bold">B</span>〈時間･精力･注意など〉<span class="bold">を注ぐ, 傾ける</span><span class="gp">; </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give <span class="r">oneself</span>〗</span>
+            <span class="co x_ni"> «…に» </span>
+            <span class="trans"><span class="bold">専念する</span>(<span class="italic">over, up</span>) </span>
+            <span class="sp"> «<span class="italic">to</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Let me <span class="italic">give</span> this matter serious consideration<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">この件について慎重に考えさせてください</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">Don't <span class="italic">give</span> it a second [another] thought<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">もうそのことは考えるな, 心配するな</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> more [full] attention <span class="italic">to</span> one's health </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">健康にいっそう[十分]留意する</span>
+            </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give oneself</span> (<span class="italic">over</span> [<span class="italic">up</span>]) <span class="italic">to</span> one's work </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">仕事に専念する</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_19_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖be given〗</span>
+            <span class="co x_ni"> «…に» </span>
+            <span class="trans"><span class="bold">没頭</span>[<span class="bold">熱中</span>]<span class="bold">する, ふける </span></span>
+            <span class="sp"> «<span class="italic">to</span>» </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_19_03" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">c. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈人が〉<span class="co x_ni"> «…のために/…するために» </span>〈生命など〉<span class="bold">をささげる, 犠牲にする</span>(<span class="italic">up</span>) </span>
+            <span class="sp"> «<span class="italic">for</span></span>
+            <span class="gp">/</span>
+            <span class="sp"><span class="italic">to</span> do» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> one's life <span class="italic">to</span> save others </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">ほかの者を救おうと命を投げ出す</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_20" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">20 </span>
+        <span id="WDEJ_g0004790_01_01_20_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give <span class="r">A </span><span class="r">B</span><span class="gp">/</span><span class="r">B</span> to <span class="r">A</span>〗</span>
+            <span class="trans">〈人が〉<span class="bold">A</span>〈人〉<span class="bold">にB</span>〈腕など〉<span class="bold">を差し出す</span><span class="gp">; </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="oup_label x_ni">｟やや古｠</span>
+            <span class="con">〖<span class="rf">～</span> oneself〗</span>
+            <span class="trans">〈女性が〉 </span>
+            <span class="ind">【男性に】</span>
+            <span class="trans">
+              <span class="bold">体を許す </span>
+            </span>
+            <span class="sp"> «<span class="italic">to</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">give</span> her one's hand to help her up the stairs </span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">階段を上るのを手伝おうと彼女に手を貸す</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_01_20_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="con">〖give <span class="r">A </span><span class="r">B</span>〗</span>
+            <span class="gr ty_用法">〖通例命令文で〗</span>
+            <span class="trans">〈電話交換手が〉<span class="bold">A</span>〈人〉<span class="bold">にB</span>〈人･番号など〉<span class="bold">をつなぐ</span>[<span class="bold">取り次ぐ</span>] </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex"><span class="italic">Give</span> me extension 34 [the police], please<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">内線34番[警察]をお願いします</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_01_21" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">21 </span>
+        <span class="trg x_xd3">
+          <span class="con">〖give (<span class="r">A</span>) <span class="r">B</span>〗</span>
+          <span class="trans">(<span class="bold">A</span>〈人〉<span class="bold">に</span>)<span class="bold">B</span>〈論点など〉<span class="bold">を認める, 譲る </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'll <span class="italic">give</span> you that<span class="gp">. </span></span>
+            <span class="oup_label x_ni">｟話｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(ほかの点には賛成しがたいが)その点は認めるよ, それは君の言う通りだ</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">Don't give me that</span>
+              </span>
+              <span class="gp">. </span>
+            </span>
+            <span class="oup_label x_ni">｟くだけた話｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">そんなの信じられないね, その手には乗らないぞ </span>
+          </span>
+          <span class="x_xdt">
+            <span class="grnote"> (<span class="lbl">!</span>相手の言い分に対して) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_01_02" class="semb x_xd1">
+      <span class="gr x_xdh x_rr ty_動詞区分">自動詞</span>
+      <span id="WDEJ_g0004790_01_02_01" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">1 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈人が〉(贈り物を)<span class="bold">あげる </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Remember, it's better to <span class="italic">give</span> than to receive<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">贈り物は受け取るよりあげる方がいいというのを覚えておいてください</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_02" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">2 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈人が〉 </span>
+          <span class="ind">【恵まれない者などに】</span>
+          <span class="trans">(金･物を)<span class="bold">寄付する</span><span class="gp">, </span><span class="bold">施す</span><span class="gp">; </span><span class="bold">寄贈する </span></span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic"><span class="bold">give generously </span></span><span class="italic">to</span> the poor [scholarship fund] </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">貧しい人々[育英基金]に惜しみない寄付を施す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_03" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">3 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans"><span class="bold">譲る, 譲歩する</span><span class="gp">; </span><span class="bold">降参</span>[<span class="bold">屈服</span>]<span class="bold">する </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Neither side will <span class="italic">give</span> an inch on this<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">どちらもこの事については一歩もひかないだろう</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">give</span>! </span>
+            <span class="oup_label x_ni">｟米･くだけて｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">参った</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_04" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">4 </span>
+        <span class="trg x_xd3">
+          <span class="trans">(圧力･重量などを受けて)〈物が〉<span class="bold">しなう, たわむ, へこむ</span>; (急に)<span class="bold">折れる, 崩れ落ちる</span>; 〈戸などが〉<span class="bold">開く</span>; (関節などの)<span class="bold">力が抜ける </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">The floor suddenly <span class="italic">gave</span> under me [my weight]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">床が突然私の足元から[重みで]崩れ落ちた</span>
+          </span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">
+              <span class="italic">
+                <span class="bold">Something's got to give</span>
+              </span>
+              <span class="gp">. </span>
+            </span>
+            <span class="oup_label x_ni">｟比喩的に｠</span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">(相反する条件があり)どこかで妥協しなければならない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_05" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">5 </span>
+        <span class="trg x_xd3">
+          <span class="trans">〈気候が〉<span class="bold">和らぐ, ゆるむ</span>; 〈雪･霜が〉<span class="bold">解ける</span></span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_06" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">6 </span>
+        <span id="WDEJ_g0004790_01_02_06_01" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">a. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈窓･戸･建物などが〉<span class="co x_ni"> «…に» </span><span class="bold">向いている</span>(face)</span>
+            <span class="gp">; </span>
+            <span class="co x_ni"> «…を» </span>
+            <span class="trans">
+              <span class="bold">見晴らす </span>
+            </span>
+            <span class="sp"> «<span class="italic">on</span> (<span class="italic">to</span>)</span>
+            <span class="gp">, </span>
+            <span class="sp">
+              <span class="italic">upon</span>
+            </span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">onto</span>» </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+        <span id="WDEJ_g0004790_01_02_06_02" class="semb x_xd3 hasSn">
+          <span class="sn x_xdh">b. </span>
+          <span class="trg x_xd4">
+            <span class="trans">〈通路･ドアなどが〉<span class="co x_ni"> «…に» </span><span class="bold">通じている </span></span>
+            <span class="sp"> «<span class="italic">onto</span></span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">on</span> (<span class="italic">to</span>)</span>
+            <span class="gp">, </span>
+            <span class="sp"><span class="italic">into</span>» </span>
+          </span>
+          <span class="exg x_xd4 hasSn">
+            <span class="x_xdh">
+              <span class="sn">▸ </span>
+              <span class="ex">The window <span class="italic">gives onto</span> a busy street<span class="gp">. </span></span>
+            </span>
+            <span class="trg x_xd5">
+              <span class="trans ty_用例訳">その窓はにぎやかな通りに面している</span>
+              <span class="gp">. </span>
+            </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_01_02_07" class="semb x_xd2 hasSn">
+        <span class="sn x_xdh">7 </span>
+        <span class="trg x_xd3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="gr ty_用法">〖命令文で〗</span>
+          <span class="trans">(知っていることを)<span class="bold">言え </span></span>
+        </span>
+        <span class="exg x_xd3 hasSn">
+          <span class="x_xdh">
+            <span class="sn">▸ </span>
+            <span class="ex">Okay, now <span class="italic">give</span>! </span>
+          </span>
+          <span class="trg x_xd4">
+            <span class="trans ty_用例訳">さあ, 吐くんだ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p01" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve and g<span class="str">é</span>t </span>
+      <span id="WDEJ_g0004790_p01_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">＝ bet</span>
+          </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_r0014260:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_r0014260_c01'])" title="rhym･ing">→ rhyming slang</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p02" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve and t<span class="str">á</span>ke </span>
+      <span id="WDEJ_g0004790_p02_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">互いに譲歩[妥協]する </span>
+          <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_g0004800:com.apple.dictionary.ja-en.WISDOM" title="give-and-take">→ give-and-take</a></span>)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p02_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">意見交換をする, 話し合う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p03" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve as g<span class="str">ò</span>od as <span class="italic">one</span> g<span class="str">é</span>ts </span>
+      <span id="WDEJ_g0004790_p03_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英話｠</span>
+          <span class="trans">(けんか･口論で)互角にやりあう, 負けずにやり返す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p04" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve aw<span class="str">á</span>y </span>
+      <span id="WDEJ_g0004790_p04_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟米｠</span>
+          <span class="trans">譲る, 崩れる(give way)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p05" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A</span> aw<span class="str">á</span>y [aw<span class="str">á</span>y <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p05_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけて｠</span>
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans"><span class="bold">A</span>〈不要になった物〉<span class="bold">を無料で与える</span>, 譲る </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'll <span class="italic">give away</span> my old clothes <span class="italic">to</span> charity<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">着なくなった服をチャリティに出す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈金･物〉を<span class="co x_ni"> «…に» </span>寄付する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give away</span> $1 million <span class="italic">to</span> UNESCO </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">ユネスコに100万ドルの寄付をする</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">A〈秘密など〉を漏らす, 暴露する(reveal) </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">〈表情･声などが〉A〈本心･真実など〉を現す, 映す</span>
+          <span class="gp">; </span>
+          <span class="trans">〈特徴などが〉A〈人〉の正体を露呈する</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉を裏切る(betray) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He was pretending to be normal, but his eyes <span class="italic">gave</span> him <span class="italic">away</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は平静を装っていたが, 目には動揺が浮かんでいた</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> oneself <span class="italic">away </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">馬脚[正体]を現す</span>
+            <span class="gp">; </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">不正[うそ]がばれる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(不注意などから)A〈機会など〉を逃がす, (相手方に)与えてしまう</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈試合･選挙など〉で敗れる, 負ける </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give away</span> easy goals </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">簡単にゴールを許す</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">A〈賞など〉を贈る</span>
+          <span class="gp">; </span>
+          <span class="trans">(販売促進のため)A〈物〉を進呈する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give away</span> the prizes <span class="italic">to</span> the winners </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">勝者に賞を授与する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="trans">(結婚式で)〈特に父親が〉A〈新婦〉を新郎に渡す, 新郎のところまで導く</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p05_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟豪｠</span>
+          <span class="trans">A〈喫煙･飲酒など〉をやめる, A〈興味･信念など〉を失う</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p06" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve b<span class="str">á</span>ck </span>
+      <span id="WDEJ_g0004790_p06_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">後ろへ下がる, 退く(retreat)</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p06_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【人などに】</span>
+          <span class="trans">(お礼に)お返しをする </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p07" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A</span> b<span class="str">á</span>ck [b<span class="str">á</span>ck <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p07_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈物〉<span class="bold">を返す</span></span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> (B) back A/A back (to B)/B A back〗</span>
+          <span class="trans">(B〈持ち主〉に)A〈物〉を返す, 戻す</span>
+          <span class="gp">; </span>
+          <span class="trans">(<span class="bold">B</span>〈人〉<span class="bold">に</span>)<span class="bold">A</span>〈能力･性格など〉<span class="bold">を取り戻させる</span></span>
+          <span class="gp">; </span>
+          <span class="trans">(B〈人など〉に)A〈事〉のお礼をする </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> him <span class="italic">back</span> the pen [the pen <span class="italic">back</span>]≒<span class="italic">give</span> the pen <span class="italic">back</span> [<span class="italic">back</span> the pen] <span class="italic">to</span> him </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼にペンを返す</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Give</span> it me <span class="italic">back</span>! </span>
+            <span class="oup_label x_ni">｟くだけた話｠</span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">それ返してよ </span>
+            <span class="xrg ty_↑">(<span class="xr"><a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_01_k104'])" title="give">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">1</span><span class="xrlabel">語法</span><span class="xrlabel">(3)</span></span></a></span>)</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> her <span class="italic">back</span> her hearing </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女の聴力を回復させる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p07_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈音〉を反響する, A〈光〉を反射する</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p08" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve d<span class="str">ó</span>wn </span>
+      <span id="WDEJ_g0004790_p08_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">〈牛が〉乳を出す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p09" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">g<span class="str">ì</span>ve <span class="italic">A</span> f<span class="str">ó</span>rth [f<span class="str">ó</span>rth <span class="italic">A</span>] </span>
+        <span class="oup_label x_ni">｟書｠</span>
+      </span>
+      <span id="WDEJ_g0004790_p09_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈音･においなど〉を出す</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p09_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈事〉を広める, 公にする</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p10" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">g<span class="str">ì</span>ve <span class="str">í</span>n </span>
+        <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0026630:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0026630_01_k101'])" title="con･tin･ue">→ continue<span class="xrlabelGroup"><span class="xrlabel">語源</span></span></a></span>)</span>
+      </span>
+      <span id="WDEJ_g0004790_p10_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="ind">【圧力･要請･感情･人などに】</span>
+          <span class="trans"><span class="bold">降参する</span>, 屈服する, 折れる </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">〈建物などが〉崩れ落ちる(fall down) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The rebels finally <span class="italic">gave in</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">反乱者たちはついに降服した</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give in to</span> temptation </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">誘惑に負ける</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The fire shows no sign of <span class="italic">giving in</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その火災は一向に衰える気配がない</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p11" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A </span><span class="str">í</span>n [<span class="str">í</span>n <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p11_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英｠</span>
+          <span class="ind">【権限のある人に】</span>
+          <span class="trans"><span class="bold">A</span>〈書類など〉<span class="bold">を提出する</span>, 差し出す(hand A in) </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Please <span class="italic">give</span> your homework <span class="italic">in</span> before Friday<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">宿題を金曜日までに提出しなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p11_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">A〈名前〉を登録する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p12" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">í</span>ve it an <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p12_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">それをAする </span>
+          <span class="grnote"> (<span class="lbl">!</span>(<span class="bold">1</span>)itは前出の物事をさす. (<span class="bold">2</span>)Aは行為を表す<span class="gr x_rr">名詞</span>で, 主なものはgo, miss, rest, shot, thought, <span class="bold">try</span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">“I don't drink.” “Oh! You should <span class="italic">give it a try</span>.” </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">「私は酒は飲まないんです」「何だって, 試してみるべきだよ」</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p13" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">í</span>ve it to <span class="italic">A</span> (h<span class="str">ó</span>t [str<span class="str">á</span>ight]) </span>
+      <span id="WDEJ_g0004790_p13_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈人〉を𠮟りつける, やっつける, 責める</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p14" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve it <span class="str">ú</span>p </span>
+      <span id="WDEJ_g0004790_p14_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="ind">【人に】</span>
+          <span class="trans">拍手喝采する </span>
+          <span class="sp"> «<span class="italic">for</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p15" class="idmsec x_xo1">
+      <span class="idm x_xoh">G<span class="str">í</span>ve me <span class="italic">A</span> (<span class="str">á</span>ny d<span class="str">à</span>y [t<span class="str">ì</span>me])<span class="gp">. </span></span>
+      <span id="WDEJ_g0004790_p15_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="co x_ni"> «…より» </span>
+          <span class="trans">A〈物･事･人〉の方が(ずっと)よい(prefer) </span>
+          <span class="sp"> «<span class="italic">over</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Give me</span> a Honda <span class="italic">over</span> a Toyota <span class="italic">any day</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">トヨタよりもホンダ車の方が好きだね</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p16" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">í</span>ve of <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p16_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟かたく｠</span>
+          <span class="trans">(惜しみなく･見返りなどを期待せず)A〈力など〉を注ぐ, A〈時間･金など〉を与える </span>
+          <span class="grnote"> (<span class="lbl">!</span><span class="oup_label x_ni">｟英｠</span>では<span class="oup_label x_ni">｟古｠</span>だが<span class="oup_label x_ni">｟米｠</span>ではよく用いられる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give of</span> oneself to help the refugees </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">難民救済に献身[尽力]する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p17" class="idmsec x_xo1">
+      <span class="x_xoh">
+        <span class="idm">g<span class="str">ì</span>ve <span class="italic">A </span><span class="str">ó</span>ff [<span class="str">ó</span>ff <span class="italic">A</span>] </span>
+        <span class="xrg ty_→">(<span class="xr"><a href="x-dictionary:r:WDEJ_c0026630:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_c0026630_01_k101'])" title="con･tin･ue">→ continue<span class="xrlabelGroup"><span class="xrlabel">語源</span></span></a></span>)</span>
+      </span>
+      <span id="WDEJ_g0004790_p17_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈におい･熱･光･気体･音など〉<span class="bold">を発する</span>, 放つ(<span class="oup_label x_ni">｟かたく｠</span>emit) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">This candle <span class="italic">gives off</span> a fragrant scent<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">このろうそくはよい香りを発する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p17_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈木などが〉A〈枝など〉を伸ばす, 広げる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p17_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="trans">A〈様子･雰囲気など〉を醸し出す </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give off</span> a sense of dignity </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">威厳ある雰囲気を漂わす</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p18" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve or t<span class="str">á</span>ke <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p18_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈数量･時間〉に多少の増減があるにせよ </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aを省略して「およそ」の意味でも用いられる) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Sydney is about a two-hour drive, <span class="italic">give or take</span> a few minutes<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">数分の違いはあるでしょうが, シドニーまで車で2時間ほどです</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">This painting is worth $2 million, <span class="italic">give or take</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">この絵画は約200万ドルの価値がある</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p19" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ó</span>ut </span>
+      <span id="WDEJ_g0004790_p19_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">〈蓄え･力などが〉尽きる, なくなる(fail) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The water in the well soon <span class="italic">gave out</span><span class="gp"> . </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">まもなくして井戸の水が底をついた</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p19_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans">〈装置･体の一部などが〉動かなくなる</span>
+          <span class="gp">; </span>
+          <span class="trans">〈声などが〉出なくなる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">His heart <span class="italic">gave out</span> as he slept<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼は寝ている間に息を引き取った</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p19_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に米｠</span>
+          <span class="trans">〈道などが〉<span class="co x_ni"> «…で» </span>途切れる, 終わる </span>
+          <span class="sp"> «<span class="italic">at</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p19_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…で» </span>
+          <span class="trans">気持ちを表す </span>
+          <span class="sp"> «<span class="italic">with</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give out with</span> a loud laugh </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">大声で笑う</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p20" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ó</span>ut <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p20_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟書｠</span>
+          <span class="trans">A〈叫び･ため息など〉を発する(let out) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give out</span> a cry of pain </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">苦痛の声をあげる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p20_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_p17'])" title="give">＝ <span class="xrlabelGroup"><span class="xrlabel">give</span></span> off A <span class="xrlabelGroup"><span class="xrlabel">(1)</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p21" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A </span><span class="str">ó</span>ut [<span class="str">ó</span>ut <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p21_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【大勢の人に】</span>
+          <span class="trans"><span class="bold">A</span>〈ビラ･用紙･飲み物など〉<span class="bold">を配る</span>, 配布する(<span class="oup_label x_ni">｟よりかたく｠</span>distribute) </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p21_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟主に英･かたく｠</span>
+          <span class="trans">A〈情報など〉を公表する, 報道する</span>
+          <span class="gp">; </span>
+          <span class="trans">言いふらす </span>
+          <span class="grnote"> (<span class="lbl">!</span>しばしば受け身で) </span>
+          <span class="gp">; </span>
+          <span class="trans">断言する, 称する </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">it is <span class="italic">given out</span> that … </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">…ということが公表[報道]される</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p21_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_13'])" title="give">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">13</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p22" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ó</span>ver </span>
+      <span id="WDEJ_g0004790_p22_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけた話｠</span>
+          <span class="gr ty_用法">〖しばしば命令文で〗</span>
+          <span class="trans">やめる(stop), 静かにする</span>
+          <span class="gp">; </span>
+          <span class="trans">〈雨などが〉やむ </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Give over</span>! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">いいかげんにしなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p23" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ó</span>ver <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p23_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけた話｠</span>
+          <span class="gr ty_用法">〖しばしば命令文で〗</span>
+          <span class="trans">A〈行為･習慣など〉をやめる </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは主に<span class="gr x_rr">動名</span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">Give over</span> complaining! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">文句を言うのはよしなさい</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p24" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A </span><span class="str">ó</span>ver [<span class="str">ó</span>ver <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p24_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例be <span class="rf">～</span>n over〗</span>
+          <span class="trans">〈場所･時間などが〉 </span>
+          <span class="ind">【ある特定の目的･活動などに】</span>
+          <span class="trans">当てられる, ささげられる </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">The first floor of the museum <span class="italic">is given over to</span> permanent exhibits<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">その美術館の1階は常設展示に当てられている</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p24_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖通例be <span class="rf">～</span>n over〗</span>
+          <span class="ind">【悪習などに】</span>
+          <span class="trans">溺れる, ふける</span>
+          <span class="gp">; </span>
+          <span class="ind">【感情･誘惑などに】</span>
+          <span class="trans">屈する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">be given over to</span> drinking </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">酒に溺れる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p24_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【人などに】</span>
+          <span class="trans">A〈人･物〉を任せる, 委ねる </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p24_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> oneself over〗</span>
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_19_01'])" title="give">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">19</span><span class="xrlabel">a</span></span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p25" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ú</span>p </span>
+      <span id="WDEJ_g0004790_p25_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="trans">あきらめる, 断念する</span>
+          <span class="gp">; </span>
+          <span class="trans">(習慣などを)やめる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I <span class="italic">give up</span><span class="gp">. </span></span>
+            <span class="oup_label x_ni">｟話｠</span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">もう降参だ, 参った </span>
+          </span>
+          <span class="grnote x_xot"> (<span class="lbl">!</span>質問やなぞなぞの答えがわからない時のせりふ) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">Don't <span class="italic">give up</span><span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">あきらめてはだめだ </span>
+          </span>
+          <span class="x_xot">
+            <span class="grnote"> (<span class="lbl">!</span>相手に対し, 現時点での努力を促す言葉; Never give up. は「将来にわたってずっとあきらめるな」の意で永続的な禁止を表す) </span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p26" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A </span><span class="str">ú</span>p [<span class="str">ú</span>p <span class="italic">A</span>] </span>
+      <span id="WDEJ_g0004790_p26_01" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">1 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈習慣など〉<span class="bold">をやめる</span>, 断つ </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> smoking [╳to smoke] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">喫煙をやめる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_02" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">2 </span>
+        <span class="trg x_xo3">
+          <span class="trans"><span class="bold">A</span>〈考え･希望･仕事など〉<span class="bold">をあきらめる</span>, 捨てる </span>
+          <span class="grnote"> (<span class="lbl">!</span>Aは<span class="gr x_rr">名詞</span><span class="gr x_rr">動名</span>; 受け身にしない) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> trying to lose weight </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">やせようとするのをあきらめる</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">No one <span class="italic">gave up</span> hope of finding survivors<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">誰一人として生存者発見の望みを捨てなかった</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> one's career in music </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">音楽の道を断念する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_k308" class="box x_xo2 ty_3">
+        <span class="title x_xdh">
+          <span class="u">語法のポイント </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>私は大学進学をあきらめた</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>× I gave up going to college</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>○ I gave up the idea of going to college</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+        <span class="np x_xd1">
+          <span class="x_xdh x_xdt">
+            <span>❢give up </span>
+            <span class="italic">doing</span>
+            <span>は「すでに始めていることあるいは慣習的に行っていることをやめる」の意味</span>
+            <span class="gp">.</span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_03" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">3 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…として» </span>
+          <span class="trans">A〈人･事〉をあきらめる </span>
+          <span class="sp"> «<span class="italic">for</span></span>
+          <span class="gp">, </span>
+          <span class="sp"><span class="italic">as</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">A〈人〉を待つのをやめる</span>
+          <span class="gp">; </span>
+          <span class="trans">A〈患者〉を(良くならないと)見放す </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give</span> her <span class="italic">up for</span> dead [lost] </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼女を死んだものとあきらめる</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_04" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">4 </span>
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈恋人〉との交際をやめる</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_05" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">5 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【人に】</span>
+          <span class="trans">A〈物･場所･人など〉を手放す, 引き渡す </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">; </span>
+          <span class="trans">A〈地位･役職〉を降りる, やめる </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> one's seat <span class="italic">to</span> the elderly </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">老人に席を譲る</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">He finally <span class="italic">gave</span> himself <span class="italic">up to</span> the police [enemy]<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">彼はついに警察に自首[敵に投降]した</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> one's child for adoption </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">子供を養子にやる</span>
+          </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">give up</span> one's role as chairman </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">議長職を辞任する</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_06" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">6 </span>
+        <span class="trg x_xo3">
+          <span class="ind">【ふだんとは別のことに】</span>
+          <span class="trans">A〈時間〉を費やす, 割く </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_07" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">7 </span>
+        <span class="trg x_xo3">
+          <span class="co x_ni"> «…に» </span>
+          <span class="trans">A〈情報など〉を漏らす, 暴露する </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+      <span id="WDEJ_g0004790_p26_08" class="semb x_xo2 hasSn">
+        <span class="sn x_xoh">8 </span>
+        <span class="trg x_xo3">
+          <span class="xrg ty_↑">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_19_01'])" title="give">↑ <span class="xrlabelGroup"><span class="xrlabel">他動詞</span><span class="xrlabel">19a</span></span></a>
+            </span>
+            <span class="gp">, </span>
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_01_01_19_03'])" title="give">
+                <span class="xrlabelGroup">
+                  <span class="xrlabel">c</span>
+                </span>
+              </a>
+            </span>
+          </span>
+          <span class="gp">; </span>
+        </span>
+        <span class="trg x_xo3">
+          <span class="con">〖<span class="rf">～</span> oneself up〗</span>
+          <span class="ind">【感情などに】</span>
+          <span class="trans">身を任す </span>
+          <span class="sp"> «<span class="italic">to</span>» </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p27" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="str">ú</span>p on <span class="italic">A </span></span>
+      <span id="WDEJ_g0004790_p27_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="trans">A〈人･事〉を見限る, 見切りをつける</span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p28" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve w<span class="str">á</span>y </span>
+      <span id="WDEJ_g0004790_p28_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_→">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_w0002750:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_w0002750_p20'])" title="way">→ way<span class="hm">1</span></a>
+            </span>
+          </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p29" class="idmsec x_xo1">
+      <span class="idm x_xoh">g<span class="str">ì</span>ve <span class="italic">A</span> wh<span class="str">á</span>t for </span>
+      <span id="WDEJ_g0004790_p29_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟英･くだけて｠</span>
+          <span class="trans">A〈人〉を𠮟りつける, 責める </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex">I'll <span class="italic">give</span> him <span class="italic">what for</span>! </span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">あの野郎ただじゃおかないからな</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p30" class="idmsec x_xo1">
+      <span class="idm x_xoh"><span class="str">Ì</span> would give <span class="str">á</span>nything [my r<span class="str">ì</span>ght <span class="str">á</span>rm, the w<span class="str">ó</span>rld, a l<span class="str">ó</span>t, a gr<span class="str">è</span>at d<span class="str">é</span>al]<span class="gp">. </span></span>
+      <span id="WDEJ_g0004790_p30_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟話｠</span>
+          <span class="co x_ni"> «…を手にするために/…するために» </span>
+          <span class="trans">どんなことでもやってみせる </span>
+          <span class="sp"> «<span class="italic">for</span></span>
+          <span class="gp">/</span>
+          <span class="sp"><span class="italic">to</span> do» </span>
+          <span class="grnote"> (<span class="lbl">!</span>強調の表現) </span>
+        </span>
+        <span class="exg x_xo3 hasSn">
+          <span class="x_xoh">
+            <span class="sn">▸ </span>
+            <span class="ex"><span class="italic">I'd give anything to</span> be with you<span class="gp">. </span></span>
+          </span>
+          <span class="trg x_xo4">
+            <span class="trans ty_用例訳">君といられるのなら僕はどんなことでもするよ</span>
+            <span class="gp">. </span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p31" class="idmsec x_xo1">
+      <span class="idm x_xoh">Wh<span class="str">à</span>t g<span class="str">í</span>ves? </span>
+      <span id="WDEJ_g0004790_p31_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="oup_label x_ni">｟くだけた話｠</span>
+          <span class="trans">どうしたんだ, 何が起こったんだ</span>
+          <span class="gp">; </span>
+          <span class="trans">何か変わったことはあるかい </span>
+          <span class="grnote"> (<span class="lbl">!</span>驚きを表して; ドイツ語Was gibt's?から) </span>
+          <span class="gp">. </span>
+        </span>
+      </span>
+    </span>
+    <span id="WDEJ_g0004790_p32" class="idmsec x_xo1">
+      <span class="idm x_xoh">Wh<span class="str">à</span>t wouldn't I g<span class="str">í</span>ve? </span>
+      <span id="WDEJ_g0004790_p32_01" ord="0" class="semb x_xo2">
+        <span class="trg x_xo3">
+          <span class="xrg ty_＝">
+            <span class="xr">
+              <a href="x-dictionary:r:WDEJ_g0004790:com.apple.dictionary.ja-en.WISDOM#xpointer(//*[@id='WDEJ_g0004790_p30'])" title="give">＝ I would <span class="xrlabelGroup"><span class="xrlabel">give</span></span> anything<span class="gp">.</span></a>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span id="WDEJ_g0004790_02" class="gramb x_xd0">
+    <span class="x_xdh">
+      <span class="ps x_rr">名詞</span>
+    </span>
+    <span id="WDEJ_g0004790_02_00_01" ord="0" class="semb x_xd1">
+      <span class="trg x_xd2">
+        <span class="gr x_rr ty_名詞区分">U</span>
+        <span class="trans">(物の)<span class="bold">弾力</span>(<span class="bold">性</span>)<span class="bold">, 従圧性</span>(elasticity)</span>
+        <span class="gp">; </span>
+        <span class="trans">(精神･性格などの)<span class="bold">柔軟性, 順応性</span></span>
+        <span class="gp">. </span>
+      </span>
+    </span>
+  </span>
+  <span class="drvb x_xo0">
+    <span id="WDEJ_g0004790_32" class="drvsec x_xo1">
+      <span class="drvg x_xo2">
+        <span id="WDEJ_g0004790_d01" class="drv">g<span class="str">í</span>v(e)･a･ble </span>
+      </span>
+      <span class="gramb x_xd0">
+        <span class="x_xdh x_xdt">
+          <span class="ps x_rr">形容詞</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</d:entry>
