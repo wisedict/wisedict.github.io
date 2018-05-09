@@ -53,7 +53,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="resultRow" class="col-3 h-100">
-                    <input id="searchInput" data-bind="textInput: searchInput" class="form-control form-control-md" type="text" placeholder="Search">
+                    <input id="searchInput" data-bind="textInput: searchInput" class="form-control form-control-md" type="text" placeholder="Search English/日本語 words, particles, phrases...">
                     <hr>
                     <div id="resultContainer" class="list-group" data-bind="foreach: searchResult">
                         <a href="#" class="list-group-item list-group-item-action" data-bind="text: title, click: $root.openItem, css: { active: $root.selectedResult() && $root.selectedResult().id == id  }"></a>
@@ -94,15 +94,15 @@
                         return;
                     }
 
-                    var byTitle = index.filter(x => x.title.includes(val)).slice(0, 200);
-                    var byText = index.filter(x => x.searchString.includes(val)).slice(0, 200);
+                    var byTitle = index.filter(x => x.title.includes(val)).slice(0, 600);
+                    var byText = index.filter(x => x.searchString.includes(val)).slice(0, 600);
                     var results = byTitle.concat(byText).map(x => {
                         x.value = x.title.toLowerCase() == val
                             ? 200
                             : (x.title.toLowerCase().includes(val) ? 100 : 0);
                         x.value += x.searchString.includes(val) ? 50 : 0;
                         return x;
-                    }).sort((a, b) =>  b.value - a.value).slice(0, 400);
+                    }).sort((a, b) =>  b.value - a.value).slice(0, 1000);
                     results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
                     searchViewModel.searchResult(results);
                 });
