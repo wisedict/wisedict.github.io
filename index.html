@@ -94,15 +94,15 @@
                         return;
                     }
 
-                    var byTitle = index.filter(x => x.title.includes(val)).slice(0, 100);
-                    var byText = index.filter(x => x.searchString.includes(val)).slice(0, 100);
+                    var byTitle = index.filter(x => x.title.includes(val)).slice(0, 200);
+                    var byText = index.filter(x => x.searchString.includes(val)).slice(0, 200);
                     var results = byTitle.concat(byText).map(x => {
                         x.value = x.title.toLowerCase() == val
                             ? 200
                             : (x.title.toLowerCase().includes(val) ? 100 : 0);
                         x.value += x.searchString.includes(val) ? 50 : 0;
                         return x;
-                    }).sort((a, b) =>  b.value - a.value).slice(0, 150);
+                    }).sort((a, b) =>  b.value - a.value).slice(0, 400);
                     results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
                     searchViewModel.searchResult(results);
                 });
