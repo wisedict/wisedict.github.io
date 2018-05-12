@@ -94,13 +94,14 @@
                         return;
                     }
 
-                    var byTitle = index.filter(x => x.title.includes(val)).slice(0, 600);
-                    var byText = index.filter(x => x.searchString.includes(val)).slice(0, 600);
+                    var lowerVal = val.toLowerCase();
+                    var byTitle = index.filter(x => x.title.includes(lowerVal)).slice(0, 600);
+                    var byText = index.filter(x => x.searchString.includes(lowerVal)).slice(0, 600);
                     var results = byTitle.concat(byText).map(x => {
-                        x.value = x.title.toLowerCase() == val
-                            ? 200
-                            : (x.title.toLowerCase().includes(val) ? 100 : 0);
-                        x.value += x.searchString.includes(val) ? 50 : 0;
+                        x.value = x.title == val ? 400
+                            : (x.toLowerCase().includes(lowerVal) ? 300 : 0);
+                        x.value += (x.searchString.split(val).length - 1) * 5;
+                        x.value += (x.searchString.toLowerCase().split(lowerVal).length - 1) * 2;
                         return x;
                     }).sort((a, b) =>  b.value - a.value).slice(0, 1000);
                     results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
