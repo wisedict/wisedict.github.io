@@ -99,7 +99,7 @@
                     var byText = index.filter(x => x.searchString.includes(lowerVal)).slice(0, 600);
                     var results = byTitle.concat(byText).map(x => {
                         x.value = x.title == val ? 400
-                            : (x.toLowerCase().includes(lowerVal) ? 300 : 0);
+                            : (x.title.toLowerCase().includes(lowerVal) ? 300 : 0);
                         x.value += (x.searchString.split(val).length - 1) * 5;
                         x.value += (x.searchString.toLowerCase().split(lowerVal).length - 1) * 2;
                         return x;
