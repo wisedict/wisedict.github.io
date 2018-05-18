@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            .container-fluid {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            #searchInput {
+                text-align: center;
+            }
+
+            #resultRow {
+                flex-flow: column;
+                display: flex;
+                overflow: hidden;
+            }
+
+            #resultContainer {
+                overflow-y: auto;
+                border: 1px solid rgba(0,0,0,.125);
+            }
+
+            iframe {
+                border: 2px solid #ced4da;
+                border-radius: .25rem;
+            }
+
+            ::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 7px;
+            }
+            ::-webkit-scrollbar-thumb {
+                border-radius: 4px;
+                background-color: rgba(0, 0, 0, .5);
+                -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+            }
+
+            .list-group-item:first-child {
+                border-top: 0;
+            }
+
+            .list-group-item:last-child {
+                border-bottom: 0;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="resultRow" class="col-3 h-100">
+                    <input id="searchInput" data-bind="textInput: searchInput" class="form-control form-control-md" type="text" placeholder="Search English/日本語">
+                    <hr>
+                    <div id="resultContainer" class="list-group" data-bind="foreach: searchResult">
+                        <a href="#" class="list-group-item list-group-item-action" data-bind="text: title, click: $root.openItem, css: { active: $root.selectedResult() && $root.selectedResult().id == id  }"></a>
+                    </div>
+                </div>
+                <iframe class="col" id="itemView">
+                </iframe>
+            </div>
+        </div>
+        <script type="text/javascript" src="lookup_table.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='js/knockout.js'></script>
+        <script>
+            function uniqueBy(a, cond) {
+                return a.filter((e, i) => a.findIndex(e2 => cond(e, e2)) === i);
+            }
+
+            $(function() {
+                var searchViewModel;
+                searchViewModel = {
+                    searchInput: ko.observable(),
+                    searchResult: ko.observableArray(),
+                    selectedResult: ko.observable()
+                };
+
+                searchViewModel.openItem = function (item)  {
+                    searchViewModel.selectedResult(item);
+                    document.getElementById('itemView').src = 'data/' + item.id + '.html';
+                };
+
+                searchViewModel.delayedSearchInput = ko.pureComputed(searchViewModel.searchInput).extend({ rateLimit: { method: "notifyWhenChangesStop", timeout: 400 } });
+                searchViewModel.delayedSearchInput.subscribe(function (val) {
+                    searchViewModel.selectedResult(null);
+                    if (val.length == 0) {
+                        searchViewModel.searchResult([]);
+                        return;
+                    }
+
+                    var lowerVal = val.toLowerCase();
+                    var byTitle = index.filter(x => x.title.includes(lowerVal)).slice(0, 600);
+                    var byText = index.filter(x => x.searchString.includes(lowerVal)).slice(0, 600);
+                    var results = byTitle.concat(byText).map(x => {
+                        x.value = x.title == val ? 400
+                            : (x.title.toLowerCase().includes(lowerVal) ? 300 : 0);
+                        x.value += (x.searchString.split(val).length - 1) * 5;
+                        x.value += (x.searchString.toLowerCase().split(lowerVal).length - 1) * 2;
+                        return x;
+                    }).sort((a, b) =>  b.value - a.value).slice(0, 1000);
+                    results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
+                    searchViewModel.searchResult(results);
+                });
+
+                ko.applyBindings(searchViewModel);
+            });
+        </script>
+    </body>
+</html>
