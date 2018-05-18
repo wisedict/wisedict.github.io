@@ -83,18 +83,12 @@ permalink: /404.html
 
             $(function() {
                 searchViewModel = {
-                    searchInput: ko.observable(searchedWord),
+                    searchInput: ko.observable(),
                     searchResult: ko.observableArray(),
                     selectedResult: ko.observable()
                 };
-
-                searchViewModel.openItem = function (item)  {
-                    searchViewModel.selectedResult(item);
-                    document.getElementById('itemView').src = 'data/' + item.id + '.html';
-                };
-
-                searchViewModel.delayedSearchInput = ko.pureComputed(searchViewModel.searchInput).extend({ rateLimit: { method: "notifyWhenChangesStop", timeout: 400 } });
-                searchViewModel.delayedSearchInput.subscribe(function (val) {
+                
+                function perfromSearch (val) {
                     searchViewModel.selectedResult(null);
                     if (val.length == 0) {
                         searchViewModel.searchResult([]);
@@ -113,10 +107,22 @@ permalink: /404.html
                     }).sort((a, b) =>  b.value - a.value).slice(0, 1000);
                     results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
                     searchViewModel.searchResult(results);
+                }
+
+                searchViewModel.openItem = function (item)  {
+                    searchViewModel.selectedResult(item);
+                    document.getElementById('itemView').src = 'data/' + item.id + '.html';
+                };
+
+                searchViewModel.delayedSearchInput = ko.pureComputed(searchViewModel.searchInput).extend({ rateLimit: { method: "notifyWhenChangesStop", timeout: 400 } });
+                searchViewModel.delayedSearchInput.subscribe(function (val) {
+                    perfromSearch(val);
                 });
 
                 ko.applyBindings(searchViewModel);
+                console.log('Searching for:', searchedWord);
                 searchViewModel.searchInput(searchedWord);
+                perfromSearch(searchedWord)
             });
         </script>
     </body>
