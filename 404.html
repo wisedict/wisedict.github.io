@@ -73,9 +73,6 @@ permalink: /404.html
         <script src="js/bootstrap.min.js"></script>
         <script type='text/javascript' src='js/knockout.js'></script>
         <script>
-            var url = window.location.href;
-            url = url.split('/');
-            var searchedWord = url[url.length - 1];
             var searchViewModel;
             
             function uniqueBy(a, cond) {
@@ -112,6 +109,21 @@ permalink: /404.html
                         searchViewModel.openItem(results[0]);
                     }
                 }
+                
+                function searchForWord() {
+                    var url = window.location.href;
+                    url = url.split('/');
+                    var searchedWord = decodeURI(url[url.length - 1]);
+                    
+                    console.log('Searching for: ', searchedWord);
+                    searchViewModel.searchInput(searchedWord);
+                    perfromSearch(searchedWord, true);
+                }
+                
+                searchViewModel.clickItem = function (item) {
+                    window.history.pushState(item, "Search: " + item.title, encodeURI(item.title));
+                    searchViewModel.openItem(item);
+                };
 
                 searchViewModel.openItem = function (item)  {
                     searchViewModel.selectedResult(item);
@@ -124,9 +136,10 @@ permalink: /404.html
                 });
 
                 ko.applyBindings(searchViewModel);
-                console.log('Searching for:', searchedWord);
-                searchViewModel.searchInput(searchedWord);
-                perfromSearch(searchedWord, true)
+                
+                searchForWord();
+                
+                window.onpopstate = searchForWord;
             });
         </script>
     </body>
