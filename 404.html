@@ -73,14 +73,17 @@ permalink: /404.html
         <script src="js/bootstrap.min.js"></script>
         <script type='text/javascript' src='js/knockout.js'></script>
         <script>
+            var url = window.location.href;
+            var searchedWord = url.split('/')[0];
+            var searchViewModel;
+            
             function uniqueBy(a, cond) {
                 return a.filter((e, i) => a.findIndex(e2 => cond(e, e2)) === i);
             }
 
             $(function() {
-                var searchViewModel;
                 searchViewModel = {
-                    searchInput: ko.observable(),
+                    searchInput: ko.observable(searchedWord),
                     searchResult: ko.observableArray(),
                     selectedResult: ko.observable()
                 };
@@ -113,6 +116,7 @@ permalink: /404.html
                 });
 
                 ko.applyBindings(searchViewModel);
+                searchViewModel.searchInput(searchedWord);
             });
         </script>
     </body>
