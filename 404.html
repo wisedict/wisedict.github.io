@@ -89,7 +89,7 @@ permalink: /404.html
                     selectedResult: ko.observable()
                 };
                 
-                function perfromSearch (val) {
+                function perfromSearch (val, selectFirst) {
                     searchViewModel.selectedResult(null);
                     if (val.length == 0) {
                         searchViewModel.searchResult([]);
@@ -108,6 +108,9 @@ permalink: /404.html
                     }).sort((a, b) =>  b.value - a.value).slice(0, 1000);
                     results = uniqueBy(results, (o1, o2) => o1.id === o2.id);
                     searchViewModel.searchResult(results);
+                    if (selectFirst && results.length > 0) {
+                        searchViewModel.openItem(results[0]);
+                    }
                 }
 
                 searchViewModel.openItem = function (item)  {
@@ -117,13 +120,13 @@ permalink: /404.html
 
                 searchViewModel.delayedSearchInput = ko.pureComputed(searchViewModel.searchInput).extend({ rateLimit: { method: "notifyWhenChangesStop", timeout: 400 } });
                 searchViewModel.delayedSearchInput.subscribe(function (val) {
-                    perfromSearch(val);
+                    perfromSearch(val, false);
                 });
 
                 ko.applyBindings(searchViewModel);
                 console.log('Searching for:', searchedWord);
                 searchViewModel.searchInput(searchedWord);
-                perfromSearch(searchedWord)
+                perfromSearch(searchedWord, true)
             });
         </script>
     </body>
